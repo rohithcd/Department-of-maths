@@ -1,0 +1,181 @@
+/*Main Section */
+.section_navbar
+{
+    font-family: "monserrat", sans-serif;
+    height: 9.6rem; /*15.8 */
+    width: 100%;
+    padding: 0 4.5rem;
+    background-color: #0c2340;
+}
+
+/* Section 1 */
+.navbar_prime
+{
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+    color: #fff;
+}
+
+.navbar_title
+{
+    font-size: 1.17rem; /* 1.8 */
+    padding: 2rem 0;
+    align-self: center;
+}
+
+.navbar_title h2
+{
+    letter-spacing: 0.04rem;
+}
+
+.navbar_title h1
+{
+    text-transform: uppercase;
+}
+
+.navbar_menu-sec
+{
+    font-size: 1.04rem; /*1.6rem*/
+    font-weight: bold;
+}
+
+.navbar_menu-sec ul li
+{
+    position: relative;
+}
+
+.navbar_menu-sec ul > :not(:last-child) ::after
+{
+  content: '';
+  width: 1.5px;
+  height: 20px;
+  position: absolute;
+  right: 0%;
+  background-color: #fff;
+}
+
+.navbar_menu-sec a
+{
+    color: #fff;
+}
+
+
+/* Section 2 */
+.navbar_menu-main
+{
+    position: absolute;
+    right: 8%;
+    font-size: 1.17rem;
+    background-color: #fff;
+    width: 824px;
+    float: right;
+    align-self: center;
+    z-index: 100;
+}
+
+.navbar_menu-main a
+{
+    color: #555;
+}
+
+.navbar_menu-main ul,
+.navbar_menu-sec ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_menu-main ul li,
+.navbar_menu-sec ul li
+{
+    padding: 1.3rem 1.95rem;
+}
+
+.navbar_menu-main li
+{
+    transition: width 2s;
+    position: relative;  
+}
+
+.navbar_menu-main li::after,
+.navbar_menu-main li::before
+{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0; 
+    background: #555;
+    transition: width 0.8s;
+}
+
+.navbar_menu-main li:hover::after,
+.navbar_menu-main li:hover::before
+{
+    width: 40%;
+    height: 4px;
+}
+
+.navbar_menu-main li::after
+{
+    left: 50%; 
+}
+
+.navbar_menu-main li::before
+{
+    right: 50%;  
+}
+
+@media screen and (max-width: 1280px)
+{
+    .navbar_menu-main
+    {
+        font-size: 0.95rem;
+        width: 760px;
+    }
+
+}
+
+@media screen and (max-width: 917px)
+{
+    .section_navbar
+    {
+        padding: 0 3rem;
+    }
+
+    .navbar_menu-main
+    {
+        font-size: 0.97rem;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 810px)
+{
+    .section_navbar
+    {
+        padding: 0 3rem;
+        height: 12rem;
+    }
+
+    .navbar_title
+    {
+        font-size: 1.04rem; /*1.6rem*/
+        padding: 1.7rem 0;
+    }
+
+    .navbar_menu-main
+    {
+        display: none;
+    }
+
+    .navbar_menu-sec
+    {
+        display: none;
+    }
+
+}
+
+

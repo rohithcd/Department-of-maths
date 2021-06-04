@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.section_contact
+{
+    width: 20rem;
+    height: 22rem;
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2rem 1.2rem 2rem 0;
+    /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
+}
+
+.contact_head ~ div
+{
+    margin-top: 2rem;
+    padding: 0 1.6rem;
+}
+
+.contact_head
+{
+    display: inline-block;
+    padding: 0.8rem 1rem;
+    position: relative;
+}
+
+.contact_head::before
+{
+    content: "";
+    width: 80%;
+    height: 0.3rem;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: powderblue;
+}

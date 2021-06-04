@@ -1,0 +1,35 @@
+.section_gallery
+{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(40%, 1fr));
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    margin: 4rem auto;
+}
+
+.photo
+{
+    width: 100%;
+    height: 100%;
+}
+
+.photo > img 
+{
+    width: 100%;
+    height: 100%;
+}
+
+.btn
+{
+   
+    padding: 15px 30px;
+    border: none;
+    background-color: #0c2340;
+    color: white;
+    display: block;
+    margin: -1rem auto 2rem auto;
+    cursor: pointer;
+    font-size: 1rem;
+}

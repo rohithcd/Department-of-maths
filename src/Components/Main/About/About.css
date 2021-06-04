@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.section_about
+{
+    width: 90%;
+    height: 29rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between; 
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%),
+    url("../../../Assets/main/img_about.JPG");
+    background-size: cover;
+    padding-left: 1.2rem;
+}
+
+.about_head 
+{
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    position: relative;
+}
+
+
+.about_head::before
+{
+    content: "";
+    width: 80%;
+    height: 0.3rem;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: powderblue;
+}
+
+.section_about h2
+{
+    color: #0c2340;
+}
+
+.about_text
+{
+    width: 74%;
+    height: 27rem;
+    line-height: 1.7;
+}
+
+.about_text > p:not(:last-child)
+{
+    margin-bottom: 0.56rem;
+}
