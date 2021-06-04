@@ -10,6 +10,7 @@
 html
 {
     font-size: 100%; /* for setting 1rem == 10px */
+    background-color: #f6f6f7;
 }
 
 a
