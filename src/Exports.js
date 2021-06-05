@@ -42,6 +42,8 @@ export {default as slide_min3} from "./Assets/main/slides_img3-mob.jpg";
 /*----Program----*/
 export {default as bg_pro} from "./Assets/main/bg_program.JPG";
 
+/*----Facilities----*/
+export {default as fa_img1} from "./Assets/main/bg_program.JPG";
 
 /*------------TEXT-----------------*/
 export let names = [
@@ -122,4 +124,14 @@ export let award = [
     null, null, null, null, null, null, null,
     "Award: Kerala State Young Scientist Award 2012" ,
     null, null, null
+];
+
+/*----Facilities----*/
+export let txt = [
+    "The library of the department hosts a generous collection of textbooks for the courses offered. Also reference books for research work and advanced studiesare available",
+    "The Computer lab hosts a collection of twenty (?) computers with internet accessibility. Students attend practical classes on Python programming, MathSage, LaTex and other relevant programming languages required for application in Mathematics",
+    "The Seminar hall provides a platform for various department seminars and other relevant talks and presentations. The hall has a electronic presentation board and also a projector for the same",
+    "There are 10 classrooms equipped with the modern infrastructure for holding classes in both online and offline mode. Some classes also have a smartboard facility",
+    "There are two common rooms for PhD students and separate common room for M.Phil students. Apart from that there is also a discussion room for Masters students",
+    "The department also has an administrative office consisting of six helpful staff members for all maintenance and office related work"
 ];

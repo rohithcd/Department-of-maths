@@ -12,8 +12,8 @@ const Program = () => {
                         <ul className="program_list">
                             <li><h3 className="list_head">Integrated M.Sc. (5 years)</h3></li>
                             <li><h3 className="list_head">M.Sc. in Mathematics (2 years)</h3></li>
+                            <li><h3 className="list_head">Ph.D. in Mathematics</h3></li>
                             <li><h3 className="list_head">M.Phil in Mathematics (1 year)</h3></li>
-                            <li><h3 className="list_head">Ph.D. in Mathematics (Approx. 5 years)</h3></li>
                         </ul>
                     </div>
                     <div className="program_image">

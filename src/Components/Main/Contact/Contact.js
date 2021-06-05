@@ -9,7 +9,7 @@ const Contact = () => {
                 <h2>Contact Us</h2>
             </div>
             <div>
-                <p>Department Of Mathematics</p>
+                <p>Department of Mathematics</p>
                 <p>Cochin University of Science And Technology</p>
                 <p>PIN - 682022, Ernakulam, Kerala</p>
                 <p>✉ mathscusat@gmail.com</p>
