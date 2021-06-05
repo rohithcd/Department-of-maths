@@ -39,6 +39,9 @@ export {default as slide_min1} from "./Assets/main/slides_img1-mob.jpg";
 export {default as slide_min2} from "./Assets/main/slides_img2-mob.jpg";
 export {default as slide_min3} from "./Assets/main/slides_img3-mob.jpg";
 
+/*----Program----*/
+export {default as bg_pro} from "./Assets/main/bg_program.JPG";
+
 
 /*------------TEXT-----------------*/
 export let names = [

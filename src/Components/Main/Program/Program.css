@@ -28,9 +28,9 @@
 .program_box
 {
     width: 100%;
-    height: 30rem;
-    background-color: yellow;
+    height: 28rem;
     margin: 0 auto 3rem auto;
+    display: flex;
 }
 
 .program_list > li
@@ -40,10 +40,12 @@
     font-weight: 800;
     text-transform: uppercase;
     box-shadow: inset 0 -1px 0 #ccc;
-    padding: 33px 20px 32px 20px;
+    padding:0 20px; 
     background-color: white;
-    display: block;
-    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     height: 7rem;
     align-content: center;
     margin-bottom: 0;
@@ -52,8 +54,23 @@
 
 .list_head
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     width: 100%;
     font-size: 1.1em;
+}
+
+.program_image
+{
+    width: 64%;
+    height: 28rem;
+    background-color: white;
+}
+
+.program_image > img 
+{
+    width: 100%;
+    height: 100%;
 }

@@ -1,3 +1,4 @@
+import {bg_pro} from "../../../Exports";
 import "./Program.css";
 
 
@@ -16,7 +17,7 @@ const Program = () => {
                         </ul>
                     </div>
                     <div className="program_image">
-
+                        <img src={bg_pro} alt="Image"/>
                     </div>
                 </div>
             </div>
