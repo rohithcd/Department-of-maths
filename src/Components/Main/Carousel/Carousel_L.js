@@ -1,4 +1,3 @@
-import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -6,7 +5,7 @@ import {slide1, slide2, slide3, slide_min1, slide_min2, slide_min3} from "../../
 
 import "./Carousel_L.css";
 
-export default function Carousel_L() {
+const Carousel_L = () => {
   var img1i;
   var img2i;
   var img3i;
@@ -22,20 +21,22 @@ export default function Carousel_L() {
 
   return (
     <div className="carousal_box">
-      <Carousel
+      <Carousel className="carousal"
         showArrows={true}
-        autoPlay={false}
+        autoPlay={true}
         infiniteLoop={true}
-        stopOnHover={true}
+        stopOnHover={false}
         showThumbs={false}
-        dynamicHeight={true}
+        dynamicHeight={false}
         showStatus={false}
+        interval={3500}
+  
       >
         <div className="cente">
           <img className="imgsize" src={img1i} />
           <div className="writing">
-            <h1>WELCOME TO MATHS DEPARTMENT CUSAT</h1>
-            <p>Explore the Maths department and know about us! </p>
+            <h1>WELCOME TO DEPT OF MATHEMATICS CUSAT</h1>
+            <p>Explore the department of mathematics and know about us! </p>
           </div>
         </div>
         <div>
@@ -59,3 +60,5 @@ export default function Carousel_L() {
     </div>
   );
 }
+
+export default Carousel_L;

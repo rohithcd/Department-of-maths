@@ -2,10 +2,10 @@
 .section_navbar
 {
     font-family: "monserrat", sans-serif;
-    height: 9.6rem; /*15.8 */
+    height: 8.6rem; 
     width: 100%;
     padding: 0 4.5rem;
-    background-color: #0c2340;
+    background-color: var(--bg-main);
 }
 
 /* Section 1 */
@@ -13,13 +13,13 @@
 {
     display: flex;
     justify-content: space-between;
-    height: 8rem;
-    color: #fff;
+    height: 7rem;
+    color: var(--white);
 }
 
 .navbar_title
 {
-    font-size: 1.17rem; /* 1.8 */
+    font-size: 1.17rem; 
     padding: 2rem 0;
     align-self: center;
 }
@@ -36,7 +36,7 @@
 
 .navbar_menu-sec
 {
-    font-size: 1.04rem; /*1.6rem*/
+    font-size: 1.04rem; 
     font-weight: bold;
 }
 
@@ -52,12 +52,12 @@
   height: 20px;
   position: absolute;
   right: 0%;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .navbar_menu-sec a
 {
-    color: #fff;
+    color: var(--white);
 }
 
 
@@ -67,7 +67,7 @@
     position: absolute;
     right: 8%;
     font-size: 1.17rem;
-    background-color: #fff;
+    background-color: var(--white);
     width: 824px;
     float: right;
     align-self: center;
@@ -76,7 +76,7 @@
 
 .navbar_menu-main a
 {
-    color: #555;
+    color: var(--ash);
 }
 
 .navbar_menu-main ul,
@@ -106,7 +106,7 @@
     height: 0;
     position: absolute;
     bottom: 0; 
-    background: #555;
+    background: var(--ash);
     transition: width 0.8s;
 }
 
@@ -162,7 +162,7 @@
 
     .navbar_title
     {
-        font-size: 1.04rem; /*1.6rem*/
+        font-size: 1.04rem; 
         padding: 1.7rem 0;
     }
 

@@ -32,7 +32,7 @@ const Gallery = () => {
             <div className="section_gallery">
                 { arr }
             </div>
-            <button className="btn" onClick={show}>{state.value}</button>
+            <button className="btn btn-align" onClick={show}>{state.value}</button>
         </>
     );
 }

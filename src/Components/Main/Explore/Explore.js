@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState, useRef} from "react";
 import logo1 from "../../../Assets/icons/cusat_logo.png";
 import d_arr from "../../../Assets/icons/down_arrow.svg";
 import './Explore.css';
@@ -7,12 +7,25 @@ import './Explore.css';
 
 const Explore = ()=> {
     const [state, setState] = useState({rotate: "rotate(0deg)", isActive: false, value: "none"});
-    
-    function click() 
+
+    const scrollToRef = (ref) => {
+      
+        window.scrollTo({
+            top: (ref.current.offsetTop - 0.1),
+            left:  0,
+            behavior: 'smooth'
+        })
+    }
+
+    const myRef = useRef(null); 
+    function click(ref) 
     {
+       
+        scrollToRef(myRef);
+
         if(state.isActive === false)
         {
-            setState({rotate: "rotate(180deg)", isActive: true, value: "flex"});
+            setState({rotate: "rotate(180deg)", isActive: true, value: "block"});
         }
         else
         {
@@ -22,21 +35,24 @@ const Explore = ()=> {
 
     return(
         <>
-            <div className="hrblock" >
-                <h3 className="explr shakecls" onClick={click}>
-                    Explore More{" "}
-                    <div className="rot">
-                        <img src={d_arr} style={{transform: state.rotate}} className="arrow" alt="explore" />
-                    </div>
-                </h3>
+            <div className="hrblock">
+                    <h3 className="explr shakecls"  onClick={click}>
+                        Explore More{" "}
+                        <div className="rot">
+                            <img src={d_arr} style={{transform: state.rotate}} className="arrow" alt="explore" />
+                        </div>
+                    </h3>
+               
+               
             </div>
+            <div ref={myRef}  > </div>
             <div className="new-block" style={{display: state.value}}>
-              {/*  <div cassName="flex"> */} 
-                    <Block img={logo1} caps="CUSAT"/>
-                    <Block img={logo1} caps="CUSAT"/>
-                    <Block img={logo1} caps="CUSAT"/>
-                    <Block img={logo1} caps="CUSAT"/>
-               {/* </div>  */}
+                    <ul className="block_list">
+                        <Block img={logo1} caps="CUSAT" link="https://cusat.ac.in"/>
+                        <Block img={logo1}/>
+                        <Block img={logo1}/>
+                        <Block img={logo1}/>
+                    </ul>
                 
             </div>
         </>
@@ -46,10 +62,12 @@ const Explore = ()=> {
 const Block = (props) => {
     return(
         <>
-            <div className="block_links">
-                <img src={props.img} alt="alternate texts"/>
-                <figcaption>{props.caps}</figcaption>
-            </div>
+            <li className="block_links">
+                <a href={props.link} target="_blank">
+                    <img src={props.img} alt="alternate texts"/>
+                    <p>{props.caps}</p>
+                </a>
+            </li>
         </>
     );
 }

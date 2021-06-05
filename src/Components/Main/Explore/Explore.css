@@ -2,7 +2,7 @@
 {
     background-color: #031d3a;
     width: 100%;
-    height: 50px;
+    height: 3.12rem;
     border: 0;
     display: flex;
     justify-content: center;
@@ -20,16 +20,29 @@
 
 .new-block
 {
-    width: 100%;
-    height: 10rem;
-    align-items: center;
-    justify-content:center;
+    width: 42%;
+    background-color: white;
+    padding: 2.2rem 0;
+    margin: 3rem auto;
+    outline: 12px solid var(--bg-main);
+    outline-offset: 0.7rem;
+    
 }
 
-.block_links
+.block_list
 {
-    width: 5rem;
-    height: 5rem;
-    margin: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
     text-align: center;
+}
+
+.block_links 
+{
+    padding: 0.7rem 2rem;
+}
+
+.block_links:not(:last-child)
+{
+    border-right: 1px solid #EBEBEB; 
 }

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
-.writing {
+.writing 
+{
   font-family: "PT Sans", sans-serif;
   position: absolute;
   top: 70%;
@@ -19,7 +20,11 @@
 .writing:hover {
   color: rgb(255, 255, 255);
 }
-.imgsize {
+.imgsize 
+{
+  width: 100%;
+  max-height: calc(100vh - 11.72rem);
+  min-height: 30rem;
 }
 .cente {
   display: flex;

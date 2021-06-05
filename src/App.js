@@ -5,6 +5,8 @@ import Gallery from "./Components/Gallery/Gallery";
 import Facilities from "./Components/Facilities/Facilities";
 import Layout from "./Layout";
 
+import "./App.css";
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const App = () => {
