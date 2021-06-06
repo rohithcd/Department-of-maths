@@ -45,7 +45,13 @@ export {default as bg_pro} from "./Assets/main/bg_program.JPG";
 /*----Facilities----*/
 export {default as fa_img1} from "./Assets/main/bg_program.JPG";
 
+/*----Explore----*/
+export {default as ex_logo1} from "./Assets/icons/cusat_logo.png";
+export {default as ex_logo2} from "./Assets/icons/dyuthi.png";
+export {default as ex_logo3} from "./Assets/icons/book.png";
+
 /*------------TEXT-----------------*/
+/*----People----*/
 export let names = [
     "Dr. P. G. Romeo",
     "Dr. Sasi Gopalan",
@@ -126,6 +132,13 @@ export let award = [
     null, null, null
 ];
 
+/*----Explore----*/
+export let links = [
+    "https://cusat.ac.in",
+    "https://dyuthi.cusat.ac.in/xmlui/",
+    "http://library.cusat.ac.in/",
+    "https://sites.google.com/site/osadms/"
+];
 /*----Facilities----*/
 export let txt = [
     "The library of the department hosts a generous collection of textbooks for the courses offered. Also reference books for research work and advanced studiesare available",

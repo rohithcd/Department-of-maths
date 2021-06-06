@@ -24,8 +24,10 @@
     background-color: white;
     padding: 2.2rem 0;
     margin: 3rem auto;
-    outline: 12px solid var(--bg-main);
-    outline-offset: 0.7rem;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.123);
+    font-family: "Poppins", sans-serif;
+   /* outline: 12px solid var(--bg-main);
+    outline-offset: 0.7rem; */
     
 }
 
@@ -35,6 +37,7 @@
     justify-content: center;
     align-items: stretch;
     text-align: center;
+    transition: all 2s ease-in-out;
 }
 
 .block_links 
@@ -45,4 +48,9 @@
 .block_links:not(:last-child)
 {
     border-right: 1px solid #EBEBEB; 
+}
+
+.block_links:hover
+{
+    transform: scale(1.05);
 }

@@ -1,14 +1,14 @@
 import { useState, useRef} from "react";
-import logo1 from "../../../Assets/icons/cusat_logo.png";
+import {links, ex_logo1, ex_logo2, ex_logo3} from "../../../Exports";
 import d_arr from "../../../Assets/icons/down_arrow.svg";
 import './Explore.css';
 
-
+let logos = [ex_logo1, ex_logo2, ex_logo3];
 
 const Explore = ()=> {
     const [state, setState] = useState({rotate: "rotate(0deg)", isActive: false, value: "none"});
 
-    const scrollToRef = (ref) => {
+    const scrollToObj = (ref) => {
       
         window.scrollTo({
             top: (ref.current.offsetTop - 0.1),
@@ -21,7 +21,7 @@ const Explore = ()=> {
     function click(ref) 
     {
        
-        scrollToRef(myRef);
+        scrollToObj(myRef);
 
         if(state.isActive === false)
         {
@@ -48,10 +48,10 @@ const Explore = ()=> {
             <div ref={myRef}  > </div>
             <div className="new-block" style={{display: state.value}}>
                     <ul className="block_list">
-                        <Block img={logo1} caps="CUSAT" link="https://cusat.ac.in"/>
-                        <Block img={logo1}/>
-                        <Block img={logo1}/>
-                        <Block img={logo1}/>
+                        <Block img={logos[0]} caps="CUSAT" link={links[0]}/>
+                        <Block img={logos[1]} caps="DYUTHI" link={links[1]}/>
+                        <Block img={logos[2]} caps="LIBRARY" link={links[2]}/>
+                        <Block img={logos[0]} caps="OSADMS" link={links[3]}/>
                     </ul>
                 
             </div>
@@ -64,7 +64,7 @@ const Block = (props) => {
         <>
             <li className="block_links">
                 <a href={props.link} target="_blank">
-                    <img src={props.img} alt="alternate texts"/>
+                    <img id="myImg" src={props.img} alt="alternate texts"/>
                     <p>{props.caps}</p>
                 </a>
             </li>
