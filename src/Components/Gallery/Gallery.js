@@ -1,4 +1,5 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
+import Loader from "../Loader/Loader";
 
 import {img1, img2, img3, img4, img5, img6, img7, img8, img9, img10 } from "../../Exports";
 import "./Gallery.css";
@@ -7,7 +8,15 @@ import "./Gallery.css";
 const Gallery = () => {
     let arr = [];
     const [state, setState] = useState({n: 4, value: "Show More"});
+    const [loading, setLoading] = useState(false);
     let pics = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+
+    useEffect(() => {
+        setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+    }, []);
 
     function show()
     {
@@ -29,10 +38,14 @@ const Gallery = () => {
     
     return(
         <>
-            <div className="section_gallery">
-                { arr }
-            </div>
-            <button className="btn btn-align" onClick={show}>{state.value}</button>
+            {(loading) ?  (<Loader/> ): (
+            <>
+                <div className="section_gallery">
+                    { arr }
+                </div>
+                <button className="btn btn-align" onClick={show}>{state.value}</button>
+            </>
+            )}
         </>
     );
 }

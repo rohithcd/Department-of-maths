@@ -43,12 +43,22 @@ export {default as slide_min3} from "./Assets/main/slides_img3-mob.jpg";
 export {default as bg_pro} from "./Assets/main/bg_program.JPG";
 
 /*----Facilities----*/
-export {default as fa_img1} from "./Assets/main/bg_program.JPG";
+export {default as fa_img1} from "./Assets/facilities/seminar_hall-1.JPG";
+export {default as fa_img2} from "./Assets/facilities/seminar_hall-2.JPG";
+export {default as fa_img3} from "./Assets/facilities/library-1.JPG";
+export {default as fa_img4} from "./Assets/facilities/library-1.JPG";
+export {default as fa_img5} from "./Assets/facilities/library-2.JPG";
+export {default as fa_img6} from "./Assets/facilities/library-3.JPG";
+export {default as fa_img7} from "./Assets/facilities/library-4.JPG";
+export {default as fa_img8} from "./Assets/facilities/library-5.JPG";
 
 /*----Explore----*/
 export {default as ex_logo1} from "./Assets/icons/cusat_logo.png";
 export {default as ex_logo2} from "./Assets/icons/dyuthi.png";
 export {default as ex_logo3} from "./Assets/icons/book.png";
+
+export {default as logo_main1} from "./Assets/main/logo_main.png";
+
 
 /*------------TEXT-----------------*/
 /*----People----*/

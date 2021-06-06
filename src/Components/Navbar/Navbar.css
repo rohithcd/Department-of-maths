@@ -17,11 +17,19 @@
     color: var(--white);
 }
 
+.navbar-image
+{
+    width: 74px;
+    height: 74px;
+    margin-top: -1rem;
+}
+
 .navbar_title
 {
+    display: flex;
     font-size: 1.17rem; 
-    padding: 2rem 0;
-    align-self: center;
+    padding: 2.5rem 0 1.5rem 0;
+    align-items: center;
 }
 
 .navbar_title h2

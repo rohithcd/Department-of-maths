@@ -1,16 +1,23 @@
 import {Link} from 'react-router-dom';
 import './Navbar.css';
+import {logo_main1} from "../../Exports";
+import logo from "../../Assets/icons/logo.svg";
 
 
 const Navbar = () => {
   return(
     <>
       <nav className="section_navbar">
-       
         <div className="navbar_prime">
           <div className="navbar_title">
+            <img src={logo_main1} alt="" className="navbar-image"/>
+            <div className="logo">
+            <img src={logo} alt="logo" />
+          </div>
+          { /* <span>
             <h2>Department of</h2>
             <h1>Mathematics</h1>
+            </span> */}
           </div>    
 
           <div className="navbar_menu-sec">

@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import logo from "../../Assets/icons/logo.svg";
 import "./Footer.css";
 
+const scrollToTop= () => {
+    window.scrollTo(0,0)
+}
+
 
 export default function footer() {
   function check() {}
@@ -25,7 +29,7 @@ export default function footer() {
               <Link to="/" className="item_f1">
                 Olympiad
               </Link>
-              <Link to="/" className="item_f1">
+              <Link to="/people" onClick={scrollToTop} className="item_f1">
                 People
               </Link>
             </div>
@@ -40,10 +44,10 @@ export default function footer() {
               <Link to="/" className="item_f2">
                 Faculty
               </Link>
-              <Link to="/" className="item_f2">
+              <Link to="/facilities" onClick={scrollToTop} className="item_f2">
                 Facilities
               </Link>
-              <Link to="/" className="item_f2">
+              <Link to="/alumni" onClick={scrollToTop} className="item_f2">
                 Alumni
               </Link>
             </div>

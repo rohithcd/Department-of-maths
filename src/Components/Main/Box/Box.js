@@ -11,7 +11,7 @@ const Box = () => {
       <div className="boxes">
         <Card head="Department" img={b_img1} para={""} />
         <Card head="Courses" img={b_img2} para={""} />
-        <Card head="Areas Of Research" img={b_img3} para={""} />
+        <Card head="Future Events" img={b_img3} para={""} />
         <Card head="Out Reach" img={b_img4} para={""} />
       </div>
     </div>
