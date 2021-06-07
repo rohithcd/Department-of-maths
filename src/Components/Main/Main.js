@@ -8,15 +8,18 @@ import Program from "./Program/Program";
 
 import "./Main.css";
 
+
 const Main = () => {
     return(
         <>
+    
             <Carousel />
             <Explore/>
             <About/>
             <Box />
             <Program/>
             <Banner />
+   
         </>
     );
 }

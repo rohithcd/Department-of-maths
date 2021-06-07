@@ -1,9 +1,11 @@
 import React from "react";
 import "./Ban.css";
 
+
 export default function Banner() {
+
   return (
-    <div className="bgi cvr">
+    <div  className="bgi cvr">
       <p className="cgreen">More About Maths Department</p>
       <br></br>
       <p>

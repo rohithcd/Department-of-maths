@@ -5,13 +5,12 @@ import logo from "../../Assets/icons/logo.svg";
 
 
 const Navbar = () => {
-  
   return(
     <> 
       <nav className="section_navbar">
         <div className="navbar_prime">
           <div className="navbar_title">
-            <img src={logo_main1} alt="" className="navbar-image"/>
+            <img src={logo_main1} className="navbar-image"  alt=""/>
             <div className="nav_head">
               <img src={logo} alt="logo" />
             </div>

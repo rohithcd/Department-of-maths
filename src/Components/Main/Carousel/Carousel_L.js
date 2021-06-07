@@ -6,14 +6,18 @@ import {img8, slide1, slide2, slide_min1, slide_min2, slide_min3} from "../../..
 import "./Carousel_L.css";
 
 const Carousel_L = () => {
-  var img1i;
-  var img2i;
-  var img3i;
-  if (window.innerWidth < 480) {
+  let img1i;
+  let img2i;
+  let img3i;
+
+  if (window.innerWidth < 480) 
+  {
     img1i = slide_min1;
     img2i = slide_min2;
     img3i = slide_min3;
-  } else {
+  } 
+  else 
+  {
     img1i = img8;
     img2i = slide2;
     img3i = slide1;
@@ -30,7 +34,6 @@ const Carousel_L = () => {
         dynamicHeight={false}
         showStatus={false}
         interval={3500}
-  
       >
         <div className="cente">
           <img className="imgsize" src={img1i}  alt="" />
@@ -39,6 +42,7 @@ const Carousel_L = () => {
             <p>Explore the department of mathematics and know about us! </p>
           </div>
         </div>
+
         <div>
           <img className="imgsize" src={img2i} alt=""/>
           <div className="writing">
@@ -49,6 +53,7 @@ const Carousel_L = () => {
             </p>
           </div>
         </div>
+
         <div>
           <img className="imgsize" src={img3i}  alt=""/>
           <div className="writing">
@@ -56,6 +61,7 @@ const Carousel_L = () => {
             <p>Know more about our university </p>
           </div>
         </div>
+        
       </Carousel>
     </div>
   );

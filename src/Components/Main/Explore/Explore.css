@@ -21,6 +21,7 @@
 .new-block
 {
     width: 42%;
+    min-width: 600px;
     background-color: white;
     padding: 2.2rem 0;
     margin: 3rem auto;
@@ -35,7 +36,7 @@
     justify-content: center;
     align-items: stretch;
     text-align: center;
-    transition: all 2s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 
 .block_links 
@@ -56,4 +57,66 @@
 .block_links > *
 {
     color: #031d3a;
+}
+
+@media screen and (max-width: 980px)
+{
+    .new-block
+    {
+        width: 57%;
+        min-width: 480px;
+        padding: 1.6rem 0;
+        margin: 2.5rem auto;
+    }
+
+    .myImg
+    {
+        width: 69.03px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 780px)
+{
+    .new-block
+    {
+        width: 70%;
+        min-width: 440px;
+        padding: 0.9rem 0;
+        margin: 1.9rem auto;
+    }
+
+    .myImg
+    {
+        width: 49.94px;
+        height: 47px;
+    }
+}
+
+@media screen and (max-width: 520px)
+{
+    .new-block
+    {
+        width: 70%;
+        min-width: 350px;
+        padding: 0.6rem 0;
+        margin: 1.3rem auto;
+        font-size: 0.87rem;
+    }
+
+    .block_links 
+    {
+        padding: 0.6rem 1.2rem;
+    }
+
+    .myImg
+    {
+        width: 33.98px;
+        height: 32px;
+    }
+
+    .explr 
+    {
+        font-size: 1.1rem;
+    }
 }
