@@ -1,10 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&display=swap');
+
 .section_error
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     top: 0%;
     left: 0;
     z-index: 1000;
     width: 100%;
     height: 100vh;
-    background-color: var(--white);
+    background-color: var(--bg-offwhite);
+    text-align: center;
+    transform: translateY(-10%);
+}
+
+.error_main
+{
+   color: #333;
+}
+
+.error_prime
+{
+    display: inline-block;
+    background: rgb(12,35,36);
+    background: linear-gradient(146deg, rgba(12,35,36,1) 2%, rgba(12,35,64,1) 39%, rgba(33,102,116,1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.error_prime > h1
+{
+    font-size: 13rem;
+    color: transparent;
+    text-align: center;
+}
+
+.error_txt
+{
+    line-height: 1.3;
+}
+
+.error_txt > h2
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.error_txt > p
+{
+    font-size: 1.3rem;
+    color: var(--bg-grey);
+    font-family: "Poppins", sans-serif;
+
+}
+
+.btn-ctr
+{
+    margin: 2rem auto;
 }
