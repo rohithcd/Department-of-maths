@@ -2,7 +2,6 @@ import {Link} from 'react-router-dom';
 import './Navbar.css';
 import {logo_main1} from "../../Exports";
 import logo from "../../Assets/icons/logo.svg";
-import ham from "../../Assets/icons/menu.png";
 
 
 const Navbar = () => {

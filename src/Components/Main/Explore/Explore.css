@@ -26,8 +26,6 @@
     margin: 3rem auto;
     box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.123);
     font-family: "Poppins", sans-serif;
-   /* outline: 12px solid var(--bg-main);
-    outline-offset: 0.7rem; */
     
 }
 
@@ -53,4 +51,9 @@
 .block_links:hover
 {
     transform: scale(1.05);
+}
+
+.block_links > *
+{
+    color: #031d3a;
 }

@@ -1,7 +1,7 @@
 /* Common Styles */
 :root
 {
-    --bg-main: #0c2340;
+    --bg-main: #031d3a; /* #0c2340 */
     --bg-offwhite: #f6f6f7;
     --ash: #555;
     --white: #fff;
@@ -52,4 +52,12 @@ li
 {
     background-color: var(--bg-main);
     color: var(--white);
+}
+
+@media screen and (max-width: 1280px)
+{
+    html
+    {
+        font-size: 95%;
+    }
 }

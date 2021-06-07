@@ -40,6 +40,7 @@
     font-size: 1.17rem; 
     padding: 2.5rem 0 1.5rem 0;
     align-items: center;
+    pointer-events: none;
 }
 
 .navbar_title h2
@@ -61,6 +62,11 @@
 .navbar_menu-sec ul li
 {
     position: relative;
+}
+
+.navbar_menu-sec ul li > *:hover
+{
+    text-decoration: underline;
 }
 
 .navbar_menu-sec ul > :not(:last-child) ::after
@@ -154,21 +160,41 @@
 {
     .navbar_menu-main
     {
-        font-size: 0.95rem;
         width: 760px;
     }
 
 }
 
-@media screen and (max-width: 917px)
+@media screen and (max-width: 1160px)
+{
+    .navbar_menu-main
+    {
+        font-size: 1.05rem;
+        width: 656px;
+    }
+
+    .navbar_menu-main ul li,
+    .navbar_menu-sec ul li
+    {
+        padding: 1.3rem 1.6rem;
+    }
+}
+
+@media screen and (max-width: 980px)
 {
     .section_navbar
     {
-        padding: 0 1rem;
+        padding: 2rem 4.5rem;
     }
+    .navbar_menu-main,
+    .navbar_menu-sec
+    {
+        display: none;
+    }
+
     .navbar_prime
     {
-        height: 4.5rem !important;
+        height: 4.5rem;
     }
 
     .navbar_title
@@ -232,31 +258,21 @@
 
 }
 
-@media screen and (max-width: 810px)
+@media screen and (max-width: 780px)
 {
     .section_navbar
     {
-        padding: 0 2rem;
-        height: 12rem;
-    }
-
-    .navbar_menu-main
-    {
-        display: none;
-    }
-
-    .navbar_menu-sec
-    {
-        display: none;
+        padding: 2rem;
     }
 
 }
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 640px)
 {
     .section_navbar
     {
-        height: 4.5rem; 
+        height: 5.6rem; 
+        padding: 0.8rem 2rem;
     }
 
     .nav_head img 
@@ -271,6 +287,72 @@
         height: 58px;
         margin-top: -0.6rem;
     }
+
+    .ham_container
+    {
+        margin: 0.85rem 0;
+    }
+
+    .ham
+    {
+        width: 2.2rem;
+    }
+
+    .ham::before,
+    .ham::after
+    {
+        width: 2.2rem;
+    }
+
+    .ham::before{top: -0.7rem;}
+    .ham::after{top: 0.7rem;}
+
+}
+
+@media screen and (max-width: 520px)
+{
+    .section_navbar
+    {
+        height: 4.5rem; 
+        padding: 0 1.8rem;
+    }
+
+    .ham_container
+    {
+        margin: 0.95rem 0;
+    }
+
+    .ham
+    {
+        width: 2rem;
+    }
+
+    .ham::before,
+    .ham::after
+    {
+        width: 2rem;
+    }
+
+    .ham::before{top: -0.6rem;}
+    .ham::after{top: 0.6rem;}
+
+    .nav_head
+    {
+        margin: 3.5%;
+    }
+
+    .nav_head img 
+    {
+        width: 53%;
+    }
+
+    .navbar-image
+    {
+        width: 46px;
+        height: 46px;
+        margin-top: -0.5rem;
+    }
+
 }
 
 
