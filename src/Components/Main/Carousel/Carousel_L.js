@@ -1,7 +1,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-import {img8, slide1, slide2, slide3, slide_min1, slide_min2, slide_min3} from "../../../Exports";
+import {img8, slide1, slide2, slide_min1, slide_min2, slide_min3} from "../../../Exports";
 
 import "./Carousel_L.css";
 
@@ -33,14 +33,14 @@ const Carousel_L = () => {
   
       >
         <div className="cente">
-          <img className="imgsize" src={img1i} />
+          <img className="imgsize" src={img1i}  alt="" />
           <div className="writing">
             <h1>WELCOME TO DEPT OF MATHEMATICS CUSAT</h1>
             <p>Explore the department of mathematics and know about us! </p>
           </div>
         </div>
         <div>
-          <img className="imgsize" src={img2i} />
+          <img className="imgsize" src={img2i} alt=""/>
           <div className="writing">
             <h1>MORE THAN JUST STUDYING</h1>
             <p>
@@ -50,7 +50,7 @@ const Carousel_L = () => {
           </div>
         </div>
         <div>
-          <img className="imgsize" src={img3i} />
+          <img className="imgsize" src={img3i}  alt=""/>
           <div className="writing">
             <h1>CUSAT</h1>
             <p>Know more about our university </p>

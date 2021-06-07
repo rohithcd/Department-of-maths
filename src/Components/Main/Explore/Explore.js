@@ -63,7 +63,7 @@ const Block = (props) => {
     return(
         <>
             <li className="block_links">
-                <a href={props.link} target="_blank">
+                <a href={props.link} rel="noreferrer" target="_blank">
                     <img id="myImg" src={props.img} alt="alternate texts"/>
                     <p>{props.caps}</p>
                 </a>

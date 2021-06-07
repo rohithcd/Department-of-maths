@@ -17,7 +17,7 @@ const Program = () => {
                         </ul>
                     </div>
                     <div className="program_image">
-                        <img src={bg_pro} alt="Image"/>
+                        <img src={bg_pro} alt=""/>
                     </div>
                 </div>
             </div>

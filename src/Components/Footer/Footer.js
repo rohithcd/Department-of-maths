@@ -9,7 +9,6 @@ const scrollToTop= () => {
 
 
 export default function footer() {
-  function check() {}
   return (
     <div>
       <div className="blue">
