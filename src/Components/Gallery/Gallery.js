@@ -22,7 +22,7 @@ const Gallery = () => {
     {
         if(state.n === 4)
         {
-            setState({n: 10, value: "Show Less"});
+            setState({n: pics.length, value: "Show Less"});
         }
         else
         {

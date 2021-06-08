@@ -17,7 +17,7 @@ const Facilities = () => {
     let arr = [];
     let pics = [fa_img1, fa_img1, fa_img1, fa_img1, fa_img1, fa_img1];
 
-    for(let i=0; i<6; i++)
+    for(let i=0; i<pics.length; i++)
     {
         arr.push(<Article img={pics[i]} text={txt[i]} val={check(i)}/>);
     }

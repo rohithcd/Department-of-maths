@@ -45,7 +45,7 @@ const Explore = ()=> {
                
                
             </div>
-            <div ref={myRef}  > </div>
+            <div ref={myRef}> </div>
             <div className="new-block" style={{display: state.value}}>
                     <ul className="block_list">
                         <Block img={logos[0]} caps="CUSAT" link={links[0]}/>

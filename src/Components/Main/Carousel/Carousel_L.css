@@ -12,7 +12,8 @@
   background: rgb(0, 0, 0);
   background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.7) 50%,rgba(0, 0, 0, 1) 100%);
 }
-.writing:hover {
+.writing:hover 
+{
   color: rgb(255, 255, 255);
 }
 .imgsize 
@@ -29,6 +30,10 @@
 
 @media screen and (max-width: 640px)
 {
+  .writing
+  {
+    font-size: 0.85rem;
+  }
   .imgsize 
   {
     height: calc(100vh - 8.72rem);
@@ -40,6 +45,11 @@
 
 @media screen and (max-width: 520px)
 {
+  .writing
+  {
+    font-size: 0.75rem;
+  }
+
   .imgsize 
   {
     height: calc(100vh - 7.62rem);
