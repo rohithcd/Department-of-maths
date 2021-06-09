@@ -7,6 +7,12 @@
     --white: #fff;
 }
 
+::selection
+{
+    color: var(--white);
+    background-color: var(--bg-main);
+}
+
 *
 {
     padding: 0;

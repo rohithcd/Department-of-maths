@@ -12,17 +12,17 @@ export {default as img9} from "./Assets/gallery/_E3T3184.JPG";
 export {default as img10} from "./Assets/gallery/_E3T3187.JPG";
 
 /*----People----*/
-export {default as p_img1} from "./Assets/people/image1.png";
-export {default as p_img2} from "./Assets/people/image2.png";
-export {default as p_img3} from "./Assets/people/image3.png";
-export {default as p_img4} from "./Assets/people/image4.png";
-export {default as p_img5} from "./Assets/people/image5.png";
-export {default as p_img6} from "./Assets/people/image6.png";
-export {default as p_img7} from "./Assets/people/image7.png";
-export {default as p_img8} from "./Assets/people/image8.png";
-export {default as p_img9} from "./Assets/people/image9.png";
-export {default as p_img10} from "./Assets/people/image10.png";
-export {default as p_img11} from "./Assets/people/image11.png";
+export {default as p_img1} from "./Assets/people/image1.jpg";
+export {default as p_img2} from "./Assets/people/image2.JPG";
+export {default as p_img3} from "./Assets/people/image3.jpg";
+export {default as p_img4} from "./Assets/people/image4.jpg";
+export {default as p_img5} from "./Assets/people/image5.jpg";
+export {default as p_img6} from "./Assets/people/image6.JPG";
+export {default as p_img7} from "./Assets/people/image7.jpg";
+export {default as p_img8} from "./Assets/people/image8.jpg";
+export {default as p_img9} from "./Assets/people/image9.jpg";
+export {default as p_img10} from "./Assets/people/image10.jpg";
+export {default as p_img11} from "./Assets/people/image11.JPG";
 
 /*----Box----*/
 export {default as b_img1} from "./Assets/main/box_img1.jpg";
@@ -146,6 +146,12 @@ export let award = [
     "Award: Kerala State Young Scientist Award 2012" ,
     null, null, null
 ];
+
+export let profile = [
+    null, null, null, null, null, null, null,
+    "https://iqac.cusat.ac.in/Web/profile_view/424/Dr.APARNALAKSHMANANS",
+    null, null, null
+]
 
 /*----Explore----*/
 export let links = [
