@@ -9,13 +9,13 @@ const Box = () => {
       <h2>News & Events</h2>
       <hr/>
       <div className="boxes">
-        <Card head="Department" img={b_img1} para={""} />
-        <Card head="Courses" img={b_img2} para={""} />
-        <Card head="Future Events" img={b_img3} para={""} />
-        <Card head="Out Reach" img={b_img4} para={""} />
+        <Card head="Department" img={b_img1} para={""} link={""} />
+        <Card head="Courses" img={b_img2} para={""} link={""}  />
+        <Card head="Future Events" img={b_img3} para={""} link={""} />
+        <Card head="Out Reach" img={b_img4} para={""} link={"/outreach"}  />
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
 
-export default Box;
+  export default Box;

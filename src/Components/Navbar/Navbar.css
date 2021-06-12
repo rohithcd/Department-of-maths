@@ -118,7 +118,7 @@
 
 .navbar_menu-main li
 {
-    transition: width 2s;
+   /* transition: width 2s; */
     position: relative;  
 }
 
@@ -131,7 +131,7 @@
     position: absolute;
     bottom: 0; 
     background: var(--ash);
-    transition: width 0.8s;
+   /* transition: width 0.8s; */
 }
 
 .navbar_menu-main li:hover::after,
@@ -155,7 +155,6 @@
 {
     display: none;
     width: 0;
-    transition: all 2s linear;
 }
 
 .nav_side-items
@@ -293,13 +292,14 @@
     .navbar_menu-side
     {
         position: fixed;
-        bottom: 0%;
+        top: 0%;
         right: 0;
         width: 40%;
         max-width: 350px;
-        height: calc(100% - 8.6rem);
+        height: calc(100vh - 8.6rem);
         background-color: var(--bg-main);
         border-top: 1px solid black;
+        transform: translateY(8.5rem);
         z-index: 10000;
     }
 
@@ -344,7 +344,8 @@
 
     .navbar_menu-side
     {
-        height: calc(100% - 5.6rem);
+        height: calc(100vh - 5.6rem);
+        transform: translateY(5.5rem);
     }
    
 
@@ -405,7 +406,8 @@
     .navbar_menu-side
     {
         width: 60%;
-        height: calc(100% - 4.5rem);
+        height: calc(100vh - 4.5rem);
+        transform: translateY(4.4rem);
     }
 
     .nav_side-items li

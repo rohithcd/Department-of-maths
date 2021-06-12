@@ -1,5 +1,7 @@
 import Faculty from "./Faculty/Faculty";
 
+
+
 const People = () => {
     return(
         <>

@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="navbar_menu-sec" >
             <ul>
               <li><Link to="/gallery">Gallery</Link></li>
-              <li><Link to="/olympiad">Olympiad</Link></li>
+              <li><a href="https://olympiads.hbcse.tifr.res.in/olympiads-2020-21/mathematical-olympiad/"rel="noreferrer" target="_blank">Olympiad</a></li>
               <li><Link to="/alumni">Alumni</Link></li>
               <li><Link to="/contact-us">Contact us</Link></li>
             </ul>
@@ -54,7 +54,7 @@ const Navbar = () => {
 
        <div className="navbar_menu-main">
           <ul>
-            <Link to="/"><li >Home</li></Link>
+            <Link to="/"><li><span>Home</span></li></Link>
             <Link to="/people"><li >People</li></Link>
             <Link to="/research"><li >Research</li></Link>
             <Link to="/academics"><li >Academics</li></Link>

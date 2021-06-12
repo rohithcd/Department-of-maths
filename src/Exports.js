@@ -59,6 +59,9 @@ export {default as ex_logo3} from "./Assets/icons/book.png";
 
 export {default as logo_main1} from "./Assets/main/logo_main.png";
 
+/*----Profile----*/
+export {default as profile_pic1} from "./Assets/people/profile_pic1.jpg";
+
 
 /*------------TEXT-----------------*/
 /*----About----*/
@@ -148,7 +151,7 @@ export let award = [
 ];
 
 export let profile = [
-    null, null, null, null, null, null, null,
+    "/people/profile=/3444", null, null, null, null, null, null,
     "https://iqac.cusat.ac.in/Web/profile_view/424/Dr.APARNALAKSHMANANS",
     null, null, null
 ]
@@ -162,10 +165,10 @@ export let links = [
 ];
 /*----Facilities----*/
 export let txt = [
-    "The library of the department hosts a generous collection of textbooks for the courses offered. Also reference books for research work and advanced studiesare available",
-    "The Computer lab hosts a collection of twenty (?) computers with internet accessibility. Students attend practical classes on Python programming, MathSage, LaTex and other relevant programming languages required for application in Mathematics",
-    "The Seminar hall provides a platform for various department seminars and other relevant talks and presentations. The hall has a electronic presentation board and also a projector for the same",
-    "There are 10 classrooms equipped with the modern infrastructure for holding classes in both online and offline mode. Some classes also have a smartboard facility",
-    "There are two common rooms for PhD students and separate common room for M.Phil students. Apart from that there is also a discussion room for Masters students",
-    "The department also has an administrative office consisting of six helpful staff members for all maintenance and office related work"
+    "The library of the department hosts a generous collection of textbooks for the courses offered. Also reference books for research work and advanced studies are available. The library has a total collection of 10115 books, 7 journals, 14 E-books, and 25 E-ShodhSindhu.",
+    "The Computer lab hosts a collection of twenty computers with internet accessibility. Students attend practical classes on Python programming, MathSage, LaTex and other relevant programming languages required for application in Mathematics.",
+    "The Seminar hall provides a platform for departmental seminars and other relevant talks and presentations. The hall has black board and projector facilities.",
+    "There are 3 classrooms equipped with the modern infrastructure for holding classes in both online and offline mode. One of the classroom has a smartboard facility.",
+    "There are three shared office rooms for PhD students. Apart from that there is also a discussion room for Masters students.",
+    "The department also has an administrative office consisting of six staff members for office related work."
 ];

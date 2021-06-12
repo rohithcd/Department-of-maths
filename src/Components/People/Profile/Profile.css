@@ -1,0 +1,129 @@
+.section_profile
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: var(--bg-offwhite);
+    z-index: 99999;
+}
+
+.profile_head
+{
+    background-color: var(--bg-main);
+    padding: 0 6rem;
+    width: inherit;
+    height: 30rem;
+    color: var(--white);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+}
+
+.profile_head h2
+{
+    font-size: 3.5rem;
+}
+
+.profile_head h5
+{
+    font-size: 2rem;
+}
+
+.profile_head h6
+{
+    font-size: 1.4rem;
+}
+
+.profile_nav
+{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.profile_nav p
+{
+    color: var(--white);
+    margin: 0 1.2rem;
+}
+
+.head_div
+{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.photo_container
+{
+    width: 36%;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.profile_photo
+{
+    width: 250px;
+    height: 280px;
+    outline: 2px solid white;
+    outline-offset: 1rem;
+}
+
+.profile_photo > img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* navigation */
+
+
+.research-link
+{
+    position: relative;
+    padding: 0 0.3rem 0.2rem 0.3rem;
+}
+
+.research-link label:hover 
+{
+    cursor: pointer;
+}
+
+.research-link:hover .drop-menu
+{
+    display: block;
+}
+
+.drop-menu:hover
+{
+    display: block;
+}
+
+.drop-menu
+{
+    content: "";
+    min-width: 180px;
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    transform: translateX(-25%);
+    background-color: white;
+    color: var(--bg-main);
+    text-align: center;
+    border-radius: 12px;
+}
+
+.drop-menu ul li
+{
+    display: block;
+    width: 100%;
+    padding: 2px 0;
+}
+
