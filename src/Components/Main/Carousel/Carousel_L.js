@@ -1,7 +1,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-import {img8, slide1, slide2, slide_min1, slide_min2, slide_min3} from "../../../Exports";
+import { slide1, slide2, slide_min1, slide_min2, slide_min3} from "../../../Exports";
 
 import "./Carousel_L.css";
 
@@ -18,7 +18,7 @@ const Carousel_L = () => {
   } 
   else 
   {
-    img1i = img8;
+    img1i = slide1;
     img2i = slide2;
     img3i = slide1;
   }

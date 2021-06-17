@@ -131,7 +131,7 @@
     position: absolute;
     bottom: 0; 
     background: var(--ash);
-   /* transition: width 0.8s; */
+    transition: width 0.8s; 
 }
 
 .navbar_menu-main li:hover::after,

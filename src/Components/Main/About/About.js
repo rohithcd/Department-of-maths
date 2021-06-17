@@ -1,8 +1,8 @@
 import {about} from "../../../Exports";
-import "./About.css";
 import Contact from "../Contact/Contact";
+import "./About.css";
 
-const About = (props) => {
+const About = () => {
 
     let arr = [];
 
@@ -11,24 +11,19 @@ const About = (props) => {
         arr.push(<p>{about[i]}</p>);
     }
     
-    return(
+    return (
         <>
-        
-        <div className="section_about">
-            <div className="about_main">
-            <div className="about_text">
-                <div className="about_head">
-                    <h2>About</h2>
-                    
+            <div className="section_about">
+                <div className="about_main">
+                    <div className="about_text">
+                        <div className="about_head">
+                            <h2>About</h2>
+                        </div>
+                        {arr}
+                    </div>
+                    <Contact/>
                 </div>
-                {arr}
             </div>
-            <Contact/>
-            </div>
-            <button className="btn about-btn">Read More</button>
-            
-        </div>
-        
         </>
     );
 }
