@@ -2,6 +2,7 @@ import React from "react";
 import Main from "./Components/Main/Main";
 import People from "./Components/People/People";
 import Gallery from "./Components/Gallery/Gallery";
+import Gallery_main from "./Components/Gallery/Gallery_main";
 import Facilities from "./Components/Facilities/Facilities";
 import Activities from "./Components/Activities/Activities";
 import Profile from "./Components/People/Profile/Profile";
@@ -29,7 +30,8 @@ const App = () => {
               <People/>
             </Route>
             <Route path="/activities" component={Activities}/>
-            <Route path="/gallery" component={Gallery}/>
+            <Route path="/gallery/campus" component={Gallery}/>
+            <Route path="/gallery" component={Gallery_main}/>
             <Route path="/facilities" component={Facilities}/>
             <Route path="/outreach" component={Outreach}/>
           
