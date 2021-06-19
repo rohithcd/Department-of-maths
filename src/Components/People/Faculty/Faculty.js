@@ -20,7 +20,7 @@ const Faculty = () => {
     return (
         <>
         <div className="section_people">
-            <div className="people_head">
+            <div className="faculty_bg">
                 <h1>Faculties</h1>
             </div>
             <div className="section_faculty">

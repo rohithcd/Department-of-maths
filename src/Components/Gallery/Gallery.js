@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import Loader from "../Loader/Loader";
 
-import {img1, img2, img3, img4, img5, img6, img7, img8, img9, img10 } from "../../Exports";
+import {img1, img2, img3, img4, img5, img6, img7, img9, img10 } from "../../Exports";
 import "./Gallery.css";
 
 

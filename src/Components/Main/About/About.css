@@ -22,7 +22,7 @@
     justify-content: space-between; 
     font-family: "Poppins", sans-serif;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%),
-    url("../../../Assets/main/img_about.JPG");
+    url("../../../Assets/main/img_about.jpg");
     background-size: cover;
     padding-left: 1.2rem;
    
@@ -153,5 +153,10 @@
         width: 100%;
         line-height: 1.4;
         text-align: justify;
+    }
+
+    .section_about
+    {
+        height: 39.6rem;
     }
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Carousel from "./Carousel/Carousel_L";
 import Box from "./Box/Box";
 import About from "./About/About";
@@ -13,27 +13,25 @@ import "./Main.css";
 
 const Main = () => {
 
-    const [width, setWidth] = useState(0);
+/*    const [width, setWidth] = useState(0);
     useEffect(() => {
         window.addEventListener("resize", () => {
             setWidth(window.innerWidth);
         });        
     }, []);
-
+*/
 
     return(
         <>
-                <div style={{position: "fixed", top: "20%", right: "0%", zIndex: "9999999",}}>
+                {/* <div style={{position: "fixed", top: "20%", right: "0%", zIndex: "9999999",}}>
                    <h2>{width}</h2> 
-                </div>
+                </div> */}
                 <Carousel />
                 <Explore />
                 <About/>
                 <Box />
                 <Program/>
                 <Banner />
-          
-   
         </>
     );
 }
