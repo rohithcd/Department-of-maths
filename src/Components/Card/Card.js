@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import "./Card.css";
 
 const Card = (props) => {
@@ -10,7 +11,9 @@ const Card = (props) => {
                 <h4>
                     <span>{props.head}</span>
                 </h4>
-                <button className="btn_card">View</button>
+                <Link to={props.link}>
+                    <button className="btn_card">View</button>
+                </Link>
             </div>
         </>
     );

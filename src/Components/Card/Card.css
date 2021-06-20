@@ -13,8 +13,9 @@
     font-size: 1.4em;
     font-weight: 600;
     position: absolute;
-    top: 52%;
-    left: 20%;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: var(--white);
     font-family: "Roberto", sans-serif;
 }
@@ -55,7 +56,6 @@
 {
     padding: 1rem 3rem;
     display: block;
-    
     border: 1px var(--bg-main) solid;
     cursor: pointer;
     background-color: var(--white);

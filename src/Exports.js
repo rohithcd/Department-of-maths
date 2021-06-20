@@ -1,15 +1,15 @@
 /*------------ IMAGES -----------------*/
 /*----Gallery----*/
-export {default as img1} from "./Assets/gallery/_E3T2950.JPG";
-export {default as img2} from "./Assets/gallery/_E3T2953.JPG";
-export {default as img3} from "./Assets/gallery/_E3T2954.JPG";
-export {default as img4} from "./Assets/gallery/_E3T2956.JPG";
-export {default as img5} from "./Assets/gallery/_E3T2957.JPG";
-export {default as img6} from "./Assets/gallery/_E3T2958.JPG";
-export {default as img7} from "./Assets/gallery/_E3T3179.JPG";
-/* export {default as img8} from "./Assets/gallery/_E3T3182.JPG"; */
+export {default as img1} from "./Assets/gallery/img1.jpg";
+export {default as img2} from "./Assets/gallery/img2.jpg";
+export {default as img3} from "./Assets/gallery/img3.jpg";
+export {default as img4} from "./Assets/gallery/img4.jpg";
+export {default as img5} from "./Assets/gallery/img5.jpg";
+export {default as img6} from "./Assets/gallery/img6.jpg";
+export {default as img7} from "./Assets/gallery/img7.jpg";
+/* export {default as img8} from "./Assets/gallery/_E3T3182.JPG"; 
 export {default as img9} from "./Assets/gallery/_E3T3184.JPG";
-export {default as img10} from "./Assets/gallery/_E3T3187.JPG";
+export {default as img10} from "./Assets/gallery/_E3T3187.JPG";*/
 
 /*----People----*/
 export {default as p_img1} from "./Assets/people/image1.jpg";
