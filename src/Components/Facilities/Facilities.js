@@ -1,5 +1,6 @@
 import "./Facilities.css";
-import {fa_img1, txt} from "../../Exports";
+
+import {fa_img1, fa_img3, txt} from "../../Exports";
 
 function check(value)
 {
@@ -15,7 +16,7 @@ function check(value)
 
 const Facilities = () => {
     let arr = [];
-    let pics = [fa_img1, fa_img1, fa_img1, fa_img1, fa_img1, fa_img1];
+    let pics = [fa_img3, fa_img1, fa_img1, fa_img1, fa_img1, fa_img1];
 
     for(let i=0; i<pics.length; i++)
     {
@@ -33,8 +34,8 @@ const Facilities = () => {
 const Article = (props) => {
     return(
         <>
-            <div className={(props.val === 0) ? "facilities_box " : "facilities_box change"}>
-                <img src={props.img} alt=""/>
+            <div className={(props.val === 0) ? "facilities_box slider" : "facilities_box change"}>
+             <img src={props.img} alt=""/>
                 <div className={(props.val === 0) ? "facilities_para-1" : "facilities_para-2"}>
                     <h2> {props.text} </h2>
                 </div>

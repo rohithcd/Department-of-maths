@@ -42,9 +42,38 @@ const Profile = () => {
                     
                 </div>
                 <div className="profile_text">
+                   <div className="profile_section-1">
+                        <div className="child_sec-1">
+                            <h4>RESEARCH PROFILES</h4>
+                            <div className="prof_container">
+                                <span>
+                                    <h5>Publons</h5>
+                                    <a className="btn">View</a>
+                                </span>
+                                <span>
+                                    <h5>Scopus</h5>
+                                    <a className="btn">View</a>
+                                </span>
+                                <span>
+                                    <h5>Google Scholar</h5>
+                                    <a className="btn">View</a>
+                                </span>
+                            </div>
+                        </div>
 
+                        <div className="child_sec-2">
+                            <h4>BRIEF BIO</h4>
+                            <p>Assistant Professor in Department of Mathematics, CUSAT from 14 January, 2021</p>
+                        </div>
+                   
+                        <div className="child_sec-3">
+                            <h4>RESEARCH INTEREST</h4>
+                            <p>Algebra, Graph Theory</p>
+                        </div>
+
+                        
+                    </div>
                 </div>
-
             </div>
         </>
     );

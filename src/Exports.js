@@ -17,12 +17,12 @@ export {default as p_img2} from "./Assets/people/image2.JPG";
 export {default as p_img3} from "./Assets/people/image3.jpg";
 export {default as p_img4} from "./Assets/people/image4.jpg";
 export {default as p_img5} from "./Assets/people/image5.jpg";
-export {default as p_img6} from "./Assets/people/image6.JPG";
+export {default as p_img6} from "./Assets/people/image6.jpg";
 export {default as p_img7} from "./Assets/people/image7.jpg";
 export {default as p_img8} from "./Assets/people/image8.jpg";
 export {default as p_img9} from "./Assets/people/image9.jpg";
 export {default as p_img10} from "./Assets/people/image10.jpg";
-export {default as p_img11} from "./Assets/people/image11.JPG";
+export {default as p_img11} from "./Assets/people/image11.jpg";
 
 /*----Box----*/
 export {default as b_img1} from "./Assets/main/box_img1.jpg";
@@ -45,12 +45,13 @@ export {default as bg_pro} from "./Assets/main/bg_program.JPG";
 /*----Facilities----*/
 export {default as fa_img1} from "./Assets/facilities/seminar_hall-1.JPG";
 export {default as fa_img2} from "./Assets/facilities/seminar_hall-2.JPG";
-export {default as fa_img3} from "./Assets/facilities/library-1.JPG";
-export {default as fa_img4} from "./Assets/facilities/library-1.JPG";
-export {default as fa_img5} from "./Assets/facilities/library-2.JPG";
-export {default as fa_img6} from "./Assets/facilities/library-3.JPG";
-export {default as fa_img7} from "./Assets/facilities/library-4.JPG";
-export {default as fa_img8} from "./Assets/facilities/library-5.JPG";
+export {default as fa_img3} from "./Assets/facilities/lib-1.jpg";
+export {default as fa_img4} from "./Assets/facilities/lib-1.jpg";
+export {default as fa_img5} from "./Assets/facilities/lib-2.jpg";
+export {default as fa_img6} from "./Assets/facilities/lib-3.jpg";
+export {default as fa_img7} from "./Assets/facilities/lib-4.jpg";
+export {default as fa_img8} from "./Assets/facilities/lib-5.jpg";
+
 
 /*----Explore----*/
 export {default as ex_logo1} from "./Assets/icons/cusat_logo.png";
