@@ -43,8 +43,8 @@ export {default as slide_min3} from "./Assets/main/slides_img3-mob.jpg";
 export {default as bg_pro} from "./Assets/main/bg_program.JPG";
 
 /*----Facilities----*/
-export {default as fa_img1} from "./Assets/facilities/seminar_hall-1.JPG";
-export {default as fa_img2} from "./Assets/facilities/seminar_hall-2.JPG";
+export {default as fa_img1} from "./Assets/facilities/sem_hall-1.jpg";
+export {default as fa_img2} from "./Assets/facilities/sem_hall-2.jpg";
 export {default as fa_img3} from "./Assets/facilities/lib-1.jpg";
 export {default as fa_img4} from "./Assets/facilities/lib-1.jpg";
 export {default as fa_img5} from "./Assets/facilities/lib-2.jpg";

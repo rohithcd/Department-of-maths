@@ -1,6 +1,6 @@
 import "./Gallery_main.css";
 import {slide2} from "../../Exports";
-import Card from "../Card/Card";
+import Card from "../Reusable/Card/Card";
 
 const Gallery_main = () => {
     return(
@@ -12,6 +12,7 @@ const Gallery_main = () => {
            
             <div className="section_gallery-main">
             <Card pic={slide2} head={"CAMPUS"} link="/gallery/campus"/>
+            <Card pic={slide2} head={"FACULTY"} link="/gallery/faculties"/>
     </div> 
         </>
     );

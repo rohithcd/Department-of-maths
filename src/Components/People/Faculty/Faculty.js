@@ -1,6 +1,7 @@
 import "./Faculty.css";
+import {Link} from "react-router-dom";
 import {p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img8, p_img9, p_img10, p_img11,
-     names, ranks, qualifications, areaOfInterest, pub, phd, award, profile} from "../../../Exports.js";
+     names, ranks, qualifications, areaOfInterest, pub, phd, award} from "../../../Exports.js";
 
 let pics = [p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img8, p_img9, p_img10, p_img11];
 
@@ -13,7 +14,7 @@ const Faculty = () => {
             <Card 
                 img={pics[i]} name={names[i]} rank={ranks[i]} quali={qualifications[i]}
                 publications={pub[i]} areaOfInt={areaOfInterest[i]} stud={phd[i]} award={award[i]}
-                prof={profile[i]}
+               /* prof={profile[i]} */ prof="/people/profile=/ddf"
             />
         );
     }
@@ -49,11 +50,11 @@ const Card = (props) => {
                 <p>Area of Interest: {props.areaOfInt}</p>
                 
             </div>
-            <a href={props.prof} rel="noreferrer" target="_blank">
+            <Link to={props.prof}>
                 <button className="btn-oval">
                     View Profile
                 </button>
-            </a>
+            </Link>
         </div>
     );
 }

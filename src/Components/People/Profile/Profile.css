@@ -5,7 +5,28 @@
     left: 0%;
     width: 100%;
     background-color: var(--bg-offwhite);
-    z-index: 99999;
+    z-index: 11;
+}
+
+ol
+{
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+ol > li
+{
+    list-style: decimal;
+}
+
+.profile_text ol ul
+{
+    padding-left: 2rem;
+}
+
+.profile_text ol ul > li
+{
+    list-style: circle;
 }
 
 .profile_head
@@ -127,9 +148,19 @@
     padding: 2px 0;
 }
 
-.profile_section-1
+.profile_text
 {
     width: 90%;
+    margin: 0 auto;
+    color: var(--bg-main);
+    font-family: "Roberto", sans-serif;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.profile_section-1
+{
+    width: 100%;
     margin: 2rem auto;
     display: grid;
     grid-template-columns: 30rem 1fr;
@@ -138,9 +169,14 @@
     font-family: "Roberto", sans-serif;
 }
 
-.child_sec-1
+div[class^='child_sec-']
 {
     padding: 1rem 2rem;
+    line-height: 1.6;
+}
+.child_sec-1
+{
+   
     text-align: center;
     background-color: #bcc4cf;
     grid-column: 1 / 2;
@@ -150,4 +186,31 @@
 .prof_container
 {
     display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.prof_text_temp 
+{
+    margin-bottom: 2rem;
+}
+
+.prof_text_temp > h2
+{
+    display: inline-block;
+    position: relative;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.prof_text_temp > h2::before
+{
+    content: "";
+    width: 80%;
+    height: 0.3rem;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: powderblue;
 }

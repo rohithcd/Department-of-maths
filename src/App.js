@@ -7,7 +7,7 @@ import Facilities from "./Components/Facilities/Facilities";
 import Activities from "./Components/Activities/Activities";
 import Profile from "./Components/People/Profile/Profile";
 import Outreach from "./Components/Outreach/Outreach";
-import Error from "./Components/Error/Error";
+import Error from "./Components/Reusable/Error/Error";
 import Layout from "./Layout";
 
 
@@ -46,15 +46,3 @@ const App = () => {
 
 export default App;
 
-
-/*z-index of each elements 
-.section_navbar: 100
-.navbar_menu-main: 100
-.navbar_menu-side: 10000
-.section_box > hr: -1 
-
-
-
-
-
-*/

@@ -35,8 +35,11 @@ const Article = (props) => {
     return(
         <>
             <div className={(props.val === 0) ? "facilities_box slider" : "facilities_box change"}>
-             <img src={props.img} alt=""/>
-                <div className={(props.val === 0) ? "facilities_para-1" : "facilities_para-2"}>
+                <div className="article_img"> 
+                    <img src={props.img} alt=""/>
+                </div> 
+             
+                <div className={(props.val === 0) ? "facilities_para-1 fac_common" : "facilities_para-2 fac_common"}>
                     <h2> {props.text} </h2>
                 </div>
             </div>

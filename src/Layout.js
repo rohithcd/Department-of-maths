@@ -1,5 +1,5 @@
-import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer"; 
+import Navbar from "./Components/Reusable//Navbar/Navbar";
+import Footer from "./Components/Reusable/Footer/Footer"; 
 
 
 const Layout  = ({children}) => {
