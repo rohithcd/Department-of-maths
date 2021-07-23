@@ -20,7 +20,7 @@ const Facilities = () => {
 
     for(let i=0; i<pics.length; i++)
     {
-        arr.push(<Article img={pics[i]} text={txt[i]} val={check(i)}/>);
+       arr.push(<Article img={pics[i]} text={txt[i]} val={check(i)}/>); 
     }
     return(
         <>

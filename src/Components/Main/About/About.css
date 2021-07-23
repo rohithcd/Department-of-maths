@@ -9,7 +9,7 @@
 
 .section_about h2
 {
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
     color: var(--bg-main);
 }
 
@@ -70,12 +70,12 @@
 
     .section_about h2
     {
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
 
     .about_main
     {
-        font-size: 0.95rem;
+        /* font-size: 0.95rem; */
     }
 
     .about_text
@@ -93,7 +93,7 @@
 
     .about_main
     {
-        font-size: 0.90rem;
+        /* font-size: 0.90rem; */
     }
 
     .about_text
@@ -111,7 +111,7 @@
 
     .about_main
     {
-        font-size: 0.90rem;
+        /* font-size: 0.90rem; */
     }
 
     .about_text
@@ -129,7 +129,7 @@
 
     .about_main
     {
-        font-size: 0.90rem;
+        /* font-size: 0.90rem; */
     }
 
     .about_text

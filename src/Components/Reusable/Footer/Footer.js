@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import logo from "../../../Assets/icons/logo.svg";
 import "./Footer.css";
 
-const scrollToTop= () => {
+const scrollToTop = () => 
+{
     window.scrollTo(0,0)
 }
 
@@ -20,16 +21,22 @@ export default function footer() {
           <div className="vox_f">
             <div className="hox_f1">
               <Link to="/" className="item_f1">
-                Department
+                Home
+              </Link>
+              <Link to="/" className="item_f1">
+                People
               </Link>
               <Link to="/" className="item_f1">
                 Research
               </Link>
-              <Link to="/" className="item_f1">
-                Olympiad
+              <Link to="/people" onClick={scrollToTop} className="item_f1">
+                Academics
               </Link>
               <Link to="/people" onClick={scrollToTop} className="item_f1">
-                People
+                Activities
+              </Link>
+              <Link to="/people" onClick={scrollToTop} className="item_f1">
+                Facilities
               </Link>
             </div>
 

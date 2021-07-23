@@ -4,7 +4,9 @@ import {p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img8, p_img9, 
      names, ranks, qualifications, areaOfInterest, pub, phd, award} from "../../../Exports.js";
 
 let pics = [p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img8, p_img9, p_img10, p_img11];
-
+const scrollToTop = () => {
+    window.scrollTo(0,0)
+}
 
 const Faculty = () => {
     var arr = [];
@@ -50,7 +52,7 @@ const Card = (props) => {
                 <p>Area of Interest: {props.areaOfInt}</p>
                 
             </div>
-            <Link to={props.prof}>
+            <Link to={props.prof} onClick={scrollToTop}>
                 <button className="btn-oval">
                     View Profile
                 </button>
@@ -60,3 +62,4 @@ const Card = (props) => {
 }
 
 export default Faculty;
+

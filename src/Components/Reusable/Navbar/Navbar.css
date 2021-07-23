@@ -50,7 +50,7 @@
 
 .navbar_menu-sec
 {
-    font-size: 1.04rem; 
+    font-size: 1.04rem;  
     font-weight: bold;
 }
 
@@ -89,7 +89,7 @@
 {
     position: absolute;
     right: 8%;
-    font-size: 1.17rem;
+    font-size: 1.17rem; 
     background-color: var(--white);
     width: 824px;
     float: right;
@@ -157,6 +157,11 @@
     width: 0;
 }
 
+.nav_side-items li
+{
+    font-size: 1.5rem;
+}
+
 .nav_side-items
 {
     display: none;
@@ -176,7 +181,7 @@
 {
     .navbar_menu-main
     {
-        font-size: 1.05rem;
+        font-size: 1.05rem; 
         width: 656px;
     }
 
@@ -214,7 +219,7 @@
 
     .navbar_menu-main
     {
-        font-size: 0.97rem;
+        font-size: 0.97rem; 
         width: 100%;
     }
 
@@ -311,7 +316,7 @@
     .nav_side-items li
     {
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.5rem; 
         color: var(--white);
         padding: 1rem 2rem;
     }
@@ -411,7 +416,7 @@
 
     .nav_side-items li
     {
-        font-size: 1.2rem;
+        font-size: 1.2rem; 
         padding: 0.8rem 1.6rem;
     }
 

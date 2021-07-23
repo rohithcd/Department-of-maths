@@ -1,3 +1,7 @@
+#pointer
+{
+    cursor: pointer;
+}
 .section_profile
 {
     position: absolute;
@@ -58,14 +62,16 @@ ol > li
 .profile_nav
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 1rem 2rem;
+    width: 35rem;
+    margin: 0 auto;
 }
 
 .profile_nav p
 {
     color: var(--white);
-    margin: 0 1.2rem;
+   
 }
 
 .head_div
@@ -213,4 +219,12 @@ div[class^='child_sec-']
     bottom: 0%;
     left: 0%;
     background-color: powderblue;
+}
+
+.bullet-h4::before
+{
+    content: " ";
+    display: list-item;
+    list-style-type: circle;
+    position: absolute;
 }
