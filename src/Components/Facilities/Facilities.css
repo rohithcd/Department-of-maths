@@ -2,14 +2,15 @@
 .section_facilities
 {
     width: 90%;
-    margin: 7rem auto;
+    margin: 0 auto;
+    padding-top: 8rem;
 }
 
 .facilities_box
 {
     display: flex;  
     height: 28rem; 
-
+    margin-bottom: 5.6rem; 
 }
 
 .article_img
@@ -80,7 +81,7 @@
 
     .fac_common
     {
-        /* font-size: 0.95rem; */
+        font-size: 0.95rem; 
     }
 
 }
@@ -94,7 +95,7 @@
 
     .fac_common
     {
-        /* font-size: 0.86rem; */
+        font-size: 0.86rem; 
     }
 
 }

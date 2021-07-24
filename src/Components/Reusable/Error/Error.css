@@ -6,19 +6,20 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 0%;
+    top: 0;
     left: 0;
     z-index: 1000;
     width: 100%;
     height: 100vh;
     background-color: var(--bg-offwhite);
     text-align: center;
-    transform: translateY(-10%);
+    
 }
 
 .error_main
 {
    color: #333;
+   transform: translateY(-5%);
 }
 
 .error_prime
@@ -33,7 +34,7 @@
 
 .error_prime > h1
 {
-    /*font-size: 13rem;*/
+    font-size: 13rem;
     color: transparent;
     text-align: center;
 }
@@ -46,19 +47,62 @@
 .error_txt > h2
 {
     font-family: "Roboto", sans-serif;
-    /*font-size: 2rem;*/
+    font-size: 2rem;
     font-weight: 800;
 }
 
 .error_txt > p
 {
-    /*font-size: 1.3rem;*/
+    font-size: 1.3rem;
     color: var(--bg-grey);
     font-family: "Poppins", sans-serif;
-
 }
 
 .btn-ctr
 {
     margin: 2rem auto;
+}
+
+@media screen and (max-width: 940px)
+{
+    .error_prime > h1
+    {
+        font-size: 12rem;
+    }
+
+    .error_txt > h2
+    {
+        font-size: 1.8rem;
+    }
+
+    .error_txt > p
+    {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media screen and (max-width: 540px)
+{
+    .error_prime > h1
+    {
+        font-size: 9.5rem;
+    }
+
+    .error_txt > h2
+    {
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+
+    .error_txt > p
+    {
+        font-size: 1.1rem;
+    }
+
+    .btn-ctr
+    {
+        margin: 1.4rem auto;
+    }
+
 }

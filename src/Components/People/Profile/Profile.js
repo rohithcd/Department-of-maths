@@ -118,7 +118,10 @@ const Profile = () => {
                             <h6>Department of Mathematics</h6>
                             <h6>CUSAT</h6>
                         </div>
+
+                        
                     </div>
+                    <button className="btn-prof">Download CV</button>
                     
                 </div>
                 <div className="profile_text">
@@ -162,24 +165,11 @@ const Profile = () => {
                             </ol>
                         </div>
                     </div>
-                    <div className="prof_text_temp">
-                        <h2>AWARDS/RECOGNITIONS AND ACHIEVEMENTS</h2>
-                        <ol>
-                            {arr3}                  
-                        </ol>
-                    </div>
-                    <div ref={member} className="prof_text_temp">
-                        <h2>MEMBERSHIPS IN PROFESSIONAL ORGANISATIONS</h2>
-                        <ol>
-                            {arr4}                      
-                        </ol>
-                    </div>
-                    <div ref={talks} className="prof_text_temp">
-                        <h2>INVITED TALKS IN INTERNATIONAL CONFERENCES</h2>
-                            <ol>
-                                {arr5}
-                            </ol>
-                    </div>
+
+                    <Section  head={"AWARDS/RECOGNITIONS AND ACHIEVEMENTS"} arr={arr3}/>
+                    <Section refer={member} head={"MEMBERSHIPS IN PROFESSIONAL ORGANISATIONS"} arr={arr4}/>
+                    <Section refer={talks} head={"INVITED TALKS IN INTERNATIONAL CONFERENCES"} arr={arr5}/>
+
                     <div ref={publications} className="prof_text_temp">
                         <h2> ARTICLES PUBLISHED IN NATIONAL AND INTERNATIONAL JOURNALS </h2>
                         <h4 className="bullet-h4">International Journals – 24</h4>
@@ -195,32 +185,11 @@ const Profile = () => {
                             {arr8}
                         </ol>
                     </div>
-                    <div ref={conference} className="prof_text_temp">
-                        <h2>CONFERENCES/ WORKSHOPS/ SYMPOSIA ORGANIZED</h2>
-                        <ol>
-                            {arr9}
-                        </ol>
-                    </div>
-                    <div className="prof_text_temp">
-                        <h2>PROFESSIONAL EXPERIENCE – TEACHING</h2>
-                        <ol>
-                            {arr10}
-                        </ol>
-                    </div>
-
-                    <div ref={projects} className="prof_text_temp">
-                        <h2>RESEARCH PROJECTS</h2>
-                        <ol>
-                            {arr11}
-                        </ol>
-                    </div>
-
-                    <div className="prof_text_temp">
-                        <h2>EXTERNAL FUNDED STUDENT PROJECTS</h2>
-                        <ol>
-                            {arr12}
-                        </ol>
-                    </div>
+                    
+                    <Section refer={conference} head={"CONFERENCES/ WORKSHOPS/ SYMPOSIA ORGANIZED"} arr={arr9}/>
+                    <Section  head={"PROFESSIONAL EXPERIENCE – TEACHING"} arr={arr10}/>
+                    <Section refer={projects} head={"RESEARCH PROJECTS"} arr={arr11}/>
+                    <Section  head={"EXTERNAL FUNDED STUDENT PROJECTS"} arr={arr12}/>
 
                     <div className="prof_text_temp">
                         <h2>OTHER ACADEMIC ACTIVITIES</h2>
@@ -244,3 +213,15 @@ const Profile = () => {
 }
 
 export default Profile;
+
+
+const Section = (props) => {
+    return(
+        <div ref={props.refer} className="prof_text_temp">
+            <h2>{props.head}</h2>
+            <ol>
+                {props.arr}
+            </ol>
+        </div>
+    );
+}

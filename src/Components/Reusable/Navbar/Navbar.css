@@ -7,6 +7,8 @@
     padding: 0 4.5rem;
     background-color: var(--bg-main);
     z-index: 10;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .lock
@@ -50,7 +52,7 @@
 
 .navbar_menu-sec
 {
-    font-size: 1.04rem;  
+    font-size: 1.02rem;  
     font-weight: bold;
 }
 
@@ -172,7 +174,7 @@
 {
     .navbar_menu-main
     {
-        width: 760px;
+        width: 790px;
     }
 
 }
@@ -182,7 +184,12 @@
     .navbar_menu-main
     {
         font-size: 1.05rem; 
-        width: 656px;
+        width: 684px;
+    }
+
+    .navbar_menu-sec
+    {
+        font-size: 0.86rem;  
     }
 
     .navbar_menu-main ul li,

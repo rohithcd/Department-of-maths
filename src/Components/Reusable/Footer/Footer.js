@@ -35,9 +35,6 @@ export default function footer() {
               <Link to="/people" onClick={scrollToTop} className="item_f1">
                 Activities
               </Link>
-              <Link to="/people" onClick={scrollToTop} className="item_f1">
-                Facilities
-              </Link>
             </div>
 
             <div className="hox_f1">

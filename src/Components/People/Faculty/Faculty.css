@@ -19,7 +19,7 @@
 
 .faculty_bg > h1
 {
-    /*font-size: 6rem;*/
+    font-size: 6rem;
     font-weight: 900;
     color: var(--white);
     font-family: "Roberto", sans-serif;
@@ -72,7 +72,7 @@
 
 .faculty_grid p
 {
-    /*font-size: 0.98rem;*/
+    font-size: 0.98rem;
     
 }
 
@@ -157,7 +157,7 @@
 
     .faculty_grid p
     {
-        /*font-size: 0.96rem;*/
+        font-size: 0.96rem;
     }
 
     .faculty_card > img
@@ -186,7 +186,7 @@
 
     .faculty_grid p
     {
-        /*font-size: 0.95rem;*/
+        font-size: 0.95rem;
     }
 
     .faculty_card > img
@@ -215,7 +215,7 @@
 
     .faculty_grid p
     {
-        /*font-size: 0.95rem;*/
+        font-size: 0.95rem;
     }
 
     .faculty_card > img
