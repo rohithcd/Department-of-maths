@@ -1,227 +1,77 @@
-import "./Profile.css";
-import {useRef} from "react";
-import {Link} from "react-router-dom";
-import {profile_pic1} from "../../../Exports.js";
-import {aparna_quali_1, aparna_quali_2, aparna_achieve, aparna_membership, aparna_invited, aparna_articles, aparna_conference,
-aparna_teaching, aparna_research, aparna_fund} from "./Details/Aparna.js";
-
-const scroll = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: 'smooth'});   
+import Template from "./Template.js";
+import React from "react";
+import {useParams} from "react-router-dom"; 
+import Error from "../../Reusable/Error/Error";
+import {profile_pic1, p_img1, p_img2, p_img3, p_img4, p_img5, p_img6, p_img7, p_img9, p_img10, p_img11} from "../../../Exports.js";
+import pdf from "../../../Assets/people/CV/Bio-Aparna.pdf";
 
 const Profile = () => {
-    const edu_quali = useRef(null);
-    const member = useRef(null);
-    const publications = useRef(null);
-    const projects = useRef(null);
-    const phd = useRef(null);
-    const conference = useRef(null);
-    const talks = useRef(null);
-    const board = useRef(null);
 
-    let obj = {
-        aparna: [aparna_quali_1, aparna_quali_2, aparna_achieve, aparna_membership, aparna_invited, aparna_articles, aparna_conference, aparna_teaching, aparna_research, aparna_fund]
-    }
+    const {Id} = useParams();
+    const param = Id.slice(8);
 
-    let arr1 = [], arr2 = [], arr3 = [], arr4 = [], arr5 = [], arr6 = [], arr7 = [], arr8 = [], arr9 = [], arr10 = [], arr11 = [], arr12 = [];
-    let quali1 = obj.aparna[0], quali2 = obj.aparna[1], achieve = obj.aparna[2], mem = obj.aparna[3], invite = obj.aparna[4], articles = obj.aparna[5], confer = obj.aparna[6],
-                teach = obj.aparna[7], research = obj.aparna[8], fund = obj.aparna[9];
-    for(let i=0; i<quali1.length; i++)
+    let prof = [
+        {name: "Dr P. G. Romeo", job: "Professor", pic: p_img1},
+        {name: "Dr. Sasi Gopalan", job: "Professor", pic:p_img2},
+        {name: "Prof. Ambat Vijayakumar", job: "Emeritus Professor", pic:p_img3},
+        {name: "Dr. Shery Fernandez", job: "Associate Professor", pic:p_img4},
+        {name: "Dr. Ambily A A", job: "Assistant Professor", pic:p_img5},
+        {name: "Dr. V. B. Kiran Kumar", job: "Assistant Professor", pic:p_img6},
+        {name: "Dr. A. Noufal", job: "Assistant Professor", pic:p_img7},
+        {name: "Dr. Aparna Lakshmanan S", job: "Assistant Professor", pic: profile_pic1, doc: pdf},
+        {name: "Dr. Shankar P", job: "Assistant Professor", pic:p_img9},
+        {name: "Dr. Tanushree Pandit", job: "Assistant Professor", pic:p_img10},
+        {name: "Dr. Tathagata Banerjee", job: "Assistant Professor", pic:p_img11}    
+    ];
+
+    if(param === "Azyq5R38")
     {
-        arr1.push(<li>{quali1[i]}</li>);
+        return <Template obj={prof[0]}/>
     }
-
-    for(let i=0; i<quali2.length; i++)
+    else if(param === "4MzRVnmS")
     {
-        arr2.push(<li>{quali2[i]}</li>);
+        return <Template obj={prof[1]}/>
     }
-
-    for(let i=0; i<achieve.length; i++)
+    else if(param === "5D7f5vjz")
     {
-        arr3.push(<li>{achieve[i]}</li>);
+        return <Template obj={prof[2]}/>
     }
-
-    for(let i=0; i<mem.length; i++)
+    else if(param === "6SsAl9xE")
     {
-        arr4.push(<li>{mem[i]}</li>);
+        return <Template obj={prof[3]}/>
     }
-
-    for(let i=0; i<invite.length; i++)
+    else if(param === "QnZUwiq6")
     {
-        arr5.push(<li>{invite[i]}</li>);
+        return <Template obj={prof[4]}/>
     }
-
-    for(let i=0; i<24; i++)
+    else if(param === "ZIzVik2u")
     {
-        arr6.push(<li>{articles[i]}</li>);
+        return <Template obj={prof[5]}/>
     }
-
-    for(let i=24; i<28; i++)
+    else if(param === "JBbkICAq")
     {
-        arr7.push(<li>{articles[i]}</li>);
+        return <Template obj={prof[6]}/>
     }
-
-    for(let i=28; i<29; i++)
+    else if(param === "DOsSFiDt")
     {
-        arr8.push(<li>{articles[i]}</li>);
+        return <Template obj={prof[7]}/>
     }
-
-    for(let i=0; i<confer.length; i++)
+    else if(param === "16HJ4Mgh")
     {
-        arr9.push(<li>{confer[i]}</li>);
+        return <Template obj={prof[8]}/>
     }
-
-    for(let i=0; i<teach.length; i++)
+    else if(param === "h4GJEgP9")
     {
-        arr10.push(<li>{teach[i]}</li>);
+        return <Template obj={prof[9]}/>
     }
-
-    for(let i=0; i<research.length; i++)
+    else if(param === "84gdKK0e")
     {
-        arr11.push(<li>{research[i]}</li>);
+        return <Template obj={prof[10]}/>
     }
-
-    for(let i=0; i<fund.length; i++)
+    else
     {
-        arr12.push(<li>{fund[i]}</li>);
+        return <Error/>
     }
-
-    return(
-        <>
-            <div className="section_profile">
-                <div className="profile_head">
-                    <nav className="profile_nav">
-                        <Link to="/"><p>Home</p></Link>
-                        <p id="pointer" onClick={() => scroll(edu_quali)}>Educational Qualifications</p>
-                        <p id="pointer" onClick={() => scroll(member)}>Memberships</p>
-                        <span className="research-link">
-                            <label>Research</label>
-                            <span className="drop-menu">
-                                <ul>
-                                    <li id="pointer"  onClick={() => scroll(publications)}>Publications</li>
-                                    <li id="pointer" onClick={() => scroll(projects)}>Projects</li>
-                                    <li id="pointer" onClick={() => scroll(phd)}>PhD guidance</li>
-                                    <li id="pointer" onClick={() => scroll(conference)}>Conferences Organised</li>
-                                    <li id="pointer" onClick={() => scroll(talks)}>Invited Talks</li>
-                                    <li id="pointer" onClick={() => scroll(board)}>Editorial Board Member</li>
-                                </ul>
-                            </span>
-                        </span>
-                    </nav>
-                    <div className="head_div">
-                        <div className="photo_container">
-                            <figure className="profile_photo">
-                                <img src={profile_pic1} alt=""/>
-                            </figure>
-                        </div>
-                        <div classNme="head_text">
-                            <h2>Dr Aparna Lakshmanan</h2>
-                            <h5>Assistant Professor</h5>
-                            <h6>Department of Mathematics</h6>
-                            <h6>CUSAT</h6>
-                        </div>
-
-                        
-                    </div>
-                    <button className="btn-prof">Download CV</button>
-                    
-                </div>
-                <div className="profile_text">
-                   <div className="profile_section-1">
-                        <div className="child_sec-1">
-                            <h4>RESEARCH PROFILES</h4>
-                            <div className="prof_container">
-                                <span>
-                                    <h5>Publons</h5>
-                                    <a href="https://publons.com/dashboard/summary/" className="btn">View</a>
-                                </span>
-                                <span>
-                                    <h5>Scopus</h5>
-                                    <a href="https://www.scopus.com/authid/detail.uri?authorId=55310792000" className="btn">View</a>
-                                </span>
-                                <span>
-                                    <h5>Google Scholar</h5>
-                                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ApsNUl0AAAAJ&gmla=AJsN-F6tQ-kBuj3lOsmSOUv_C-xsJCMACZWtxGTn50xkesLAOlRzGhDDhihF3DT2UOTdPvV9tvtHsVmW1qFwT5OSFEXfFU6wZ5wEkOjuaHdP6TBWV4rUMXU" className="btn">View</a>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div className="child_sec-2">
-                            <h4>BRIEF BIO</h4>
-                            <p>Assistant Professor in Department of Mathematics, CUSAT from January, 2021</p>
-                        </div>
-                   
-                        <div className="child_sec-3">
-                            <h4>RESEARCH INTERESTS</h4>
-                            <p>Algebra, Graph Theory</p>
-                        </div>
-                    </div>
-                    <div ref={edu_quali} className="prof_text_temp">
-                        <h2>EDUCATIONAL QUALIFICATIONS</h2>
-                        <div>
-                            <ol type={"1"}>
-                                {arr1}
-                                <ul>
-                                    {arr2}
-                                </ul>
-                            </ol>
-                        </div>
-                    </div>
-
-                    <Section  head={"AWARDS/RECOGNITIONS AND ACHIEVEMENTS"} arr={arr3}/>
-                    <Section refer={member} head={"MEMBERSHIPS IN PROFESSIONAL ORGANISATIONS"} arr={arr4}/>
-                    <Section refer={talks} head={"INVITED TALKS IN INTERNATIONAL CONFERENCES"} arr={arr5}/>
-
-                    <div ref={publications} className="prof_text_temp">
-                        <h2> ARTICLES PUBLISHED IN NATIONAL AND INTERNATIONAL JOURNALS </h2>
-                        <h4 className="bullet-h4">International Journals – 24</h4>
-                        <ol>
-                            {arr6}
-                        </ol>
-                        <h4 className="bullet-h4">Proceedings of International Conferences – 4</h4>
-                        <ol>
-                            {arr7}
-                        </ol>
-                            <h4 className="bullet-h4">National Journals – 1</h4>
-                        <ol>
-                            {arr8}
-                        </ol>
-                    </div>
-                    
-                    <Section refer={conference} head={"CONFERENCES/ WORKSHOPS/ SYMPOSIA ORGANIZED"} arr={arr9}/>
-                    <Section  head={"PROFESSIONAL EXPERIENCE – TEACHING"} arr={arr10}/>
-                    <Section refer={projects} head={"RESEARCH PROJECTS"} arr={arr11}/>
-                    <Section  head={"EXTERNAL FUNDED STUDENT PROJECTS"} arr={arr12}/>
-
-                    <div className="prof_text_temp">
-                        <h2>OTHER ACADEMIC ACTIVITIES</h2>
-                        <ol>
-                            <li>Reviewer for</li>
-                            <ul>
-                                <li>Mathematical Reviews</li>
-                                <li>Zentralblatt Math</li>
-                                <li>Bulletin of Mathematical Sciences and Applications.</li>
-                            </ul>
-                            <li>Editorial Board Member for</li>
-                            <ul>
-                                <li>Contemporary Studies in Discrete Mathematics</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </>
-    );
 }
 
 export default Profile;
-
-
-const Section = (props) => {
-    return(
-        <div ref={props.refer} className="prof_text_temp">
-            <h2>{props.head}</h2>
-            <ol>
-                {props.arr}
-            </ol>
-        </div>
-    );
-}

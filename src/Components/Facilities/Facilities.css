@@ -95,7 +95,146 @@
 
     .fac_common
     {
-        font-size: 0.86rem; 
+        font-size: 0.84rem; 
+    }
+
+}
+
+@media screen and (max-width: 1020px)
+{
+    .facilities_box
+    { 
+        height: 22rem; 
+    }
+
+    .fac_common
+    {
+        font-size: 0.72rem; 
+    }
+
+}
+
+@media screen and (max-width: 880px)
+{
+    .section_facilities
+    {
+        width: 70%;
+        padding-top: 3.5rem;
+    }
+
+    .facilities_box
+    { 
+        flex-direction: column;
+        height: 30rem; 
+        margin-bottom: 4rem;
+    }
+
+    .fac_common
+    {
+        font-size: 0.72rem; 
+    }
+    
+    .article_img
+    {
+        width: 100%;
+        height: calc(56%);
+        margin-top: 0;
+    } 
+    
+    .fac_common
+    {
+        width: 100%;
+        height: calc(44%);
+        align-items: center;
+    }
+    
+    .fac_common > h2
+    {
+        width: 90%;
+        padding-left: 0;
+    }
+    
+    .fac_common::before
+    {
+        width: 100%;/*54.5rem; */
+        height: 100%; 
+        outline-offset: -2px;
+    }
+    
+    .facilities_para-1::before
+    {
+        transform: translate(0, 0); /*4rem */
+    }
+    
+    .facilities_para-2::before
+    {
+        transform: translate(0, 0);
+    }
+    
+    .change
+    {
+        flex-direction: column;  
+    }
+}
+
+@media screen and (max-width: 690px)
+{
+    .section_facilities
+    {
+        width: 75%;
+        padding-top: 3.5rem;
+    }
+
+    .article_img
+    {
+        height: calc(52%);
+    } 
+    
+    .fac_common
+    {
+        height: calc(48%);
+    }
+
+    .facilities_box
+    { 
+        flex-direction: column;
+        height: 27rem; 
+        margin-bottom: 4rem;
+    }
+
+    .fac_common
+    {
+        font-size: 0.6rem; 
+    }
+
+}
+
+@media screen and (max-width: 500px)
+{
+    .section_facilities
+    {
+        width: 86%;
+    }
+
+    .facilities_box
+    { 
+        height: 22rem; 
+        margin-bottom: 3.5rem;
+    }
+
+    .article_img
+    {
+        height: calc(50%);
+    } 
+    
+    .fac_common
+    {
+        height: calc(50%);
+    }
+
+    .fac_common
+    {
+        font-size: 0.5rem; 
     }
 
 }

@@ -13,7 +13,7 @@ export {default as img10} from "./Assets/gallery/_E3T3187.JPG";*/
 
 /*----People----*/
 export {default as p_img1} from "./Assets/people/image1.jpg";
-export {default as p_img2} from "./Assets/people/image2.JPG";
+export {default as p_img2} from "./Assets/people/image2.jpg";
 export {default as p_img3} from "./Assets/people/image3.jpg";
 export {default as p_img4} from "./Assets/people/image4.jpg";
 export {default as p_img5} from "./Assets/people/image5.jpg";
@@ -152,9 +152,17 @@ export let award = [
 ];
 
 export let profile = [
-    "/people/profile=/3444", null, null, null, null, null, null,
-    "https://iqac.cusat.ac.in/Web/profile_view/424/Dr.APARNALAKSHMANANS",
-    null, null, null
+    "/people/profile=Azyq5R38",
+    "/people/profile=4MzRVnmS",
+    "/people/profile=5D7f5vjz",
+    "/people/profile=6SsAl9xE",
+    "/people/profile=QnZUwiq6",
+    "/people/profile=ZIzVik2u",
+    "/people/profile=JBbkICAq",
+    "/people/profile=DOsSFiDt",
+    "/people/profile=16HJ4Mgh",
+    "/people/profile=h4GJEgP9",
+    "/people/profile=84gdKK0e"
 ]
 
 /*----Explore----*/

@@ -1,6 +1,6 @@
-import "./Facilities.css";
-
 import {fa_img1, fa_img3, txt} from "../../Exports";
+import Title from "../Reusable/Title/Title";
+import "./Facilities.css";
 
 function check(value)
 {
@@ -25,6 +25,7 @@ const Facilities = () => {
 
     return(
         <>
+            <Title head="Facilities"/>
             <div className="section_facilities">
                 {arr}
             </div>

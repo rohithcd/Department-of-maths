@@ -42,7 +42,7 @@ ol > li
     height: 30rem;
     color: var(--white);
     font-family: "Roboto", sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
     position: relative;
 }
 
@@ -82,7 +82,20 @@ ol > li
     align-items: center;
 }
 
+.head_text 
+{
+    line-height: 1.4;
+}
 
+.head_text h5
+{
+    font-size: 1.8rem;
+}
+
+.head_text p
+{
+    font-size: 1.2rem;
+}
 
 .photo_container
 {
@@ -92,8 +105,6 @@ ol > li
     align-items: center;
     justify-content: center;
 }
-
-
 
 .profile_photo
 {
