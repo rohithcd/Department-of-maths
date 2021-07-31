@@ -126,7 +126,7 @@ const Template = (props) => {
                     
                 </div>
                 <div className="profile_text">
-                   <div className="profile_section-1">
+                    <div className="profile_section-1">
                         <div className="child_sec-1">
                             <h4>RESEARCH PROFILES</h4>
                             <div className="prof_container">

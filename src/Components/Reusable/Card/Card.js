@@ -8,9 +8,7 @@ const Card = (props) => {
                 <div className="pic_container">
                     <img src={props.pic} alt=""/>
                 </div>
-                <h4>
-                    <span>{props.head}</span>
-                </h4>
+                <h4><span>{props.head}</span></h4>
                 <Link to={props.link}>
                     <button className="btn_card">View</button>
                 </Link>

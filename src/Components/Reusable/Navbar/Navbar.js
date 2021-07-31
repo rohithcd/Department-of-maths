@@ -10,55 +10,58 @@ import "../Ham/Ham.css";
 
 const Navbar = () => {
 
-    const {width, state, breakpoint, menu} = useContext(UserContext);
+    const {width, state, breakpoint, menu} = useContext(UserContext); /* Importing values from App Component */
 
   return(
     <> 
-      <nav className={(state && width < breakpoint) ? "section_navbar lock" : "section_navbar"} >
-        <div className="navbar_prime">
-            <div className="navbar_title">
-                <img src={logo_main1} className="navbar-image" alt=""/>
-                <div className="nav_head">
-                    <img src={logo} alt="logo" />
-                </div>
-            </div>    
+        <nav className={(state && width < breakpoint) ? "section_navbar lock" : "section_navbar"} >
+            <div className="navbar_prime">
+                <div className="navbar_title">
+                    <img src={logo_main1} className="navbar-image" alt=""/>
+                    <div className="nav_head">
+                        <img src={logo} alt="logo" />
+                    </div>
+                </div>    
 
-            <div className="navbar_menu-sec" >
-                <ul>
-                    <li><Link to="/gallery">Gallery</Link></li>
-                    <li><a href="https://olympiads.hbcse.tifr.res.in/olympiads-2020-21/mathematical-olympiad/"rel="noreferrer" target="_blank">Olympiad</a></li>
-                    <li><Link to="/alumni">Alumni</Link></li>
-                    <li><Link to="/contact-us">Contact us</Link></li>
-                </ul>
+                <div className="navbar_menu-sec" >
+                    <ul>
+                        <li><Link to="/gallery">Gallery</Link></li>
+                        <li><a href="https://olympiads.hbcse.tifr.res.in/olympiads-2020-21/mathematical-olympiad/" rel="noreferrer" target="_blank">Olympiad</a></li>
+                        <li><Link to="/alumni">Alumni</Link></li>
+                        <li><Link to="/contact-us">Contact us</Link></li>
+                    </ul>
+                </div>
+
+                <Ham/>
             </div>
 
-            <Ham/>
-        </div>
+            <div className="navbar_menu-main">
+                <ul>
+                    <MenuList/>
+                </ul>
+            </div> 
 
-       <div className="navbar_menu-main">
-          <ul>
-            <Link to="/"><li><span>Home</span></li></Link>
-            <Link to="/people"><li >People</li></Link>
-            <Link to="/research"><li >Research</li></Link>
-            <Link to="/academics"><li >Academics</li></Link>
-            <Link to="/activities"><li >Activities</li></Link>
-            <Link to="/facilities"><li >Facilities</li></Link>
-          </ul>
-        </div> 
-
-          <div className="navbar_menu-side"  style={{display:(state) ? "block" : "none"}}>
-            <ul className={(state) ? "nav_side-items" : ""}>
-              <Link to="/"><li onClick={menu}>Home</li></Link>
-              <Link to="/people"><li onClick={menu}>People</li></Link>
-              <Link to="/research"><li onClick={menu}>Research</li></Link>
-              <Link to="/academics"><li onClick={menu}>Academics</li></Link>
-              <Link to="/activities"><li onClick={menu}>Activities</li></Link>
-              <Link to="/facilities"><li onClick={menu}>Facilities</li></Link>
-            </ul>
-          </div>
-      </nav> 
+            <div className="navbar_menu-side"  style={{display:(state) ? "block" : "none"}}>
+                <ul className={(state) ? "nav_side-items" : ""}>
+                    <MenuList func={menu}/>
+                </ul>
+            </div>
+        </nav> 
     </>
   ); 
+}
+
+const MenuList = ({func}) => {
+    return(
+        <>
+            <Link to="/"><li onClick={func}>Home</li></Link>
+            <Link to="/people"><li onClick={func}>People</li></Link>
+            <Link to="/research"><li onClick={func}>Research</li></Link>
+            <Link to="/academics"><li onClick={func}>Academics</li></Link>
+            <Link to="/activities"><li onClick={func}>Activities</li></Link>
+            <Link to="/facilities"><li onClick={func}>Facilities</li></Link>
+        </>
+    );
 }
 
 export default Navbar;

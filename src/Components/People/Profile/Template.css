@@ -4,8 +4,6 @@
     cursor: pointer;
 }
 
-
-
 /* dropdown menu */
 .drop-menu
 {
@@ -152,8 +150,6 @@ ol > li
 
 
 /* navigation */
-
-
 .research-link
 {
     position: relative;
@@ -193,12 +189,12 @@ ol > li
 
 div[class^='child_sec-']
 {
-    padding: 1rem 2rem;
-    line-height: 1.6;
+    line-height: 1.5;
 }
+
 .child_sec-1
 {
-   
+    padding: 1rem 2rem;
     text-align: center;
     background-color: #bcc4cf;
     grid-column: 1 / 2;
@@ -274,6 +270,12 @@ div[class^='child_sec-']
 
 @media screen and (max-width: 1260px)
 {
+    .profile_text
+    {
+        line-height: 1.5;
+        font-size: 1.05rem;
+    }
+
     .profile_head
     {
         padding: 0 3.6rem;
@@ -302,6 +304,12 @@ div[class^='child_sec-']
 
 @media screen and (max-width: 1090px)
 {
+    .profile_text
+    {
+        line-height: 1.4;
+        font-size: 1rem;
+    }
+
     .profile_head
     {
         padding: 0 2.8rem;
@@ -347,6 +355,19 @@ div[class^='child_sec-']
 
 @media screen and (max-width: 980px)
 {
+
+    .child_sec-1
+    {
+        padding: 1rem 6rem;
+    }
+
+    .profile_section-1
+    {
+        width: 92%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 1rem;
+    }
 
     .head_div
     {
@@ -407,6 +428,11 @@ div[class^='child_sec-']
 
 @media screen and (max-width: 860px)
 {
+    .child_sec-1
+    {
+        padding: 1rem 3rem;
+    }
+
     .profile_head
     {
         padding: 0 1rem;
@@ -416,7 +442,6 @@ div[class^='child_sec-']
     .profile_head h2
     {
         font-size: 2.5rem;
-        
     }
     
     .head_text h5
@@ -444,6 +469,11 @@ div[class^='child_sec-']
 
 @media screen and (max-width: 770px)
 {
+    .child_sec-1
+    {
+        padding: 1rem 1rem;
+    }
+
     .head_div
     {
         flex-direction: column;
@@ -459,12 +489,12 @@ div[class^='child_sec-']
     {
         padding: 0 1rem;
         padding-left: 0;
+        height: 36rem;
     }
 
     .profile_head h2
     {
         font-size: 2.4rem;
-        
     }
     
     .head_text h5
@@ -486,10 +516,92 @@ div[class^='child_sec-']
 
 @media screen and (max-width: 520px)
 {
+    .profile_text
+    {
+        line-height: 1.37;
+        font-size: 0.98rem;  
+    }
+    
+    .child_sec-1
+    {
+        padding: 1rem 0.2rem;
+    }
+
+    .prof_container
+    {
+        justify-content: space-around;
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .ham_box > div
+    {
+        top: 0%;
+    }
+
     .ham_box > div
     {
         width: 2.9rem;
         height: 2.6rem;
+    }
+
+    .photo_container
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .profile_photo
+    {
+        width: 200px;
+        height: 230px;
+    }
+
+    .profile_head
+    {
+        padding-top: 2.4rem;
+    }
+
+    .head_div
+    {
+        padding: 3.57rem 0 0 0;
+    }
+
+    .profile_head h2
+    {
+        font-size: 1.9rem;
+    }
+
+    .head_text 
+    {
+        padding-top: 2.5rem;
+    }
+    
+    .head_text h5
+    {
+        font-size: 1.2rem;
+    }
+    
+    .head_text p
+    {
+        font-size: 0.92rem;
+    }
+
+    .btn-prof
+    {
+        bottom: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .btn-prof:active
+    {
+        transform: scale(0.96) translateX(-50%);
+    }
+
+    .profile_text ol ul
+    {
+        padding-left: 1rem;
     }
 }
 

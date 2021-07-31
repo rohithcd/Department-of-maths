@@ -6,10 +6,7 @@ const About = () => {
 
     let arr = [];
 
-    for(let i=0; i<about.length; i++)
-    {
-        arr.push(<p>{about[i]}</p>);
-    }
+    for(let i=0; i<about.length; i++) { arr.push(<p>{about[i]}</p>); }
     
     return (
         <>

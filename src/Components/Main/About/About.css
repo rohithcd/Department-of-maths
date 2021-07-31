@@ -9,7 +9,6 @@
 
 .section_about h2
 {
-    /* font-size: 1.7rem; */
     color: var(--bg-main);
 }
 
@@ -21,20 +20,17 @@
     display: flex;
     justify-content: space-between; 
     font-family: "Poppins", sans-serif;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%),
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%),
     url("../../../Assets/main/img_about.jpg");
     background-size: cover;
     padding-left: 1.2rem;
-   
 }
 
 .about_head 
 {
     display: inline-block;
-    
-    padding: 0.5rem 1.1rem 0.6rem 0;
+    padding: 0.5rem 1.1rem 0.7rem 0;
     position: relative;
-    margin-bottom: 0.6rem;
 }
 
 
@@ -70,12 +66,12 @@
 
     .section_about h2
     {
-        /* font-size: 1.5rem; */
+        font-size: 1.5rem; 
     }
 
     .about_main
     {
-        /* font-size: 0.95rem; */
+        font-size: 1.1rem; 
     }
 
     .about_text
@@ -93,7 +89,7 @@
 
     .about_main
     {
-        /* font-size: 0.90rem; */
+         font-size: 1.05rem; 
     }
 
     .about_text
@@ -106,16 +102,18 @@
 {
     .section_about
     {
+        
         height: 33.6rem;
     }
 
     .about_main
     {
-        /* font-size: 0.90rem; */
+        font-size: 1.03rem; 
     }
 
     .about_text
     {
+        width: 100%;
         line-height: 1.5;
     }
 }
@@ -129,7 +127,7 @@
 
     .about_main
     {
-        /* font-size: 0.90rem; */
+        font-size: 1rem;
     }
 
     .about_text

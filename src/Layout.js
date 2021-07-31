@@ -3,6 +3,7 @@ import Navbar from "./Components/Reusable//Navbar/Navbar";
 import Footer from "./Components/Reusable/Footer/Footer"; 
 
 export const UserContext = React.createContext();
+
 const Layout  = ({children}) => {
     const breakpoint = 980;
     const [width, setWidth] = useState(window.innerWidth);

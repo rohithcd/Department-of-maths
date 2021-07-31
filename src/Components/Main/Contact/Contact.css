@@ -8,7 +8,6 @@
     background-color: #f7f7f7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 2rem 1.2rem 2rem 0;
-    /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
 }
 
 .contact_head ~ div
@@ -66,6 +65,11 @@
 
 @media screen and (max-width: 980px)
 {
+    .section_contact
+    {
+        display: none;
+    }
+
     .section_contact
     {
         width: 17.5rem;
