@@ -1,55 +1,38 @@
-import {useState, useEffect} from "react";
+import {useContext} from "react";
 import {Link} from 'react-router-dom';
-import './Navbar.css';
+import {UserContext} from "../../../Layout";
 import {logo_main1} from "../../../Exports";
 import logo from "../../../Assets/icons/logo.svg";
+import Ham from  "../Ham/Ham";
 
+import './Navbar.css';
+import "../Ham/Ham.css";
 
 const Navbar = () => {
 
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 980;
-  const [value, setValue] = useState({isActive: false});
-  function menu()
-  {
-      if(value.isActive === false)
-      {
-          setValue({isActive: true});
-      }
-      else
-      {
-        setValue({isActive: false});
-      }
-  }
-
-  useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);
-
+    const {width, state, breakpoint, menu} = useContext(UserContext);
 
   return(
     <> 
-      <nav className={(value.isActive && width < breakpoint) ? "section_navbar lock" : "section_navbar"} >
+      <nav className={(state && width < breakpoint) ? "section_navbar lock" : "section_navbar"} >
         <div className="navbar_prime">
-          <div className="navbar_title">
-            <img src={logo_main1} className="navbar-image" alt=""/>
-            <div className="nav_head">
-              <img src={logo} alt="logo" />
+            <div className="navbar_title">
+                <img src={logo_main1} className="navbar-image" alt=""/>
+                <div className="nav_head">
+                    <img src={logo} alt="logo" />
+                </div>
+            </div>    
+
+            <div className="navbar_menu-sec" >
+                <ul>
+                    <li><Link to="/gallery">Gallery</Link></li>
+                    <li><a href="https://olympiads.hbcse.tifr.res.in/olympiads-2020-21/mathematical-olympiad/"rel="noreferrer" target="_blank">Olympiad</a></li>
+                    <li><Link to="/alumni">Alumni</Link></li>
+                    <li><Link to="/contact-us">Contact us</Link></li>
+                </ul>
             </div>
-          </div>    
 
-          <div className="navbar_menu-sec" >
-            <ul>
-              <li><Link to="/gallery">Gallery</Link></li>
-              <li><a href="https://olympiads.hbcse.tifr.res.in/olympiads-2020-21/mathematical-olympiad/"rel="noreferrer" target="_blank">Olympiad</a></li>
-              <li><Link to="/alumni">Alumni</Link></li>
-              <li><Link to="/contact-us">Contact us</Link></li>
-            </ul>
-          </div>
-
-          <div className="ham_container common" onClick={menu}>
-            <span className={(value.isActive && width < breakpoint) ? "cross common" : "ham common" }>&nbsp;</span>
-          </div>
+            <Ham/>
         </div>
 
        <div className="navbar_menu-main">
@@ -63,8 +46,8 @@ const Navbar = () => {
           </ul>
         </div> 
 
-          <div className="navbar_menu-side"  style={{display:(value.isActive) ? "block" : "none"}}>
-            <ul className={(value.isActive) ? "nav_side-items" : ""}>
+          <div className="navbar_menu-side"  style={{display:(state) ? "block" : "none"}}>
+            <ul className={(state) ? "nav_side-items" : ""}>
               <Link to="/"><li onClick={menu}>Home</li></Link>
               <Link to="/people"><li onClick={menu}>People</li></Link>
               <Link to="/research"><li onClick={menu}>Research</li></Link>
@@ -73,9 +56,9 @@ const Navbar = () => {
               <Link to="/facilities"><li onClick={menu}>Facilities</li></Link>
             </ul>
           </div>
-      </nav>
+      </nav> 
     </>
-  );
+  ); 
 }
 
 export default Navbar;

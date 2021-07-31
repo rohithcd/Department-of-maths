@@ -20,8 +20,8 @@
 {
   width: 100%;
   height: calc(100vh - 11.72rem);
-  min-height: 33rem;
-  max-height: 45rem;
+  /* min-height: 33rem; */
+  /* max-height: 45rem; */
 }
 .cente {
   display: flex;
@@ -30,31 +30,30 @@
 
 @media screen and (max-width: 640px)
 {
-  .writing
-  {
-    font-size: 0.85rem;
-  }
-  .imgsize 
-  {
-    height: calc(100vh - 8.72rem);
-    max-height: 38rem;
-    min-height: 28rem;
-  }
+    .writing
+    {
+        font-size: 0.85rem;
+    }
+    .imgsize 
+    {
+        height: calc(100vh - 8.72rem);
+        max-height: 45rem; 
+        min-height: 40rem; 
+    }
   
 }
 
 @media screen and (max-width: 520px)
 {
-  .writing
-  {
-    font-size: 0.75rem;
-  }
+    .writing
+    {
+        font-size: 0.72rem;
+    }
 
-  .imgsize 
-  {
-    height: calc(100vh - 7.62rem);
-    min-height: 20rem;
-    max-height: 35rem;
-  }
-  
+    .imgsize 
+    {
+        height: calc(100vh - 7.62rem);
+        min-height: 30rem;
+        max-height: 40.4rem;
+    }
 }

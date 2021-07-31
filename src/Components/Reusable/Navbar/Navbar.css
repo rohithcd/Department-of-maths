@@ -81,10 +81,10 @@
     color: var(--white);
 }
 
-.ham_container
+/* .ham_container
 {
     display: none;
-}
+} */
 
 /* Section 2 */
 .navbar_menu-main
@@ -224,7 +224,7 @@
 
     /* Hamburger Button */
 
-    .navbar_menu-main
+   /* .navbar_menu-main
     {
         font-size: 0.97rem; 
         width: 100%;
@@ -299,7 +299,7 @@
     }
 
     .cross::before{top: -0.1rem; transform-origin: 50%, 50%; transform: rotate(45deg);}
-    .cross::after{top: -0.1rem; transform-origin: -50%, -50%; transform: rotate(-45deg);}
+    .cross::after{top: -0.1rem; transform-origin: -50%, -50%; transform: rotate(-45deg);} */
 
     .navbar_menu-side
     {
@@ -373,7 +373,7 @@
         margin-top: -0.6rem;
     }
 
-    .ham_container,
+  /*   .ham_container,
     .cross_container
     {
         margin: 0.85rem 0;
@@ -397,7 +397,7 @@
     .ham::after{top: 0.7rem;}
 
     .cross::before{top: -0.1rem; left: -0.2rem; transform-origin: 50%, 50%; transform: rotate(45deg);}
-    .cross::after{top: -0.1rem; left: -0.2rem; transform-origin: -50%, -50%; transform: rotate(-45deg);}
+    .cross::after{top: -0.1rem; left: -0.2rem; transform-origin: -50%, -50%; transform: rotate(-45deg);} */
  
     .nav_side-items
     {
@@ -427,7 +427,7 @@
         padding: 0.8rem 1.6rem;
     }
 
-    .ham_container
+    /* .ham_container
     {
         margin: 0.95rem 0;
     }
@@ -449,7 +449,7 @@
     .ham::after{top: 0.6rem;}
 
     .cross::before{left: 0.1rem;}
-    .cross::after{left: 0.1rem;}
+    .cross::after{left: 0.1rem;} */
 
     .nav_head
     {

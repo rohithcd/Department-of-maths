@@ -1,13 +1,14 @@
-import "./Template.css";
 import {useRef} from "react";
 import {Link} from "react-router-dom";
 import {aparna_quali_1, aparna_quali_2, aparna_achieve, aparna_membership, aparna_invited, aparna_articles, aparna_conference,
 aparna_teaching, aparna_research, aparna_fund} from "./Details/Aparna.js";
+import Ham from  "../../Reusable/Ham/Ham";
+
+import "./Template.css";
 
 const scroll = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: 'smooth'});   
 
 const Template = (props) => {
-
     const details = props.obj; /*Array passed from Parant - Profile */
 
     const edu_quali = useRef(null), member = useRef(null), publications = useRef(null), projects = useRef(null);
@@ -79,7 +80,6 @@ const Template = (props) => {
     {
         arr12.push(<li>{fund[i]}</li>);
     }
-
     return(
         <>
             <div className="section_profile">
@@ -87,12 +87,12 @@ const Template = (props) => {
                     <nav className="profile_nav">
                         <Link to="/"><p>Home</p></Link>
                         <p id="pointer" onClick={() => scroll(edu_quali)}>Educational Qualifications</p>
-                        <p id="pointer" onClick={() => scroll(member)}>Memberships</p>
+                        <p id="pointer" onClick={() => scroll(member)}>Membership</p>
                         <span className="research-link">
                             <label>Research</label>
                             <span className="drop-menu">
                                 <ul>
-                                    <li id="pointer"  onClick={() => scroll(publications)}>Publications</li>
+                                    <li id="pointer" onClick={() => scroll(publications)}>Publications</li>
                                     <li id="pointer" onClick={() => scroll(projects)}>Projects</li>
                                     <li id="pointer" onClick={() => scroll(phd)}>PhD guidance</li>
                                     <li id="pointer" onClick={() => scroll(conference)}>Conferences Organised</li>
@@ -102,7 +102,12 @@ const Template = (props) => {
                             </span>
                         </span>
                     </nav>
+                    <div className="ham_box">
+                        <Ham/>
+                    </div>
+                   
                     <div className="head_div">
+                   
                         <div className="photo_container">
                             <figure className="profile_photo">
                                 <img src={details.pic} alt=""/>

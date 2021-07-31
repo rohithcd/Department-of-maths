@@ -1,0 +1,137 @@
+.ham_container
+{
+    display: none;
+}
+
+@media screen and (max-width: 980px)
+{
+    .ham_container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 0.7rem 0;
+        transition: transform 0.2s ease-in-out;
+        border: 1px solid var(--white);
+        border-radius: 4px;
+    }
+
+    .ham_container:hover
+    {
+        transform: scale(1.02);
+    }
+
+    .ham_container:active
+    {
+        transform: scale(0.98);
+    }
+
+    .ham
+    {
+        display: inline-block;
+        background-color: var(--white);
+        width: 2.6rem;
+        height: 2px;
+        position: relative;
+        margin:0 0.4rem;
+    }
+
+    .ham::before,
+    .ham::after
+    {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 2.6rem;
+        height: 2px;
+        background-color: var(--white);
+    }
+
+    .ham::before{top: -0.8rem;}
+    .ham::after{top: 0.8rem;}
+
+    .cross
+    {
+        display: inline-block;
+        background-color: var(--white);
+        width: 2.6rem;
+        height: 0;
+        position: relative;
+        margin:0 0.4rem;
+
+    }
+
+    .cross::before,
+    .cross::after
+    {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 2.6rem;
+        height: 2px;
+        background-color: var(--white);
+    }
+
+    .cross::before{top: -0.1rem; transform-origin: 50%, 50%; transform: rotate(45deg);}
+    .cross::after{top: -0.1rem; transform-origin: -50%, -50%; transform: rotate(-45deg);}
+}
+
+@media screen and (max-width: 640px)
+{
+    .ham_container,
+    .cross_container
+    {
+        margin: 0.85rem 0;
+    }
+
+    .ham,
+    .cross
+    {
+        width: 2.2rem;
+    }
+
+    .ham::before,
+    .ham::after,
+    .ham::before,
+    .ham::after
+    {
+        width: 2.2rem;
+    }
+
+    .ham::before{top: -0.7rem;}
+    .ham::after{top: 0.7rem;}
+
+    .cross::before{top: -0.1rem; left: -0.2rem; transform-origin: 50%, 50%; transform: rotate(45deg);}
+    .cross::after{top: -0.1rem; left: -0.2rem; transform-origin: -50%, -50%; transform: rotate(-45deg);}
+ 
+}
+
+@media screen and (max-width: 520px)
+{
+    .ham_container
+    {
+        margin: 0.95rem 0;
+    }
+
+    .ham
+    {
+        width: 2rem;
+    }
+
+    .ham::before,
+    .ham::after,
+    .cross::before,
+    .cross::after
+    {
+        width: 2rem;
+    }
+
+    .ham::before{top: -0.6rem;}
+    .ham::after{top: 0.6rem;}
+
+    .cross::before{left: 0.1rem;}
+    .cross::after{left: 0.1rem;}
+
+}
