@@ -1,0 +1,22 @@
+.section_research
+{
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.research_pics
+{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 20rem);
+    grid-gap: 2rem;
+    margin: 0 auto 2rem auto;
+}
+
+.research_pics > img 
+{
+    width: 100%;
+    height: 100%;
+}
