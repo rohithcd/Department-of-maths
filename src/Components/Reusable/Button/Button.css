@@ -1,0 +1,48 @@
+.btn
+{
+    display: block;
+    padding: 16px 32px;
+    font-size: 1rem;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+/* Oval type button */
+.btn_oval
+{
+    border: 2px solid var(--white);
+    color: var(--white);
+    border-radius: 30px;
+}
+
+.btn_oval:hover
+{
+    background-color: var(--white);
+    color: var(--bg-main);
+}
+
+.btn_oval:active
+{
+    transform: scale(0.96);
+}
+
+/* Box type button */
+.btn_box
+{
+    border: 3px solid var(--bg-main);
+    color: var(--bg-main);
+}
+
+.btn_box:hover
+{
+    background-color: var(--bg-main);
+    color: var(--white);
+}
+
+@media screen and (max-width: 540px)
+{
+    .btn_box
+    {
+        padding: 12px 24px;
+    }
+}

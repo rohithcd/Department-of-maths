@@ -1,9 +1,9 @@
 import {useRef} from "react";
 import {Link} from "react-router-dom";
 import {aparna_quali_1, aparna_quali_2, aparna_achieve, aparna_membership, aparna_invited, aparna_articles, aparna_conference,
-aparna_teaching, aparna_research, aparna_fund} from "./Details/Aparna.js";
+aparna_teaching, aparna_research, aparna_fund} from "./Details/Details.js";
 import Ham from  "../../Reusable/Ham/Ham";
-
+import Button from "../../Reusable/Button/Button";
 import "./Template.css";
 
 const scroll = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: 'smooth'});   
@@ -110,7 +110,7 @@ const Template = (props) => {
                    
                         <div className="photo_container">
                             <figure className="profile_photo">
-                                <img src={details.pic} alt=""/>
+                                <img src={details.pic[1] || details.pic[0]} alt=""/>
                             </figure>
                         </div>
                         <div className="head_text">
@@ -122,7 +122,7 @@ const Template = (props) => {
 
                         
                     </div>
-                    <a href={details.doc} download><button className="btn-prof">Download CV</button></a>
+                    <a href={details.doc} download><Button type="oval" class="btn-prof" name="Download CV"/></a>
                     
                 </div>
                 <div className="profile_text">
@@ -132,15 +132,15 @@ const Template = (props) => {
                             <div className="prof_container">
                                 <span>
                                     <h5>Publons</h5>
-                                    <a href="https://publons.com/dashboard/summary/" className="btn">View</a>
+                                    <a href="https://publons.com/dashboard/summary/" className="btn btn_box">View</a>
                                 </span>
                                 <span>
                                     <h5>Scopus</h5>
-                                    <a href="https://www.scopus.com/authid/detail.uri?authorId=55310792000" className="btn">View</a>
+                                    <a href="https://www.scopus.com/authid/detail.uri?authorId=55310792000" className="btn btn_box">View</a>
                                 </span>
                                 <span>
                                     <h5>Google Scholar</h5>
-                                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ApsNUl0AAAAJ&gmla=AJsN-F6tQ-kBuj3lOsmSOUv_C-xsJCMACZWtxGTn50xkesLAOlRzGhDDhihF3DT2UOTdPvV9tvtHsVmW1qFwT5OSFEXfFU6wZ5wEkOjuaHdP6TBWV4rUMXU" className="btn">View</a>
+                                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ApsNUl0AAAAJ&gmla=AJsN-F6tQ-kBuj3lOsmSOUv_C-xsJCMACZWtxGTn50xkesLAOlRzGhDDhihF3DT2UOTdPvV9tvtHsVmW1qFwT5OSFEXfFU6wZ5wEkOjuaHdP6TBWV4rUMXU" className="btn btn_box">View</a>
                                 </span>
                             </div>
                         </div>
@@ -152,7 +152,7 @@ const Template = (props) => {
                    
                         <div className="child_sec-3">
                             <h4>RESEARCH INTERESTS</h4>
-                            <p>Algebra, Graph Theory</p>
+                            <p>{details.aoi}</p>
                         </div>
                     </div>
                     <div ref={edu_quali} className="prof_text_temp">

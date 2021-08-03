@@ -11,19 +11,6 @@ export {default as img7} from "./Assets/gallery/img7.jpg";
 export {default as img9} from "./Assets/gallery/_E3T3184.JPG";
 export {default as img10} from "./Assets/gallery/_E3T3187.JPG";*/
 
-/*----People----*/
-export {default as p_img1} from "./Assets/people/image1.jpg";
-export {default as p_img2} from "./Assets/people/image2.jpg";
-export {default as p_img3} from "./Assets/people/image3.jpg";
-export {default as p_img4} from "./Assets/people/image4.jpg";
-export {default as p_img5} from "./Assets/people/image5.jpg";
-export {default as p_img6} from "./Assets/people/image6.jpg";
-export {default as p_img7} from "./Assets/people/image7.jpg";
-export {default as p_img8} from "./Assets/people/image8.jpg";
-export {default as p_img9} from "./Assets/people/image9.jpg";
-export {default as p_img10} from "./Assets/people/image10.jpg";
-export {default as p_img11} from "./Assets/people/image11.jpg";
-
 /*----Box----*/
 export {default as b_img1} from "./Assets/main/box_img1.jpg";
 export {default as b_img2} from "./Assets/main/box_img2.jpg";
@@ -60,9 +47,6 @@ export {default as ex_logo3} from "./Assets/icons/book.png";
 
 export {default as logo_main1} from "./Assets/main/logo_main.png";
 
-/*----Profile----*/
-export {default as profile_pic1} from "./Assets/people/profile_pic1.jpg";
-
 
 /*------------TEXT-----------------*/
 /*----About----*/
@@ -71,33 +55,7 @@ export let about = [
     "The Department conducts an M.Sc. Degree programme, M.Phil. Programme in Mathematics and Ph.D. programmes. The students generally take up teaching positions or opt for research or join industry. Our students find admission to Ph.D. programmes offered in various National Institutes such as IITs, IISERs, IMSc, ISI, TIFR etc. Apart from giving instruction in post graduate courses, the Department has from the very beginning taken the leadership in promoting research in mathematics and its applications, especially in this part of the country. This was realized in a two-fold way one, by guiding young researchers to do their doctoral work and two, by conducting extension programmes which will improve the instruction at the school and college levels and encourage youngsters to take up research.",
     "Thrust areas of research are Algebra, Semi groups Theory, Stochastic Control theory, Retrial Queues, Mathematical Finance, Graph Theory, Algebraic Graph Theory,Fuzzy Mathematics, Wavelet Analysis, Operator Theory and Topology."];
 /*----People----*/
-export let names = [
-    "Dr. P. G. Romeo",
-    "Dr. Sasi Gopalan",
-    "Prof. Ambat Vijayakumar",
-    "Dr. Shery Fernandez",
-    "Dr. Ambily A A",
-    "Dr. V. B. Kiran Kumar",
-    "Dr. A. Noufal",
-    "Dr. Aparna Lakshmanan S",
-    "Dr. Shankar P",
-    "Dr. Tanushree Pandit",
-    "Dr. Tathagata Banerjee"
-];
 
-export let ranks = [
-    "Professor",
-    "Professor",
-    "Emeritus Professor",
-    "Associate Professor",
-    "Assistant Professor",
-    "Assistant Professor",
-    "Assistant Professor",
-    "Assistant Professor",
-    "Assistant Professor",
-    "Assistant Professor",
-    "Assistant Professor"
-];
 
 export let qualifications = [
     "MSc, PhD",
@@ -117,19 +75,7 @@ export let pub = [
     "Papers 51, Books 4", 32, 71, 13, "Papers 6 Book 1", 12, 4, 29, 7, 3, 1
 ];
 
-export let areaOfInterest = [
-    "Algebra, Category theory, Algebraic topology, Universal algebras",
-    "Approximation Theory, Analysis and Approximations in Deep learning, Optimization Techniques, Fuzzy Mathematics, Wavelet Analysis, Mathematical Morphology",
-    "Discrete Mathematics",
-    "Representation theory, Fuzzy Mathematics",
-    "Algebraic K-Theory, Commutative Algebra, Computational Algebra, Non-Commutative Algebras",
-    "Functional Analysis",
-    "Functional Analysis, Framelets, PDEs",
-    "Graph Theory",
-    "Functional analysis, Operator algebras and Operator theory",
-    "Convex Optimization, Variational Inequalities, Equilibrium Problems",
-    "Operator Algebras, Operator theory and Coarse geometry"
-];
+
 
 export let phd = [
     "No. of phd Students: Awarded 3, Ongoing 7",

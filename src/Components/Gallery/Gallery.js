@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import Loader from "../Reusable/Loader/Loader";
 import {img1, img2, img3, img4, img5, img6, img7} from "../../Exports";
+import Button from "../Reusable/Button/Button";
 import "./Gallery.css";
 
 
@@ -42,7 +43,7 @@ const Gallery = () => {
                 <div className="section_gallery">
                     { arr }
                 </div>
-                <button className="btn btn-align" onClick={show}>{state.value}</button>
+                <Button type="box" class="btn-align" name={state.value} onClick={show}/>
             </>
             )}
         </>

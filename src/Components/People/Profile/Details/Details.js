@@ -1,4 +1,59 @@
+/*----CV----*/
+import pdf5 from "../../../../Assets/people/CV/Bio-Ambily.pdf";
+import pdf6 from "../../../../Assets/people/CV/Bio-Aparna.pdf";
+import pdf7 from "../../../../Assets/people/CV/Bio-Noufal.pdf";
+import pdf8 from "../../../../Assets/people/CV/Bio-Shankar.pdf";
+import pdf11 from "../../../../Assets/people/CV/Bio-Kiran.pdf";
 
+/*----Profile Pic ----*/
+import p_img1 from "../../../../Assets/people/image1.jpg";
+import p_img2 from "../../../../Assets/people/image2.jpg";
+import p_img3 from "../../../../Assets/people/image3.jpg";
+import p_img4 from "../../../../Assets/people/image4.jpg";
+import p_img5 from "../../../../Assets/people/image5.jpg";
+import p_img6 from "../../../../Assets/people/image6.jpg";
+import p_img7 from "../../../../Assets/people/image7.jpg";
+import p_img8 from "../../../../Assets/people/image8.jpg";
+import p_img9 from "../../../../Assets/people/image9.jpg";
+import p_img10 from "../../../../Assets/people/image10.jpg";
+import p_img11 from "../../../../Assets/people/image11.jpg";
+import profile_pic1 from "../../../../Assets/people/profile_pic1.jpg";
+
+/*----Common Details----*/
+let names = ["Prof. Ambat Vijayakumar", "Dr. P. G. Romeo", "Dr. Sasi Gopalan", "Dr. Shery Fernandez", "Dr. Ambily A A",
+    "Dr. Aparna Lakshmanan S", "Dr. A. Noufal", "Dr. Shankar P", "Dr. Tanushree Pandit", "Dr. Tathagata Banerjee", "Dr. V. B. Kiran Kumar"];
+
+let ranks = ["Professor", "Emeritus Professor", "Associate Professor", "Assistant Professor"];
+
+let areaofInt = [
+    "Discrete Mathematics",
+    "Algebra, Category theory, Algebraic topology, Universal algebras",
+    "Approximation Theory, Analysis and Approximations in Deep learning, Optimization Techniques, Fuzzy Mathematics, Wavelet Analysis, Mathematical Morphology",
+    "Representation theory, Fuzzy Mathematics",
+    "Algebraic K-Theory, Commutative Algebra, Computational Algebra, Non-Commutative Algebras",
+    "Graph Theory",
+    "Functional Analysis, Framelets, PDEs",
+    "Functional analysis, Operator algebras and Operator theory",
+    "Convex Optimization, Variational Inequalities, Equilibrium Problems",
+    "Operator Algebras, Operator theory and Coarse geometry",
+    "Functional Analysis"
+];
+
+export let prof = [
+    {name: names[0], job: ranks[2], pic: [p_img3], aoi: areaofInt[0]},
+    {name: names[1], job: ranks[0], pic: [p_img1], aoi: areaofInt[1]},
+    {name: names[2], job: ranks[0], pic: [p_img2], aoi: areaofInt[2]},
+    {name: names[3], job: ranks[2], pic: [p_img4], aoi: areaofInt[3]},
+    {name: names[4], job: ranks[3], pic: [p_img5], aoi: areaofInt[4], doc: pdf5},
+    {name: names[5], job: ranks[3], pic: [p_img8, profile_pic1], aoi: areaofInt[5], doc: pdf6},
+    {name: names[6], job: ranks[3], pic: [p_img7], aoi: areaofInt[6], doc: pdf7},
+    {name: names[7], job: ranks[3], pic: [p_img9], aoi: areaofInt[7], doc: pdf8},
+    {name: names[8], job: ranks[3], pic: [p_img10], aoi: areaofInt[8]},
+    {name: names[9], job: ranks[3], pic: [p_img11], aoi: areaofInt[9]},
+    {name: names[10], job: ranks[3], pic: [p_img6], aoi: areaofInt[10], doc: pdf11}    
+];
+
+/* */
 
 export let aparna_quali_1 = [
     "B.Sc. Mathematics from St. Joseph’s College, Irinjalakuda under Calicut University (2000)",
@@ -106,3 +161,29 @@ export let aparna_fund = [
     "Soil Suitability Analysis Using Fuzzy Sets (Rs. 8000/-).",
     "Reciprocity of inmates of Madhavapuram Colony – A case study (Rs. 6000/-)."
 ];
+
+
+/* export let text = [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+]; */
+
+
+
+
+
+
+/*----People----*/
+
+
+
+
