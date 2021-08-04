@@ -581,5 +581,10 @@ div[class^='child_sec-']
     {
         padding-left: 1rem;
     }
+
+    .photo_container
+    {
+        padding-right: 0;
+    }
 }
 

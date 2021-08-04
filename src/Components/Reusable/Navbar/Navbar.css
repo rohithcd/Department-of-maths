@@ -81,11 +81,6 @@
     color: var(--white);
 }
 
-/* .ham_container
-{
-    display: none;
-} */
-
 /* Section 2 */
 .navbar_menu-main
 {
@@ -153,23 +148,6 @@
     right: 50%;  
 }
 
-.navbar_menu-side
-{
-    display: none;
-    width: 0;
-}
-
-.nav_side-items li
-{
-    font-size: 1.5rem;
-}
-
-.nav_side-items
-{
-    display: none;
-}
-
-
 @media screen and (max-width: 1280px)
 {
     .navbar_menu-main
@@ -222,118 +200,6 @@
         padding: 0;
     }
 
-    /* Hamburger Button */
-
-   /* .navbar_menu-main
-    {
-        font-size: 0.97rem; 
-        width: 100%;
-    }
-
-    .ham_container
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        cursor: pointer;
-        margin: 0.7rem 0;
-        transition: transform 0.2s ease-in-out;
-        border: 1px solid var(--white);
-        border-radius: 4px;
-    }
-
-    .ham_container:hover
-    {
-        transform: scale(1.02);
-    }
-
-    .ham_container:active
-    {
-        transform: scale(0.98);
-    }
-
-    .ham
-    {
-        display: inline-block;
-        background-color: var(--white);
-        width: 2.6rem;
-        height: 2px;
-        position: relative;
-        margin:0 0.4rem;
-    }
-
-    .ham::before,
-    .ham::after
-    {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 2.6rem;
-        height: 2px;
-        background-color: var(--white);
-    }
-
-    .ham::before{top: -0.8rem;}
-    .ham::after{top: 0.8rem;}
-
-    .cross
-    {
-        display: inline-block;
-        background-color: var(--white);
-        width: 2.6rem;
-        height: 0;
-        position: relative;
-        margin:0 0.4rem;
-
-    }
-
-    .cross::before,
-    .cross::after
-    {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 2.6rem;
-        height: 2px;
-        background-color: var(--white);
-    }
-
-    .cross::before{top: -0.1rem; transform-origin: 50%, 50%; transform: rotate(45deg);}
-    .cross::after{top: -0.1rem; transform-origin: -50%, -50%; transform: rotate(-45deg);} */
-
-    .navbar_menu-side
-    {
-        position: fixed;
-        top: 0%;
-        right: 0;
-        width: 40%;
-        max-width: 350px;
-        height: calc(100vh - 8.6rem);
-        background-color: var(--bg-main);
-        border-top: 1px solid black;
-        transform: translateY(8.5rem);
-    }
-
-    .nav_side-items
-    {
-        display: block;
-        text-align: center;
-    }
-
-    .nav_side-items li
-    {
-        display: block;
-        font-size: 1.5rem; 
-        color: var(--white);
-        padding: 1rem 2rem;
-    }
-
-    .nav_side-items li:hover
-    {
-        color: var(--bg-main);
-        background-color: var(--white);
-    }
-
 }
 
 @media screen and (max-width: 780px)
@@ -353,13 +219,6 @@
         padding: 0.8rem 2rem;
     }
 
-    .navbar_menu-side
-    {
-        height: calc(100vh - 5.6rem);
-        transform: translateY(5.5rem);
-    }
-   
-
     .nav_head img 
     {
         width: 60%;
@@ -373,36 +232,6 @@
         margin-top: -0.6rem;
     }
 
-  /*   .ham_container,
-    .cross_container
-    {
-        margin: 0.85rem 0;
-    }
-
-    .ham,
-    .cross
-    {
-        width: 2.2rem;
-    }
-
-    .ham::before,
-    .ham::after,
-    .ham::before,
-    .ham::after
-    {
-        width: 2.2rem;
-    }
-
-    .ham::before{top: -0.7rem;}
-    .ham::after{top: 0.7rem;}
-
-    .cross::before{top: -0.1rem; left: -0.2rem; transform-origin: 50%, 50%; transform: rotate(45deg);}
-    .cross::after{top: -0.1rem; left: -0.2rem; transform-origin: -50%, -50%; transform: rotate(-45deg);} */
- 
-    .nav_side-items
-    {
-        display: block;
-    }
 }
 
 @media screen and (max-width: 520px)
@@ -413,43 +242,6 @@
         height: 4.5rem; 
         padding: 0 1.8rem;
     }
-
-    .navbar_menu-side
-    {
-        width: 60%;
-        height: calc(100vh - 4.5rem);
-        transform: translateY(4.4rem);
-    }
-
-    .nav_side-items li
-    {
-        font-size: 1.2rem; 
-        padding: 0.8rem 1.6rem;
-    }
-
-    /* .ham_container
-    {
-        margin: 0.95rem 0;
-    }
-
-    .ham
-    {
-        width: 2rem;
-    }
-
-    .ham::before,
-    .ham::after,
-    .cross::before,
-    .cross::after
-    {
-        width: 2rem;
-    }
-
-    .ham::before{top: -0.6rem;}
-    .ham::after{top: 0.6rem;}
-
-    .cross::before{left: 0.1rem;}
-    .cross::after{left: 0.1rem;} */
 
     .nav_head
     {

@@ -4,7 +4,7 @@ import {UserContext} from "../../../Layout";
 import {logo_main1} from "../../../Exports";
 import logo from "../../../Assets/icons/logo.svg";
 import Ham from  "../Ham/Ham";
-
+import Sidebar from  "../Sidebar/Sidebar";
 import './Navbar.css';
 import "../Ham/Ham.css";
 
@@ -41,11 +41,9 @@ const Navbar = () => {
                 </ul>
             </div> 
 
-            <div className="navbar_menu-side"  style={{display:(state) ? "block" : "none"}}>
-                <ul className={(state) ? "nav_side-items" : ""}>
+            <Sidebar class={(state) ? "side-items" : ""}  style={{display:(state) ? "block" : "none"}}>
                     <MenuList func={menu}/>
-                </ul>
-            </div>
+            </Sidebar>
         </nav> 
     </>
   ); 
