@@ -1,6 +1,7 @@
 .sidebar_main
 {
     display: none;
+   
     width: 0;
 }
 
@@ -48,7 +49,6 @@
         color: var(--bg-main);
         background-color: var(--white);
     }
-
 }
 
 @media screen and (max-width: 640px)

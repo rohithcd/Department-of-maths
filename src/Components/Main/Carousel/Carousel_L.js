@@ -10,7 +10,7 @@ const Carousel_L = () => {
   let img2i;
   let img3i;
 
-  if (window.innerWidth < 480) 
+  if (window.innerWidth < 520) 
   {
     img1i = slide_min1;
     img2i = slide_min2;

@@ -1,44 +1,50 @@
-import {fa_img1, fa_img3, txt} from "../../Exports";
+import {fac} from "../../Exports";
 import Title from "../Reusable/Title/Title";
+import {Carousel} from "react-responsive-carousel"
 import "./Facilities.css";
 
 function check(value)
 {
     if(value%2 === 0)
-    {
         return 0;
-    }
     else
-    {
         return 1;
-    }
 }
 
 const Facilities = () => {
-    let arr = [];
-    let pics = [fa_img3, fa_img1, fa_img1, fa_img1, fa_img1, fa_img1];
+    let article = [];
 
-    for(let i=0; i<pics.length; i++)
+    for(let i=0; i<fac.length; i++)
     {
-       arr.push(<Article img={pics[i]} text={txt[i]} val={check(i)}/>); 
-    } 
+        article.push(<Article img={fac[i].img} text={fac[i].txt} val={check(i)}/>);
+    }
 
     return(
         <>
             <Title head="Facilities"/>
             <div className="section_facilities">
-                {arr}
+                {article}
             </div>
         </>
     );
 }
 
 const Article = (props) => {
+    let arr = [];
+    for(let i=0; i<props.img.length; i++)
+    {
+        arr.push(<Image source={props.img[i]}/>)
+    }
+
     return(
         <>
             <div className={(props.val === 0) ? "facilities_box slider" : "facilities_box change"}>
                 <div className="article_img"> 
-                    <img src={props.img} alt=""/>
+                    <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} stopOnHover={false} showThumbs={false} dynamicHeight={false}
+                        showStatus={false} interval={3500} className="carousel_div">
+                            {arr}
+                                
+                    </Carousel>
                 </div> 
              
                 <div className={(props.val === 0) ? "facilities_para-1 fac_common" : "facilities_para-2 fac_common"}>
@@ -49,6 +55,14 @@ const Article = (props) => {
     );
 }
 
-
+const Image = (props) => {
+    return(
+        <>
+            <div className="slider-img">
+                <img src={props.source} alt=""/>
+            </div>
+        </>
+    );
+}
 
 export default Facilities;

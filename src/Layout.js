@@ -12,8 +12,12 @@ const Layout  = ({children}) => {
 
     useEffect(() => {
         window.addEventListener("resize", () => {setWidth(window.innerWidth)});
+        
     }, []); 
 
+    if(width < 980 && state === true) {document.body.style.overflowY = "hidden"}
+    else {document.body.style.overflowY = "auto"}
+    
     return(
         <>
             <UserContext.Provider value={{width, state, breakpoint, menu}}>

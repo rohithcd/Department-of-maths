@@ -1,15 +1,22 @@
-import {useRef} from "react";
+import {useRef, useContext} from "react";
+import {UserContext} from "../../../Layout";
 import {Link} from "react-router-dom";
 import {aparna_quali_1, aparna_quali_2, aparna_achieve, aparna_membership, aparna_invited, aparna_articles, aparna_conference,
 aparna_teaching, aparna_research, aparna_fund} from "./Details/Details.js";
 import Ham from  "../../Reusable/Ham/Ham";
+import Sidebar from  "../../Reusable/Sidebar/Sidebar";
 import Button from "../../Reusable/Button/Button";
 import "./Template.css";
 
-const scroll = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: 'smooth'});   
+const scroll = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: 'smooth'});
+    
 
 const Template = (props) => {
     const details = props.obj; /*Array passed from Parant - Profile */
+    
+    const {menu} = useContext(UserContext);
+
+    
 
     const edu_quali = useRef(null), member = useRef(null), publications = useRef(null), projects = useRef(null);
     const phd = useRef(null), conference = useRef(null), talks = useRef(null), board = useRef(null);
@@ -80,6 +87,7 @@ const Template = (props) => {
     {
         arr12.push(<li>{fund[i]}</li>);
     }
+
     return(
         <>
             <div className="section_profile">
@@ -101,6 +109,7 @@ const Template = (props) => {
                                 </ul>
                             </span>
                         </span>
+
                     </nav>
                     <div className="ham_box">
                         <Ham/>
@@ -149,6 +158,13 @@ const Template = (props) => {
                             <h4>BRIEF BIO</h4>
                             <p>Assistant Professor in Department of Mathematics, CUSAT from January, 2021</p>
                         </div>
+
+                        <Sidebar class="">
+                            <Link to="/" onClick={menu}><li>Home</li></Link>
+                            <li id="pointer" onClick={() => {scroll(edu_quali); menu();}}>Educational Qualifications</li>
+                            <li id="pointer" onClick={() => {scroll(member); menu();}}>Membership</li>
+                            <li>Research</li>
+                        </Sidebar>
                    
                         <div className="child_sec-3">
                             <h4>RESEARCH INTERESTS</h4>

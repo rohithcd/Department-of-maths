@@ -1,4 +1,13 @@
 /*------------ IMAGES -----------------*/
+import fa_img1 from "./Assets/facilities/sem_hall-1.jpg";
+import fa_img2 from "./Assets/facilities/sem_hall-2.jpg";
+import fa_img3 from "./Assets/facilities/lib-1.jpg";
+import fa_img4 from "./Assets/facilities/lib-1.jpg";
+import fa_img5 from "./Assets/facilities/lib-2.jpg";
+import fa_img6 from "./Assets/facilities/lib-3.jpg";
+import fa_img7 from "./Assets/facilities/lib-4.jpg";
+import fa_img8 from "./Assets/facilities/lib-5.jpg";
+
 /*----Gallery----*/
 export {default as img1} from "./Assets/gallery/img1.jpg";
 export {default as img2} from "./Assets/gallery/img2.jpg";
@@ -27,18 +36,28 @@ export {default as slide_min2} from "./Assets/main/slides_img2-mob.jpg";
 export {default as slide_min3} from "./Assets/main/slides_img3-mob.jpg";
 
 /*----Program----*/
-export {default as bg_pro} from "./Assets/main/bg_program.JPG";
+export {default as bg_pro} from "./Assets/facilities/sem_hall-1.jpg";
 
 /*----Facilities----*/
-export {default as fa_img1} from "./Assets/facilities/sem_hall-1.jpg";
-export {default as fa_img2} from "./Assets/facilities/sem_hall-2.jpg";
-export {default as fa_img3} from "./Assets/facilities/lib-1.jpg";
-export {default as fa_img4} from "./Assets/facilities/lib-1.jpg";
-export {default as fa_img5} from "./Assets/facilities/lib-2.jpg";
-export {default as fa_img6} from "./Assets/facilities/lib-3.jpg";
-export {default as fa_img7} from "./Assets/facilities/lib-4.jpg";
-export {default as fa_img8} from "./Assets/facilities/lib-5.jpg";
 
+
+let text = [
+    "The library of the department hosts a generous collection of textbooks for the courses offered. Also reference books for research work and advanced studies are available. The library has a total collection of 10115 books, 7 journals, 14 E-books, and 25 E-ShodhSindhu.",
+    "The Computer lab hosts a collection of twenty computers with internet accessibility. Students attend practical classes on Python programming, MathSage, LaTex and other relevant programming languages required for application in Mathematics.",
+    "The Seminar hall provides a platform for departmental seminars and other relevant talks and presentations. The hall has black board and projector facilities.",
+    "There are 3 classrooms equipped with the modern infrastructure for holding classes in both online and offline mode. One of the classroom has a smartboard facility.",
+    "There are three shared office rooms for PhD students. Apart from that there is also a discussion room for Masters students.",
+    "The department also has an administrative office consisting of six staff members for office related work."
+];
+
+export let fac = [
+    {img: [fa_img3, fa_img4, fa_img5, fa_img6, fa_img7, fa_img8], txt: text[0]},
+    {img: [fa_img1, fa_img2], txt: text[1]},
+    {img: [fa_img1, fa_img2], txt: text[2]},
+    {img: [fa_img1, fa_img2], txt: text[3]},
+    {img: [fa_img1, fa_img2], txt: text[4]},
+    {img: [fa_img1, fa_img2], txt: text[5]}
+];
 
 /*----Explore----*/
 export {default as ex_logo1} from "./Assets/icons/cusat_logo.png";
@@ -119,11 +138,4 @@ export let links = [
     "https://sites.google.com/site/osadms/"
 ];
 /*----Facilities----*/
-export let txt = [
-    "The library of the department hosts a generous collection of textbooks for the courses offered. Also reference books for research work and advanced studies are available. The library has a total collection of 10115 books, 7 journals, 14 E-books, and 25 E-ShodhSindhu.",
-    "The Computer lab hosts a collection of twenty computers with internet accessibility. Students attend practical classes on Python programming, MathSage, LaTex and other relevant programming languages required for application in Mathematics.",
-    "The Seminar hall provides a platform for departmental seminars and other relevant talks and presentations. The hall has black board and projector facilities.",
-    "There are 3 classrooms equipped with the modern infrastructure for holding classes in both online and offline mode. One of the classroom has a smartboard facility.",
-    "There are three shared office rooms for PhD students. Apart from that there is also a discussion room for Masters students.",
-    "The department also has an administrative office consisting of six staff members for office related work."
-];
+

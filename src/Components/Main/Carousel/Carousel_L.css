@@ -2,30 +2,32 @@
 
 .writing 
 {
-  font-family: "PT Sans", sans-serif;
-  position: absolute;
-  top: 70%;
-  bottom: 0%;
-  left: 0%;
-  width: 100%;
-  color: rgb(233, 233, 233);
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.7) 50%,rgba(0, 0, 0, 1) 100%);
+    font-family: "PT Sans", sans-serif;
+    position: absolute;
+    top: 70%;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    color: rgb(233, 233, 233);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.7) 50%,rgba(0, 0, 0, 1) 100%);
 }
 .writing:hover 
 {
-  color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
+
 .imgsize 
 {
-  width: 100%;
-  height: calc(100vh - 11.72rem);
-  /* min-height: 33rem; */
-  /* max-height: 45rem; */
+    width: 100%;
+    height: calc(100vh - 11.72rem);
+    min-height: 28rem;
+    max-height: 45rem; 
 }
-.cente {
-  display: flex;
-  align-items: center;
+.cente 
+{
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 640px)
@@ -37,8 +39,8 @@
     .imgsize 
     {
         height: calc(100vh - 8.72rem);
-        max-height: 45rem; 
-        min-height: 40rem; 
+        max-height: 42rem; 
+        min-height: 28rem; 
     }
   
 }
@@ -52,8 +54,8 @@
 
     .imgsize 
     {
-        height: calc(100vh - 7.62rem);
-        min-height: 30rem;
-        max-height: 40.4rem;
+        height: calc(100vh - 10.92rem); /* 7.62rem */
+        min-height: 27rem; /* 30rem*/
+        max-height: 40.4rem; /* 40.4 */
     }
 }

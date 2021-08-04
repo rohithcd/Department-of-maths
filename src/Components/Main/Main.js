@@ -8,30 +8,15 @@ import Program from "./Program/Program";
 
 import "./Main.css";
 
-
-
-
 const Main = () => {
-
-/*    const [width, setWidth] = useState(0);
-    useEffect(() => {
-        window.addEventListener("resize", () => {
-            setWidth(window.innerWidth);
-        });        
-    }, []);
-*/
-
     return(
         <>
-                {/* <div style={{position: "fixed", top: "20%", right: "0%", zIndex: "9999999",}}>
-                   <h2>{width}</h2> 
-                </div> */}
-                <Carousel />
-                <Explore />
-                <About/>
-                <Box />
-                <Program/>
-                <Banner />
+            <Carousel/>
+            <Explore/>
+            <About/>
+            <Box/>
+            <Program/>
+            <Banner/>
         </>
     );
 }
