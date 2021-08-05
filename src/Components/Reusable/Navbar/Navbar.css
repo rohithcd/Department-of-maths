@@ -200,6 +200,26 @@
         padding: 0;
     }
 
+    .side-items ul
+    {
+        margin-top: 1.7rem;
+    }
+
+    .side_li > a,
+    .side_li > a:visited
+    {
+        color: var(--white);
+        border-bottom: 1px solid white;
+        padding-bottom: 0;
+    }
+
+    .side_li:hover,
+    .side_li:active
+    {
+        transform: translateX(-2px);
+        color: currentColor !important;
+        background-color: transparent !important;
+    }
 }
 
 @media screen and (max-width: 780px)

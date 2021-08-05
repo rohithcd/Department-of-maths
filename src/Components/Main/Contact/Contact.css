@@ -53,7 +53,7 @@
 {
     .section_contact
     {
-        width: 18.8rem;
+        display: none;
     }
 
     .contact_head ~ div

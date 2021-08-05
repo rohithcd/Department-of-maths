@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import Button from "../Button/Button";
 import "./Error.css";
 
 const Error = () => {
@@ -12,7 +13,7 @@ const Error = () => {
                     <div className="error_txt">
                         <h2>PAGE NOT FOUND!!</h2>
                         <p>Sorry, the page you are looking for doesn't exist.</p>
-                        <Link to="/"><button className="btn btn-ctr">GO TO HOME</button></Link>
+                        <Link to="/"><Button type="box" class="btn-ctr" name="GO TO HOME"/></Link>
                     </div>
                 </div>
             </div>

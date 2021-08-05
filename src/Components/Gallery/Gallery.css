@@ -6,7 +6,8 @@
     grid-template-rows: repeat(auto-fill, 1fr);
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
-    margin: 4rem auto;
+    margin: 0 auto 4rem auto;
+    padding-top: 4rem;
 }
 
 .photo
@@ -24,4 +25,43 @@
 .btn-align
 {
     margin: -1rem auto 2rem auto;
+}
+
+@media screen and (max-width: 980px)
+{
+    .section_gallery
+    {
+        width: 40rem;
+        grid-template-columns: repeat(1, minmax(40%, 1fr));
+        grid-template-rows: repeat(auto-fill, 25rem);
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    .section_gallery
+    {
+        width: 30rem;
+        grid-template-rows: repeat(auto-fill, 20rem);
+    }
+}
+
+@media screen and (max-width: 560px)
+{
+    .section_gallery
+    {
+        width: 25rem;
+        grid-template-rows: repeat(auto-fill, 17.5rem);
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .section_gallery
+    {
+        width: 92%;
+        grid-template-rows: repeat(auto-fill, 15rem);
+        padding-top: 2rem;
+    }
+
 }

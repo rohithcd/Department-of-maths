@@ -15,20 +15,15 @@ const Gallery = () => {
         setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1500); 
     }, []);
 
     function show()
     {
         if(state.n === 4)
-        {
             setState({n: pics.length, value: "Show Less"});
-        }
         else
-        {
             setState({n: 4, value: "Show More"});
-        }
-       
     }
 
     for(let i=0; i<state.n; i++)
@@ -43,7 +38,7 @@ const Gallery = () => {
                 <div className="section_gallery">
                     { arr }
                 </div>
-                <Button type="box" class="btn-align" name={state.value} onClick={show}/>
+                <Button type="box" class="btn-align" name={state.value} click={show}/>
             </>
             )}
         </>

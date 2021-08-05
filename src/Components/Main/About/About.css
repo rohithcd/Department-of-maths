@@ -4,7 +4,7 @@
 
 .section_about
 {
-    height: 30rem;
+    height: 35rem;
 }
 
 .section_about h2
@@ -49,6 +49,7 @@
 {
     width: 74%;
     height: inherit;
+    font-size: 1.04rem;
     line-height: 1.7;
 }
 
@@ -57,26 +58,16 @@
     margin-bottom: 0.56rem;
 }
 
-@media screen and (max-width: 1260px)
+@media screen and (max-width: 1330px)
 {
-    .section_about
-    {
-        height: 31.4rem;
-    }
-
     .section_about h2
     {
         font-size: 1.5rem; 
     }
 
-    .about_main
-    {
-        font-size: 1.1rem; 
-    }
-
     .about_text
     {
-        line-height: 1.6;
+        line-height: 1.5;
     }
 }
 
@@ -84,17 +75,17 @@
 {
     .section_about
     {
-        height: 31.6rem;
+        height: 29rem;
     }
 
     .about_main
     {
-         font-size: 1.05rem; 
+        font-size: 1.03rem; 
     }
 
     .about_text
     {
-        line-height: 1.6;
+        width: 100%;
     }
 }
 
@@ -108,7 +99,7 @@
 
     .about_main
     {
-        font-size: 1.03rem; 
+        font-size: 1.02rem; 
     }
 
     .about_text
@@ -122,12 +113,13 @@
 {
     .section_about
     {
-        height: 33.6rem;
+        height: 100%;
     }
 
     .about_main
     {
         font-size: 1rem;
+        background-image: none;
     }
 
     .about_text
@@ -140,7 +132,6 @@
 {
     .about_main
     {
-        background-image: none;
         padding-left: 0;
         margin: 2rem auto 0.6rem auto;
     }

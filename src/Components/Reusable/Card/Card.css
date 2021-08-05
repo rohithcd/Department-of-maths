@@ -20,16 +20,16 @@
     font-family: "Roberto", sans-serif;
 }
 
-.div_card h4 span
+/* .div_card h4 span
 {
     background: linear-gradient(to right bottom, rgba(3, 29, 58, 0.93), rgba(8, 40, 129, 0.93));
     padding: 1rem 1.12rem;
-}
+} */
 
 .pic_container
 {
     width: inherit;
-    height: 10rem;
+    height: 100%; /* 10rem*/
     position: relative;
 }
 
@@ -37,7 +37,6 @@
 {
     width: 100%;
     height: 100%;
-   
 }
 
 .pic_container::before
@@ -59,7 +58,11 @@
     border: 1px var(--bg-main) solid;
     cursor: pointer;
     background-color: var(--white);
-    margin: 4rem auto 0 auto;
+    margin: 0 auto 0 auto;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .btn_card:hover
