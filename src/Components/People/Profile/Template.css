@@ -586,5 +586,10 @@ div[class^='child_sec-']
     {
         padding-right: 0;
     }
+
+    .prof_text_temp > h2
+    {
+        margin-bottom: 1.1rem;
+    }
 }
 

@@ -1,8 +1,6 @@
 import {useRef, useContext} from "react";
 import {UserContext} from "../../../Layout";
 import {Link} from "react-router-dom";
-import {aparna_quali_1, aparna_quali_2, aparna_achieve, aparna_membership, aparna_invited, aparna_articles, aparna_conference,
-aparna_teaching, aparna_research, aparna_fund} from "./Details/Details.js";
 import Ham from  "../../Reusable/Ham/Ham";
 import Sidebar from  "../../Reusable/Sidebar/Sidebar";
 import Button from "../../Reusable/Button/Button";
@@ -10,82 +8,53 @@ import "./Template.css";
 
 const scroll = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: 'smooth'});
     
+function object(prop) 
+    {
+        let arr = [], arr2 = [];
+        for(let i=0; i<prop.length; i++)
+        {
+            if(prop[i] !== 0)
+            {
+                arr.push(<li>{prop[i]}</li>);
+            }
+    
+            if(prop[i] === 0)
+            {
+                let j = i+1;
+                while(prop[j] !== -1)
+                {
+                    arr2.push(<li>{prop[j]}</li>);
+                    j++;
+                }
+                arr.push(<ul>{arr2}</ul>)
+                i=j+1;
+            }
+        }
+        return arr;
+    }
 
 const Template = (props) => {
     const details = props.obj; /*Array passed from Parant - Profile */
+    const texts = props.dat;
     
     const {menu} = useContext(UserContext);
-
-    
 
     const edu_quali = useRef(null), member = useRef(null), publications = useRef(null), projects = useRef(null);
     const phd = useRef(null), conference = useRef(null), talks = useRef(null), board = useRef(null);
 
-    let obj = {
-        aparna: [aparna_quali_1, aparna_quali_2, aparna_achieve, aparna_membership, aparna_invited, aparna_articles, aparna_conference, aparna_teaching, aparna_research, aparna_fund]
-    }
+    let arr1 = object(texts.edu), arr2 = object(texts.mem), arr3 = object(texts.talks),
+    arr4 = object(texts.conf), arr5 = object(texts.proj);
+            
 
-    let arr1 = [], arr2 = [], arr3 = [], arr4 = [], arr5 = [], arr6 = [], arr7 = [], arr8 = [], arr9 = [], arr10 = [], arr11 = [], arr12 = [];
-    let quali1 = obj.aparna[0], quali2 = obj.aparna[1], achieve = obj.aparna[2], mem = obj.aparna[3], invite = obj.aparna[4], articles = obj.aparna[5], confer = obj.aparna[6],
-                teach = obj.aparna[7], research = obj.aparna[8], fund = obj.aparna[9];
-    for(let i=0; i<quali1.length; i++)
-    {
-        arr1.push(<li>{quali1[i]}</li>);
-    }
 
-    for(let i=0; i<quali2.length; i++)
+    let refer = ["Publon", "Scopus", "Google Scholar"];
+    let arr14 = [];
+    for(let i=0; i<3; i++)
     {
-        arr2.push(<li>{quali2[i]}</li>);
-    }
-
-    for(let i=0; i<achieve.length; i++)
-    {
-        arr3.push(<li>{achieve[i]}</li>);
-    }
-
-    for(let i=0; i<mem.length; i++)
-    {
-        arr4.push(<li>{mem[i]}</li>);
-    }
-
-    for(let i=0; i<invite.length; i++)
-    {
-        arr5.push(<li>{invite[i]}</li>);
-    }
-
-    for(let i=0; i<24; i++)
-    {
-        arr6.push(<li>{articles[i]}</li>);
-    }
-
-    for(let i=24; i<28; i++)
-    {
-        arr7.push(<li>{articles[i]}</li>);
-    }
-
-    for(let i=28; i<29; i++)
-    {
-        arr8.push(<li>{articles[i]}</li>);
-    }
-
-    for(let i=0; i<confer.length; i++)
-    {
-        arr9.push(<li>{confer[i]}</li>);
-    }
-
-    for(let i=0; i<teach.length; i++)
-    {
-        arr10.push(<li>{teach[i]}</li>);
-    }
-
-    for(let i=0; i<research.length; i++)
-    {
-        arr11.push(<li>{research[i]}</li>);
-    }
-
-    for(let i=0; i<fund.length; i++)
-    {
-        arr12.push(<li>{fund[i]}</li>);
+        if(texts.links[i] == null)
+            continue;
+        else
+            arr14.push(<Links head={refer[i]} anchor={texts.links[i]}/>);
     }
 
     return(
@@ -139,24 +108,13 @@ const Template = (props) => {
                         <div className="child_sec-1">
                             <h4>RESEARCH PROFILES</h4>
                             <div className="prof_container">
-                                <span>
-                                    <h5>Publons</h5>
-                                    <a href="https://publons.com/dashboard/summary/" className="btn btn_box">View</a>
-                                </span>
-                                <span>
-                                    <h5>Scopus</h5>
-                                    <a href="https://www.scopus.com/authid/detail.uri?authorId=55310792000" className="btn btn_box">View</a>
-                                </span>
-                                <span>
-                                    <h5>Google Scholar</h5>
-                                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ApsNUl0AAAAJ&gmla=AJsN-F6tQ-kBuj3lOsmSOUv_C-xsJCMACZWtxGTn50xkesLAOlRzGhDDhihF3DT2UOTdPvV9tvtHsVmW1qFwT5OSFEXfFU6wZ5wEkOjuaHdP6TBWV4rUMXU" className="btn btn_box">View</a>
-                                </span>
+                                {arr14}
                             </div>
                         </div>
 
                         <div className="child_sec-2">
                             <h4>BRIEF BIO</h4>
-                            <p>Assistant Professor in Department of Mathematics, CUSAT from January, 2021</p>
+                            <p>{details.bio}</p>
                         </div>
 
                         <Sidebar class="">
@@ -171,58 +129,31 @@ const Template = (props) => {
                             <p>{details.aoi}</p>
                         </div>
                     </div>
-                    <div ref={edu_quali} className="prof_text_temp">
-                        <h2>EDUCATIONAL QUALIFICATIONS</h2>
-                        <div>
-                            <ol type={"1"}>
-                                {arr1}
-                                <ul>
-                                    {arr2}
-                                </ul>
-                            </ol>
-                        </div>
-                    </div>
-
-                    <Section  head={"AWARDS/RECOGNITIONS AND ACHIEVEMENTS"} arr={arr3}/>
-                    <Section refer={member} head={"MEMBERSHIPS IN PROFESSIONAL ORGANISATIONS"} arr={arr4}/>
-                    <Section refer={talks} head={"INVITED TALKS IN INTERNATIONAL CONFERENCES"} arr={arr5}/>
+                    <Section refer={edu_quali} head={"EDUCATIONAL QUALIFICATIONS"} arr={arr1}/>
+                    <Section refer={member} head={"MEMBERSHIPS IN PROFESSIONAL ORGANISATIONS"} arr={arr2}/>
+                    <Section  head={"AWARDS/RECOGNITIONS AND ACHIEVEMENTS"} />
+                    <Section refer={talks} head={"INVITED TALKS IN INTERNATIONAL CONFERENCES"} arr={arr3}/>
 
                     <div ref={publications} className="prof_text_temp">
                         <h2> ARTICLES PUBLISHED IN NATIONAL AND INTERNATIONAL JOURNALS </h2>
                         <h4 className="bullet-h4">International Journals – 24</h4>
                         <ol>
-                            {arr6}
+                            {}
                         </ol>
                         <h4 className="bullet-h4">Proceedings of International Conferences – 4</h4>
                         <ol>
-                            {arr7}
+                            {}
                         </ol>
                             <h4 className="bullet-h4">National Journals – 1</h4>
                         <ol>
-                            {arr8}
+                            {}
                         </ol>
                     </div>
                     
-                    <Section refer={conference} head={"CONFERENCES/ WORKSHOPS/ SYMPOSIA ORGANIZED"} arr={arr9}/>
-                    <Section  head={"PROFESSIONAL EXPERIENCE – TEACHING"} arr={arr10}/>
-                    <Section refer={projects} head={"RESEARCH PROJECTS"} arr={arr11}/>
-                    <Section  head={"EXTERNAL FUNDED STUDENT PROJECTS"} arr={arr12}/>
-
-                    <div className="prof_text_temp">
-                        <h2>OTHER ACADEMIC ACTIVITIES</h2>
-                        <ol>
-                            <li>Reviewer for</li>
-                            <ul>
-                                <li>Mathematical Reviews</li>
-                                <li>Zentralblatt Math</li>
-                                <li>Bulletin of Mathematical Sciences and Applications.</li>
-                            </ul>
-                            <li>Editorial Board Member for</li>
-                            <ul>
-                                <li>Contemporary Studies in Discrete Mathematics</li>
-                            </ul>
-                        </ol>
-                    </div>
+                    <Section refer={conference} head={"CONFERENCES/ WORKSHOPS/ SYMPOSIA ORGANIZED"} arr={arr4}/>
+                    <Section  head={"PROFESSIONAL EXPERIENCE – TEACHING"} />
+                    <Section refer={projects} head={"RESEARCH PROJECTS"} arr={arr5}/>
+                    <Section  head={"EXTERNAL FUNDED STUDENT PROJECTS"} />
                 </div>
             </div>
         </>
@@ -232,13 +163,37 @@ const Template = (props) => {
 export default Template;
 
 
-const Section = (props) => {
+const Section = ({arr, refer, head}) => {
+    return(
+        <div  ref={refer} className="prof_text_temp">
+            <h2>{head}</h2>
+            <div>
+                <ol>
+                    {arr}
+                </ol>
+            </div>
+        </div>
+    );
+}
+
+/*const Sec = (props) => {
     return(
         <div ref={props.refer} className="prof_text_temp">
             <h2>{props.head}</h2>
             <ol>
-                {props.arr}
+                {props.children}
             </ol>
         </div>
+    );
+} */
+
+const Links = (props) => {
+    return(
+        <>
+            <span>
+                <h5>{props.head}</h5>
+                <a href={props.anchor} className="btn btn_box">View</a>
+            </span>
+        </>
     );
 }
