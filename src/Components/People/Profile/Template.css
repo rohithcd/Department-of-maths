@@ -1,3 +1,60 @@
+/*Table*/
+.content-table
+{
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    min-width: 400px;
+}
+
+.content-table thead tr
+{
+    background-color: var(--bg-main);/*#009809*/
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td
+{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr
+{
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even)
+{
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type
+{
+    border-bottom: 2px solid var(--bg-main);
+}
+
+@media screen and (max-width: 480px)
+{
+    .content-table
+    {
+        margin: 8px 0;
+        font-size: 1rem;
+        min-width: 320px;
+    }
+
+    .content-table th,
+    .content-table td
+    {
+        padding: 10px 13px;
+    }
+
+}
+
+
+
 /* dropdown menu */
 .drop-menu
 {
@@ -10,7 +67,7 @@
     transform: translateX(-25%);
     background-color: white;
     text-align: center;
-    border-radius: 12px; 
+    border-radius: 6px; /*12px*/ 
     box-shadow: 2px 3px 5px rgb(0, 0, 0, 0.5);
     overflow: hidden;
 }
@@ -25,7 +82,7 @@
 .drop-menu ul li:hover
 {
     color: white;
-    background-color: rgb(3, 18, 58);
+    background-color: #878c96;/* rgb(100, 18, 58); */
 }
 
 .drop-menu:hover
@@ -67,7 +124,7 @@
 /* Body */
 ol
 {
-    padding-left: 1.5rem;
+    padding-left: 0.2rem;
     margin-bottom: 2rem;
 }
 
@@ -178,8 +235,8 @@ ol > li
     margin: 2rem auto;
     display: grid;
     grid-template-columns: 30rem 1fr;
-    grid-template-rows: repeat(2, 6rem);
-    grid-column-gap: 3rem;
+    grid-template-rows: repeat(2, 6.5rem);
+    grid-column-gap: 2rem;
     font-family: "Roberto", sans-serif;
 }
 
@@ -207,15 +264,15 @@ div[class^='child_sec-']
 
 .prof_text_temp 
 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .prof_text_temp > h2
 {
     display: inline-block;
     position: relative;
-    padding: 1rem 0;
-    margin-bottom: 2rem;
+    padding: 0.5rem 0;
+    margin-bottom: 1.5rem;
 }
 
 .prof_text_temp > h2::before
@@ -244,6 +301,16 @@ div[class^='child_sec-']
     bottom: 4%;
     right: 2%;
 }
+
+/* .btn-mail
+{
+    position: absolute;
+    bottom: 4%;
+    left: 1%;
+    border-radius: 100% !important;
+    padding: 2px 10px;; 6px 11px !important; 
+    font-size: 1.4rem;
+}*/
 
 @media screen and (max-width: 1260px)
 {
@@ -299,7 +366,7 @@ div[class^='child_sec-']
 
     .profile_head h2
     {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     
     .head_text h5
@@ -316,9 +383,6 @@ div[class^='child_sec-']
     {
         width: 36%;
         height: 28rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     .profile_photo
@@ -332,6 +396,31 @@ div[class^='child_sec-']
 
 @media screen and (max-width: 980px)
 {
+    .profile_head
+    {
+        height: 42rem;
+        padding: 0 1.8rem;
+    }
+
+    .profile_nav
+    {
+        display: none;
+    }
+
+    .head_div
+    {
+        padding: 3.57rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo_container
+    {
+        width: 100%;
+        height: 100%;
+        padding: 5rem 0 2.3rem 0;
+        justify-content: center;
+    }
 
     .child_sec-1
     {
@@ -344,21 +433,6 @@ div[class^='child_sec-']
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-row-gap: 1rem;
-    }
-
-    .head_div
-    {
-        padding: 3.57rem;
-    }
-
-    .profile_nav
-    {
-        display: none;
-    }
-
-    .profile_head
-    {
-        padding: 0 1.8rem;
     }
 
     .head_text 
@@ -381,17 +455,11 @@ div[class^='child_sec-']
         font-size: 0.98rem;
     }
 
-    .photo_container
-    {
-        width: 36%;
-        height: 28rem;
-    }
-    
-    .profile_photo
+/*    .profile_photo
     {
         width: 205px;
         height: 230px;
-    }
+    }  */
 
     .ham_box > div
     {
@@ -401,72 +469,30 @@ div[class^='child_sec-']
         width: 3.52rem;
         height: 3.1rem;
     }
-}
-
-@media screen and (max-width: 860px)
-{
-    .child_sec-1
-    {
-        padding: 1rem 3rem;
-    }
-
-    .profile_head
-    {
-        padding: 0 1rem;
-        padding-left: 0.5rem;
-    }
-
-    .profile_head h2
-    {
-        font-size: 2.5rem;
-    }
     
-    .head_text h5
+    .btn-prof
     {
-        font-size: 1.4rem;
-    }
-    
-    .head_text p
-    {
-        font-size: 0.98rem;
+        bottom: 4%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    .photo_container
+    .btn-prof:active
     {
-        width: 36%;
-        height: 28rem;
+        transform: scale(0.96) translateX(-50%);
     }
-    
-    .profile_photo
+
+    .side_drop 
     {
-        width: 205px;
-        height: 230px;
+        display: none;
     }
 }
 
-@media screen and (max-width: 770px)
+@media screen and (max-width: 690px)
 {
-    .child_sec-1
-    {
-        padding: 1rem 1rem;
-    }
-
     .head_div
     {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .photo_container
-    {
-        height: 100%;
-    }
-
-    .profile_head
-    {
-        padding: 0 1rem;
-        padding-left: 0;
-        height: 36rem;
+        padding: 3rem 0;
     }
 
     .profile_head h2
@@ -487,12 +513,22 @@ div[class^='child_sec-']
     .profile_head
     {
         padding: 0;
-    }
-
+    } 
 }
 
 @media screen and (max-width: 520px)
 {
+    .profile_head
+    {
+        height: 37rem;
+    }
+
+    ol
+    {
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
     .profile_text
     {
         line-height: 1.37;
@@ -541,7 +577,7 @@ div[class^='child_sec-']
 
     .head_div
     {
-        padding: 3.57rem 0 0 0;
+        padding: 0;
     }
 
     .profile_head h2
@@ -551,8 +587,7 @@ div[class^='child_sec-']
 
     .head_text 
     {
-        padding-top: 2.5rem;
-
+        padding-top: 0;
     }
     
     .head_text h5
@@ -565,31 +600,38 @@ div[class^='child_sec-']
         font-size: 0.92rem;
     }
 
-    .btn-prof
-    {
-        bottom: 4%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .btn-prof:active
-    {
-        transform: scale(0.96) translateX(-50%);
-    }
-
     .profile_text ol ul
     {
         padding-left: 1rem;
-    }
-
-    .photo_container
-    {
-        padding-right: 0;
     }
 
     .prof_text_temp > h2
     {
         margin-bottom: 1.1rem;
     }
+}
+
+@media screen and (max-width: 360px)
+{
+    .profile_head
+    {
+        height: 36rem;
+    }
+
+    .profile_head h2
+    {
+        font-size: 1.7rem;
+    }
+
+    .head_text h5
+    {
+        font-size: 1.15rem;
+    }
+    
+    .head_text p
+    {
+        font-size: 0.90rem;
+    }
+
 }
 

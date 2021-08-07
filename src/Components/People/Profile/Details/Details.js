@@ -84,8 +84,8 @@ let aparna_quali = [
     "Enhancing Soft Skills and Personality (Elite Gold Medal in 2019)",
     "Fuzzy Logic and Neural Networks (2019)",
     "Groups, Motion, Symmetry and Puzzles (2019)",
-    -1,
-    "Calculus of One Real Variable (Course topper in 2019)"
+    "Calculus of One Real Variable (Course topper in 2019)",
+    -1
 ];
 
 let ambily_quali = [
@@ -119,17 +119,16 @@ let kiran_quali = [
     "B.Sc. in Mathematics (April 2006), First Class with Distinction"
 ];
 
+/* Programmes Organized */
 
-/* */
+let noufal_conference = [
+    "Research Workshop on Analysis",
+    "Research Workshop on Analysis II",
+    "Residential Training Camp for the Regional Mathematical Olympiad Awardees in Kerala Region (2017, 2018, 2019).",
+    "National Seminar on Analysis and Geometry (2014)."
+];
 
-/* let aparna_achieve = [
-    "NPTEL Stars – NPTEL Enthusiasts Award from NPTEL in 2020.",
-    "Best Alumni Award from St. Joseph’s College, Irinjalakuda in 2019.",
-    "IMS prize (Group 1 – Discrete Mathematics) instituted by Indian Mathematical Society in 2013.",
-    "Kerala State Young Scientist Award instituted by Kerala State Council for Science, Technology and Environment in 2012.",
-    "First rank for M.Sc. Mathematics from Cochin University of Science and Technology in 2002."
-]; */
-
+/* Memberships */
 let aparna_membership = [
     "American Mathematical Society (AMS) - Member",
     "Indian Mathematical Society (IMS) – Life Member",
@@ -138,30 +137,17 @@ let aparna_membership = [
     "Kerala Mathamatical Association (KMA) – Life member."
 ];
 
-
-let aparna_invited = [
-    "“On Vizing’s Conjecture”, International seminar on new trends in Applications of Mathematics sponsored by CSO & MOSPL at Bharatmata College, Thrikkakara, Kerala, India (31st January 2011).",
-    "“Some Domination Concepts in Cographs” , International Conference on Discrete Mathematics and its Applications organized by Department of Mathematics, Amrita Vishwa Vidyapeetham, Coimbatore, India (10th December 2011).",
-    "“Triangles in graphs” in the “ Indo – Slovenia Conference on Graph Theory and Applications (Indo- Slov 2013)” organized by the department of Futures Studies in association with Graph Theory Research group, University of Maribor and institute of Mathematics, Physics and Mechanics, Ljubljana, Slovenia (February 22 – 24, 2013).",
-    "“Domination in Graph Products- Vizing’s Conjecture” in the workshop on Graph Theory and Interconnection Networks Department of Applied Mathematics, Tunghai university, Taichung, Taiwan (November 16 – 17, 2013).",
-    "“On Tuza’s Conjecture related to triangles in graphs” in the Third India – Taiwan Conference on Discrete Mathematics organized by Department of Applied mathematics, National Chiao Tung University (November 19 – 22 , 2013).",
-    "“Recent developments on Vizing’s Conjecture” in the International Conference on Graph Theory and its Applications held in Amritha School of Engineering (December 16-19, 2015).",
-    "“On Leech Trees” in Fifth India-Taiwan Conference on Discrete Mathematics 2017 organized by Department of Mathematics, Tamkang University, Tamsui, Taiwan (July 18 – 21, 2017).",
-    "“On Leech Trees and Some Related Concepts” in International Conference on Discrete Mathematics 2018 organized by Periyar University, Salem (January 4 – 7, 2018).",
-    "“On Double Roman Domination Number” in International Conference on Discrete Mathematics and Network Systems organized by BITS, Pilani, Goa (July 7 – 10, 2018).",
-    "“On Leech Labelling” in International Conference on Mathematical Computer Engineering organized by VIT, Chennai (November 23 – 24, 2018).",
-    "“Double Roman Domination Number” in International Conference on Graph Theory and its Applications organized by Amrita University, Ettimadai (January 4 – 6, 2019).",
-    "“Double Roman Domination Number” in 9th Slovenian International Conference on Graph Theory – Bled’19 organized by Institute of Mathematics, Physics and Mechanics, Slovenia (August 23 – 29, 2019)"
-];
-
+/* Invited Talks */
 let ambily_invited = [
     "International Workshops/ Conferences",
-    null,
+    0,
     "Invited Talk on Roy’s elementary orthogonal transformations at Asia-Australia Algebra Conference Western Sydney University, Australia, 21-25 January 2019.",
     "Talk “On von Neumann regularity of simple flat Leavitt path algebras” in the Annual Conference of Australian Mathematical Society, AustMS 2018, at University of Adelaide, Australia, 4-7 December, 2018.",
     "Poster Presentation on “Simple flat Leavitt path algebras are von Neumann regular” at CIMPA Research School on “Topics in Ring Theory”, Cape Town, South Africa, 16-28 July 2018.",
     "Invited Talk on Normality of the DSER elementary orthogonal group, in the International Conference in K-Theory, held at Western Sydney University, Australia, 01-05 August, 2016.",
+    -1,
     "National Workshops/ Conferences/Training Programs",
+    0,
     "Resource Person, Summer Training Program in Mathematics STPM-2021, at S.B.College Changanassery, April 5-17, 2021.",
     "Invited Talk, IWM Annual Conference 2021, held during March 22-23, 2021 in cooperation with IIT Dharwad.",
     "Invited Talk on Visualization of Roys Elementary Orthogonal Transformations in the Commutative Algebra and Algebraic Geometry conference (CAAG 2019), at IISER Bhopal, 2-6 July, 2019.",
@@ -170,10 +156,63 @@ let ambily_invited = [
     "Invited Lecture’s in Young Talent Nurture program, at IIST, Trivandrum 24th May- 6th June, 2016.",
     "Invited Talk on Extendability of Quadratic Modules in CAAG 2015, IIT Guwahati, 05-09 February, 2015.",
     "Colloquium talk on Normality and K1-stability of Roy’s elementary orthogonal group at School of Mathematics TIFR Mumbai, March 12, 2015.",
-    "Contributed Talk at Young Women and Mathematics-Symposium 2014, IISER Pune, 25-27 July 2014."
+    "Contributed Talk at Young Women and Mathematics-Symposium 2014, IISER Pune, 25-27 July 2014.",
+    -1
 ];
 
-/* let aparna_articles = [
+let aparna_invited = [
+    "“Double Roman Domination Number” in 9th Slovenian International Conference on Graph Theory – Bled’19 organized by Institute of Mathematics, Physics and Mechanics, Slovenia (August 23 – 29, 2019)",
+    "“Double Roman Domination Number” in International Conference on Graph Theory and its Applications organized by Amrita University, Ettimadai (January 4 – 6, 2019).",
+    "“On Leech Labelling” in International Conference on Mathematical Computer Engineering organized by VIT, Chennai (November 23 – 24, 2018).",
+    "“On Double Roman Domination Number” in International Conference on Discrete Mathematics and Network Systems organized by BITS, Pilani, Goa (July 7 – 10, 2018).",
+    "“On Leech Trees and Some Related Concepts” in International Conference on Discrete Mathematics 2018 organized by Periyar University, Salem (January 4 – 7, 2018).",
+    "“On Leech Trees” in Fifth India-Taiwan Conference on Discrete Mathematics 2017 organized by Department of Mathematics, Tamkang University, Tamsui, Taiwan (July 18 – 21, 2017).",
+    "“Recent developments on Vizing’s Conjecture” in the International Conference on Graph Theory and its Applications held in Amritha School of Engineering (December 16-19, 2015).",
+    "“On Tuza’s Conjecture related to triangles in graphs” in the Third India – Taiwan Conference on Discrete Mathematics organized by Department of Applied mathematics, National Chiao Tung University (November 19 – 22 , 2013).",
+    "“Domination in Graph Products- Vizing’s Conjecture” in the workshop on Graph Theory and Interconnection Networks Department of Applied Mathematics, Tunghai university, Taichung, Taiwan (November 16 – 17, 2013).",
+    "“Triangles in graphs” in the “ Indo – Slovenia Conference on Graph Theory and Applications (Indo- Slov 2013)” organized by the department of Futures Studies in association with Graph Theory Research group, University of Maribor and institute of Mathematics, Physics and Mechanics, Ljubljana, Slovenia (February 22 – 24, 2013).",
+    "“Some Domination Concepts in Cographs” , International Conference on Discrete Mathematics and its Applications organized by Department of Mathematics, Amrita Vishwa Vidyapeetham, Coimbatore, India (10th December 2011).",
+    "“On Vizing’s Conjecture”, International seminar on new trends in Applications of Mathematics sponsored by CSO & MOSPL at Bharatmata College, Thrikkakara, Kerala, India (31st January 2011)."
+];
+
+let noufal_invited = [
+    "Gave a Lecture on The Introduction to Wavelet Analysis for the Students of Majlis Arts and Science College Puramannur.",
+    "Gave a Lecture on Hilbert Huang Transform for the Research group in the Department of Bioinformatics, University of Kerala, Thiruvananthapuram.",
+    "Gave a Lecture on The Introduction to Real Analysis for the Students of Govt. Arts and Science College Tirur.",
+    "Gave a Lecture on Introduction to Geogebra 5.0 in the Faculty Enrichment Programme on Mathematical Softwares Organized by the Department of Mathematics, Statistics and Computer Applications at St.Theresas College (Autonomous) Ernakulam, 20.10.2015.",
+    "Gave a Lecture on The Finite Dimensional Spectral Theorem in the Two day Workshop on Functional analysis Organized by the Department of Mathematics, P.M.Govt.College Chalakkudy, 11.12.2015.",
+    "Gave a Lecture on Korovkin Theorem in The National Seminar on Recent Trends in Analysis, Topology and its Applications organized by the Department of Mathematics, Sanatana Dharma College, Alappuzha, during December 02-04, 2015.",
+    "Gave a Lecture on LaTeX in the One day Seminar organized by the Department of Mathematics, St. Mary’s College, Thrissur on 19-03-2016."
+
+];
+
+let shankar_invited = [
+    "The non-commutative analogue of Korovkin’s sets and peak points in ”Symposium on Geometry of Banach Spaces” held at Indian Institute of Technology, Hyderabad, India (December 01-02, 2019)."
+
+];
+
+/* Publications */
+let ambily_articles = [
+"Classical K-Theory",
+0,
+"A.A. Ambily and Ravi A. Rao, Normality of DSER elementary orthogonal group, J. Pure Appl. Algebra (2020), DOI: https://doi.org/10.1016/j.jpaa.2019.106283, arXiv:1703.04083 [math.AC].",
+"A.A. Ambily, Yoga of commutators in DSER elementary orthogonal group, J. Homotopy Relat. Struct. 14 (2019), no.2, 595 − 610.",
+"A.A. Ambily, Normality and K1-stability of Roy’s elementary orthogonal group, J. Algebra, 424 (2015), 522 − 539.",
+"A.A. Ambily and Ravi A. Rao, Extendability of quadratic modules over a polynomial extension of an equicharacteristic regular local ring, J. Pure Appl. Algebra, 218 (2014), no.10, 1820 − 1837.",
+-1,
+"Non-commutative algebras",
+0,
+"A.A. Ambily, Roozbeh Hazrat and Huanhuan Li , Simple flat Leavitt path algebras are von Neumann regular, Comm. Algebra 47 (2019), no.7, 2604 − 2616.",
+-1,
+"Number Theory",
+0,
+"S.D. Adhikari, A.A. Ambily and B. Sury, Zero-sum problems with subgroup weights, Proc. Indian Acad. Sci.(Math. Sci.) 120(3) (2010), 259 − 266",
+-1
+];
+
+let aparna_articles = [
+    "International Journals",
+    0,
     "Aparna Lakshmanan S., S. B. Rao, A. Vijayakumar, Gallai and anti-Gallai graphs of a graph, Mathematica Bohemica, 132(1)(2007), 43 – 54.",
     "Aparna Lakshmanan S., A. Vijayakumar, Clique irreducibility of some iterative classes of graphs, Discuss. Math. Graph Theory, 28 (2008), 307 – 321.",
     "Aparna Lakshmanan S., A. Vijayakumar, The &lt;t&gt;-property of some classes of graphs, Discrete Math., 309 (2009), 259 – 263.",
@@ -198,13 +237,53 @@ let ambily_invited = [
     "Jeepamol J Palathingal, Gopalapillai Indulal, Aparna Lakshmanan, Spectrum of antiGallai Graph of Some Graphs, Indian Journal of Pure and Applied Mathematics(accepted)",
     "Jismy Varghese, Anu V., Aparna Lakshmanan S., Italian Domination and Perfect Italian Domination on Sierpinski Graphs, Journal of Discrete Mathematical Sciences & Cryptography (accepted).",
     "Seena Varghese, Aparna Lakshmanan S., S. Arumugam, Leech Index of a Trees, Journal of Discrete Mathematical Sciences & Cryptography (accepted).",
+    -1,
+    "Proceedings of International Conferences",
+    0,
     "Aparna Lakshmanan S., A. Vijayakumar, Some properties of the clique graph of a cograph, RMS Lecture Note Series 7 (2008), (Proceedings of the International Conference on Discrete Mathematics, Bangalore, India, 2006), 227 – 232.",
     "Aparna Lakshmanan S., A. Vijayakumar, A note on some domination parameters in graph products, J. Combin. Math. Combin. Comput., 69 (2009), 31 – 38.",
     "Anu V., Aparna Lakshmanan S., Homometric number of a graph and some related concepts, Lecture Notes in Computer Science, 10398 (2017), 30 – 37.",
     "V. G. Deepa, Aparna Lakshmanan S., V. N. Sreeja, The Role of Social Factors in Education: A Case Study in Social Network Perspective, Lecture Notes in Networks and Systems, 75 (2019), 61 – 68.",
-    "Aparna Lakshmanan S., Characterization of some special classes of Gallai and anti Gallai graphs, Discourse, 1 (2013), 85 – 89."
-]; */
+    -1,
+    "National Journals",
+    0,
+    "Aparna Lakshmanan S., Characterization of some special classes of Gallai and anti Gallai graphs, Discourse, 1 (2013), 85 – 89.",
+    -1
+]; 
 
+let shankar_articles = [
+    "C.S. Arunkumar, P. Shankar, and A.K. Vijayarajan, Boundary representations and rectangular hyperrigidity, Banach J. Math. Anal. 15 (2021), no. 2, 38.",
+    "P. Shankar and A. K. Vijayarajan, Hilbert modules characterization for weak hyperrigid operator systems, J. Anal. 28 (2020), 905-912.",
+    "P. Shankar, Hyperrigid generators in C∗-algebras, J. Anal. 28 (2020), 791-797.",
+    "M. N. N. Namboodiri, S. Pramod, P. Shankar and A. K. Vijayarajan, Quasi hyperrigidity and weak peak points for non-commutative operator systems , Proc. Indian Acad. Sci. Math. Sci. 128 (2018), no. 5, 128:66.",
+    "P. Shankar and A. K. Vijayarajan, Tensor products of hyperrigid operator systems, Ann. Funct. Anal. 9 (2018), no.3, 369-375.",
+    "S. Pramod, P. Shankar and A. K. Vijayarajan, Separating and quasi hyperrigid operator systems in C*-algebras, Tbilisi Math. J. 10 (2017), no. 4, 55-61.",
+    "P. Shankar and A. K. Vijayarajan, Hyperrigid operator systems and Hilbert modules, Ann. Funct. Anal. 8 (2017), no. 1, 133-141"
+];
+
+/*PhD Guidance*/
+let ambily_phd = {
+    name: ["Ms. Aparna Pradeep V.K"],
+    thesis: ["August 2017 onwards"]
+};
+
+let aparna_phd = {
+    name: ["Anu V", "Jeepamol J"],
+    thesis: ["A study on Two Graph Parameters – Double Roman Domination Number and Homometric Number", "Studies on Graph Operators"]
+};
+
+/*Programmes Organized */
+let ambily_conference = [
+    "International Workshops/Conferences",
+    0,
+    "Organized International Workshop on Leavitt Path Algebras and K-Theory, July 1-3, 2017, at Department of Mathematics, Cochin University of Science and Technology, funded by NBHM (National Board for Higher Mathematics) and KSCSTE (Kerala State Council for Science, Technology, and Environment) - NBHM Grant of Rs. 2,10,000 and KSCSTE Grant of Rs. 1,50,000.",
+    -1,
+    "National Workshops/Conferences",
+    0,
+    "Organized Workshop on Differential Equations at Department of Mathematics, Cochin University of Science and Technology, March 9, 2019.",
+    "Organized Indian Women and Mathematics (IWM) 2018, January 2-3, 2018 - Regional Workshop on Research and Opportunities in Kerala, at Department of Mathematics, Cochin University of Science and Technology, funded by NBHM (National Board for Higher Mathematics) – Grant of Rs. 3, 96, 000.",
+    -1
+];
 
 let aparna_conference = [
     "Convenor of the UGC sponsored National Seminar on Graph Theory and its Applications, August 7 – 9, 2014.",
@@ -213,22 +292,23 @@ let aparna_conference = [
     "Convenor of the Academic Support Programme for Under Graduate Students – One Day International Workshop on November 27, 2018."
 ];
 
-/* let aparna_teaching = [
-    "St. Xavier’s College for Women, Aluva, Assistant Professor (07/11/2005 to 13/01/2021)",
-    "Cochin university of Science and Technology (14/01/2021 onwards)"
-]; */
+/* Projects */
+let ambily_research = [
+    "Title: Quadratic analogues of results on projective modules and the structure of orthogonal groups, Funding: RUSA, Govt.of India, Role: Principal Investigator, Year: 2019-2020, ongoing (INR 21,11,800).",
+    "Title: Leavitt Path Algebras, Classifications via K-Theory, Funding: SERB Overseas Postdoctoral Fellowship, Department of Science and Technology, Govt.of India, Role: Overseas Postdoctoral Fellow, Year: 2018-2019, completed (INR 26,67,350).",
+    "Title: Leavitt Path Algebras, Classifications via K-Theory, Funding: Seed Money for New Research Initiatives from Cochin University of Science and Technology, Role: Principal Investigator, Year: 2017-2019, ongoing (INR 2,50,000).",
+    "Title: Classical Algebraic K-theory and algebraic groups, Funding: D.S.T. Indo-Russian project no. INT/RUS/RFBR/P-138, Role: Member, Year: 2013-2015, completed (INR 22,65,000)."
+];
 
 let aparna_research = [
     "UGC minor project (completed in 2016) – “Study of various graph parameters under graph products” (Rs. 1,50,000/-).",
     "KSCSTE Major project (completed in 2019) – “Problems related to Applications of graph theory to Networks” (Rs.11,80,000/-)."
 ];
 
-/* let aparna_fund = [
-    "Soil Suitability Analysis Using Fuzzy Sets (Rs. 8000/-).",
-    "Reciprocity of inmates of Madhavapuram Colony – A case study (Rs. 6000/-)."
-]; */
-
-
+/*Editorial Board Member */
+let aparna_board = [
+    "For Contemporary Studies in Discrete Mathematics.",
+];
 
 let link = {
     ambat: [null, null, null],
@@ -245,17 +325,17 @@ let link = {
 }
 
 export let data = [
-    {links: link.ambat, edu: [], talks: [], mem:[], conf: [], proj:[]},
-    {links: link.romeo, edu: [], talks: [], mem:[], conf: [], proj:[]},
-    {links: link.sasi, edu: [], talks: [], mem:[], conf: [], proj:[]},
-    {links: link.shery, edu: [], talks: [], mem:[], conf: [], proj:[]},
-    {links: link.ambily, edu: ambily_quali, talks: ambily_invited, mem:[], conf: [], proj:[]},
-    {links: link.aparna, edu: aparna_quali, talks: aparna_invited, mem: aparna_membership, conf: aparna_conference, proj: aparna_research},
-    {links: link.noufal, edu: noufal_quali, talks: [], mem:[], conf: [], proj:[]},
-    {links: link.shankar, edu: shankar_quali, talks: [], mem:[], conf: [], proj:[]},
-    {links: link.tanu, edu: [], talks: [], mem:[], conf: [], proj:[]},
-    {links: link.tatha, edu: [], talks: [], mem:[], conf: [], proj:[]},
-    {links: link.kiran, edu: kiran_quali, talks: [], mem:[], conf: [], proj:[]}
+    {links: link.ambat, edu: [], mem:[], talks: [],  pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.romeo, edu: [], mem:[], talks: [],  pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.sasi, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.shery, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.ambily, edu: ambily_quali, mem: [], pub : ambily_articles, phd: ambily_phd, proj:ambily_research, conf: ambily_conference, talks: ambily_invited,  board: []},
+    {links: link.aparna, edu: aparna_quali, mem: aparna_membership, pub: aparna_articles, phd: aparna_phd, proj: aparna_research, conf: aparna_conference, talks: aparna_invited,  board: aparna_board},
+    {links: link.noufal, edu: noufal_quali, mem:[], pub: [], talks: noufal_invited,  conf: noufal_conference, phd: aparna_phd, proj:[],  board: []},
+    {links: link.shankar, edu: shankar_quali, mem: [], talks: shankar_invited, pub : shankar_articles,  conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.tanu, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.tatha, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.kiran, edu: kiran_quali, mem:[], talks: [], pub : [],  conf: [], phd: aparna_phd, proj:[], board: []}
 ];
 
 

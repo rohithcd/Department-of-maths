@@ -1,4 +1,4 @@
-import {useRef, useContext} from "react";
+import {useRef, useContext, useState} from "react";
 import {UserContext} from "../../../Layout";
 import {Link} from "react-router-dom";
 import Ham from  "../../Reusable/Ham/Ham";
@@ -9,29 +9,27 @@ import "./Template.css";
 const scroll = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: 'smooth'});
     
 function object(prop) 
+{
+    let arr = [];
+    for(let i=0; i<prop.length; i++)
     {
-        let arr = [], arr2 = [];
-        for(let i=0; i<prop.length; i++)
+        if(prop[i] !== 0)
         {
-            if(prop[i] !== 0)
-            {
-                arr.push(<li>{prop[i]}</li>);
-            }
-    
-            if(prop[i] === 0)
-            {
-                let j = i+1;
-                while(prop[j] !== -1)
-                {
-                    arr2.push(<li>{prop[j]}</li>);
-                    j++;
-                }
-                arr.push(<ul>{arr2}</ul>)
-                i=j+1;
-            }
+            arr.push(<li>{prop[i]}</li>);
         }
-        return arr;
+        else if(prop[i] === 0)
+        {
+            let j = i+1;
+            while(prop[j] !== -1)
+            {
+                arr.push(<ul><li>{prop[j]}</li></ul>);
+                j++;
+            }
+            i=j;
+        }
     }
+    return arr;
+}
 
 const Template = (props) => {
     const details = props.obj; /*Array passed from Parant - Profile */
@@ -42,10 +40,7 @@ const Template = (props) => {
     const edu_quali = useRef(null), member = useRef(null), publications = useRef(null), projects = useRef(null);
     const phd = useRef(null), conference = useRef(null), talks = useRef(null), board = useRef(null);
 
-    let arr1 = object(texts.edu), arr2 = object(texts.mem), arr3 = object(texts.talks),
-    arr4 = object(texts.conf), arr5 = object(texts.proj);
-            
-
+    let arr1 = object(texts.edu), arr2 = object(texts.mem), arr3 = object(texts.talks), arr4 = object(texts.conf), arr5 = object(texts.proj), arr6=object(texts.board), arr7 = object(texts.pub);
 
     let refer = ["Publon", "Scopus", "Google Scholar"];
     let arr14 = [];
@@ -56,6 +51,8 @@ const Template = (props) => {
         else
             arr14.push(<Links head={refer[i]} anchor={texts.links[i]}/>);
     }
+
+    const [drop, setDrop] = useState(true);
 
     return(
         <>
@@ -72,7 +69,7 @@ const Template = (props) => {
                                     <li id="pointer" onClick={() => scroll(publications)}>Publications</li>
                                     <li id="pointer" onClick={() => scroll(projects)}>Projects</li>
                                     <li id="pointer" onClick={() => scroll(phd)}>PhD guidance</li>
-                                    <li id="pointer" onClick={() => scroll(conference)}>Conferences Organised</li>
+                                    <li id="pointer" onClick={() => scroll(conference)}>Programmes Organised</li>
                                     <li id="pointer" onClick={() => scroll(talks)}>Invited Talks</li>
                                     <li id="pointer" onClick={() => scroll(board)}>Editorial Board Member</li>
                                 </ul>
@@ -100,6 +97,7 @@ const Template = (props) => {
 
                         
                     </div>
+
                     <a href={details.doc} download><Button type="oval" class="btn-prof" name="Download CV"/></a>
                     
                 </div>
@@ -121,7 +119,17 @@ const Template = (props) => {
                             <Link to="/" onClick={menu}><li>Home</li></Link>
                             <li id="pointer" onClick={() => {scroll(edu_quali); menu();}}>Educational Qualifications</li>
                             <li id="pointer" onClick={() => {scroll(member); menu();}}>Membership</li>
-                            <li>Research</li>
+                            <li id="pointer"onClick={() => setDrop(!drop)}>Research</li>
+                            <div className={(drop) ? "side_drop" : ""}>
+                                <ul>
+                                    <li id="pointer" className="side_li" onClick={() => {scroll(publications); menu();}}><a>Publications</a></li>
+                                    <li id="pointer" className="side_li" onClick={() => {scroll(projects); menu();}}><a>Projects</a></li>
+                                    <li id="pointer" className="side_li" onClick={() => {scroll(phd); menu();}}><a>PhD Guidance</a></li>
+                                    <li id="pointer" className="side_li" onClick={() => {scroll(conference); menu();}}><a>Programmes Organised</a></li>
+                                    <li id="pointer" className="side_li" onClick={() => {scroll(talks); menu();}}><a>Invited Talks</a></li>
+                                    <li id="pointer" className="side_li" onClick={() => {scroll(board); menu();}}><a>Editorial Board Member</a></li>
+                                </ul>
+                            </div>
                         </Sidebar>
                    
                         <div className="child_sec-3">
@@ -129,31 +137,14 @@ const Template = (props) => {
                             <p>{details.aoi}</p>
                         </div>
                     </div>
-                    <Section refer={edu_quali} head={"EDUCATIONAL QUALIFICATIONS"} arr={arr1}/>
-                    <Section refer={member} head={"MEMBERSHIPS IN PROFESSIONAL ORGANISATIONS"} arr={arr2}/>
-                    <Section  head={"AWARDS/RECOGNITIONS AND ACHIEVEMENTS"} />
-                    <Section refer={talks} head={"INVITED TALKS IN INTERNATIONAL CONFERENCES"} arr={arr3}/>
-
-                    <div ref={publications} className="prof_text_temp">
-                        <h2> ARTICLES PUBLISHED IN NATIONAL AND INTERNATIONAL JOURNALS </h2>
-                        <h4 className="bullet-h4">International Journals – 24</h4>
-                        <ol>
-                            {}
-                        </ol>
-                        <h4 className="bullet-h4">Proceedings of International Conferences – 4</h4>
-                        <ol>
-                            {}
-                        </ol>
-                            <h4 className="bullet-h4">National Journals – 1</h4>
-                        <ol>
-                            {}
-                        </ol>
-                    </div>
-                    
-                    <Section refer={conference} head={"CONFERENCES/ WORKSHOPS/ SYMPOSIA ORGANIZED"} arr={arr4}/>
-                    <Section  head={"PROFESSIONAL EXPERIENCE – TEACHING"} />
-                    <Section refer={projects} head={"RESEARCH PROJECTS"} arr={arr5}/>
-                    <Section  head={"EXTERNAL FUNDED STUDENT PROJECTS"} />
+                    <Section refer={edu_quali} head={"Educational Qualifications"} arr={arr1}/>
+                    <Section refer={member} head={"Memberships"} arr={arr2}/>
+                    <Section refer={publications} head={"Publications"} arr={arr7}/>
+                    <Section refer={projects} head={"Projects"} arr={arr5}/>
+                    <Table refer={phd} head={"PhD Guidance"} obj={texts.phd} />
+                    <Section refer={conference} head={"Programmes Organized"} arr={arr4}/>
+                    <Section refer={talks} head={"Invited Talks"} arr={arr3}/>
+                    <Section refer={board} head={"Editorial Board Member"} arr={arr6}/>
                 </div>
             </div>
         </>
@@ -162,6 +153,37 @@ const Template = (props) => {
 
 export default Template;
 
+const Table = ({refer, head, obj}) => {
+    let arr = [];
+    for(let i=0; i<obj.name.length; i++)
+    {
+        arr.push(<tr> 
+            <td>{i+1}</td>
+            <td>{obj.name[i]}</td>
+            <td>{obj.thesis[i]}</td>
+        </tr>);
+    }
+    return(
+        <>
+        <div ref={refer} className="prof_text_temp">
+            <h2>{head}</h2>
+            <table className="content-table">
+                <thead>
+                    <tr>
+                        <th>Sl.no</th>
+                        <th>Name of Scholar</th>
+                        <th>Tiltle of Thesis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {arr}
+                </tbody>
+            </table>
+
+        </div>
+        </>
+    );
+}
 
 const Section = ({arr, refer, head}) => {
     return(
@@ -176,21 +198,11 @@ const Section = ({arr, refer, head}) => {
     );
 }
 
-/*const Sec = (props) => {
-    return(
-        <div ref={props.refer} className="prof_text_temp">
-            <h2>{props.head}</h2>
-            <ol>
-                {props.children}
-            </ol>
-        </div>
-    );
-} */
-
 const Links = (props) => {
     return(
         <>
             <span>
+
                 <h5>{props.head}</h5>
                 <a href={props.anchor} className="btn btn_box">View</a>
             </span>
