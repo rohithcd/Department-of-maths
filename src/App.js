@@ -6,6 +6,7 @@ import Gallery from "./Components/Gallery/Gallery";
 import Gallery_main from "./Components/Gallery/Gallery_main";
 import Facilities from "./Components/Facilities/Facilities";
 import Research from "./Components/Research/Research";
+import Academics from "./Components/Academics/Academics";
 import Activities from "./Components/Activities/Activities";
 import Profile from "./Components/People/Profile/Profile";
 import Outreach from "./Components/Outreach/Outreach";
@@ -24,6 +25,7 @@ const App = () => {
                     <Route exact path="/" component={Main} />
                     <Route path={'/people/:Id'}><Profile/></Route>
                     <Route path="/people"><People/></Route>
+                    <Route path="/academics" component={Academics}/>
                     <Route path="/activities" component={Activities}/>
                     <Route path="/research" component={Research}/>
                     <Route path="/gallery/campus" component={Gallery}/>

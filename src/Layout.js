@@ -15,7 +15,7 @@ const Layout  = ({children}) => {
         
     }, []); 
 
-    if(width < 980 && state === true) {document.body.style.overflowY = "hidden"}
+    if(width <= 980 && state === true) {document.body.style.overflowY = "hidden"}
     else {document.body.style.overflowY = "auto"}
     
     return(

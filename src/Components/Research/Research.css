@@ -1,8 +1,41 @@
 .section_research
 {
-    width: 90%;
-    margin: 0 auto;
+    width: 96%;
+    margin: 1rem auto;
     font-family: "Poppins", sans-serif;
+}
+
+.research_text
+{
+    width: calc(100% - 27rem);
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+.research_div
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.research_div p
+{
+    margin: 0.4rem 0;
+}
+
+.research_div ol
+{
+    padding-left: 1rem;
+}
+
+.card_opt
+{
+    width: 25rem;
+    height: 20rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    margin-top: 10rem;
 }
 
 .research_pics
@@ -19,4 +52,36 @@
 {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 980px)
+{
+    .card_opt
+    {
+        display: none;
+    }
+
+    .research_text
+    {
+        width: 96%;
+        margin: 1rem auto;
+    }
+
+    .research_pics
+    {
+        width: 30rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 20rem);
+    }
+
+}
+
+@media screen and (max-width: 520px)
+{
+    .research_pics
+    {
+        width: 96%;
+        grid-template-rows: repeat(4, 16rem);
+    }
+
 }

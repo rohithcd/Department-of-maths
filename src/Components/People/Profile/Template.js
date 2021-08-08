@@ -11,6 +11,7 @@ const scroll = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, be
 function object(prop) 
 {
     let arr = [];
+    let arr2 = [];
     for(let i=0; i<prop.length; i++)
     {
         if(prop[i] !== 0)
@@ -20,16 +21,20 @@ function object(prop)
         else if(prop[i] === 0)
         {
             let j = i+1;
+            arr2.splice(0, arr.length-1);
             while(prop[j] !== -1)
             {
-                arr.push(<ul><li>{prop[j]}</li></ul>);
+                arr2.push(<li>{prop[j]}</li>);
                 j++;
             }
+            arr.push(<ul>{arr2.map(item => item)}</ul>);
+
             i=j;
         }
     }
     return arr;
 }
+
 
 const Template = (props) => {
     const details = props.obj; /*Array passed from Parant - Profile */
@@ -120,14 +125,14 @@ const Template = (props) => {
                             <li id="pointer" onClick={() => {scroll(edu_quali); menu();}}>Educational Qualifications</li>
                             <li id="pointer" onClick={() => {scroll(member); menu();}}>Membership</li>
                             <li id="pointer"onClick={() => setDrop(!drop)}>Research</li>
-                            <div className={(drop) ? "side_drop" : ""}>
+                            <div className={(drop) ? "side_hide" : "side_drop"}>
                                 <ul>
-                                    <li id="pointer" className="side_li" onClick={() => {scroll(publications); menu();}}><a>Publications</a></li>
-                                    <li id="pointer" className="side_li" onClick={() => {scroll(projects); menu();}}><a>Projects</a></li>
-                                    <li id="pointer" className="side_li" onClick={() => {scroll(phd); menu();}}><a>PhD Guidance</a></li>
-                                    <li id="pointer" className="side_li" onClick={() => {scroll(conference); menu();}}><a>Programmes Organised</a></li>
-                                    <li id="pointer" className="side_li" onClick={() => {scroll(talks); menu();}}><a>Invited Talks</a></li>
-                                    <li id="pointer" className="side_li" onClick={() => {scroll(board); menu();}}><a>Editorial Board Member</a></li>
+                                    <li id="pointer" className="drop_li" onClick={() => {scroll(publications); menu();}}>Publications</li>
+                                    <li id="pointer" className="drop_li" onClick={() => {scroll(projects); menu();}}>Projects</li>
+                                    <li id="pointer" className="drop_li" onClick={() => {scroll(phd); menu();}}>PhD Guidance</li>
+                                    <li id="pointer" className="drop_li" onClick={() => {scroll(conference); menu();}}>Programmes Organised</li>
+                                    <li id="pointer" className="drop_li" onClick={() => {scroll(talks); menu();}}>Invited Talks</li>
+                                    <li id="pointer" className="drop_li" onClick={() => {scroll(board); menu();}}>Editorial Board Member</li>
                                 </ul>
                             </div>
                         </Sidebar>
