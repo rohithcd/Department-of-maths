@@ -1,0 +1,38 @@
+.dropdown-menu 
+{
+    position: absolute;
+    width: max-content;
+    top: 100%;
+    left: 0%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-div
+{
+    display: none;
+}
+
+.drop-div:hover 
+{
+    display: block;
+}
+
+.dropdown-menu li:hover > a 
+{
+    color: white !important;
+}
+
+.dropdown-menu li:hover
+{
+    background-color: #333 !important;
+}
+
+.dropdown-menu li:hover::before,
+.dropdown-menu li:hover::after
+{
+    content: "";
+    width: 0% !important;
+    height: 0% !important;
+}

@@ -32,6 +32,7 @@
   width: 16px;
   background: currentColor;
   animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  background-color: var(--bg-main);
 }
 .loader div:nth-child(1) {
   left: 0px;

@@ -46,7 +46,7 @@ const Carousel_L = () => {
         <div>
           <img className="imgsize" src={img2i} alt=""/>
           <div className="writing">
-            <h1>MORE THAN JUST STUDYING</h1>
+            <h1>Title</h1>
             <p>
               Its about widening you knowledge and absorbing the truth about
               life.

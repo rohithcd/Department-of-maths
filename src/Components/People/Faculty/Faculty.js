@@ -6,10 +6,10 @@ import "./Faculty.css";
 
 const scrollToTop = () => {window.scrollTo(0,0)}
 
-const Faculty = () => {
+function cardfix(start, end) {
     var arr = [];
     const profil = prof;
-    for(var i=0; i<profil.length; i++)
+    for(var i=start; i<end; i++)
     {
         arr.push(
             <Card 
@@ -20,14 +20,34 @@ const Faculty = () => {
         );
     }
 
+    return arr;
+}
+
+const Faculty = () => {
+    let professor = cardfix(0, 3);
+    let associate_prof = cardfix(3, 4);
+    let asst_professor = cardfix(4, prof.length);
+
     return (
         <>
             <div className="section_people">
                 <Title head="Faculty"/>
                 <div className="section_faculty">
+                    <h2>Professor</h2>
                     <div className="faculty_grid">
-                        {arr}
+                        {professor}
                     </div>
+                    <h2>Associate Professor</h2>
+                    <div className="faculty_grid">
+                        {associate_prof}
+                    </div>
+                    <h2>Assistant Professor</h2>
+                    <div className="faculty_grid">
+                        {asst_professor}
+                    </div>
+
+                   
+                        
                 </div>
             </div>
         </>

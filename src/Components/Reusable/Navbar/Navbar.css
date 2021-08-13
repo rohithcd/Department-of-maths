@@ -119,6 +119,11 @@
     position: relative;  
 }
 
+.navbar_menu-main li:hover > div
+{
+    display: block;
+}
+
 .navbar_menu-main li::after,
 .navbar_menu-main li::before
 {
@@ -183,6 +188,19 @@
     {
         padding: 2rem 4.5rem;
     }
+
+    .icons
+    {
+        fill: white;
+        margin-right: 0.7rem;
+        align-self: stretch;
+    }
+
+    .icons:hover 
+    {
+        fill: var(--bg-main);
+    }
+
     .navbar_menu-main,
     .navbar_menu-sec
     {

@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import Ham from  "../../Reusable/Ham/Ham";
 import Sidebar from  "../../Reusable/Sidebar/Sidebar";
 import Button from "../../Reusable/Button/Button";
+import Table from "../../Reusable/Table/Table";
 import "./Template.css";
 
 const scroll = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: 'smooth'});
@@ -21,7 +22,7 @@ function object(prop)
         else if(prop[i] === 0)
         {
             let j = i+1;
-            arr2.splice(0, arr.length-1);
+            arr2.splice(0, arr.length+1);
             while(prop[j] !== -1)
             {
                 arr2.push(<li>{prop[j]}</li>);
@@ -74,6 +75,7 @@ const Template = (props) => {
                                     <li id="pointer" onClick={() => scroll(publications)}>Publications</li>
                                     <li id="pointer" onClick={() => scroll(projects)}>Projects</li>
                                     <li id="pointer" onClick={() => scroll(phd)}>PhD guidance</li>
+                                    <li id="pointer" onClick={() => scroll(phd)}>Teaching</li>
                                     <li id="pointer" onClick={() => scroll(conference)}>Programmes Organised</li>
                                     <li id="pointer" onClick={() => scroll(talks)}>Invited Talks</li>
                                     <li id="pointer" onClick={() => scroll(board)}>Editorial Board Member</li>
@@ -145,8 +147,9 @@ const Template = (props) => {
                     <Section refer={edu_quali} head={"Educational Qualifications"} arr={arr1}/>
                     <Section refer={member} head={"Memberships"} arr={arr2}/>
                     <Section refer={publications} head={"Publications"} arr={arr7}/>
+                    <Section refer={projects} head={"Teaching"} arr={arr5}/>
                     <Section refer={projects} head={"Projects"} arr={arr5}/>
-                    <Table refer={phd} head={"PhD Guidance"} obj={texts.phd} />
+                    <Table title="Student Achievements" heading={["Sl. No.", "Name of Scholar",	"Title of Thesis"]} rest={texts.phd}/>
                     <Section refer={conference} head={"Programmes Organized"} arr={arr4}/>
                     <Section refer={talks} head={"Invited Talks"} arr={arr3}/>
                     <Section refer={board} head={"Editorial Board Member"} arr={arr6}/>
@@ -157,38 +160,6 @@ const Template = (props) => {
 }
 
 export default Template;
-
-const Table = ({refer, head, obj}) => {
-    let arr = [];
-    for(let i=0; i<obj.name.length; i++)
-    {
-        arr.push(<tr> 
-            <td>{i+1}</td>
-            <td>{obj.name[i]}</td>
-            <td>{obj.thesis[i]}</td>
-        </tr>);
-    }
-    return(
-        <>
-        <div ref={refer} className="prof_text_temp">
-            <h2>{head}</h2>
-            <table className="content-table">
-                <thead>
-                    <tr>
-                        <th>Sl.no</th>
-                        <th>Name of Scholar</th>
-                        <th>Tiltle of Thesis</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {arr}
-                </tbody>
-            </table>
-
-        </div>
-        </>
-    );
-}
 
 const Section = ({arr, refer, head}) => {
     return(

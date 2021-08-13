@@ -26,12 +26,19 @@ html
     background-color: var(--bg-offwhite);
 }
 
+#root
+{
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
 a
 {
     text-decoration: none;
 }
 
-a:hover
+a:hover,
+#pointer
 {
     cursor: pointer;
 }
@@ -41,12 +48,8 @@ li
     list-style: none;
 }
 
-/* button */
 
-#pointer
-{
-    cursor: pointer;
-}
+
 
 
 

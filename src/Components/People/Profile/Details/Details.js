@@ -20,23 +20,24 @@ import p_img11 from "../../../../Assets/people/image11.jpg";
 import profile_pic1 from "../../../../Assets/people/profile_pic1.jpg";
 
 /*----Common Details----*/
-let names = ["Prof. Ambat Vijayakumar", "Dr. P. G. Romeo", "Dr. Sasi Gopalan", "Dr. Shery Fernandez", "Dr. Ambily A A",
-    "Dr. Aparna Lakshmanan S", "Dr. A. Noufal", "Dr. Shankar P", "Dr. Tanushree Pandit", "Dr. Tathagata Banerjee", "Dr. V. B. Kiran Kumar"];
+let names = ["Dr. P. G. Romeo", "Dr. Sasi Gopalan", "Prof. Ambat Vijayakumar",  "Dr. Shery Fernandez", "Dr. Ambily A A",
+    "Dr. Aparna Lakshmanan S", "Dr. V. B. Kiran Kumar", "Dr. A. Noufal", "Dr. Shankar P", "Dr. Tanushree Pandit", "Dr. Tathagata Banerjee"];
 
-let ranks = ["Professor", "Emeritus Professor", "Associate Professor", "Assistant Professor"];
+let ranks = ["Professor",  "Emeritus Professor", "Associate Professor", "Assistant Professor"];
 
 let areaofInt = [
-    "Discrete Mathematics",
     "Algebra, Category theory, Algebraic topology, Universal algebras",
     "Approximation Theory, Analysis and Approximations in Deep learning, Optimization Techniques, Fuzzy Mathematics, Wavelet Analysis, Mathematical Morphology",
+    "Discrete Mathematics",
     "Representation theory, Fuzzy Mathematics",
     "Algebraic K-Theory, Commutative Algebra, Computational Algebra, Non-Commutative Algebras",
     "Graph Theory",
+    "Functional Analysis",
     "Functional Analysis, Framelets, PDEs",
     "Functional analysis, Operator algebras and Operator theory",
     "Convex Optimization, Variational Inequalities, Equilibrium Problems",
-    "Operator Algebras, Operator theory and Coarse geometry",
-    "Functional Analysis"
+    "Operator Algebras, Operator theory and Coarse geometry"
+    
 ];
 
 let p_bio = [
@@ -54,17 +55,17 @@ let p_bio = [
 ];
 
 export let prof = [
-    {name: names[0], job: ranks[2], pic: [p_img3], aoi: areaofInt[0], bio: p_bio[0]},
-    {name: names[1], job: ranks[0], pic: [p_img1], aoi: areaofInt[1], bio: p_bio[1]},
-    {name: names[2], job: ranks[0], pic: [p_img2], aoi: areaofInt[2], bio: p_bio[2]},
+    {name: names[0], job: ranks[0], pic: [p_img1], aoi: areaofInt[0], bio: p_bio[0]},
+    {name: names[1], job: ranks[0], pic: [p_img2], aoi: areaofInt[1], bio: p_bio[1]},
+    {name: names[2], job: ranks[1], pic: [p_img3], aoi: areaofInt[2], bio: p_bio[2]},
     {name: names[3], job: ranks[2], pic: [p_img4], aoi: areaofInt[3], bio: p_bio[3]},
     {name: names[4], job: ranks[3], pic: [p_img5], aoi: areaofInt[4], bio: p_bio[4], doc: pdf5},
     {name: names[5], job: ranks[3], pic: [p_img8, profile_pic1], aoi: areaofInt[5], bio: p_bio[5], doc: pdf6},
-    {name: names[6], job: ranks[3], pic: [p_img7], aoi: areaofInt[6], bio: p_bio[6], doc: pdf7},
-    {name: names[7], job: ranks[3], pic: [p_img9], aoi: areaofInt[7], bio: p_bio[7], doc: pdf8},
-    {name: names[8], job: ranks[3], pic: [p_img10], aoi: areaofInt[8], bio: p_bio[8]},
-    {name: names[9], job: ranks[3], pic: [p_img11], aoi: areaofInt[9], bio: p_bio[9]},
-    {name: names[10], job: ranks[3], pic: [p_img6], aoi: areaofInt[10], bio: p_bio[10], doc: pdf11}    
+    {name: names[6], job: ranks[3], pic: [p_img6], aoi: areaofInt[6], bio: p_bio[6], doc: pdf7},
+    {name: names[7], job: ranks[3], pic: [p_img7], aoi: areaofInt[7], bio: p_bio[7], doc: pdf8},
+    {name: names[8], job: ranks[3], pic: [p_img9], aoi: areaofInt[8], bio: p_bio[8]},
+    {name: names[9], job: ranks[3], pic: [p_img10], aoi: areaofInt[9], bio: p_bio[9]},
+    {name: names[10], job: ranks[3], pic: [p_img11], aoi: areaofInt[10], bio: p_bio[10], doc: pdf11}    
 ];
 
 /*Educational Qualifications */
@@ -192,6 +193,19 @@ let shankar_invited = [
 ];
 
 /* Publications */
+let shery_articles = [
+    "The lattice of pre- complements of a classic interval valued fuzzy graph, Malaya Journal of Matematik, Vol. 8, 2020",
+    "The Chain structure of intuitionistic level subgroups in cyclic groups of order pq, Malaya Journal of Matematik, Vol. 8, 2020",
+    "Fuzzy ?-separating cover of a fuzzy topological spaces, The Albertian Journal of Pure and Applied Mathematics (TAJOPAAM), Vol. 15, 2019",
+    "Fuzzification of functor in Category theory, The Albertian Journal of Pure and Applied Mathematics (TAJOPAAM), Vol. 15, 2019",
+    "The doze optimization of nano silver on Salmonella Typhmurium using fuzzy mathematics, Journal of computer and Mathematical sciences, Vol. 9, 2018",
+    "Classic and Non-classic Interval Valued Fuzzy Graphs, International journal of applied Engineering research., Vol. 13, 2018",
+    "The doze optimization through fuzzy mathematics, International journal of pure and applied mathematics, Vol. 117, 2017",
+    "Fuzzy G-modules of Periodic functions, The Albertian Journal of Pure and Applied Mathematics (TAJOPAAM), Vol. 14, 2015",
+    "Quasi injective fuzzy G-modules on P_r, International Journal of scientific and Research Publications, Vol. 5, 2015",
+    "Artinian Fuzzy g-modules, Journal of computer and Mathematical sciences, Vol. 6, 2015"
+];
+
 let ambily_articles = [
 "Classical K-Theory",
 0,
@@ -261,16 +275,33 @@ let shankar_articles = [
     "P. Shankar and A. K. Vijayarajan, Hyperrigid operator systems and Hilbert modules, Ann. Funct. Anal. 8 (2017), no. 1, 133-141"
 ];
 
+let kiran_articles = [
+    "Korovkin-type theorems on B(H) and their applications to function spaces, Monatshefte für Mathematik, Springer 2021",
+    "Approximation of Entropy Numbers, Complex Analysis and Operator Theory, Springer Vol. 13, 2019",
+    "A short survey on preconditioners and Korovkin- type theorems, Journal of Analysis, Springer 2019",
+    "A Korovkin-type theory for non-self-adjoint Toeplitz operators, Linear Algebra Appl., Springer Vol. 543, 2018",
+    "A note on discrete Borg-type theorems, Linear and Multilinear Algebra, Taylor & Francis Vol. 66, 2017",
+    "Real powers of bounded linear operators, Int. J. Appl. Comput. Math., 3(2):,., Springer Vol. 3, 2017",
+    "Preconditioners in spectral approximation, Ann. Funct. Anal., , Vol. 7, 2016",
+    "Spectral approximation of bounded self-adjoint operators—a short survey, Semigroups, algebras and operator theory, Springer Proc. Math. Stat. , Springer Vol. 142, 2015",
+    "Truncation method for random bounded self-adjoint operators, Banach J. Math. Anal., Vol. 9, 2015",
+    "Perturbation of operators and approximation of spectrum., Proc. Indian Acad. Sci. Math. Sci., Vol. 124, 2014"
+];
+
+let tatha_articles = [
+    "Noncommutative coarse geometry, Journal of Noncommutative geometry, European Mathematical Society Vol. 13, 2019"
+];
+
 /*PhD Guidance*/
 let ambily_phd = {
     name: ["Ms. Aparna Pradeep V.K"],
     thesis: ["August 2017 onwards"]
 };
 
-let aparna_phd = {
-    name: ["Anu V", "Jeepamol J"],
-    thesis: ["A study on Two Graph Parameters – Double Roman Domination Number and Homometric Number", "Studies on Graph Operators"]
-};
+let aparna_phd = [
+    [1, "Anu V", "A study on Two Graph Parameters – Double Roman Domination Number and Homometric Number"],
+    [2, "Jeepamol J", "Studies on Graph Operators"]
+];
 
 /*Programmes Organized */
 let ambily_conference = [
@@ -314,28 +345,28 @@ let link = {
     ambat: [null, null, null],
     romeo: [null, null, null],
     sasi: [null, null, null],
-    shery: [null, null, null],
+    shery: [null, null, "https://scholar.google.com/citations?user=y5PD2qgAAAAJ&hl=en"],
     ambily: [null, "https://www.scopus.com/authid/detail.uri?authorId=55464037100", "https://scholar.google.com/citations?user=d3oabqUAAAAJ&hl=en&oi=ao"],
     aparna :["https://publons.com/dashboard/summary/", "https://www.scopus.com/authid/detail.uri?authorId=55310792000", "https://scholar.google.com/citations?view_op=list_works&hl=en&user=ApsNUl0AAAAJ&gmla=AJsN-F6tQ-kBuj3lOsmSOUv_C-xsJCMACZWtxGTn50xkesLAOlRzGhDDhihF3DT2UOTdPvV9tvtHsVmW1qFwT5OSFEXfFU6wZ5wEkOjuaHdP6TBWV4rUMXU"],
     noufal: [null, null, null],
     shankar: [null, null, "https://scholar.google.com/citations?user=z6mlrdYAAAAJ&hl=en"],
     tanu: [null, null, null],
     tatha: [null, null, null],
-    kiran: [null, null, null]
+    kiran: [null, null, "https://scholar.google.co.in/citations?hl=en&view_op=list_works&gmla=AJsN-F5GoUKrHv6VTDHVL4RPgYwcw2dezBTHgctDZ7ZsNw5VzVYkvF6pcj2RZh2WxEqgM8LpQhDbMZCaiVYMh1GyhcZBjpxn9Q&user=chCK9y4AAAAJ"]
 }
 
 export let data = [
     {links: link.ambat, edu: [], mem:[], talks: [],  pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.romeo, edu: [], mem:[], talks: [],  pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.sasi, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
-    {links: link.shery, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.shery, edu: [], mem:[], talks: [], pub : shery_articles, conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.ambily, edu: ambily_quali, mem: [], pub : ambily_articles, phd: ambily_phd, proj:ambily_research, conf: ambily_conference, talks: ambily_invited,  board: []},
     {links: link.aparna, edu: aparna_quali, mem: aparna_membership, pub: aparna_articles, phd: aparna_phd, proj: aparna_research, conf: aparna_conference, talks: aparna_invited,  board: aparna_board},
     {links: link.noufal, edu: noufal_quali, mem:[], pub: [], talks: noufal_invited,  conf: noufal_conference, phd: aparna_phd, proj:[],  board: []},
     {links: link.shankar, edu: shankar_quali, mem: [], talks: shankar_invited, pub : shankar_articles,  conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.tanu, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
-    {links: link.tatha, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
-    {links: link.kiran, edu: kiran_quali, mem:[], talks: [], pub : [],  conf: [], phd: aparna_phd, proj:[], board: []}
+    {links: link.tatha, edu: [], mem:[], talks: [], pub : tatha_articles, conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.kiran, edu: kiran_quali, mem:[], talks: [], pub : kiran_articles,  conf: [], phd: aparna_phd, proj:[], board: []}
 ];
 
 
