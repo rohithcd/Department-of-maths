@@ -1,4 +1,4 @@
-import {useContext} from "react";
+import {useContext, useState} from "react";
 import {Link} from 'react-router-dom';
 import {UserContext} from "../../../Layout";
 import {logo_main1, HomeLogo, PeopleLogo, ResearchLogo, AcademicsLogo, ActivitiesLogo, FacilitiesLogo} from "../../../Exports";
@@ -6,6 +6,7 @@ import logo from "../../../Assets/icons/logo.svg";
 import Ham from  "../Ham/Ham";
 import Sidebar from  "../Sidebar/Sidebar";
 import Dropdown from "../Dropdown/Dropdown";
+import {Arrow} from "../../../Exports";
 import './Navbar.css';
 import "../Ham/Ham.css";
 
@@ -17,7 +18,7 @@ const droplist = [
 const Navbar = () => {
 
     const {width, state, breakpoint, menu} = useContext(UserContext); /* Importing values from App Component */
-
+    const [drop, setDrop] = useState({more: false, research: false});
 
 
   return(
@@ -42,32 +43,41 @@ const Navbar = () => {
 
             <div className="navbar_menu-main">
                 <ul>
-                    <MenuList/>
-                    <Link to="/facilities"><li><FacilitiesLogo/>More</li></Link>
+                    <MenuList bool={drop.research} setter={() => {return null}} hover={setDrop}/>
                 </ul>
             </div> 
 
             <Sidebar class={(state) ? "side-items" : ""}  style={{display:(state) ? "block" : "none"}}>
-                <MenuList func={menu}/>
-                <ul>
+                <MenuList func={menu} bool={drop.research} setter={setDrop} hover={() => {return null}}/>
+                <li id="pointer" onClick={() => setDrop({more: !drop.more})}><FacilitiesLogo/>More<Arrow pos={drop.more ? "rotate(-180deg)": "rotate(0deg)"}/></li>
+                <Dropdown disp={drop.more ? "block": "none"}>
                     <SecMenu func={menu} id="side_li"/>
-                    
-                </ul>
+                </Dropdown>
             </Sidebar>
         </nav> 
     </>
   ); 
 }
 
-const MenuList = ({func}) => {
+const MenuList = ({func, bool, setter, hover}) => {
     return(
         <>
             <Link to="/"><li onClick={func}><HomeLogo/>Home</li></Link>
             <Link to="/people"><li onClick={func}><PeopleLogo/>People</li></Link>
-            <Link to="/research">
-                <li onClick={func}><ResearchLogo/>Research
-            <Dropdown list={droplist}/>
-            </li></Link>
+            <li id="pointer" className="down-list" onMouseLeave={() => hover({research: false})} onMouseEnter={() => hover({research: true})} onClick={() => setter({research: !bool})} style={{flexDirection: bool ? "column" : "row"}}>
+                <span className="side-flex">
+                    <ResearchLogo/>Research<Arrow pos={bool ? "rotate(-180deg)": "rotate(0deg)"}/>
+                </span>
+            <Dropdown disp={bool ? "block": "none"}>
+                {droplist.map((item, index) => {
+                    return (
+                    <li key={index}>
+                        <Link className="dropdown-link" to={item.link}>{item.name}</Link>
+                    </li>
+                    );
+                })}
+            </Dropdown>
+            </li>
             <Link to="/academics"><li onClick={func}><AcademicsLogo/>Academics</li></Link>
             <Link to="/activities"><li onClick={func}><ActivitiesLogo/>Activities</li></Link>
             <Link to="/facilities"><li onClick={func}><FacilitiesLogo/>Facilities</li></Link>

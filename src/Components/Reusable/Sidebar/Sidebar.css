@@ -3,6 +3,7 @@
     display: none;
     z-index: 3;
     width: 0;
+    overflow-x: hidden;
 }
 
 .side-items li
@@ -43,7 +44,13 @@
         display: flex;
         font-size: 1.25rem; 
         color: var(--white);
-        padding: 1.2rem 0.9rem;
+        padding: 1.2rem 0 1.2rem 0.9rem;
+        width: 100%;
+    }
+
+    .side-flex 
+    {
+        display: flex;
     }
 
     .side-items li:hover
@@ -52,9 +59,15 @@
         background-color: var(--white);
     }
 
-    .side-items li:hover > .icons
+    .side-items li:hover > .icons,
+    .side-items li:hover > .side-flex .icons
     {
         fill: var(--bg-main);
+    }
+
+    .side-li > a
+    {
+        border-bottom: 0;
     }
 }
 

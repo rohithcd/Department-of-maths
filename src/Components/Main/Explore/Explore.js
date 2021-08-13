@@ -3,7 +3,6 @@ import {links, ex_logo1, ex_logo2, ex_logo3} from "../../../Exports";
 import d_arr from "../../../Assets/icons/down_arrow.svg";
 import './Explore.css';
 
-let logos = [ex_logo1, ex_logo2, ex_logo3];
 
 const Explore = ()=> {
     const [state, setState] = useState({rotate: "rotate(0deg)", isActive: false, value: "none"});
@@ -20,17 +19,13 @@ const Explore = ()=> {
     const myRef = useRef(null); 
     function click(ref) 
     {
-       
-        scrollToObj(myRef);
-
         if(state.isActive === false)
         {
             setState({rotate: "rotate(180deg)", isActive: true, value: "block"});
+            scrollToObj(myRef);
         }
         else
-        {
             setState({rotate: "rotate(0deg)", isActive: false, value: "none"});
-        } 
     }
 
     return(
@@ -48,10 +43,10 @@ const Explore = ()=> {
             <div ref={myRef}> </div>
             <div className="new-block" style={{display: state.value}}>
                     <ul className="block_list">
-                        <Block img={logos[0]} caps="CUSAT" link={links[0]}/>
-                        <Block img={logos[1]} caps="DYUTHI" link={links[1]}/>
-                        <Block img={logos[2]} caps="LIBRARY" link={links[2]}/>
-                        <Block img={logos[0]} caps="OSADMS" link={links[3]}/>
+                        <Block img={ex_logo1} caps="CUSAT" link={links[0]}/>
+                        <Block img={ex_logo2} caps="DYUTHI" link={links[1]}/>
+                        <Block img={ex_logo3} caps="LIBRARY" link={links[2]}/>
+                        <Block img={ex_logo1} caps="OSADMS" link={links[3]}/>
                     </ul>
                 
             </div>

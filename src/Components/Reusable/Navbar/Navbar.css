@@ -16,6 +16,11 @@
     position: fixed;
 }
 
+.arrow_main
+{
+    display: none;
+}
+
 .nav_head
 {
     margin: 4%;
@@ -184,6 +189,12 @@
 
 @media screen and (max-width: 980px)
 {
+    label 
+    {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     .section_navbar
     {
         padding: 2rem 4.5rem;
@@ -199,6 +210,25 @@
     .icons:hover 
     {
         fill: var(--bg-main);
+    }
+
+    .arrow_main
+    {
+        display: block;
+        fill: white;
+        position: absolute;
+        right: 10%;
+    }
+
+    .side-items li:hover > .arrow_main, 
+    .side-items li:hover > .side-flex .arrow_main 
+    {
+        fill: var(--bg-main);
+    }
+
+    .down-list
+    {
+        flex-direction: column;
     }
 
     .navbar_menu-main,
