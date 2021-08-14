@@ -1,6 +1,6 @@
 import "./Academics.css";
 import Table from "../Reusable/Table/Table";
-import { stud_achieve, placements, phd_awarded, stud_sport } from "../../Exports";
+import { stud_achieve, placements, stud_sport } from "../../Exports";
 
 const Academics = () => {
     return (
@@ -14,9 +14,7 @@ const Academics = () => {
             <Table title="Placements" heading={["Year",	"Name of student placed  and contact details",	"Name of the  employer with contact details"]}
             rest={placements}
             />
-            <Table title="PhD Awarded" heading={["Sl.no", "Name of Scholar PhD Scholar", "Name of the guide/s", "Title of Thesis", "Year of award of PhD"]}
-            rest={phd_awarded}
-            />
+            
         </>
     );
 }

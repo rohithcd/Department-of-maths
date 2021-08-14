@@ -69,6 +69,12 @@ export let prof = [
 ];
 
 /*Educational Qualifications */
+let ambat_quali = [
+    "M.Sc. Mathematics, 1980 - II Rank, University of Cochin",
+    "P.G. Diploma in German, 1983 University of Cochin.",
+    "Ph.D. Mathematics, 1986 Cochin University of Science and Technology"
+];
+
 let aparna_quali = [
     "B.Sc. Mathematics from St. Joseph’s College, Irinjalakuda under Calicut University (2000)",
     "M.Sc. Mathematics from Cochin University of Science and Technology with first Rank (2002)",
@@ -130,6 +136,20 @@ let noufal_conference = [
 ];
 
 /* Memberships */
+let ambat_membership = [
+    "Indian Mathematical Society - Life Member (1985)",
+    "Ramanujan Mathematical Society - Life Member( 1987)",
+    "Association of Mathematics Teachers of India - Life Member (1980)",
+    "American Mathematical Society - Member (1994)",
+    "Canadian  Mathematical Society - Member (1999)",
+    "Institute of Combinatorics and its Applications Canada - Fellow (FTICA) – (1999)",
+    "Kerala Mathematics Teachers Association - Life Member (2001)",
+    "Cryptology Research Society of India - Life Member(2006)",
+    "Academy of Discrete Mathematics and Applications - Life Member (2006)",
+    "Mathematical Association of America - Member (2007)",
+    "Indian Science Congress Association - Life Member (2009)"
+
+];
 let aparna_membership = [
     "American Mathematical Society (AMS) - Member",
     "Indian Mathematical Society (IMS) – Life Member",
@@ -139,6 +159,19 @@ let aparna_membership = [
 ];
 
 /* Invited Talks */
+let ambat_invited = [
+    "Invited talk in the National Seminar on Information Theory and Communication, (100th birth Anniversary of Shannon) , Rajagiri School of Engineering and Technology, Cochin ,30th April 2016.",
+    "Invited talk in the   Special   Symposium on Mathematics Education, 31st Annual Conference   of   Ramanujan  Mathematical  Society,  Tiruchirappally, India, June 18-21, 2016.",
+    "The Power Domination Problem in Graphs, International Conference on Theoretical Computer Science and Discrete Mathematics , Kalasalingam University, Krishnankoil, December 19-21, 2016.",
+    "‘What is happening in Mathematical Sciences ‘ Lead lecture in the Mathematical and Statistical Sciences Session, 29th  Kerala Science Congress, Marthoma College, Thiruvalla. January 29, 2017.",
+    "Resource Person, Azim Premji University- Ramanujan Math. Society Workshop for School Teachers,  Chinmaya Vidyalaya , Kannur,  May 2017.",
+    "‘Median Problems in Graphs ‘  International Conference in Graph Theory and Networks, St.Xaviers College, Aluva, October30- November1, 2017.",
+    "Some Network Topological Notions of the Mycielskian  of a Graph, International Conference on Discrete Mathematics and its Applications to Network Science, BITS Goa, July 7-10,2018.",
+    "Key Note Speaker, The changing face of Mathematics, National Level Workshop On Discovering the Art of Mathematics, Department of Mathematics, University of Kerala, 18th  December 2018.",
+    "‘Excitements in Mathematics’ Lead lecture in the Mathematical and Statistical Sciences Session , 31st  Kerala Science Congress, Fatima Matha National college, Quilon, February 3, 2019."
+
+];
+
 let ambily_invited = [
     "International Workshops/ Conferences",
     0,
@@ -193,6 +226,43 @@ let shankar_invited = [
 ];
 
 /* Publications */
+let ambat_articles = [
+    "Papers",
+    0,
+    "Forwarding indices and bisection width of Sierpinski graphs.(with Savitha K S), Bull ICA ( 2016).",
+    "Convex Median and Anti-Median at Prescribed Distance (with Pravas, K.), Journal of Combinatorial Optimization, 33 , (2017),  1021-1029.",
+    "Component factors of the Cartesian product of graphs,(with Chitra, M.R.) Asian-European Journal of Mathematics, (2016).",
+    "The diameter variability of product graphs,(with Chitra , M.R.), The Journal of Combinatorial Mathematics and Combinatorial Computing,(2016).",
+    "Heredity for generalised power domination (with Paul Dorbec, Seethu Varghese),  Discrete Mathematics and Theoretical Computer Science, 18(3), 31-37, ( 2016).",
+    "Some network topological notions of the Mycielskian of a graph (with K S Savitha), 	AKCE International Journal of Graphs and Combinatorics (2016).",
+    "Reciprocal Graphs ( with G. Indulal), Malaya J.Mat.4,(2016), 380-387.",
+    "Generalised power domination in WK- Pyramid networks, ( with Seethu Varghese) , Bull ICA, Vol 78, (2016), 52-68.",
+    "On the Power domination Number of Graph products, ( with Seethu Varghese),  LNCS(Springer), Vol. 9602 (2016) , 357- 367.",
+    "The k- power bondage number of a graph ( with Seethu Varghese ), Discrete Mathematics, Algorithms , Applications., Vol 8, No: 4 (2016).",
+    "On an edge partition and root graphs of some classes of line graphs ( with Pravas. K) , Electronics Journal of Graph theory and Its Applications, 1-15, 2017.",
+    "Some diameter notions of the generalised Mycielskian of a graph ( with K.S. Savitha, Chitra M. R.) , Proceedings of the International Conference on Discrete Mathematics and Theoretical Computer Science, Kalasalingam University, December 2016. LNCS ( Springer ), Lecture Notes in Comput. Sci., 10398, Springer, Cham, 371–382, 2017.",
+    "Further progress on the heredity of the game domination number ( with Tijo James, Paul Dorbec ), Proceedings of the International Conference on Discrete Mathematics and Theoretical Computer Science, Kalasalingam University, December 2016. LNCS ( Springer ), to appear in 2017.",
+    "The median problem on Symmetric Bipartite Graphs (with Pravas, K.),   Proceedings of the International Conference on Discrete Mathematics and Theoretical Computer Science, Kalasalingam University, December 2016. LNCS ( Springer ), Lecture Notes in Comput. Sci., 10398, Springer, Cham, 262–270, 2017.",
+    "The diameter variability of the product graphs.(with Chitra M.R.), J. Combin. Math. Combin. Comput. 103 (2017), 159–170.",
+    "Power domination in Knodel graphs and Hanoi Graphs ( with Seethu Varghese , A.M.Hinz ), Discuss. Math. Graph Theory 38(1): 63-74 (2018) .",
+    "Distance Energy Change in bipartite graph due to edge deletion (with Wasin So and Anu Varghese), Linear Algebra and its Applications, 553 (2018),211-222.",
+    "The Domination Game on Split Graphs (with Tijo James and Sandi Klavzar ), Bulletin of Australian Mathematical Society, doi:10.1017/S0004972718001053",
+    "Domination game: Eﬀect of edge contraction and edge subdivision (with Tijo James) – Discuss. Math. Graph Theory,doi:10.7151/dmgt.2378.",
+    "Wiener index and Steiner 3-Wiener index of a graph (with  Matjaˇz Kovˇse, Rasila V. A. ) – to appear in Asian European Journal of Mathematics 2021",
+    "Steiner Wiener index of block graphs (with Matjaˇz Kovˇse, Rasila V. A. ) – AKCE.International Journal of Graphs and Combin. 17 (3 ) (2020), 830-840. ",
+    "Split Graphs with Exactly Four Distinct Eigenvalues ( with Anu Varghese, Steve Kirkland, Felix Goldberg), Disc..Appl. Math 2020.",
+    "On spectral radius of signed graphs without negative even cycles (with Z.Stanic)-Bulletin Mathematique de la Societe des sciences Mathematiques de Roumanie, Vol 64, (2021), 89-96.",
+    "Bounds on the Steiner Wiener index of graphs (with Rasila, V.A.)- communicated",
+    "Steiner Wiener index of line graphs (with Rasila, V.A)- communicated.",
+    -1,
+    "Books",
+    0,
+    "Recent Trends in Graphs and Combinatorics , Special Issue of Discrete Mathematics (Elsevier)-2012 . Eds ; R . Balakrishnan, R. B. Bapat, Sandi Klavsar, A.Vijayakumar, Thomas Zaslavsky,  Xuding Zhu.",
+    "Proceedings of 5th International Conference, CALDAM 2019, February 14-16, IIT, Kharagpur,India, (Springer) LNCS 11394. Eds.: Sudebkumar Prasant Pal , Ambat Vijayakumar.",
+    "Proceedings of the INTERNATIONAL CONFERENCE ON NUMBER THEORY AND DISCRETE MATHEMATICS, SPECIAL ISSUE OF JOURNAL OF RAMANUJAN MATH SOCIETY,2021.Eds: AMBAT VIJAYAKUMAR, MAHESH KAKDE,PRASAD TETALI, SANDI KLAVSAR, SANOLI GUN",
+    -1
+    
+];
 let shery_articles = [
     "The lattice of pre- complements of a classic interval valued fuzzy graph, Malaya Journal of Matematik, Vol. 8, 2020",
     "The Chain structure of intuitionistic level subgroups in cyclic groups of order pq, Malaya Journal of Matematik, Vol. 8, 2020",
@@ -341,8 +411,16 @@ let aparna_board = [
     "For Contemporary Studies in Discrete Mathematics.",
 ];
 
+let ambat_board = [
+    "Member, Editorial Board,  NBHM - RMS Mathematics News Letter (1999-2007).",
+    "Member, Editorial Board, Resonance, Indian Academy of Sciences(2007-  2011).",
+    "Member, Editorial Board, TEJUS- News Letter of CUSAT (2001-2015)",
+    "Member, Editorial Board, ANANTHATHA- A Mathematics Magazine in Malayalam.", 
+    "Consultant, Ananthathe Arinja Aal , Malayalam translation of ‘The Man Who Knew Infinity’, by Robert Kanigal, published by Kerala Language Institute.August 2013."
+];
+
 let link = {
-    ambat: [null, null, null],
+    ambat: [null, null, "https://scholar.google.co.in/citations?user=ei-GTVQAAAAJ&hl=en"],
     romeo: [null, null, null],
     sasi: [null, null, null],
     shery: [null, null, "https://scholar.google.com/citations?user=y5PD2qgAAAAJ&hl=en"],
@@ -356,17 +434,17 @@ let link = {
 }
 
 export let data = [
-    {links: link.ambat, edu: [], mem:[], talks: [],  pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.romeo, edu: [], mem:[], talks: [],  pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.sasi, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.ambat, edu: ambat_quali, mem: ambat_membership, talks: ambat_invited,  pub : ambat_articles, conf: [], phd: aparna_phd, proj:[], board: ambat_board},
     {links: link.shery, edu: [], mem:[], talks: [], pub : shery_articles, conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.ambily, edu: ambily_quali, mem: [], pub : ambily_articles, phd: ambily_phd, proj:ambily_research, conf: ambily_conference, talks: ambily_invited,  board: []},
     {links: link.aparna, edu: aparna_quali, mem: aparna_membership, pub: aparna_articles, phd: aparna_phd, proj: aparna_research, conf: aparna_conference, talks: aparna_invited,  board: aparna_board},
+    {links: link.kiran, edu: kiran_quali, mem:[], talks: [], pub : kiran_articles,  conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.noufal, edu: noufal_quali, mem:[], pub: [], talks: noufal_invited,  conf: noufal_conference, phd: aparna_phd, proj:[],  board: []},
     {links: link.shankar, edu: shankar_quali, mem: [], talks: shankar_invited, pub : shankar_articles,  conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.tanu, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.tatha, edu: [], mem:[], talks: [], pub : tatha_articles, conf: [], phd: aparna_phd, proj:[], board: []},
-    {links: link.kiran, edu: kiran_quali, mem:[], talks: [], pub : kiran_articles,  conf: [], phd: aparna_phd, proj:[], board: []}
 ];
 
 

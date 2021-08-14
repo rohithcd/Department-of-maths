@@ -11,8 +11,9 @@ import './Navbar.css';
 import "../Ham/Ham.css";
 
 const droplist = [
-    {name: "PhD Awarded", link: "/phd-awarded"},
-    {name: "Placements", link: "/placements"}
+    {name: "PhD Awarded", link: "/research/PhD-awarded"},
+    {name: "Placements", link: "/research/placements"},
+    {name: "Visitors", link:"/research/visitors"}
 ];
 
 const Navbar = () => {
@@ -71,7 +72,7 @@ const MenuList = ({func, bool, setter, hover}) => {
             <Dropdown disp={bool ? "block": "none"}>
                 {droplist.map((item, index) => {
                     return (
-                    <li key={index}>
+                    <li onClick={func} key={index}>
                         <Link className="dropdown-link" to={item.link}>{item.name}</Link>
                     </li>
                     );

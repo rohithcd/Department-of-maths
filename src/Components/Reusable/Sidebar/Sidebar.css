@@ -19,6 +19,7 @@
 
 @media screen and (max-width: 980px)
 {
+
     .sidebar_main
     {
         position: fixed;
@@ -63,11 +64,6 @@
     .side-items li:hover > .side-flex .icons
     {
         fill: var(--bg-main);
-    }
-
-    .side-li > a
-    {
-        border-bottom: 0;
     }
 }
 

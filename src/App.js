@@ -6,7 +6,6 @@ import Gallery from "./Components/Gallery/Gallery";
 import Gallery_main from "./Components/Gallery/Gallery_main";
 import Facilities from "./Components/Facilities/Facilities";
 import Research from "./Components/Research/Research";
-import Visitors from "./Components/Research/Visitors/Visitors";
 import Academics from "./Components/Academics/Academics";
 import Activities from "./Components/Activities/Activities";
 import Profile from "./Components/People/Profile/Profile";
@@ -28,8 +27,7 @@ const App = () => {
                     <Route path="/people"><People/></Route>
                     <Route path="/academics" component={Academics}/>
                     <Route path="/activities" component={Activities}/>
-                    <Route path="/research/distinguished-visitors" component={Visitors}/>
-                    <Route path="/research" component={Research}/>
+                    <Route path={"/research/:link"}><Research/></Route>
                     <Route path="/gallery/campus" component={Gallery}/>
                     <Route path="/gallery" component={Gallery_main}/>
                     <Route path="/facilities" component={Facilities}/>

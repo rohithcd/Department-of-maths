@@ -257,7 +257,7 @@
     .side_li > a:visited
     {
         color: var(--white);
-        border-bottom: 1px solid white;
+        padding-top: 0rem;
         padding-bottom: 0;
     }
 

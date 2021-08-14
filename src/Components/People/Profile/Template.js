@@ -22,14 +22,13 @@ function object(prop)
         else if(prop[i] === 0)
         {
             let j = i+1;
-            arr2.splice(0, arr.length+1);
             while(prop[j] !== -1)
             {
                 arr2.push(<li>{prop[j]}</li>);
                 j++;
             }
             arr.push(<ul>{arr2.map(item => item)}</ul>);
-
+            arr2.splice(0, arr2.length);
             i=j;
         }
     }
