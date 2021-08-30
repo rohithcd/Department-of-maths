@@ -23,7 +23,7 @@
     position: relative;
 }
 
-.contact_head::before
+/*.contact_head::before
 {
     content: "";
     width: 80%;
@@ -32,7 +32,7 @@
     bottom: 0%;
     left: 0%;
     background-color: powderblue;
-}
+} */
 
 @media screen and (max-width: 1260px)
 {

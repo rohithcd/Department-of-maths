@@ -1,6 +1,6 @@
 import "./Table.css";
 
-const Table = ({title, heading, rest}) => {
+const Table = ({title, heading, rest, view}) => {
     let body = [], head =[], arr2 = [];
 
     for(let i=0; i<heading.length; i++)
@@ -20,6 +20,7 @@ const Table = ({title, heading, rest}) => {
 
     return(
         <>
+            <div style={{display: view}}>
                 <h2>{title}</h2>
                 <table className="content-table">
                     <thead>
@@ -31,6 +32,7 @@ const Table = ({title, heading, rest}) => {
                         {body}
                     </tbody>
                 </table>
+            </div>
         </>
     );
 }

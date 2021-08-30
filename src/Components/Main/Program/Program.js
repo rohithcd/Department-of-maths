@@ -6,7 +6,7 @@ const Program = () => {
     return(
         <>
             <div className="section_program">
-                <h2>Programs Offered</h2>
+                <h2 className="main-head">Programs Offered</h2>
                 <div className="program_box">
                     <div className="program_text">
                         <ul className="program_list">

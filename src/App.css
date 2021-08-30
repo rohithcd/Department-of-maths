@@ -48,6 +48,22 @@ li
     list-style: none;
 }
 
+.main-head
+{
+    display: inline-block;
+    position: relative;
+}
+
+.main-head::before
+{
+    content: "";
+    width: 80%;
+    height: 0.3rem;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: powderblue;
+}
 
 
 

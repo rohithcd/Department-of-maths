@@ -8,7 +8,7 @@ import Table from "../../Reusable/Table/Table";
 import "./Template.css";
 
 const scroll = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: 'smooth'});
-    
+
 function object(prop) 
 {
     let arr = [];
@@ -39,6 +39,7 @@ function object(prop)
 const Template = (props) => {
     const details = props.obj; /*Array passed from Parant - Profile */
     const texts = props.dat;
+    const display = props.disp; 
     
     const {menu} = useContext(UserContext);
 
@@ -116,7 +117,7 @@ const Template = (props) => {
                             </div>
                         </div>
 
-                        <div className="child_sec-2">
+                        <div className="child_sec-2" style={{overflow: "hidden"}}>
                             <h4>BRIEF BIO</h4>
                             <p>{details.bio}</p>
                         </div>
@@ -143,15 +144,15 @@ const Template = (props) => {
                             <p>{details.aoi}</p>
                         </div>
                     </div>
-                    <Section refer={edu_quali} head={"Educational Qualifications"} arr={arr1}/>
-                    <Section refer={member} head={"Memberships"} arr={arr2}/>
-                    <Section refer={publications} head={"Publications"} arr={arr7}/>
-                    <Section refer={projects} head={"Teaching"} arr={arr5}/>
-                    <Section refer={projects} head={"Projects"} arr={arr5}/>
-                    <Table title="Student Achievements" heading={["Sl. No.", "Name of Scholar",	"Title of Thesis"]} rest={texts.phd}/>
-                    <Section refer={conference} head={"Programmes Organized"} arr={arr4}/>
-                    <Section refer={talks} head={"Invited Talks"} arr={arr3}/>
-                    <Section refer={board} head={"Editorial Board Member"} arr={arr6}/>
+                    <Section refer={edu_quali} head={"Educational Qualifications"} arr={arr1} view={(display[0] === "edu") ? "none":"block"}/>
+                    <Section refer={member} head={"Memberships"} arr={arr2} view={(display[1] === "mem") ? "none":"block"}/>
+                    <Section refer={publications} head={"Publications"} arr={arr7} view={(display[2] === "pub") ? "none":"block"}/>
+                    <Section refer={projects} head={"Teaching"} arr={arr5} view={(display[3] === "teach") ? "none":"block"}/>
+                    <Section refer={projects} head={"Projects"} arr={arr5} view={(display[4] === "proj") ? "none":"block"}/>
+                    <Table title="Student Achievements" heading={["Sl. No.", "Name of Scholar",	"Title of Thesis"]} rest={texts.phd} view={(display[5] === "achieve") ? "none":"block"}/>
+                    <Section refer={conference} head={"Programmes Organized"} arr={arr4} view={(display[6] === "program") ? "none":"block"}/>
+                    <Section refer={talks} head={"Invited Talks"} arr={arr3} view={(display[7] === "talks") ? "none":"block"}/>
+                    <Section refer={board} head={"Editorial Board Member"} arr={arr6} view={(display[8] === "edit") ? "none":"block"}/>
                 </div>
             </div>
         </>
@@ -160,9 +161,9 @@ const Template = (props) => {
 
 export default Template;
 
-const Section = ({arr, refer, head}) => {
+const Section = ({arr, refer, head, view}) => {
     return(
-        <div  ref={refer} className="prof_text_temp">
+        <div ref={refer} className="prof_text_temp" style={{display: view}}>
             <h2>{head}</h2>
             <div>
                 <ol>
@@ -177,7 +178,6 @@ const Links = (props) => {
     return(
         <>
             <span>
-
                 <h5>{props.head}</h5>
                 <a href={props.anchor} className="btn btn_box">View</a>
             </span>

@@ -14,7 +14,7 @@ const About = () => {
                 <div className="about_main">
                     <div className="about_text">
                         <div className="about_head">
-                            <h2>About</h2>
+                            <h2 className="main-head">About</h2>
                         </div>
                         {arr}
                     </div>

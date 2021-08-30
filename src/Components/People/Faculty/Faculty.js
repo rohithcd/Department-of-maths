@@ -33,15 +33,15 @@ const Faculty = () => {
             <div className="section_people">
                 <Title head="Faculty"/>
                 <div className="section_faculty">
-                    <h2>Professor</h2>
+                    <h2 className="main-head faculty-h2">Professor</h2>
                     <div className="faculty_grid">
                         {professor}
                     </div>
-                    <h2>Associate Professor</h2>
+                    <h2 className="main-head faculty-h2">Associate Professor</h2>
                     <div className="faculty_grid">
                         {associate_prof}
                     </div>
-                    <h2>Assistant Professor</h2>
+                    <h2 className="main-head faculty-h2">Assistant Professor</h2>
                     <div className="faculty_grid">
                         {asst_professor}
                     </div>

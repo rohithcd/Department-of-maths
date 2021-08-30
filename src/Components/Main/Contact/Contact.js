@@ -5,7 +5,7 @@ const Contact = () => {
         <>
             <div className="section_contact">
                 <div className="contact_head">
-                    <h2>Contact Us</h2>
+                    <h2 className="main-head">Contact Us</h2>
                 </div>
                 <div>
                     <p>Department of Mathematics</p>

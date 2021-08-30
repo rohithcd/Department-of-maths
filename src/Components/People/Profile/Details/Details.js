@@ -44,14 +44,14 @@ let p_bio = [
     "",
     "",
     "",
-    "",
+    "Associate Professor, Department of Mathematics CUSAT",
     "Assistant Professor at CUSAT since August 2015, I was a visiting Fellow at Tata Institute of Fundamental Research, Mumbai during 2014-2015. I was a SERB Postdoctoral Fellow at Western Sydney University in 2018.",
     "Assistant Professor in Department of Mathematics, CUSAT from January, 2021.",
-    "Currently residing in Edathala Panchayath.",
+    "I joined CUSAT Maths department in 2015. Before that, I worked at PSMO College (2014-15), University of Calicut (2012-13). I was a postdoctoral fellow at Kerala School of Mathematics (2013-14). I completed my masters and PhD from CUSAT Maths Department.",
     "Assistant Professor at Department of Mathematics, CUSAT",
     "",
-    "",
-    ""
+    "Ph.D. in Mathematics from Indian Institute of Technology Kanpur M.Sc. in Mathematics from Indian Institute of Technology Kanpur B. Sc. in Mathematics (Honours) from Calcutta University",
+    "I had completed my B.Sc. (with Honours) in Physics from St. Stephen's College, under University of Delhi in the year 2008. Then I shifted to Mathematics and completed my M.Sc. degree in Mathematics from Ramakrishna Mission Vivekananda University ( currently also known as Ramakrishna Mission Vivekananda Educational and Research Institute), situated at Belur Math, West Bengal in the year 2010. In 2011, I started my Ph.D. curriculum in Mathematics at the University of Goettingen, Germany. In my Ph.D. I had specialised in the study of Operator Algebras (specifically in C*-algebras) and also in Coarse Geometry. My Ph.D. work was about introducing coarse geometry in noncommutative spaces, which are encoded by some non-unital C*-algebra, via unitizations. I was awarded my Ph.D. degree in November, 2016. In January, 2017 I joined Indian Statistical Institute, Bangalore center as a visiting scientist under the mentorship of Prof. B. V. Rajarama Bhat. I was awarded the National Post-doctoral Fel"
 ];
 
 export let prof = [
@@ -226,6 +226,19 @@ let shankar_invited = [
 ];
 
 /* Publications */
+let romeo_articles = [
+    "On the embedding of ? – semigroup Amalgam using partial ? – groupoid., Advances in Algebra, Research India Publications Vol. 4, 2021",
+    "On the embedding of ? – semigroup Amalgam, Malaya Journal of Matematik, Vol. 9, 2021",
+    "Cluster algebras and quivers, Bulletin of Calcutta Mathematical society, Vol. 6, 2020",
+    "Groupoids and involution Rings, Asian Journal of Algebra, 2020",
+    "Translations in semirings and semirings of translations, Malaya Journal of Matematik, Vol. 8, 2020",
+    "Cross-connection Structure of Concordant Semigroups, World Scientific, Vol. 30, 2019",
+    "Ring of rectangular matrices under sandwich operation., International journal of scientific and technical research, Vol. 3, 2019",
+    "On the lattice of biorder ideals of regular rings, Asian-European Journal of Mathematics, Vol. 11, 2019" ,
+    "On matrix semigroups and matrix semigroup amalgams, IJAR, Vol. 6, 2019",
+    "On cardinality of centrilizers in full transformation semigroups, IJRAR, Vol. 2, 2019"
+];
+
 let ambat_articles = [
     "Papers",
     0,
@@ -346,6 +359,8 @@ let shankar_articles = [
 ];
 
 let kiran_articles = [
+    "Journal Publications",
+    0,
     "Korovkin-type theorems on B(H) and their applications to function spaces, Monatshefte für Mathematik, Springer 2021",
     "Approximation of Entropy Numbers, Complex Analysis and Operator Theory, Springer Vol. 13, 2019",
     "A short survey on preconditioners and Korovkin- type theorems, Journal of Analysis, Springer 2019",
@@ -355,12 +370,29 @@ let kiran_articles = [
     "Preconditioners in spectral approximation, Ann. Funct. Anal., , Vol. 7, 2016",
     "Spectral approximation of bounded self-adjoint operators—a short survey, Semigroups, algebras and operator theory, Springer Proc. Math. Stat. , Springer Vol. 142, 2015",
     "Truncation method for random bounded self-adjoint operators, Banach J. Math. Anal., Vol. 9, 2015",
-    "Perturbation of operators and approximation of spectrum., Proc. Indian Acad. Sci. Math. Sci., Vol. 124, 2014"
+    "Perturbation of operators and approximation of spectrum., Proc. Indian Acad. Sci. Math. Sci., Vol. 124, 2014",
+    -1,
+    "Conference Publications",
+    0,
+    "Discrete Borg-Type theorems, National Seminar on Topology and Analysis (NSOTA 2014),, 2014",
+    "Preconditioners in Spectral Approximation , Proceedings of the National Seminar on Mathematical Analysis and Algebra (MAA 2013), 2013",
+    -1
+];
+
+let tanu_articles = [
+    "Journal Publications",
+    0,
+    "Simple bilevel programming and extensions, Mathematical Programming, Springer Vol. 188, 2020",
+    -1,
+    "Conference Publications",
+    0,
+    "About the links between equilibrium problems and variational inequalities, International Symposium on Operations Research and Game Theory: Modelling and Computation, 2018",
+    -1
 ];
 
 let tatha_articles = [
     "Noncommutative coarse geometry, Journal of Noncommutative geometry, European Mathematical Society Vol. 13, 2019"
-];
+]; 
 
 /*PhD Guidance*/
 let ambily_phd = {
@@ -406,6 +438,11 @@ let aparna_research = [
     "KSCSTE Major project (completed in 2019) – “Problems related to Applications of graph theory to Networks” (Rs.11,80,000/-)."
 ];
 
+let kiran_research = [
+    "Study of Spectral Properties of Infinite Dimensional Operators using Linear Algebraic Techniques\" (UGC- -0001 --0001 , Total outlay Rs.1000000)",
+    "Korovkin-type Approximation and Application to Spectral Analysis\" (KSCSTE- -0001 --0001 , Total outlay Rs.1425000)"
+];
+
 /*Editorial Board Member */
 let aparna_board = [
     "For Contemporary Studies in Discrete Mathematics.",
@@ -434,16 +471,16 @@ let link = {
 }
 
 export let data = [
-    {links: link.romeo, edu: [], mem:[], talks: [],  pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.romeo, edu: [], mem:[], talks: [],  pub : romeo_articles, conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.sasi, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.ambat, edu: ambat_quali, mem: ambat_membership, talks: ambat_invited,  pub : ambat_articles, conf: [], phd: aparna_phd, proj:[], board: ambat_board},
     {links: link.shery, edu: [], mem:[], talks: [], pub : shery_articles, conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.ambily, edu: ambily_quali, mem: [], pub : ambily_articles, phd: ambily_phd, proj:ambily_research, conf: ambily_conference, talks: ambily_invited,  board: []},
     {links: link.aparna, edu: aparna_quali, mem: aparna_membership, pub: aparna_articles, phd: aparna_phd, proj: aparna_research, conf: aparna_conference, talks: aparna_invited,  board: aparna_board},
-    {links: link.kiran, edu: kiran_quali, mem:[], talks: [], pub : kiran_articles,  conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.kiran, edu: kiran_quali, mem:[], talks: [], pub : kiran_articles,  conf: [], phd: aparna_phd, proj: kiran_research, board: []},
     {links: link.noufal, edu: noufal_quali, mem:[], pub: [], talks: noufal_invited,  conf: noufal_conference, phd: aparna_phd, proj:[],  board: []},
     {links: link.shankar, edu: shankar_quali, mem: [], talks: shankar_invited, pub : shankar_articles,  conf: [], phd: aparna_phd, proj:[], board: []},
-    {links: link.tanu, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.tanu, edu: [], mem:[], talks: [], pub : tanu_articles, conf: [], phd: aparna_phd, proj:[], board: []},
     {links: link.tatha, edu: [], mem:[], talks: [], pub : tatha_articles, conf: [], phd: aparna_phd, proj:[], board: []},
 ];
 

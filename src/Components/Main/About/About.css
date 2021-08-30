@@ -33,8 +33,7 @@
     position: relative;
 }
 
-
-.about_head::before
+/*.about_head::before
 {
     content: "";
     width: 70%;
@@ -43,7 +42,7 @@
     bottom: 10%;
     left: 0%;
     background-color: powderblue;
-}
+}*/
 
 .about_text
 {
