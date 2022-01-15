@@ -16,10 +16,14 @@ const droplist = [
     {name: "Visitors", link:"/research/visitors"}
 ];
 
+const dropAca = [
+    {name: "Courses ", link: "/academics/courses"},
+];
+
 const Navbar = () => {
 
     const {width, state, breakpoint, menu} = useContext(UserContext); /* Importing values from App Component */
-    const [drop, setDrop] = useState({more: false, research: false});
+    const [drop, setDrop] = useState({more: false, research: false, academics: false});
 
 
   return(
@@ -44,7 +48,7 @@ const Navbar = () => {
 
             <div className="navbar_menu-main">
                 <ul>
-                    <MenuList bool={drop.research} setter={() => {return null}} hover={setDrop}/>
+                    <MenuList bool={drop.research} bool1={drop.academics} setter={() => {return null}} hover={setDrop}/>
                 </ul>
             </div> 
 
@@ -60,7 +64,7 @@ const Navbar = () => {
   ); 
 }
 
-const MenuList = ({func, bool, setter, hover}) => {
+const MenuList = ({func, bool, setter, hover, bool1}) => {
     return(
         <>
             <Link to="/"><li onClick={func}><HomeLogo/>Home</li></Link>
@@ -79,7 +83,22 @@ const MenuList = ({func, bool, setter, hover}) => {
                 })}
             </Dropdown>
             </li>
-            <Link to="/academics"><li onClick={func}><AcademicsLogo/>Academics</li></Link>
+
+            <li id="pointer" className="down-list" onMouseLeave={() => hover({academics: false})} onMouseEnter={() => hover({academics: true})} onClick={() => setter({academics: !bool1})} style={{flexDirection: bool1 ? "column" : "row"}}>
+                <span className="side-flex">
+                    <AcademicsLogo/>Academics<Arrow pos={bool1 ? "rotate(-180deg)": "rotate(0deg)"}/>
+                </span>
+            <Dropdown disp={bool1 ? "block": "none"}>
+                {dropAca.map((item, index) => {
+                    return (
+                    <li onClick={func} key={index}>
+                        <Link className="dropdown-link" to={item.link}>{item.name}</Link>
+                    </li>
+                    );
+                })}
+            </Dropdown>
+            </li>
+            {/*<Link to="/academics"><li onClick={func}><AcademicsLogo/>Academics</li></Link>*/}
             <Link to="/activities"><li onClick={func}><ActivitiesLogo/>Activities</li></Link>
             <Link to="/facilities"><li onClick={func}><FacilitiesLogo/>Facilities</li></Link>
         </>

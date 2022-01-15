@@ -1,8 +1,13 @@
 .section_research
 {
-    width: 96%;
+    width: 92%;
     margin: 1rem auto;
     font-family: "Poppins", sans-serif;
+}
+
+.section_research h2 
+{
+    font-size: 1.6rem;
 }
 
 .research_text
@@ -40,7 +45,7 @@
 
 .research_pics
 {
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 20rem);

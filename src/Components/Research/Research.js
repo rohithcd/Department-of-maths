@@ -6,7 +6,6 @@ import PhD from "./PhD/PhD";
 const Research = () => {
     const {link} = useParams();
 
-    console.log(link);
 
     if(link === 'PhD-awarded') return <PhD/>
     else if(link === 'placements') return null;

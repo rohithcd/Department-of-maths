@@ -119,10 +119,10 @@ const Template = (props) => {
 
                         <div className="child_sec-2" style={{overflow: "hidden"}}>
                             <h4>BRIEF BIO</h4>
-                            <p>{details.bio}</p>
+                            <p className={(details.bio.length <= 100) ? " " : "child_bio"}>{details.bio}</p>
                         </div>
 
-                        <Sidebar class="">
+                        <Sidebar>
                             <Link to="/" onClick={menu}><li>Home</li></Link>
                             <li id="pointer" onClick={() => {scroll(edu_quali); menu();}}>Educational Qualifications</li>
                             <li id="pointer" onClick={() => {scroll(member); menu();}}>Membership</li>

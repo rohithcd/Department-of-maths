@@ -11,8 +11,8 @@ const Error = () => {
                         <h1>404</h1>
                     </div>
                     <div className="error_txt">
-                        <h2>PAGE NOT FOUND!!</h2>
-                        <p>Sorry, the page you are looking for doesn't exist.</p>
+                        <h2>SITE UNDER CONSTRUCTION!!</h2>
+                        <p>{/*Sorry, the page you are looking for doesn't exist.*/}</p>
                         <Link to="/"><Button type="box" class="btn-ctr" name="GO TO HOME"/></Link>
                     </div>
                 </div>

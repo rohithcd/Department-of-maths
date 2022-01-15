@@ -1,9 +1,16 @@
 /*----CV----*/
-import pdf5 from "../../../../Assets/people/CV/Bio-Ambily.pdf";
-import pdf6 from "../../../../Assets/people/CV/Bio-Aparna.pdf";
+/*import pdf0 from "../../../../Assets/people/CV/Bio-Romeo.pdf";
+import pdf1 from "../../../../Assets/people/CV/Bio-Sasi.pdf";
+import pdf2 from "../../../../Assets/people/CV/Bio-Ambat.pdf";
+import pdf3 from "../../../../Assets/people/CV/Bio-Shery.pdf"; */
+import pdf4 from "../../../../Assets/people/CV/Bio-Ambily.pdf";
+import pdf5 from "../../../../Assets/people/CV/Bio-Aparna.pdf";
+import pdf6 from "../../../../Assets/people/CV/Bio-Kiran.pdf";
 import pdf7 from "../../../../Assets/people/CV/Bio-Noufal.pdf";
 import pdf8 from "../../../../Assets/people/CV/Bio-Shankar.pdf";
-import pdf11 from "../../../../Assets/people/CV/Bio-Kiran.pdf";
+/*import pdf9 from "../../../../Assets/people/CV/Bio-Tanu.pdf";
+import pdf10 from "../../../../Assets/people/CV/Bio-Tatha.pdf"; */
+
 
 /*----Profile Pic ----*/
 import p_img1 from "../../../../Assets/people/image1.jpg";
@@ -37,12 +44,11 @@ let areaofInt = [
     "Functional analysis, Operator algebras and Operator theory",
     "Convex Optimization, Variational Inequalities, Equilibrium Problems",
     "Operator Algebras, Operator theory and Coarse geometry"
-    
 ];
 
 let p_bio = [
     "",
-    "",
+    "Dr. SASI GOPALAN Joined in CUSAT as Lecturer in Mathematics in the School of Engineering, CUSAT in 01-07-2003 with 7 years teaching experience from IHRD. Placed as Associate professor in 2009 and Professor in 2012 onwards at SOE . Served as head Division of Applied Science & Huminites, SOE (2013 to 2015). In July 2019 , selected to the new vacant post as Professor at Department of Mathematics, CUSAT. Taken Charge as Head , Department of Mathematics, CUSAT from 17 -05-2021 onwards. Elected three times to the senate CUSAT (14-02-2007 to 13-02-2011, 14-02-2011 to 13-02-2015 and from 14-02-2019 onwards) . Received Major Project SERB in the year 2013. Served as warden for boys hostel 2007 - 2014 and Chief Warden (2018-2019). Introduced Equal Opportunity Cell (EOC) of UGC in 2009 and Skill Orientation Center for Engineering (SOCE) of AICTE in 2019 . Gov. of Kerala nominated to CUSAT syndicate on 25th Feb 2019.",
     "",
     "Associate Professor, Department of Mathematics CUSAT",
     "Assistant Professor at CUSAT since August 2015, I was a visiting Fellow at Tata Institute of Fundamental Research, Mumbai during 2014-2015. I was a SERB Postdoctoral Fellow at Western Sydney University in 2018.",
@@ -55,17 +61,17 @@ let p_bio = [
 ];
 
 export let prof = [
-    {name: names[0], job: ranks[0], pic: [p_img1], aoi: areaofInt[0], bio: p_bio[0]},
-    {name: names[1], job: ranks[0], pic: [p_img2], aoi: areaofInt[1], bio: p_bio[1]},
-    {name: names[2], job: ranks[1], pic: [p_img3], aoi: areaofInt[2], bio: p_bio[2]},
-    {name: names[3], job: ranks[2], pic: [p_img4], aoi: areaofInt[3], bio: p_bio[3]},
-    {name: names[4], job: ranks[3], pic: [p_img5], aoi: areaofInt[4], bio: p_bio[4], doc: pdf5},
-    {name: names[5], job: ranks[3], pic: [p_img8, profile_pic1], aoi: areaofInt[5], bio: p_bio[5], doc: pdf6},
-    {name: names[6], job: ranks[3], pic: [p_img6], aoi: areaofInt[6], bio: p_bio[6], doc: pdf7},
-    {name: names[7], job: ranks[3], pic: [p_img7], aoi: areaofInt[7], bio: p_bio[7], doc: pdf8},
-    {name: names[8], job: ranks[3], pic: [p_img9], aoi: areaofInt[8], bio: p_bio[8]},
-    {name: names[9], job: ranks[3], pic: [p_img10], aoi: areaofInt[9], bio: p_bio[9]},
-    {name: names[10], job: ranks[3], pic: [p_img11], aoi: areaofInt[10], bio: p_bio[10], doc: pdf11}    
+    {name: names[0], job: ranks[0], pic: [p_img1], aoi: areaofInt[0], bio: p_bio[0]/*, doc: pdf0*/},
+    {name: names[1], job: ranks[0], pic: [p_img2], aoi: areaofInt[1], bio: p_bio[1]/*, doc: pdf1*/},
+    {name: names[2], job: ranks[1], pic: [p_img3], aoi: areaofInt[2], bio: p_bio[2]/*, doc: pdf2*/},
+    {name: names[3], job: ranks[2], pic: [p_img4], aoi: areaofInt[3], bio: p_bio[3]/*, doc: pdf3*/},
+    {name: names[4], job: ranks[3], pic: [p_img5], aoi: areaofInt[4], bio: p_bio[4], doc: pdf4},
+    {name: names[5], job: ranks[3], pic: [p_img8, profile_pic1], aoi: areaofInt[5], bio: p_bio[5], doc: pdf5},
+    {name: names[6], job: ranks[3], pic: [p_img6], aoi: areaofInt[6], bio: p_bio[6], doc: pdf6},
+    {name: names[7], job: ranks[3], pic: [p_img7], aoi: areaofInt[7], bio: p_bio[7], doc: pdf7},
+    {name: names[8], job: ranks[3], pic: [p_img9], aoi: areaofInt[8], bio: p_bio[8], doc: pdf8},
+    {name: names[9], job: ranks[3], pic: [p_img10], aoi: areaofInt[9], bio: p_bio[9]/*, doc: pdf9*/},
+    {name: names[10], job: ranks[3], pic: [p_img11], aoi: areaofInt[10], bio: p_bio[10]/*, doc: pdf10*/}    
 ];
 
 /*Educational Qualifications */

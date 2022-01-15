@@ -178,7 +178,7 @@ ol > li
     margin: 2rem auto;
     display: grid;
     grid-template-columns: 30rem 1fr;
-    grid-template-rows: repeat(2, 6.5rem);
+    grid-template-rows: repeat(2, 7.4rem);
     grid-column-gap: 2rem;
     font-family: "Roberto", sans-serif;
 }
@@ -195,6 +195,21 @@ div[class^='child_sec-']
     background-color: #bcc4cf;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+}
+
+@media screen and (min-width: 980px)
+{
+    .child_bio 
+    {
+        position: relative;
+    }
+
+    .child_bio::after
+    {
+        content: " see more";
+        font-weight: bold;
+        cursor: pointer;
+    }
 }
 
 .prof_container
