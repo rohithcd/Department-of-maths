@@ -1,7 +1,6 @@
 .content-table
 {
     border-collapse: collapse;
-    margin: 10px 0;
     font-size: 1.1rem;
     min-width: 400px;
 }
@@ -39,7 +38,6 @@
 {
     .content-table
     {
-        margin: 8px 0;
         font-size: 1rem;
         min-width: 320px;
     }

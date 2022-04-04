@@ -1,0 +1,10 @@
+.visitors-list {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .visitors-list {
+        padding: 1rem 2rem;
+    }
+}

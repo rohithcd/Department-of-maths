@@ -42,9 +42,9 @@ export {default as img4} from "./Assets/gallery/img4.jpg";
 export {default as img5} from "./Assets/gallery/img5.jpg";
 export {default as img6} from "./Assets/gallery/img6.jpg";
 export {default as img7} from "./Assets/gallery/img7.jpg";
-/* export {default as img8} from "./Assets/gallery/_E3T3182.JPG"; 
-export {default as img9} from "./Assets/gallery/_E3T3184.JPG";
-export {default as img10} from "./Assets/gallery/_E3T3187.JPG";*/
+/* export {default as img8} from "./Assets/gallery/_E3T3182.jpg"; 
+export {default as img9} from "./Assets/gallery/_E3T3184.jpg";
+export {default as img10} from "./Assets/gallery/_E3T3187.jpg";*/
 
 /*----Box----*/
 export {default as b_img1} from "./Assets/main/box_img1.jpg";
@@ -53,9 +53,9 @@ export {default as b_img3} from "./Assets/main/box_img3.jpg";
 export {default as b_img4} from "./Assets/main/box_img4.jpg";
 
 /*----Carousal----*/
-export {default as slide1} from "./Assets/main/slides_img1.JPG";
-export {default as slide2} from "./Assets/main/slides_img2.JPG";
-export {default as slide3} from "./Assets/main/slides_img3.JPG";
+export {default as slide1} from "./Assets/main/slides_img1.jpg";
+export {default as slide2} from "./Assets/main/slides_img2.jpg";
+export {default as slide3} from "./Assets/main/slides_img3.jpg";
 
 export {default as slide_min1} from "./Assets/main/slides_img1-mob.jpg";
 export {default as slide_min2} from "./Assets/main/slides_img2-mob.jpg";
