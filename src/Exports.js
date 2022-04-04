@@ -8,6 +8,18 @@ import fa_img6 from "./Assets/facilities/lib-3.jpg";
 import fa_img7 from "./Assets/facilities/lib-4.jpg";
 import fa_img8 from "./Assets/facilities/lib-5.jpg";
 
+import fa_img9 from "./Assets/facilities/shared_office1.jpeg";
+import fa_img10 from "./Assets/facilities/shared_office2.jpeg";
+import fa_img11 from "./Assets/facilities/shared_office3.jpeg";
+import fa_img12 from "./Assets/facilities/shared_office4.jpeg";
+import fa_img13 from "./Assets/facilities/cplab1.jpeg";
+import fa_img14 from "./Assets/facilities/cplab2.jpeg";
+
+import fa_img15 from "./Assets/facilities/classroom1.jpeg";
+
+import fa_img16 from "./Assets/facilities/office.jpeg";
+
+
 /*---------- CONTACT-US --------------*/
 export {default as phone} from "./Assets/icons/phone.png";
 export {default as email} from "./Assets/icons/email.png";
@@ -60,17 +72,17 @@ let text = [
     "The Computer lab hosts a collection of twenty computers with internet accessibility. Students attend practical classes on Python programming, MathSage, LaTex and other relevant programming languages required for application in Mathematics.",
     "The Seminar hall provides a platform for departmental seminars and other relevant talks and presentations. The hall has black board and projector facilities.",
     "There are 3 classrooms equipped with the modern infrastructure for holding classes in both online and offline mode. One of the classroom has a smartboard facility.",
-    "There are three shared office rooms for PhD students. Apart from that there is also a discussion room for Masters students.",
+    "There are four shared office rooms for PhD students. Apart from that there is also a discussion room for Masters students.",
     "The department also has an administrative office consisting of six staff members for office related work."
 ];
 
 export let fac = [
     {img: [fa_img3, fa_img4, fa_img5, fa_img6, fa_img7, fa_img8], txt: text[0]},
-    {img: [fa_img1, fa_img2], txt: text[1]},
+    {img: [fa_img13, fa_img14], txt: text[1]},
     {img: [fa_img1, fa_img2], txt: text[2]},
-    {img: [fa_img1, fa_img2], txt: text[3]},
-    {img: [fa_img1, fa_img2], txt: text[4]},
-    {img: [fa_img1, fa_img2], txt: text[5]}
+    {img: [fa_img15], txt: text[3]},
+    {img: [fa_img9, fa_img10, fa_img11, fa_img12,], txt: text[4]},
+    {img: [fa_img16], txt: text[5]}
 ];
 
 /*----Explore----*/
