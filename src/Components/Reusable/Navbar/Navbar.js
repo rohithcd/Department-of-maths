@@ -17,7 +17,7 @@ const droplist = [
 ];
 
 const dropAca = [
-    {name: "Courses ", link: "/academics/courses"},
+    {name: "Courses", link: "/academics/courses"},
 ];
 
 const Navbar = () => {

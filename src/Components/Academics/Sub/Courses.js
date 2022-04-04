@@ -4,6 +4,7 @@ import Button from  "../../Reusable/Button/Button.js";
 import bulletin from "./bulletin.pdf";
 import teachers from "./teachers.pdf";
 import syllabus from "./Msc_syllabus.pdf";
+import imsc from "./Imsc_syllabus.pdf";
 import Table from "../../Reusable/Table/Table.js";
 
 
@@ -39,9 +40,11 @@ const Courses = () => {
                 </table>
             </div>
             
-            <Download name="Msc Syllabus(Approved by University)" link={syllabus}/>
+            <Download name="Imsc Syllabus (Approved by University)" link={imsc}/>
+            <Download name="Msc Syllabus (Approved by University)" link={syllabus}/>
             <Download name="Teachers appointed" link={teachers}/>
             <Download name="Course Structure" link={bulletin}/>
+            
             
         </>
     );

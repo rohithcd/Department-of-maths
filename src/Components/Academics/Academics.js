@@ -10,8 +10,8 @@ import { stud_achieve, placements, stud_sport } from "../../Exports";*/
 const Academics = () => {
     const {link} = useParams();
 
-    if(link === 'courses') return <Courses/>
-    else if(link === link + '/:id') return <Error/>
+    // if(link === 'courses') return <Courses/>
+    // else if(link === link + '/:id') return <Error/>
 
     return (
         <>
