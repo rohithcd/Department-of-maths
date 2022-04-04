@@ -11,6 +11,15 @@
     
 }
 
+.table_programs table
+{
+    width: 90% !important;
+    margin: 2rem auto !important;
+}
+
+
+
+
 .main-courses h4 
 {
     font-family: "Poppins", "Sans-serif";

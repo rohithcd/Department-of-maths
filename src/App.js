@@ -8,7 +8,7 @@ import Alumni from "./Components/Alumni/Alumni";
 import Facilities from "./Components/Facilities/Facilities";
 import Research from "./Components/Research/Research";
 import Academics from "./Components/Academics/Academics";
-import Activities from "./Components/Activities/Activities";
+import ActivitiesMain from "./Components/Activities/Activities_main";
 import Profile from "./Components/People/Profile/Profile";
 import Outreach from "./Components/Outreach/Outreach";
 import Contact from "./Components/Contact/Contact";
@@ -28,7 +28,7 @@ const App = () => {
                     <Route path={'/people/:Id'}><Profile/></Route>
                     <Route path="/people"><People/></Route>
                     <Route path={"/academics/:link"}><Academics/></Route>
-                    <Route path="/activities" component={Activities}/>
+                    <Route path="/activities" component={ActivitiesMain}/>
                     <Route path={"/research/:link"}><Research/></Route>
                     <Route path="/gallery/campus" component={Gallery}/>
                     <Route path="/gallery" component={Gallery_main}/>

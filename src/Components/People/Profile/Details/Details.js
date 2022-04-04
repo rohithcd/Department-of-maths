@@ -62,7 +62,7 @@ let p_bio = [
 
 export let prof = [
     {name: names[0], job: ranks[0], pic: [p_img1], aoi: areaofInt[0], bio: p_bio[0]/*, doc: pdf0*/},
-    {name: names[1], job: ranks[0], pic: [p_img2], aoi: areaofInt[1], bio: p_bio[1]/*, doc: pdf1*/},
+    {name: names[1], job: "Professor & Head", pic: [p_img2], aoi: areaofInt[1], bio: p_bio[1]/*, doc: pdf1*/},
     {name: names[2], job: ranks[1], pic: [p_img3], aoi: areaofInt[2], bio: p_bio[2]/*, doc: pdf2*/},
     {name: names[3], job: ranks[2], pic: [p_img4], aoi: areaofInt[3], bio: p_bio[3]/*, doc: pdf3*/},
     {name: names[4], job: ranks[3], pic: [p_img5], aoi: areaofInt[4], bio: p_bio[4], doc: pdf4},

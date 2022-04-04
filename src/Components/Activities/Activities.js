@@ -1,5 +1,4 @@
 import "./Activities.css";
-import Title from "../Reusable/Title/Title";
 import {res_txt} from "../../Exports";
 
 
@@ -15,7 +14,7 @@ const Activities = () => {
 
     return(
         <>
-            <Title head="Activities"/>
+        
         <div className="section_research">
         <h2>International Conference on Recent Trends in Graph Theory and Combinatorics, India, April 26-29, 2018</h2>
             <div className="prof_text_temp research_div">
