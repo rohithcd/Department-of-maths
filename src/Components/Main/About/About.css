@@ -21,7 +21,7 @@
     justify-content: space-between; 
     font-family: "Poppins", sans-serif;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%),
-    url("../../../Assets/main/img_about.jpg");
+    url("../../../Assets/main/img_about.JPG");
     background-size: cover;
     padding-left: 1.2rem;
 }

@@ -53,9 +53,9 @@ export {default as b_img3} from "./Assets/main/box_img3.jpg";
 export {default as b_img4} from "./Assets/main/box_img4.jpg";
 
 /*----Carousal----*/
-export {default as slide1} from "./Assets/main/slides_img1.jpg";
-export {default as slide2} from "./Assets/main/slides_img2.jpg";
-export {default as slide3} from "./Assets/main/slides_img3.jpg";
+export {default as slide1} from "./Assets/main/slides_img1.JPG";
+export {default as slide2} from "./Assets/main/slides_img2.JPG";
+export {default as slide3} from "./Assets/main/slides_img3.JPG";
 
 export {default as slide_min1} from "./Assets/main/slides_img1-mob.jpg";
 export {default as slide_min2} from "./Assets/main/slides_img2-mob.jpg";
@@ -230,6 +230,30 @@ export let placements = [
     [2020,"Ardra Raphael"," Infosys"],
     [2020,"Anmary Tonny"," Infosys"]
 ];
+
+export let placements_data = [
+    [1, 2021, "Gayathri Subhash", "M.Sc. Mathematics",	"EY Global Delivary Services, India LLP", "Rs. 3,33,333/-"],
+    [2, 2021, "Meeva Biju",	"M.Sc. Mathematics", "IQVIA", "Rs. 5,84,755/-"],
+    [3, 2020, "Anagha S", "M.Sc. Mathematics", "ZIFO RnD Solutions", "Rs. 437500/-"],
+    [4, 2020, "Kavya M S", "M.Sc. Mathematics", "ZIFO RnD Solutions", "Rs. 4,37,500/-"],
+    [5, 2020, "Jiya Rose Johnson", "M.Sc. Mathematics", "ZIFO RnD Solutions", "Rs. 4,37,500/-"],
+    [6, 2020, "Manu K R", "M.Sc. Mathematics", "ZIFO RnD Solutions", "Rs. 4,37,500/-"],
+    [7, 2020, "Nikhil Manoj", "M.Sc. Mathematics", "ZIFO RnD Solutions", "Rs. 4,37,500/-"],
+    [8, 2020, "Ardra Raphael", "M.Sc. Mathematics", "ZIFO RnD Solutions", "Rs. 4,37,500/-"],
+    [9, 2020, "Nikhil Manoj", "M.Sc. Mathematics", "Infosys", "Rs. 5,50,000/-"],
+    [10, 2020, "Ardra Raphael", "M.Sc. Mathematics", "Infosys", "Rs. 5,50,000/-"],
+    [11, 2020, "Anmary Tonny", "M.Sc. Mathematics", "Infosys", "Rs. 5,50,000/-"],
+    [12, 2020, "Meeva Biju", "M.Sc. Mathematics", "TATA Consultancy"],
+    [13, 2020, "Midhun S", "M.Sc. Mathematics", "Sree Narayana Trust", "Rs. 15,600 - 39,100 + AGP 6,000/-"],
+    [14, 2020, "Madhumitha Baiju", "M.Sc. Mathematics", "KPSC", "Rs. 15,600 - 39,100 + AGP 6,000/-" ],
+    [15, 2020, "Job Mathai", "M.Sc. Mathematics", "St. Thomas College, Kozhencherry", "Rs. 15,600 - 39,100 + AGP 6,000/-"],
+    [16, 2019, "Neethu Jenson", "M.Sc. Mathematics", "ZIFO RnD Solutions", "Rs. 4,37,500/-"],
+    [17, 2019, "Sandhya R", "M.Sc. Mathematics", "Amrita Viswa Vidhyapeedam", "Rs. 48,600/-"],
+    [18, 2019, "Ranjith M", "M.Sc. Mathematics", "Amrita Viswa Vidhyapeedam", "Rs. 48,600/-"],
+    [19, 2019, "Rachel Paul", "M.Sc. Mathematics", "Carmel College, Mala", "Rs. 15,600 - 39,100 + AGP 6,000/-"],
+    [20, 2019, "Eva Cherian", "M.Sc. Mathematics", "RSET", "Rs.30,000/-"],
+    [21, 2017, "Linet Roselin Antony", "M.Sc. Mathematics", "Sacred Heart College, Chalakudy", "Rs. 15,600 - 39,100 + AGP 6,000/-"],
+]
 
 export let stud_achieve = [
     [1,"Harinarayanan G",2016,"3 years","JRF & NBHM","UGC","NET"],

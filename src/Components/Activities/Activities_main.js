@@ -6,7 +6,9 @@ import Title from "../Reusable/Title/Title";
 const ActivitiesMain = () => {
     return(
         <>
-            <Title head="Activities"/>
+        <Title head="Activities"/>
+        <div className="visitors-list activities-sub">
+
             <ul>
                 <li>Training Programmes for school going students  - 4 </li>
                 <li>Enrichment Programmes for UG and PG students</li>
@@ -14,6 +16,7 @@ const ActivitiesMain = () => {
                 <li>International Conferences - 2</li>
                 <li>Coordinated Regional Mathematical Olympiad, NBHM scholarship test, Simon – Mario International Competitive Examination</li>
             </ul>
+        </div>
         </>
     );
 }
