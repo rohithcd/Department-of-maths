@@ -14,6 +14,7 @@ import Outreach from "./Components/Outreach/Outreach";
 import Contact from "./Components/Contact/Contact";
 import Error from "./Components/Reusable/Error/Error";
 import Layout from "./Layout";
+import Courses from "./Components/Academics/Sub/Courses";
 
 import "./App.css";
 
@@ -27,7 +28,7 @@ const App = () => {
                     <Route exact path="/" component={Main} />
                     <Route path={'/people/:Id'}><Profile/></Route>
                     <Route path="/people"><People/></Route>
-                    <Route path={"/academics/:link"}><Academics/></Route>
+                    <Route path={"/academics/courses"}><Courses/></Route>
                     <Route path="/activities" component={ActivitiesMain}/>
                     <Route path={"/research/:link"}><Research/></Route>
                     <Route path="/gallery/campus" component={Gallery}/>

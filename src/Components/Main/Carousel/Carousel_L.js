@@ -46,10 +46,9 @@ const Carousel_L = () => {
         <div>
           <img className="imgsize" src={img2i} alt=""/>
           <div className="writing">
-            <h1>Title</h1>
+            <h1>Vision</h1>
             <p>
-              Its about widening you knowledge and absorbing the truth about
-              life.
+            To develop intellectually rigorous future generation of <br/> students and research scholars by providing exhaustive knowledge in all areas of Mathematical Sciences and to generate logical thinking to solve complex problems
             </p>
           </div>
         </div>
@@ -57,8 +56,8 @@ const Carousel_L = () => {
         <div>
           <img className="imgsize" src={img3i}  alt=""/>
           <div className="writing">
-            <h1>CUSAT</h1>
-            <p>Know more about our university </p>
+            <h1>Mission</h1>
+            <p>To impart a quality education in Mathematics and to inculcate the spirit of <br/> research through innovative teaching - research methodologies.</p>
           </div>
         </div>
         
