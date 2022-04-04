@@ -92,7 +92,6 @@ export {default as ex_logo3} from "./Assets/icons/book.png";
 
 export {default as logo_main1} from "./Assets/main/logo_main.png";
 
-
 /*------------TEXT-----------------*/
 /*----About----*/
 export let about = [
