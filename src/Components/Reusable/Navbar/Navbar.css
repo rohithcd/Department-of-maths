@@ -115,7 +115,7 @@
 .navbar_menu-main ul li,
 .navbar_menu-sec ul li
 {
-    padding: 1.3rem 1.95rem;
+    padding: 1.3rem 1.5rem;
 }
 
 .navbar_menu-main li
@@ -162,7 +162,7 @@
 {
     .navbar_menu-main
     {
-        width: 790px;
+        width: 830px;
     }
 
 }
@@ -172,7 +172,7 @@
     .navbar_menu-main
     {
         font-size: 1.05rem; 
-        width: 684px;
+        width: 710px;
     }
 
     .navbar_menu-sec
@@ -183,7 +183,7 @@
     .navbar_menu-main ul li,
     .navbar_menu-sec ul li
     {
-        padding: 1.3rem 1.6rem;
+        padding: 1.3rem 1.2rem;
     }
 }
 

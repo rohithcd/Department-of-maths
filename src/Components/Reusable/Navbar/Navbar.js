@@ -1,7 +1,7 @@
 import {useContext, useState} from "react";
 import {Link} from 'react-router-dom';
 import {UserContext} from "../../../Layout";
-import {logo_main1, HomeLogo, PeopleLogo, ResearchLogo, AcademicsLogo, ActivitiesLogo, FacilitiesLogo} from "../../../Exports";
+import {logo_main1, HomeLogo, PeopleLogo, ResearchLogo, AcademicsLogo, ActivitiesLogo, FacilitiesLogo, StudentsLogo} from "../../../Exports";
 import logo from "../../../Assets/icons/logo.svg";
 import Ham from  "../Ham/Ham";
 import Sidebar from  "../Sidebar/Sidebar";
@@ -10,20 +10,53 @@ import {Arrow} from "../../../Exports";
 import './Navbar.css';
 import "../Ham/Ham.css";
 
-const droplist = [
-    {name: "PhD Awarded", link: "/research/PhD-awarded"},
-    {name: "Placements", link: "/research/placements"},
-    {name: "Visitors", link:"/research/visitors"}
-];
+const droplist = {
+    people: [
+        {name: "Faculty", link: "/people/faculty"},
+        {name: "Retired Faculty", link: "/people/retired-faculty"},
+        {name: "Research Scholars", link: "/people/research-scholars"},
+        {name: "Staff", link: "/people/staff"}
+    ],
 
-const dropAca = [
-    {name: "Courses", link: "/academics/courses"},
-];
+    research: [
+        {name: "Research Areas", link: "/research/ressearch-areas"},
+        {name: "Publications", link: "/research/publications"},
+        {name: "PhD Awarded", link: "/research/PhD-awarded"},
+        {name: "Visitors", link:"/research/visitors"}
+    ],
+
+    academics: [
+        {name: "Courses", link: "/academics/courses"}
+    ],
+
+    students: [
+        {name: "Placements", link: "/research/placements"}
+    ],
+
+    activities: [
+        {name: "Regional Mathematic Olympiad", link: "/activities/reg-math-olympiad"},
+        {name: "Scholarship Exams", link: "/research/scholar-exams"},
+        {name: "Training Programs", link: "/research/training-programs"},
+        {name: "Workshops/Conferences", link: "/research/work-conf"}
+    ]
+}
+
+// const droplist = [
+
+// ];
+
+// const dropAca = [
+//     ,
+// ];
+
+// const dropStu = [
+//     {name: "Placements", link: "/research/placements"},
+// ];
 
 const Navbar = () => {
 
     const {width, state, breakpoint, menu} = useContext(UserContext); /* Importing values from App Component */
-    const [drop, setDrop] = useState({more: false, research: false, academics: false});
+    const [drop, setDrop] = useState({people: false, more: false, research: false, academics: false, activities:false, students: false});
 
 
   return(
@@ -48,7 +81,7 @@ const Navbar = () => {
 
             <div className="navbar_menu-main">
                 <ul>
-                    <MenuList bool={drop.research} bool1={drop.academics} setter={() => {return null}} hover={setDrop}/>
+                    <MenuList bool={drop.research} bool0={drop.people} bool1={drop.academics} bool2={drop.students} bool3={drop.activities} setter={() => {return null}} hover={setDrop}/>
                 </ul>
             </div> 
 
@@ -64,17 +97,33 @@ const Navbar = () => {
   ); 
 }
 
-const MenuList = ({func, bool, setter, hover, bool1}) => {
+const MenuList = ({func, bool, setter, hover, bool0, bool1, bool2, bool3}) => {
     return(
         <>
             <Link to="/"><li onClick={func}><HomeLogo/>Home</li></Link>
-            <Link to="/people"><li onClick={func}><PeopleLogo/>People</li></Link>
+            <Link to="/people" onClick={func}>
+                <li id="pointer" className="down-list" onMouseLeave={() => hover({people: false})} onMouseEnter={() => hover({people: true})} onClick={() => {setter({people: !bool})}} style={{flexDirection: bool ? "column" : "row"}}>
+                    <span className="side-flex">
+                        <PeopleLogo/>People<Arrow pos={bool0 ? "rotate(-180deg)": "rotate(0deg)"}/>
+                    </span>
+                <Dropdown disp={bool0 ? "block": "none"}>
+                    {droplist.people.map((item, index) => {
+                        return (
+                        <li onClick={func} key={index}>
+                            <Link className="dropdown-link" to={item.link}>{item.name}</Link>
+                        </li>
+                        );
+                    })}
+                </Dropdown>
+                </li>
+            </Link>
+
             <li id="pointer" className="down-list" onMouseLeave={() => hover({research: false})} onMouseEnter={() => hover({research: true})} onClick={() => setter({research: !bool})} style={{flexDirection: bool ? "column" : "row"}}>
                 <span className="side-flex">
                     <ResearchLogo/>Research<Arrow pos={bool ? "rotate(-180deg)": "rotate(0deg)"}/>
                 </span>
             <Dropdown disp={bool ? "block": "none"}>
-                {droplist.map((item, index) => {
+                {droplist.research.map((item, index) => {
                     return (
                     <li onClick={func} key={index}>
                         <Link className="dropdown-link" to={item.link}>{item.name}</Link>
@@ -89,7 +138,7 @@ const MenuList = ({func, bool, setter, hover, bool1}) => {
                     <AcademicsLogo/>Academics<Arrow pos={bool1 ? "rotate(-180deg)": "rotate(0deg)"}/>
                 </span>
             <Dropdown disp={bool1 ? "block": "none"}>
-                {dropAca.map((item, index) => {
+                {droplist.academics.map((item, index) => {
                     return (
                     <li onClick={func} key={index}>
                         <Link className="dropdown-link" to={item.link}>{item.name}</Link>
@@ -99,11 +148,44 @@ const MenuList = ({func, bool, setter, hover, bool1}) => {
             </Dropdown>
             </li>
             {/*<Link to="/academics"><li onClick={func}><AcademicsLogo/>Academics</li></Link>*/}
-            <Link to="/activities"><li onClick={func}><ActivitiesLogo/>Activities</li></Link>
+            <Link to="/activities" onClick={func}>
+                <li id="pointer" className="down-list" onMouseLeave={() => hover({activities: false})} onMouseEnter={() => hover({activities: true})} onClick={() => setter({activities: !bool3})} style={{flexDirection: bool3 ? "column" : "row"}}>
+                    <span className="side-flex">
+                        <ActivitiesLogo/>Activities<Arrow pos={bool3 ? "rotate(-180deg)": "rotate(0deg)"}/>
+                    </span>
+                <Dropdown disp={bool3 ? "block": "none"}>
+                    {droplist.activities.map((item, index) => {
+                        return (
+                        <li onClick={func} key={index}>
+                            <Link className="dropdown-link" to={item.link}>{item.name}</Link>
+                        </li>
+                        );
+                    })}
+                </Dropdown>
+                </li>
+            </Link>
+
+            <li id="pointer" className="down-list" onMouseLeave={() => hover({students: false})} onMouseEnter={() => hover({students: true})} onClick={() => setter({students: !bool2})} style={{flexDirection: bool2 ? "column" : "row"}}>
+                <span className="side-flex">
+                    <StudentsLogo/>Students<Arrow pos={bool2 ? "rotate(-180deg)": "rotate(0deg)"}/>
+                </span>
+            <Dropdown disp={bool2 ? "block": "none"}>
+                {droplist.students.map((item, index) => {
+                    return (
+                    <li onClick={func} key={index}>
+                        <Link className="dropdown-link" to={item.link}>{item.name}</Link>
+                    </li>
+                    );
+                })}
+            </Dropdown>
+            </li>
+
+
             <Link to="/facilities"><li onClick={func}><FacilitiesLogo/>Facilities</li></Link>
         </>
     );
 }
+
 
 const SecMenu = ({func, id}) => {
     return(

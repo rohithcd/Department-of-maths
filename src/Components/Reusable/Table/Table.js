@@ -20,7 +20,7 @@ const Table = ({title, heading, rest, view}) => {
 
     return(
         <>
-            <div style={{overflowX: "auto"}}>
+            <div style={{overflowX: "auto", display: view}} >
                 <h2>{title}</h2>
                 <table className="content-table">
                     <thead>
