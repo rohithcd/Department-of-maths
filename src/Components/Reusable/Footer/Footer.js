@@ -16,10 +16,10 @@ const Footer = () => {
                 <div className="vox_f">
                     <div className="hox_f1">
                         <Link to="/" onClick={scrollToTop} className="item_f1" id="pointer">Home</Link>
-                        <Link to="/people" onClick={scrollToTop} className="item_f1" id="pointer">People</Link>
+                        <Link to="/people/faculty" onClick={scrollToTop} className="item_f1" id="pointer">People</Link>
                         <Link to="/research" onClick={scrollToTop} className="item_f1" id="pointer">Research</Link>
                         <Link to="/people" onClick={scrollToTop} className="item_f1" id="pointer">Academics</Link>
-                        <Link to="/people" onClick={scrollToTop} className="item_f1" id="pointer">Activities</Link>
+                        <Link to="/activities/courses" onClick={scrollToTop} className="item_f1" id="pointer">Activities</Link>
                         <Link to="/facilities" onClick={scrollToTop} className="item_f1" id="pointer">Facilities</Link>
                     </div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                 </div>
                 </div>
-                <p className="copyright">Copyright &copy; 2020 Department Of Mathematics. All rights reserved.</p>
+                <p className="copyright">Copyright &copy; 2022 Department Of Mathematics. All rights reserved.</p>
             </div>
         </>
 

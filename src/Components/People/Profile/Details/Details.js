@@ -1,3 +1,11 @@
+/*---- Importing Pictures of Staff (For Staff.js) ----*/
+import bindu_pic from "../../../../Assets/people/staff/bindu.jpg";
+import sheeba_pic from "../../../../Assets/people/staff/sheeba.jpg";
+import sony_pic from "../../../../Assets/people/staff/sony.jpg";
+import udayakumar_pic from "../../../../Assets/people/staff/udayakumar.jpg";
+
+/*---- Import End ----*/
+
 /*----CV----*/
 /*import pdf0 from "../../../../Assets/people/CV/Bio-Romeo.pdf";
 import pdf1 from "../../../../Assets/people/CV/Bio-Sasi.pdf";
@@ -26,11 +34,13 @@ import p_img10 from "../../../../Assets/people/image10.jpg";
 import p_img11 from "../../../../Assets/people/image11.jpg";
 import profile_pic1 from "../../../../Assets/people/profile_pic1.jpg";
 
+
+
 /*----Common Details----*/
-let names = ["Dr. P. G. Romeo", "Dr. Sasi Gopalan", "Prof. Ambat Vijayakumar",  "Dr. Shery Fernandez", "Dr. Ambily A A",
+let names = ["Prof. P. G. Romeo", "Prof. Sasi Gopalan", "Prof. Ambat Vijayakumar",  "Dr. Shery Fernandez", "Dr. Ambily A A",
     "Dr. Aparna Lakshmanan S", "Dr. V. B. Kiran Kumar", "Dr. A. Noufal", "Dr. Shankar P", "Dr. Tanushree Pandit", "Dr. Tathagata Banerjee"];
 
-let ranks = ["Professor",  "Emeritus Professor", "Associate Professor", "Assistant Professor"];
+let ranks = ["Professor",  "Emeritus Professor", "Associate Professor", "Assistant Professor", "Emeritus Scientist"];
 
 let areaofInt = [
     "Algebra, Category theory, Algebraic topology, Universal algebras",
@@ -61,12 +71,12 @@ let p_bio = [
 ];
 
 export let prof = [
-    {name: names[0], job: ranks[0], pic: [p_img1], aoi: areaofInt[0], bio: p_bio[0]/*, doc: pdf0*/},
     {name: names[1], job: "Professor & Head", pic: [p_img2], aoi: areaofInt[1], bio: p_bio[1]/*, doc: pdf1*/},
+    {name: names[0], job: ranks[4] + " (CSIR)", pic: [p_img1], aoi: areaofInt[0], bio: p_bio[0]/*, doc: pdf0*/},
     {name: names[2], job: ranks[1], pic: [p_img3], aoi: areaofInt[2], bio: p_bio[2]/*, doc: pdf2*/},
     {name: names[3], job: ranks[2], pic: [p_img4], aoi: areaofInt[3], bio: p_bio[3]/*, doc: pdf3*/},
     {name: names[4], job: ranks[3], pic: [p_img5], aoi: areaofInt[4], bio: p_bio[4], doc: pdf4},
-    {name: names[5], job: ranks[3], pic: [p_img8, profile_pic1], aoi: areaofInt[5], bio: p_bio[5], doc: pdf5},
+    {name: names[5], job: ranks[2], pic: [p_img8, profile_pic1], aoi: areaofInt[5], bio: p_bio[5], doc: pdf5},
     {name: names[6], job: ranks[3], pic: [p_img6], aoi: areaofInt[6], bio: p_bio[6], doc: pdf6},
     {name: names[7], job: ranks[3], pic: [p_img7], aoi: areaofInt[7], bio: p_bio[7], doc: pdf7},
     {name: names[8], job: ranks[3], pic: [p_img9], aoi: areaofInt[8], bio: p_bio[8], doc: pdf8},
@@ -476,20 +486,54 @@ let link = {
     kiran: [null, null, "https://scholar.google.co.in/citations?hl=en&view_op=list_works&gmla=AJsN-F5GoUKrHv6VTDHVL4RPgYwcw2dezBTHgctDZ7ZsNw5VzVYkvF6pcj2RZh2WxEqgM8LpQhDbMZCaiVYMh1GyhcZBjpxn9Q&user=chCK9y4AAAAJ"]
 }
 
+/*========================================================================================================*/
+
+/*------- Faculty List -------*/
+// Data in  the card View (faculty.js)
+export let Professors = [
+    {name: "Prof. Sasi Gopalan", pos: "Professor & Head", pic: [p_img2], bio: p_bio[1], qua:"MSc, PhD", publi: "Papers 51, Books 4",  phd: "No. of phd Students: Awarded 3, Ongoing 7", award: null, areaOfInt: "Approximation Theory, Analysis and Approximations in Deep learning, Optimization Techniques, Fuzzy Mathematics, Wavelet Analysis, Mathematical Morphology", profLink: "/people/faculty/profile=4MzRVnmS"},
+    {name: "Prof. P. G. Romeo", pos: "Emeritus Scientist (CSIR)", pic: [p_img1], bio: p_bio[0], qua:"MSc, PhD", publi:32, phd: "No. of phd Students: 8", award: null, areaOfInt: "Algebra, Category theory, Algebraic topology, Universal algebras", profLink: "/people/faculty/profile=Azyq5R38",/* doc: pdf0*/},
+    {name: "Prof. Ambat Vijayakumar", pos: "Emeretus Professor", pic: [p_img3], bio: p_bio[2], qua:"PhD", publi: 71, phd: "No. of phd Students: Awarded 13, Ongoing 1", award: null, areaOfInt: "Discrete Mathematics", profLink: "/people/faculty/profile=5D7f5vjz", /* doc: pdf2*/},
+    {name: "Prof M.N.N Namboothiri", pos: "Emeretus Professor", pic: [], bio: [], qua: "PhD", publi: 22, phd: null, award: null, areaOfInt: null, profLink: "/people/faculty/profile=Bb5G5mjy", /* doc: pdf2*/}
+];
+
+export let AssocProfessors = [
+    {name: "Dr. Shery Fernandez", job: "Associate Professor", pic: [p_img4], bio: p_bio[3], qua: "M.Phil, PhD, NET", publi: 13, phd: "No. of phd Students: 5", award: null, areaOfInt: "Representation theory, Fuzzy Mathematics", profLink: "/people/faculty/profile=6SsAl9xE", /* doc: pdf3*/},
+    {name: "Dr. Aparna Lakshmanan S", job: "Associate Professor", pic: [p_img8, profile_pic1], bio: p_bio[5], qua: "PhD, NET", publi: 29, phd: "No. of phd Students: Awarded 2, Ongoing 4", award: "Award: Kerala State Young Scientist Award 2012", areaOfInt: "Graph Theory", profLink: "/people/faculty/profile=ZIzVik2u", doc: pdf5},
+];
+
+export let AsstProfessors = [
+    {name: "Dr. Ambily A A", job: ranks[3], pic: [p_img5], bio: p_bio[4], qua: "MSc, M.Phil, PhD", publi: "Papers 6 Book 1", phd: "No. of phd Students: Ongoing 3", award: "Award: Kerala State Young Scientist Award 2020", areaOfInt: "Algebraic K-Theory, Commutative Algebra, Computational Algebra, Non-Commutative Algebras", profLink: "/people/faculty/profile=QnZUwiq6", doc: pdf4},
+    {name: "Dr. V. B. Kiran Kumar", job: ranks[3], pic: [p_img6], bio: p_bio[6], qua: "MSc, PhD", publi: 12, phd: "No. of phd Students: Awarded 1, Ongoing 3", award: null, areaOfInt: "Functional Analysis", profLink: "/people/faculty/profile=JBbkICAq", doc: pdf6},
+    {name: "Dr. A. Noufal", job: ranks[3], pic: [p_img7], bio: p_bio[7], qua: "MSc, M.Phil, PhD", publi: 4, phd: "No. of phd Students: Ongoing 4", award: null, areaOfInt: "Functional Analysis, Framelets, PDEs", profLink: "/people/faculty/profile=DOsSFiDt", doc: pdf7},
+    {name: "Dr. Shankar P", job: ranks[3], pic: [p_img9], bio: p_bio[8], qua: "MSc, PhD", publi: 7, phd: null, award: null, areaOfInt: "Functional analysis, Operator algebras and Operator theory", profLink: "/people/faculty/profile=16HJ4Mgh", doc: pdf8},
+    {name: "Dr. Tanushree Pandit", job: ranks[3], pic: [p_img10], bio: p_bio[9], qua: "MSc, PhD", phd: null, award: null, areaOfInt: "Convex Optimization, Variational Inequalities, Equilibrium Problems", profLink: "/people/faculty/profile=h4GJEgP9", publi: 3,/*, doc: pdf9*/},
+    {name: "Dr. Tathagata Banerjee", job: ranks[3], pic: [p_img11], bio: p_bio[10], qua: "MSc, PhD", publi: 1, phd: null, areaOfInt: "Operator Algebras, Operator theory and Coarse geometry", profLink: "/people/faculty/profile=84gdKK0e", award: null,/*, doc: pdf10*/}    
+];
+
+// Data in the profile view (profile.js)
+// Need to be optimised
 export let data = [
-    {links: link.romeo, edu: [], mem:[], talks: [],  pub : romeo_articles, conf: [], phd: aparna_phd, proj:[], board: []},
-    {links: link.sasi, edu: [], mem:[], talks: [], pub : [], conf: [], phd: aparna_phd, proj:[], board: []},
-    {links: link.ambat, edu: ambat_quali, mem: ambat_membership, talks: ambat_invited,  pub : ambat_articles, conf: [], phd: aparna_phd, proj:[], board: ambat_board},
-    {links: link.shery, edu: [], mem:[], talks: [], pub : shery_articles, conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.romeo, edu: [], mem:[], talks: [],  pub : romeo_articles, conf: [], phd: [], proj:[], board: []},
+    {links: link.sasi, edu: [], mem:[], talks: [], pub : [], conf: [], phd: [], proj:[], board: []},
+    {links: link.ambat, edu: ambat_quali, mem: ambat_membership, talks: ambat_invited,  pub : ambat_articles, conf: [], phd: [], proj:[], board: ambat_board},
+    {links: link.shery, edu: [], mem:[], talks: [], pub : shery_articles, conf: [], phd: [], proj:[], board: []},
     {links: link.ambily, edu: ambily_quali, mem: [], pub : ambily_articles, phd: ambily_phd, proj:ambily_research, conf: ambily_conference, talks: ambily_invited,  board: []},
     {links: link.aparna, edu: aparna_quali, mem: aparna_membership, pub: aparna_articles, phd: aparna_phd, proj: aparna_research, conf: aparna_conference, talks: aparna_invited,  board: aparna_board},
-    {links: link.kiran, edu: kiran_quali, mem:[], talks: [], pub : kiran_articles,  conf: [], phd: aparna_phd, proj: kiran_research, board: []},
-    {links: link.noufal, edu: noufal_quali, mem:[], pub: [], talks: noufal_invited,  conf: noufal_conference, phd: aparna_phd, proj:[],  board: []},
-    {links: link.shankar, edu: shankar_quali, mem: [], talks: shankar_invited, pub : shankar_articles,  conf: [], phd: aparna_phd, proj:[], board: []},
-    {links: link.tanu, edu: [], mem:[], talks: [], pub : tanu_articles, conf: [], phd: aparna_phd, proj:[], board: []},
-    {links: link.tatha, edu: [], mem:[], talks: [], pub : tatha_articles, conf: [], phd: aparna_phd, proj:[], board: []},
+    {links: link.kiran, edu: kiran_quali, mem:[], talks: [], pub : kiran_articles,  conf: [], phd: [], proj: kiran_research, board: []},
+    {links: link.noufal, edu: noufal_quali, mem:[], pub: [], talks: noufal_invited,  conf: noufal_conference, phd: [], proj:[],  board: []},
+    {links: link.shankar, edu: shankar_quali, mem: [], talks: shankar_invited, pub : shankar_articles,  conf: [], phd: [], proj:[], board: []},
+    {links: link.tanu, edu: [], mem:[], talks: [], pub : tanu_articles, conf: [], phd: [], proj:[], board: []},
+    {links: link.tatha, edu: [], mem:[], talks: [], pub : tatha_articles, conf: [], phd: [], proj:[], board: []},
+    {links: "", edu: [], mem:[], talks: [], pub : [], conf: [], phd: [], proj:[], board: []}
 ];
 
 
-
-
+/*---- Staff List ----*/
+export let staffs = [
+    {name: "Sheeba VK", pic: sheeba_pic, desig: "Section Officer"},
+    {name: "Abhilash R", pic: null, desig: "Junior Librarian"},
+    {name: "Bindu M C", pic: bindu_pic, desig: "Assistant"},
+    {name: "Sony C V", pic: sony_pic, desig: "Computer Assistant"},
+    {name: "Udayakumar K G", pic: udayakumar_pic, desig: "Office Attendant"}
+];

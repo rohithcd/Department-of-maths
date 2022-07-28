@@ -15,6 +15,7 @@ import Contact from "./Components/Contact/Contact";
 import Error from "./Components/Reusable/Error/Error";
 import Layout from "./Layout";
 import Courses from "./Components/Academics/Sub/Courses";
+import Staff from "./Components/People/Staff/Staff";
 
 import "./App.css";
 
@@ -26,8 +27,10 @@ const App = () => {
             <Layout>
                 <Switch>
                     <Route exact path="/" component={Main} />
-                    <Route path={'/people/:Id'}><Profile/></Route>
-                    <Route path="/people"><People/></Route>
+                    <Route path={'/people/faculty/:Id'}><Profile/></Route>
+                    <Route path={'/people/staff'}><Staff/></Route>
+                    {/* <Route path={'/people/retired-prof'}><Profile/></Route> */}
+                    <Route path="/people/faculty"><People/></Route>
                     <Route path={"/academics/courses"}><Courses/></Route>
                     <Route path="/activities" component={ActivitiesMain}/>
                     <Route path={"/research/:link"}><Research/></Route>

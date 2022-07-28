@@ -107,60 +107,67 @@ export let about = [
 /*----People----*/
 
 
-export let qualifications = [
-    "MSc, PhD",
-    "MSc, PhD",
-    "phD",
-    "M.Phil, PhD, NET",
-    "MSc, M.Phil, PhD",
-    "PhD, NET",
-    "MSc, PhD",
-    "MSc, M.Phil, PhD",
-    "MSc, PhD",
-    "MSc, PhD",
-    "MSc, PhD"
-];
 
-export let pub = [
-    "Papers 51, Books 4", 32, 71, 13, "Papers 6 Book 1",29, 12, 4,  7, 3, 1
-];
+/*---Removal---*/
+
+// export let qualifications = [
+//     "MSc, PhD",
+//     "MSc, PhD",
+//     "phD",
+//     "M.Phil, PhD, NET",
+//     "MSc, M.Phil, PhD",
+//     "PhD, NET",
+//     "MSc, PhD",
+//     "MSc, M.Phil, PhD",
+//     "MSc, PhD",
+//     "MSc, PhD",
+//     "MSc, PhD"
+// ];
+
+// export let pub = [
+//     "Papers 51, Books 4", 32, 71, 13, "Papers 6 Book 1",29, 12, 4,  7, 3, 1
+// ];
 
 
 
-export let phd = [
-    "No. of phd Students: Awarded 3, Ongoing 7",
-    "No. of phd Students: 8",
-    "No. of phd Students: Awarded 13, Ongoing 1",
-    "No. of phd Students: 5",
-    "No. of phd Students: Ongoing 3",
-    "No. of phd Students: Awarded 2, Ongoing 4",
-    "No. of phd Students: Awarded 1, Ongoing 3",
-    "No. of phd Students: Ongoing 4",
-    null,
-    null,
-    null
-];
+// export let phd = [
+//     "No. of phd Students: Awarded 3, Ongoing 7",
+//     "No. of phd Students: 8",
+//     "No. of phd Students: Awarded 13, Ongoing 1",
+//     "No. of phd Students: 5",
+//     "No. of phd Students: Ongoing 3",
+//     "No. of phd Students: Awarded 2, Ongoing 4",
+//     "No. of phd Students: Awarded 1, Ongoing 3",
+//     "No. of phd Students: Ongoing 4",
+//     null,
+//     null,
+//     null
+// ];
 
-export let award = [
-    null, null, null, null,
-    "Award: Kerala State Young Scientist Award 2020" ,
-    "Award: Kerala State Young Scientist Award 2012" , 
-    null, null, null, null, null
-];
+// export let award = [
+//     null, null, null, null,
+//     "Award: Kerala State Young Scientist Award 2020" ,
+//     "Award: Kerala State Young Scientist Award 2012" , 
+//     null, null, null, null, null
+// ];
 
 export let profile = [
-    "/people/profile=Azyq5R38",
-    "/people/profile=4MzRVnmS",
-    "/people/profile=5D7f5vjz",
-    "/people/profile=6SsAl9xE",
-    "/people/profile=QnZUwiq6",
-    "/people/profile=ZIzVik2u",
-    "/people/profile=JBbkICAq",
-    "/people/profile=DOsSFiDt",
-    "/people/profile=16HJ4Mgh",
-    "/people/profile=h4GJEgP9",
-    "/people/profile=84gdKK0e"
-]
+    "/people/faculty/profile=Azyq5R38",
+    "/people/faculty/profile=4MzRVnmS",
+    "/people/faculty/profile=5D7f5vjz",
+    "/people/faculty/profile=6SsAl9xE",
+    "/people/faculty/profile=QnZUwiq6",
+    "/people/faculty/profile=ZIzVik2u",
+    "/people/faculty/profile=JBbkICAq",
+    "/people/faculty/profile=DOsSFiDt",
+    "/people/faculty/profile=16HJ4Mgh",
+    "/people/faculty/profile=h4GJEgP9",
+    "/people/faculty/profile=84gdKK0e"
+];
+
+/*---RemovalEnd ---- */
+
+
 
 /*----Explore----*/
 export let links = [

@@ -22,15 +22,18 @@ const droplist = {
         {name: "Research Areas", link: "/research/ressearch-areas"},
         {name: "Publications", link: "/research/publications"},
         {name: "PhD Awarded", link: "/research/PhD-awarded"},
-        {name: "Visitors", link:"/research/visitors"}
+        {name: "Visitors", link:"/research/visitors"},
+        {name: "Research Awarded", link:"/research/visitors"}
     ],
 
     academics: [
-        {name: "Courses", link: "/academics/courses"}
+        {name: "Courses", link: "/academics/courses"},
+        {name: "Timetable", link: "/academics/time-table"}
     ],
 
     students: [
-        {name: "Placements", link: "/research/placements"}
+        {name: "Placements", link: "/research/placements"},
+        {name: "Achievements", link: "/research/achievements"}
     ],
 
     activities: [
@@ -101,22 +104,21 @@ const MenuList = ({func, bool, setter, hover, bool0, bool1, bool2, bool3}) => {
     return(
         <>
             <Link to="/"><li onClick={func}><HomeLogo/>Home</li></Link>
-            <Link to="/people" onClick={func}>
-                <li id="pointer" className="down-list" onMouseLeave={() => hover({people: false})} onMouseEnter={() => hover({people: true})} onClick={() => {setter({people: !bool})}} style={{flexDirection: bool ? "column" : "row"}}>
-                    <span className="side-flex">
-                        <PeopleLogo/>People<Arrow pos={bool0 ? "rotate(-180deg)": "rotate(0deg)"}/>
-                    </span>
-                <Dropdown disp={bool0 ? "block": "none"}>
-                    {droplist.people.map((item, index) => {
-                        return (
-                        <li onClick={func} key={index}>
-                            <Link className="dropdown-link" to={item.link}>{item.name}</Link>
-                        </li>
-                        );
-                    })}
-                </Dropdown>
-                </li>
-            </Link>
+
+            <li id="pointer" className="down-list" onMouseLeave={() => hover({people: false})} onMouseEnter={() => hover({people: true})} onClick={() => {setter({people: !bool})}} style={{flexDirection: bool ? "column" : "row"}}>
+                <span className="side-flex">
+                    <PeopleLogo/>People<Arrow pos={bool0 ? "rotate(-180deg)": "rotate(0deg)"}/>
+                </span>
+            <Dropdown disp={bool0 ? "block": "none"}>
+                {droplist.people.map((item, index) => {
+                    return (
+                    <li onClick={func} key={index}>
+                        <Link className="dropdown-link" to={item.link}>{item.name}</Link>
+                    </li>
+                    );
+                })}
+            </Dropdown>
+            </li>
 
             <li id="pointer" className="down-list" onMouseLeave={() => hover({research: false})} onMouseEnter={() => hover({research: true})} onClick={() => setter({research: !bool})} style={{flexDirection: bool ? "column" : "row"}}>
                 <span className="side-flex">

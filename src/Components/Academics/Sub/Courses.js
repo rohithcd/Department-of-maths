@@ -42,7 +42,7 @@ const Courses = () => {
             
             <Download name="Imsc Syllabus (Approved by University)" link={imsc}/>
             <Download name="Msc Syllabus (Approved by University)" link={syllabus}/>
-            <Download name="Teachers appointed" link={teachers}/>
+            <Download name="UGC Regulation for Appointment of Teachers" link={teachers}/>
             <Download name="Course Structure" link={bulletin}/>
             
             
