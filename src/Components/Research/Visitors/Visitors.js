@@ -12,7 +12,7 @@ const Visitors = () => {
                     <h3>{item.h3}</h3>
                     <ul>
                         {item.li.reverse().map((i)=>(
-                            <li>-> {i}</li>
+                            <li style={{listStyleType: "circle"}}>{i}</li>
                         ))}
                     </ul>
                 </div>

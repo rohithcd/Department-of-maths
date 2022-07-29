@@ -16,6 +16,7 @@ import Error from "./Components/Reusable/Error/Error";
 import Layout from "./Layout";
 import Courses from "./Components/Academics/Sub/Courses";
 import Staff from "./Components/People/Staff/Staff";
+import ResearchScholars from "./Components/People/ResearchScholars/ResearchScholars";
 
 import "./App.css";
 
@@ -29,7 +30,7 @@ const App = () => {
                     <Route exact path="/" component={Main} />
                     <Route path={'/people/faculty/:Id'}><Profile/></Route>
                     <Route path={'/people/staff'}><Staff/></Route>
-                    {/* <Route path={'/people/retired-prof'}><Profile/></Route> */}
+                    <Route path={'/people/research-scholars'}><ResearchScholars/></Route> 
                     <Route path="/people/faculty"><People/></Route>
                     <Route path={"/academics/courses"}><Courses/></Route>
                     <Route path="/activities" component={ActivitiesMain}/>

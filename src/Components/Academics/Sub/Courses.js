@@ -5,7 +5,7 @@ import bulletin from "./bulletin.pdf";
 import teachers from "./teachers.pdf";
 import syllabus from "./Msc_syllabus.pdf";
 import imsc from "./Imsc_syllabus.pdf";
-import Table from "../../Reusable/Table/Table.js";
+import bulletin_20_21 from "./bulletin_20_21.pdf";
 
 
 const Courses = () => {
@@ -44,6 +44,7 @@ const Courses = () => {
             <Download name="Msc Syllabus (Approved by University)" link={syllabus}/>
             <Download name="UGC Regulation for Appointment of Teachers" link={teachers}/>
             <Download name="Course Structure" link={bulletin}/>
+            <Download name="Academic Bulletin 2020 - 2021" link={bulletin_20_21}/>
             
             
         </>

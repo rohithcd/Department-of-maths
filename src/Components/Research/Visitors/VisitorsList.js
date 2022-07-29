@@ -1,3 +1,5 @@
+//Dynamically calculates No of Visitors
+
 const visitorsList = [
     {
         id: 1,
@@ -20,7 +22,7 @@ const visitorsList = [
     },
     {
         id: 3,
-        h3: 'Distinguished Visitors - 18',
+        h3: 'Distinguished Visitors - 37',
         li: [
             'Prof. R. Venkatesh, Indian Institute of Science, Bangalore 04.07.2017',
             'Prof. Inder. K. Rana, I.I.T. Bombay  01.08.2017',
@@ -35,13 +37,57 @@ const visitorsList = [
             'Dr A.V. Jayanthan, IIT Chennai 13.10.2017',
             'Dr. Neeraj Kumar, IIT Mumbai 13.10.2017',
             'Prof. Satyagopal Mandal, University of Kansas, USA 28.12.2017',
+            'Prof A.K Jain, Dept of Physics, IIT Rourkela, 21.05.2018',
+            'Prof. N.S Narayana Swami, IIT Madras, 08.06.2018',
             'Dr. Tamizh Chelvam, MS University, Tirunelveli, India 28.12.2018',
             'Prof. Woalfram Bauer, Hannover University, Germany 13.02.2018',
             'Dr. V .Krishnakumar, Kerala School Of Mathematics, Kozhikode 07.02.2018',
             'Dr. G .P. Balakumar, IIT Palakkad  09.02.2018',
             'Dr. A.R. Rajan, The State Institute of Encyclopaedic Publications, Trivandrum  21.02.2018',
+            'Prof Vijay Kodiyolam (IMSC) 17.09.2018',
+            'Dr K.R Arun, IISER Thiruvananthapuram, 26.09.2018',
+            'Prof Prosenjith Das, IIST Thiruvananthapuram, 04.10.2018', //clarification on this one
+            'Tiju Cheriyan John, ISI Delhi, 10.10.2018',
+            'Prof Bin Han 22.10.2018, 24.20.2018, 13.11.2018',
+            'Prof V Kannan, Central University Hyderabad, 07.12.2018',
+            'Prof Eva Czabarka, University of South Carolina USA, 12.12.2018',
+            'S.H Kulkarni, IIT Madras, 02.02.2019',
+            'Prof Diera Busill-Hall, 04.02.2019',
+            'Mithun Mukharjee, IISER Thiruvananthapuram, 05.04.2019',
+            'Prof S. Kesavan, IMSC Chennai, 06.07.2019',
+            'Prof A.R Rajan, 22.07.2019',
+            'Dr. Apoorva Khare, IISC Bangalore, 20.09.2019',
+            'Dr. K. Somasundaram, Amritha Univerity, 25.11.2019',
+            'Dr. Narayanan.N, IIT Madras, 22.03.2022',
+            'Praphulla Kaushik, IISER Pune, 05.07.2022, 07.07.2022, 08.07.2022',
+            'Dr. Kaushik Dhara, 13.07.2022'   
+
         ]
     },
-]
+];
 
+
+
+/* Data Added on 29/07/2022 */
+/*
+'Prof A.K Jain, Dept of Physics, IIT Rourkela, 21.05.2018',
+'Prof. N.S Narayana Swami, IIT Madras, 08.06.2018',
+'Prof Vijay Kodiyolam (IMSC) 17.09.2018',
+'Dr K.R Arun, IISER Thiruvananthapuram, 26.09.2018',
+'Prof Prosenjith Das, IIST Thiruvananthapuram, 04.10.2018', //clarification on this one
+'Tiju Cheriyan John, ISI Delhi, 10.10.2018',
+'Prof Bin Han 22.10.2018, 24.20.2018, 13.11.2018',
+'Prof V Kannan, Central University Hyderabad, 07.12.2018',
+'Prof Eva Czabarka, University of South Carolina USA, 12.12.2018',
+'S.H Kulkarni, IIT Madras, 02.02.2019',
+'Prof Diera Busill-Hall, 04.02.2019',
+'Mithun Mukharjee, IISER Thiruvananthapuram, 05.04.2019',
+'Prof S. Kesavan, IMSC Chennai, 06.07.2019',
+'Prof A.R Rajan, 22.07.2019',
+'Dr. Apoorva Khare, IISC Bangalore, 20.09.2019',
+'Dr. K. Somasundaram, Amritha Univerity, 25.11.2019',
+'Dr. Narayanan.N, IIT Madras, 22.03.2022',
+'Praphulla Kaushik, IISER Pune, 05.07.2022, 07.07.2022, 08.07.2022',
+'Dr. Kaushik Dhara, 13.07.2022',
+*/
 export default visitorsList;

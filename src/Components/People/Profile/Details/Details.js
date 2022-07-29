@@ -33,6 +33,7 @@ import p_img9 from "../../../../Assets/people/image9.jpg";
 import p_img10 from "../../../../Assets/people/image10.jpg";
 import p_img11 from "../../../../Assets/people/image11.jpg";
 import profile_pic1 from "../../../../Assets/people/profile_pic1.jpg";
+import mnn_pic from "../../../../Assets/people/mnn_namboothiri.jpg";
 
 
 
@@ -494,7 +495,7 @@ export let Professors = [
     {name: "Prof. Sasi Gopalan", pos: "Professor & Head", pic: [p_img2], bio: p_bio[1], qua:"MSc, PhD", publi: "Papers 51, Books 4",  phd: "No. of phd Students: Awarded 3, Ongoing 7", award: null, areaOfInt: "Approximation Theory, Analysis and Approximations in Deep learning, Optimization Techniques, Fuzzy Mathematics, Wavelet Analysis, Mathematical Morphology", profLink: "/people/faculty/profile=4MzRVnmS"},
     {name: "Prof. P. G. Romeo", pos: "Emeritus Scientist (CSIR)", pic: [p_img1], bio: p_bio[0], qua:"MSc, PhD", publi:32, phd: "No. of phd Students: 8", award: null, areaOfInt: "Algebra, Category theory, Algebraic topology, Universal algebras", profLink: "/people/faculty/profile=Azyq5R38",/* doc: pdf0*/},
     {name: "Prof. Ambat Vijayakumar", pos: "Emeretus Professor", pic: [p_img3], bio: p_bio[2], qua:"PhD", publi: 71, phd: "No. of phd Students: Awarded 13, Ongoing 1", award: null, areaOfInt: "Discrete Mathematics", profLink: "/people/faculty/profile=5D7f5vjz", /* doc: pdf2*/},
-    {name: "Prof M.N.N Namboothiri", pos: "Emeretus Professor", pic: [], bio: [], qua: "PhD", publi: 22, phd: null, award: null, areaOfInt: null, profLink: "/people/faculty/profile=Bb5G5mjy", /* doc: pdf2*/}
+    {name: "Prof M.N.N Namboothiri", pos: "Emeretus Professor", pic: [mnn_pic], bio: [], qua: "PhD", publi: 22, phd: null, award: null, areaOfInt: "Broadly Functional Analysis, Current research topics: Spectral Analysis of Schrodinger Operators, Spectral Analysis large matrices, Approximation Theory in Operator Algebras", profLink: "/people/faculty/profile=Bb5G5mjy", /* doc: pdf2*/}
 ];
 
 export let AssocProfessors = [

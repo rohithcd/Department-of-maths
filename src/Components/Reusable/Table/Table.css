@@ -49,3 +49,8 @@
     }
 
 }
+
+.td-max td {
+    width: min-content;
+    max-width: 300px;
+}

@@ -15,7 +15,7 @@ const Table = ({title, heading, rest, view}) => {
         {
             arr2.push(<td>{rest[i][j]}</td>);
         }
-        body.push(<tr>{arr2.map(item => item)}</tr>);
+        body.push(<tr><td>{i+1}</td>{arr2.map(item => item)}</tr>);
     }
 
     return(
@@ -24,7 +24,7 @@ const Table = ({title, heading, rest, view}) => {
                 <h2>{title}</h2>
                 <table className="content-table">
                     <thead>
-                        <tr>
+                        <tr className="td-max">
                             {head}
                         </tr>
                     </thead>
