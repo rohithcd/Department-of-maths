@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.75cdf751.chunk.css",
-    "main.js": "/static/js/main.dcefd192.chunk.js",
-    "main.js.map": "/static/js/main.dcefd192.chunk.js.map",
+    "main.css": "/static/css/main.2ca6d894.chunk.css",
+    "main.js": "/static/js/main.8f16796c.chunk.js",
+    "main.js.map": "/static/js/main.8f16796c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4963e4e2.js",
     "runtime-main.js.map": "/static/js/runtime-main.4963e4e2.js.map",
     "static/css/2.ed1298f3.chunk.css": "/static/css/2.ed1298f3.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.69cadc89.chunk.js.map": "/static/js/2.69cadc89.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ed1298f3.chunk.css.map": "/static/css/2.ed1298f3.chunk.css.map",
-    "static/css/main.75cdf751.chunk.css.map": "/static/css/main.75cdf751.chunk.css.map",
+    "static/css/main.2ca6d894.chunk.css.map": "/static/css/main.2ca6d894.chunk.css.map",
     "static/js/2.69cadc89.chunk.js.LICENSE.txt": "/static/js/2.69cadc89.chunk.js.LICENSE.txt",
     "static/media/Bio-Ambily.1ed3aaa5.pdf": "/static/media/Bio-Ambily.1ed3aaa5.pdf",
     "static/media/Bio-Aparna.f78fdb0e.pdf": "/static/media/Bio-Aparna.f78fdb0e.pdf",
@@ -25,6 +25,7 @@
     "static/media/box_img3.b6e505c5.jpg": "/static/media/box_img3.b6e505c5.jpg",
     "static/media/box_img4.5f69a13e.jpg": "/static/media/box_img4.5f69a13e.jpg",
     "static/media/bulletin.f2706601.pdf": "/static/media/bulletin.f2706601.pdf",
+    "static/media/bulletin_20_21.dbe25870.pdf": "/static/media/bulletin_20_21.dbe25870.pdf",
     "static/media/classroom1.595a62a0.jpeg": "/static/media/classroom1.595a62a0.jpeg",
     "static/media/cplab1.362d72af.jpeg": "/static/media/cplab1.362d72af.jpeg",
     "static/media/cplab2.54d4e5b5.jpeg": "/static/media/cplab2.54d4e5b5.jpeg",
@@ -58,6 +59,7 @@
     "static/media/lib-5.4d759b7e.jpg": "/static/media/lib-5.4d759b7e.jpg",
     "static/media/logo.81000b9a.svg": "/static/media/logo.81000b9a.svg",
     "static/media/logo_main.ad0d375b.png": "/static/media/logo_main.ad0d375b.png",
+    "static/media/mnn_namboothiri.4f7d75fd.jpg": "/static/media/mnn_namboothiri.4f7d75fd.jpg",
     "static/media/office.ef667dae.jpeg": "/static/media/office.ef667dae.jpeg",
     "static/media/phone.6e142172.png": "/static/media/phone.6e142172.png",
     "static/media/profile_pic1.cc68b5d7.jpg": "/static/media/profile_pic1.cc68b5d7.jpg",
@@ -79,7 +81,7 @@
     "static/js/runtime-main.4963e4e2.js",
     "static/css/2.ed1298f3.chunk.css",
     "static/js/2.69cadc89.chunk.js",
-    "static/css/main.75cdf751.chunk.css",
-    "static/js/main.dcefd192.chunk.js"
+    "static/css/main.2ca6d894.chunk.css",
+    "static/js/main.8f16796c.chunk.js"
   ]
 }
