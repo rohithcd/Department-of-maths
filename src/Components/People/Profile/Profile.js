@@ -12,6 +12,7 @@ const Profile = () => {
     else if(param === "4MzRVnmS") return <Template obj={Professors[0]} dat={data[1]} disp={["edu", "mem", "pub", "teach", "proj", "achieve", "program", "talks", "edit"]}/> /* Sasi Gopalan */
     else if(param === "5D7f5vjz") return <Template obj={Professors[2]} dat={data[2]} disp={["edu", "mem", "pub", "teach", "proj", "achieve", "program", "talks", "edit"]}/> /* Ambat Vijayakumar */
     else if(param === "Bb5G5mjy") return <Template obj={Professors[3]} dat={data[11]} disp={["edu", "mem", "pub", "teach", "proj", "achieve", "program", "talks", "edit"]}/> /* MNN Namboothiri */
+    else if(param === "5ft45opk") return <Template obj={Professors[4]} dat={data[12]} disp={["edu", "mem", "pub", "teach", "proj", "achieve", "program", "talks", "edit"]}/> /* K.P. Naveenachandran */
     else if(param === "6SsAl9xE") return <Template obj={AssocProfessors[0]} dat={data[3]} disp={["edu", "mem", null, "teach", "proj", "achieve", "program", "talks", "edit"]}/> /* Shery Fernanadez */
     else if(param === "ZIzVik2u") return <Template obj={AssocProfessors[1]} dat={data[5]} disp={[null, null, null, null, null, null, null, null, null]}/> /* Aparna */
     else if(param === "QnZUwiq6") return <Template obj={AsstProfessors[0]} dat={data[4]} disp={[null, "mem", null, null, null, "achieve", null, null, "edit"]}/> /* Ambily */

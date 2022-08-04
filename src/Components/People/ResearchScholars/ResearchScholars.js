@@ -6,13 +6,14 @@ const ResearchScholars = () => {
     return(
         <>
             <Title head="Research Scholars" />
-            <h2>Part Time</h2>
-            <Table heading={["Sl.No","Name", "Funding Agency", "Guide", "Area of Work"]}
-                rest={rscholar_data_parttime}/>
-                
             <h2>Full Time</h2>
             <Table heading={["Sl.No","Name", "Funding Agency", "Guide", "Area of Work"]}
                 rest={rscholar_data_fulltime}/>
+
+            <h2>Part Time</h2>
+            <Table heading={["Sl.No","Name", "Funding Agency", "Guide", "Area of Work"]}
+                rest={rscholar_data_parttime}/>
+    
         </>
     );
 }

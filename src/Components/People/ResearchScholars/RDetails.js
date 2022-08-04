@@ -59,20 +59,15 @@
 
 
 export let rscholar_data_fulltime = [
-    ["Savitha K.N.", "_", "Dr. Sasi Gopalan", "Optimization of Wavelet Functions & its Application in Image Processing" ],
-    ["Pinky", "UGC JRF", "Dr. T.P. Johnson", "Some Problems in Topology Lattice Theory and Related Topics"],
-    ["Linu Pinto", "UJRF", "Dr. Sasi Gopalan", "Mathematical Database and Functional Analysis in Data Mining using Intelligent Systems"],
+    // ["Linu Pinto", "UJRF", "Dr. Sasi Gopalan", "Mathematical Database and Functional Analysis in Data Mining using Intelligent Systems"],
     ["Femy N.S.", "UJRF", "Dr. Sasi Gopalan", "Advances in Applied Mathematics to Pattern Recognition" ],
-    ["Anupriya C.S.", "UGC JRF", "Dr. Sasi Gopalan", "Application of Fuzzy Algebra to Automato Theory"],
-    ["Rasila V.A.", "KSCSTE JRF", "Dr. A. Vijayakumar", "Some Aspects of Cayley Graphs"],
+    // ["Rasila V.A.", "KSCSTE JRF", "Dr. A. Vijayakumar", "Some Aspects of Cayley Graphs"],
     ["Siji Michael", "UGC CSIR", "Dr. P.G. Romeo", "Semigroups"],
     ["Aparna Pradeep V.K.", "SERB, DST", "Dr. Ambily A A", "Clifford Algebras"],
-    ["Divya P.B.", "_", "Dr. T.P. Johnson", "Some Applications of Graph Theory in Social Network Analysis"],
     ["Athira Babu", "UGC", "Dr. A. Noufal", "Multi wavelet frames and its properties in a Hilbert space"],
     ["Navin Tomy", "UGC", "Dr. T .P. Johnson", "Some problems in topology, analysis and related topics"],
     ["Alanka Thomas", "CSIR", "Dr. P. G Romeo", "Algebra"],
     ["Sneha K K", "CSIR", "Dr. P. G Romeo", "Category Theory and semigroups"],
-    ["Anju A", "CSIR", "Dr. P. G Romeo", "Algebra"],
     ["Sarath Kumar N S", "CSIR", "Dr. V. B Kiran Kumar", "Numerical linear algebra, Functional analysis"],
     ["Simi Thomas", "UGC", "Dr. Shery Fernandez", "Spectral theory of operators"],
     ["Anmary Tonny", "INSPIRE", "Dr. V B Kiran Kumar", "Symplectic Spectral Theory"],
@@ -89,30 +84,38 @@ export let rscholar_data_fulltime = [
     ["Albin James", "CSIR", "Dr. T.P. Johnson", "Some problems in topology and related topics"],
     ["Athul Augustine", "CSIR", "Dr. Shankar P", "Boundary representation and Hyperrigidity in Hilbert C*- Modules"],
     ["Rinusha T R", "UJRF", "Dr. Shery Fernandez", "Generalizations of pivot theorems"],
-    ["Minnumol P K", "_", "Dr. P G Romeo", "Structure of algebras : A semigroup theoretical and categorical approach"]
+    ["Minnumol P K", "_", "Dr. P G Romeo", "Structure of algebras : A semigroup theoretical and categorical approach"],
+    ["Anjali V A", "_", "Dr. Shanker P", ""],
+    ["Dhanya Roy", "_", "Dr. Aparna Lakshmanan S"," "],
+    ["Aadya D", "UGC", "Dr. Aparna Lakshmanan S"," "],
 ];
 
 //part-time
 export let rscholar_data_parttime = [
+    ["Anju A", "CSIR", "Dr. P. G Romeo", "Algebra"],
+    ["Divya P.B.", "_", "Dr. T.P. Johnson", "Some Applications of Graph Theory in Social Network Analysis"],
+    ["Anupriya C.S.", "UGC JRF", "Dr. Sasi Gopalan", "Application of Fuzzy Algebra to Automato Theory"],
     ["Abdul Rof. V.", "_", "Dr. A. Krishnamoorthy", "Stochastic Models"],
     ["Anju S. Mattam", "_", "Dr. Sasi Gopalan", "Study of Properties of Fuzzy Soft Sets in Algebraic Structures" ],
     ["Yogesh Prasad. N.", "_", "Dr. T.P. Johnson", "Some Problems in Lattice Theory, Topology and Related Topics" ],
-    ["Sindhurani P.J.", "_", "Dr. T.P. Johnson", "Indian Contributions to Studies on Algebra with Special Reference to Interminate Equations."],
+    // ["Sindhurani P.J.", "_", "Dr. T.P. Johnson", "Indian Contributions to Studies on Algebra with Special Reference to Interminate Equations."],
     ["Nisha A.B", "_", "Dr. Sasi Gopalan", "Mathematical Morphology and Function Approximation"],
     ["Prince Joseph", "_", "Dr. A. Krishnamoorthy", "Stochastic Modelling Analysis"],
     ["Jaison Jacob", "_", "Dr. B. Lakshmy", "Stochastic  Modelling their Analysis and Applications"],
     ["Ajan K.A.", "_", "Dr. T.P. Johnson", "General Topology"],
-    ["Smisha M.A.", "_", "Dr. P.G. Romeo", "A Study on Semigroup Amalgams"],
+    // ["Smisha M.A.", "_", "Dr. P.G. Romeo", "A Study on Semigroup Amalgams"],
     ["Sindhu. S.", "_", "Dr. A. Krishnamoorthy", "Stochastic Modelling"],
-    ["Anu Nuthan Joshua", "_", "Dr. A. Krishnamoorthy", "Stochastic Modelling"],
+    // ["Anu Nuthan Joshua", "_", "Dr. A. Krishnamoorthy", "Stochastic Modelling"],
     ["Shajeeb P.U.", "_", "Dr. A. Krishnamoorthy", "Stochastic Modelling Analysis and Applications"],
     ["Lexy Alexander", "_", "Dr. A Noufal", "Operator theory, Asymptotic linear algebra"],
     ["Linet Roslin Antony", "_", "Dr. T.P. Johnson", "Some Problems in Topology and Related Topics"],
     ["Riya Jose", "_", "Dr. P .G Romeo", "Category theory, Semigroups"],
     ["Mathew Thomas", "_", "Dr. V. B Kiran Kumar", "Linear Relation"],
     ["Sathi P H", "_", "Dr. P .G Romeo", "Study of Structure of linear algebraic monoids"],
-    ["Niza N", "_", "Dr. Ambily A A", "Unimodular rows in K-Theory"]
-
+    ["Niza N", "_", "Dr. Ambily A A", "Unimodular rows in K-Theory"],
+    ["Savitha K.N.", "_", "Dr. Sasi Gopalan", "Optimization of Wavelet Functions & its Application in Image Processing" ],
+    ["Anju C Augustine", "_", "Dr. Shery Fernandez", ""]
 ];
 
+//NAME, GUIDE, AREA OF WORK, FUNDING AGENCY, YEAR OF JOINING    
 

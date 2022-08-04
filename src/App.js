@@ -7,14 +7,14 @@ import Gallery_main from "./Components/Gallery/Gallery_main";
 import Alumni from "./Components/Alumni/Alumni";
 import Facilities from "./Components/Facilities/Facilities";
 import Research from "./Components/Research/Research";
-import Academics from "./Components/Academics/Academics";
+// import Academics from "./Components/Academics/Academics";
 import ActivitiesMain from "./Components/Activities/Activities_main";
 import Profile from "./Components/People/Profile/Profile";
 import Outreach from "./Components/Outreach/Outreach";
 import Contact from "./Components/Contact/Contact";
 import Error from "./Components/Reusable/Error/Error";
 import Layout from "./Layout";
-import Courses from "./Components/Academics/Sub/Courses";
+import Academics from "./Components/Academics/Academics";
 import Staff from "./Components/People/Staff/Staff";
 import ResearchScholars from "./Components/People/ResearchScholars/ResearchScholars";
 
@@ -32,7 +32,7 @@ const App = () => {
                     <Route path={'/people/staff'}><Staff/></Route>
                     <Route path={'/people/research-scholars'}><ResearchScholars/></Route> 
                     <Route path="/people/faculty"><People/></Route>
-                    <Route path={"/academics/courses"}><Courses/></Route>
+                    <Route path={"/academics/:link"}><Academics/></Route>
                     <Route path="/activities" component={ActivitiesMain}/>
                     <Route path={"/research/:link"}><Research/></Route>
                     <Route path="/gallery/campus" component={Gallery}/>
