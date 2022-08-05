@@ -1,5 +1,6 @@
 import {about} from "../../../Exports";
 import Contact from "../Contact/Contact";
+// import Heading from "../Reusable/Head/Heading";
 import "./About.css";
 
 const About = () => {
@@ -10,6 +11,7 @@ const About = () => {
     
     return (
         <>
+            {/* <Heading name="ABOUT US" /> */}
             <div className="section_about">
                 <div className="about_main">
                     <div className="about_text">
