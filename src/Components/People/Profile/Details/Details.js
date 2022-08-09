@@ -510,7 +510,7 @@ export let AsstProfessors = [
     {name: "Dr. V. B. Kiran Kumar", job: ranks[3], pic: [p_img6], bio: p_bio[6], qua: "MSc, PhD", publi: 12, phd: "No. of phd Students: Awarded 1, Ongoing 3", award: null, areaOfInt: "Functional Analysis", profLink: "/people/faculty/profile=JBbkICAq", doc: pdf6},
     {name: "Dr. A. Noufal", job: ranks[3], pic: [p_img7], bio: p_bio[7], qua: "MSc, M.Phil, PhD", publi: 4, phd: "No. of phd Students: Ongoing 4", award: null, areaOfInt: "Functional Analysis, Framelets, PDEs", profLink: "/people/faculty/profile=DOsSFiDt", doc: pdf7},
     {name: "Dr. Shankar P", job: ranks[3], pic: [p_img9], bio: p_bio[8], qua: "MSc, PhD", publi: 7, phd: null, award: null, areaOfInt: "Functional analysis, Operator algebras and Operator theory", profLink: "/people/faculty/profile=16HJ4Mgh", doc: pdf8},
-    {name: "Dr. Tanushree Pandit", job: ranks[3], pic: [p_img10], bio: p_bio[9], qua: "MSc, PhD", phd: null, award: null, areaOfInt: "Convex Optimization, Variational Inequalities, Equilibrium Problems", profLink: "/people/faculty/profile=h4GJEgP9", publi: 3,/*, doc: pdf9*/},
+    {name: "Dr. Tanushree Pandit", job: ranks[3], pic: [p_img10], bio: p_bio[9], qua: "MSc, PhD", phd: null, award: null, areaOfInt: "Convex Optimization, Variational Inequalities, Equilibrium Problems", profLink: "/people/faculty/profile=h4GJEgP9", publi: 2,/*, doc: pdf9*/},
     {name: "Dr. Tathagata Banerjee", job: ranks[3], pic: [p_img11], bio: p_bio[10], qua: "MSc, PhD", publi: 1, phd: null, areaOfInt: "Operator Algebras, Operator theory and Coarse geometry", profLink: "/people/faculty/profile=84gdKK0e", award: null,/*, doc: pdf10*/}    
 ];
 

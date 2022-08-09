@@ -6,6 +6,7 @@ import teachers from "./teachers.pdf";
 import syllabus from "./Msc_syllabus.pdf";
 import imsc from "./Imsc_syllabus.pdf";
 import bulletin_20_21 from "./bulletin_20_21.pdf";
+import po from "./program-outcomes.pdf"
 
 
 const Courses = () => {
@@ -40,6 +41,7 @@ const Courses = () => {
                 </table>
             </div>
             
+            <Download name="Program Outcomes" link={po}/>
             <Download name="Imsc Syllabus (Approved by University)" link={imsc}/>
             <Download name="Msc Syllabus (Approved by University)" link={syllabus}/>
             <Download name="UGC Regulation for Appointment of Teachers" link={teachers}/>

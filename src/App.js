@@ -17,6 +17,7 @@ import Layout from "./Layout";
 import Academics from "./Components/Academics/Academics";
 import Staff from "./Components/People/Staff/Staff";
 import ResearchScholars from "./Components/People/ResearchScholars/ResearchScholars";
+import RetiredFaculty from "./Components/People/RetiredFaculty/RetiredFaculty";
 
 import "./App.css";
 
@@ -31,6 +32,7 @@ const App = () => {
                     <Route path={'/people/faculty/:Id'}><Profile/></Route>
                     <Route path={'/people/staff'}><Staff/></Route>
                     <Route path={'/people/research-scholars'}><ResearchScholars/></Route> 
+                    <Route path={'/people/retired-faculty'}><RetiredFaculty/></Route> 
                     <Route path="/people/faculty"><People/></Route>
                     <Route path={"/academics/:link"}><Academics/></Route>
                     <Route path="/activities" component={ActivitiesMain}/>

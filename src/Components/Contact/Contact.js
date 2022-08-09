@@ -1,8 +1,8 @@
 import "./Contact.css";
-import "./style.css";
+// import "./style.css";
 
-import Button from "../Reusable/Button/Button";
-import {slide2, email, phone} from "../../Exports";
+// import Button from "../Reusable/Button/Button";
+// import {slide2, email, phone} from "../../Exports";
 
 const Contact = () => {
 

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee98555c.css",
-    "main.js": "/static/js/main.9ba7202a.js",
+    "main.css": "/static/css/main.0451350e.css",
+    "main.js": "/static/js/main.6568cefc.js",
     "static/media/dep1.JPG": "/static/media/dep1.608eb71e7c4f14e8255b.JPG",
     "static/media/img_about.JPG": "/static/media/img_about.206c2ed9b14bcf7de67c.JPG",
     "static/media/slides_img3.JPG": "/static/media/slides_img3.8fa75fd164e80f6b2dfd.JPG",
@@ -57,6 +57,7 @@
     "static/media/cplab2.jpeg": "/static/media/cplab2.54d4e5b5bc4c1abd9a31.jpeg",
     "static/media/image2.jpg": "/static/media/image2.b0f325f43737a02f22a0.jpg",
     "static/media/shared_office1.jpeg": "/static/media/shared_office1.242aebaac428f78a43be.jpeg",
+    "static/media/program-outcomes.pdf": "/static/media/program-outcomes.9e0bd641d1b2b2c4bee3.pdf",
     "static/media/shared_office3.jpeg": "/static/media/shared_office3.56301c97025301e2c0fb.jpeg",
     "static/media/shared_office4.jpeg": "/static/media/shared_office4.348cc8b24012abb5e435.jpeg",
     "static/media/cplab1.jpeg": "/static/media/cplab1.362d72af374e9e0c9cc6.jpeg",
@@ -70,11 +71,11 @@
     "static/media/teachers.pdf": "/static/media/teachers.89586c1a0d130c89878b.pdf",
     "index.html": "/index.html",
     "static/media/down_arrow.svg": "/static/media/down_arrow.210c375d82c5b34ef153fd40b75542cb.svg",
-    "main.ee98555c.css.map": "/static/css/main.ee98555c.css.map",
-    "main.9ba7202a.js.map": "/static/js/main.9ba7202a.js.map"
+    "main.0451350e.css.map": "/static/css/main.0451350e.css.map",
+    "main.6568cefc.js.map": "/static/js/main.6568cefc.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee98555c.css",
-    "static/js/main.9ba7202a.js"
+    "static/css/main.0451350e.css",
+    "static/js/main.6568cefc.js"
   ]
 }

@@ -19,11 +19,11 @@ const droplist = {
     ],
 
     research: [
-        {name: "Research Areas", link: "/research/ressearch-areas"},
+        {name: "Research Areas", link: "/research/research-areas"},
         {name: "Publications", link: "/research/publications"},
         {name: "PhD Awarded", link: "/research/PhD-awarded"},
         {name: "Visitors", link:"/research/visitors"},
-        {name: "Research Awarded", link:"/research/visitors"}
+        {name: "Research Awarded", link:"/research/research-awarded"}
     ],
 
     academics: [
