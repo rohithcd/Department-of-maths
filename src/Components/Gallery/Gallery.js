@@ -1,15 +1,14 @@
 import {useState, useEffect} from "react";
 import Loader from "../Reusable/Loader/Loader";
-import {img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13} from "../../Exports";
 import Button from "../Reusable/Button/Button";
 import "./Gallery.css";
 
 
-const Gallery = () => {
+const Gallery = ({pics}) => {
     let arr = [];
     const [state, setState] = useState({n: 4, value: "Show More"});
     const [loading, setLoading] = useState(false);
-    let pics = [img8, img9, img10, img11, img12, img13, img1, img2, img3, img4, img5, img6, img7];
+    
 
     useEffect(() => {
         setLoading(true);
@@ -45,6 +44,8 @@ const Gallery = () => {
     );
 }
 
+export default Gallery;
+
 const Photo = (props) =>
 {
     return(
@@ -56,5 +57,3 @@ const Photo = (props) =>
     );
     
 }
-
-export default Gallery;

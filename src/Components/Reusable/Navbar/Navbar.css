@@ -11,6 +11,10 @@
     user-select: none;
 }
 
+.down-list span {
+    color: var(--bg-main);
+}
+
 .lock
 {
     position: fixed;

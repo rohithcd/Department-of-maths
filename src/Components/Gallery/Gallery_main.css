@@ -1,12 +1,12 @@
 .section_gallery-main
 {
-    width: 92%;
+    width: 90%;
     height: 40rem;
     margin: 3rem auto;
     display: grid;
     grid-gap: 6.65%;
-    grid-template-rows: repeat(2, 300px);
-    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: repeat(2, 360px);
+    grid-template-columns: repeat(4, 300px);
     backface-visibility: hidden;
 }
 

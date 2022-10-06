@@ -11,12 +11,13 @@ const Table = ({title, heading, rest, view}) => {
     for(let i=0; i<rest.length; i++)
     {
         arr2.splice(0, arr2.length);
-        for(let j=0; j<heading.length; j++)
+        for(let j=0; j<heading.length-1; j++)
         {
             arr2.push(<td>{rest[i][j]}</td>);
         }
         body.push(<tr><td>{i+1}</td>{arr2.map(item => item)}</tr>);
     }
+
 
     return(
         <>
@@ -24,7 +25,7 @@ const Table = ({title, heading, rest, view}) => {
                 <h2>{title}</h2>
                 <table className="content-table">
                     <thead>
-                        <tr className="td-max">
+                        <tr>
                             {head}
                         </tr>
                     </thead>

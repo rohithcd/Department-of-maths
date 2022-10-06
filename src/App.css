@@ -20,10 +20,10 @@
     box-sizing: border-box;
 }
 
-html
+body
 {
     font-size: 100%; /*1 rem = 16px */
-    background-color: var(--bg-offwhite);
+    background-color: var(--white);
 }
 
 #root
@@ -73,4 +73,8 @@ h1, h2, h3, h4, h5, h6, ul, p
 {
     margin-bottom: 0;
     padding-left: 0;
+}
+
+section {
+    margin: 5rem auto !important;
 }

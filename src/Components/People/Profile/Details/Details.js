@@ -1,8 +1,4 @@
-/*---- Importing Pictures of Staff (For Staff.js) ----*/
-import bindu_pic from "../../../../Assets/people/staff/bindu.jpg";
-import sheeba_pic from "../../../../Assets/people/staff/sheeba.jpg";
-import sony_pic from "../../../../Assets/people/staff/sony.jpg";
-import udayakumar_pic from "../../../../Assets/people/staff/udayakumar.jpg";
+
 
 /*---- Import End ----*/
 
@@ -496,7 +492,7 @@ export let Professors = [
     {name: "Prof. P. G. Romeo", pos: "Emeritus Scientist (CSIR)", pic: [p_img1], bio: p_bio[0], qua:"MSc, PhD", publi:32, phd: "No. of phd Students: 8", award: null, areaOfInt: "Algebra, Category theory, Algebraic topology, Universal algebras", profLink: "/people/faculty/profile=Azyq5R38",/* doc: pdf0*/},
     {name: "Prof. Ambat Vijayakumar", pos: "Emeretus Professor", pic: [p_img3], bio: p_bio[2], qua:"PhD", publi: 71, phd: "No. of phd Students: Awarded 13, Ongoing 1", award: null, areaOfInt: "Discrete Mathematics", profLink: "/people/faculty/profile=5D7f5vjz", /* doc: pdf2*/},
     {name: "Prof M.N.N Namboothiri", pos: "Emeretus Professor", pic: [mnn_pic], bio: [], qua: "PhD", publi: 22, phd: null, award: null, areaOfInt: "Broadly Functional Analysis, Current research topics: Spectral Analysis of Schrodinger Operators, Spectral Analysis large matrices, Approximation Theory in Operator Algebras", profLink: "/people/faculty/profile=Bb5G5mjy", /* doc: pdf2*/},
-    {name: "Prof K.P. Naveenachandran", pos: "Adjugate Professor", pic: [mnn_pic], bio: [], qua: "PhD", publi: 22, phd: null, award: null, areaOfInt: "Broadly Functional Analysis, Current research topics: Spectral Analysis of Schrodinger Operators, Spectral Analysis large matrices, Approximation Theory in Operator Algebras", profLink: "/people/faculty/profile=Bb5G5mjy", /* doc: pdf2*/}
+    {name: "Prof K.P. Naveenachandran", pos: "Adjunct Professor", pic: null, bio: [], qua: null, publi: 4, phd: null, award: null, areaOfInt: "Commutative Algebra", profLink: "/people/faculty/profile=Bb5G5mjy", /* doc: pdf2*/}
 
 ];
 
@@ -506,7 +502,7 @@ export let AssocProfessors = [
 ];
 
 export let AsstProfessors = [
-    {name: "Dr. Ambily A A", job: ranks[3], pic: [p_img5], bio: p_bio[4], qua: "MSc, M.Phil, PhD", publi: "Papers 6 Book 1", phd: "No. of phd Students: Ongoing 3", award: "Award: Kerala State Young Scientist Award 2020", areaOfInt: "Algebraic K-Theory, Commutative Algebra, Computational Algebra, Non-Commutative Algebras", profLink: "/people/faculty/profile=QnZUwiq6", doc: pdf4},
+    {name: "Dr. Ambily A A", job: ranks[3], pic: [p_img5], bio: p_bio[4], qua: "MSc, M.Phil, PhD", publi: "Papers 7 Book 1", phd: "No. of phd Students: Ongoing 3", award: "Award: Kerala State Young Scientist Award 2020", areaOfInt: "Algebraic K-Theory, Commutative Algebra, Computational Algebra, Non-Commutative Algebras", profLink: "/people/faculty/profile=QnZUwiq6", doc: pdf4},
     {name: "Dr. V. B. Kiran Kumar", job: ranks[3], pic: [p_img6], bio: p_bio[6], qua: "MSc, PhD", publi: 12, phd: "No. of phd Students: Awarded 1, Ongoing 3", award: null, areaOfInt: "Functional Analysis", profLink: "/people/faculty/profile=JBbkICAq", doc: pdf6},
     {name: "Dr. A. Noufal", job: ranks[3], pic: [p_img7], bio: p_bio[7], qua: "MSc, M.Phil, PhD", publi: 4, phd: "No. of phd Students: Ongoing 4", award: null, areaOfInt: "Functional Analysis, Framelets, PDEs", profLink: "/people/faculty/profile=DOsSFiDt", doc: pdf7},
     {name: "Dr. Shankar P", job: ranks[3], pic: [p_img9], bio: p_bio[8], qua: "MSc, PhD", publi: 7, phd: null, award: null, areaOfInt: "Functional analysis, Operator algebras and Operator theory", profLink: "/people/faculty/profile=16HJ4Mgh", doc: pdf8},
@@ -532,11 +528,4 @@ export let data = [
 ];
 
 
-/*---- Staff List ----*/
-export let staffs = [
-    {name: "Sheeba VK", pic: sheeba_pic, desig: "Section Officer"},
-    {name: "Abhilash R", pic: null, desig: "Junior Librarian"},
-    {name: "Bindu M C", pic: bindu_pic, desig: "Assistant"},
-    {name: "Sony C V", pic: sony_pic, desig: "Computer Assistant"},
-    {name: "Udayakumar K G", pic: udayakumar_pic, desig: "Office Attendant"}
-];
+

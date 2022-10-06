@@ -1,25 +1,17 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Main from "./Components/Main/Main";
-import People from "./Components/People/People";
-import Gallery from "./Components/Gallery/Gallery";
-import Gallery_main from "./Components/Gallery/Gallery_main";
-import Alumni from "./Components/Alumni/Alumni";
-import Facilities from "./Components/Facilities/Facilities";
-import Research from "./Components/Research/Research";
-// import Academics from "./Components/Academics/Academics";
-import ActivitiesMain from "./Components/Activities/Activities_main";
-import Profile from "./Components/People/Profile/Profile";
-import Outreach from "./Components/Outreach/Outreach";
-import Contact from "./Components/Contact/Contact";
-import Error from "./Components/Reusable/Error/Error";
-import Layout from "./Layout";
-import Academics from "./Components/Academics/Academics";
-import Staff from "./Components/People/Staff/Staff";
-import ResearchScholars from "./Components/People/ResearchScholars/ResearchScholars";
-import RetiredFaculty from "./Components/People/RetiredFaculty/RetiredFaculty";
+import Layout from "./Layout"; // Wraps App componentt with Navbar and Footer
+import "./App.css"; // Importing global styles
 
-import "./App.css";
+/*--- Importing Primary Options --*/
+import {Main, People, Research, Academics, Facilities} from "./Imports";
+
+/*--- Importing Options Under People Section ---*/
+import {Profile, Staff, ResearchScholars, RetiredFaculty} from "./Imports";
+
+import {Campus, Olympiad, Events, Gallery_main, ActivitiesMain, Outreach, Alumni, Contact} from "./Imports";
+
+import Error from "./Components/Reusable/Error/Error";
 
 const App = () => {
     
@@ -37,7 +29,9 @@ const App = () => {
                     <Route path={"/academics/:link"}><Academics/></Route>
                     <Route path="/activities" component={ActivitiesMain}/>
                     <Route path={"/research/:link"}><Research/></Route>
-                    <Route path="/gallery/campus" component={Gallery}/>
+                    <Route path="/gallery/campus" component={Campus}/>
+                    <Route path="/gallery/olympiad" component={Olympiad}/>
+                    <Route path="/gallery/events" component={Events}/>
                     <Route path="/gallery" component={Gallery_main}/>
                     <Route path="/facilities" component={Facilities}/>
                     <Route path="/outreach" component={Outreach}/>

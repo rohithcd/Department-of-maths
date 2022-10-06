@@ -73,7 +73,7 @@ const visitorsList = [
             'Dr. K. Somasundaram, Amritha Univerity, 25.11.2019',
             'Dr. Narayanan N., IIT Madras, 22.03.2022',
             'Dr. Praphulla Kaushik, IISER Pune, 05.07.2022, 07.07.2022, 08.07.2022',
-            'Dr. Kaushik Dhara, 13.07.2022',
+            'Dr. Kaushik Dhara, weizmann institute of science, 13.07.2022',
 
         ]
     },

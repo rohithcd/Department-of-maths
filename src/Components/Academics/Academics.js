@@ -1,7 +1,7 @@
 import "./Academics.css";
 import {useParams} from "react-router-dom";
 import Error from "../Reusable/Error/Error";
-import Courses from "./Sub/Courses";
+import Courses from "./Courses/Courses";
 import Timetable from "./Timetable/Timetable";
 
 const Academics = () => {

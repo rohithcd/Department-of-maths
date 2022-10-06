@@ -1,16 +1,28 @@
 import {Link} from "react-router-dom";
 import Title from "../../Reusable/Title/Title";
-import {staffs} from "../Profile/Details/Details.js";
 
-const scrollToTop = () => {window.scrollTo(0,0)}
+/*---- Importing Pictures of Staff (For Staff.js) ----*/
+import bindu_pic from "../../../Assets/people/staff/bindu.jpg";
+import sheeba_pic from "../../../Assets/people/staff/sheeba.jpg";
+import sony_pic from "../../../Assets/people/staff/sony.jpg";
+import udayakumar_pic from "../../../Assets/people/staff/udayakumar.jpg";
+import abhilash_pic from "../../../Assets/people/staff/abhilash.jpg";
+
+/*---- Staff List ----*/
+let staffs = [
+    {name: "Sheeba VK", pic: sheeba_pic, desig: "Section Officer"},
+    {name: "Abhilash R", pic: abhilash_pic, desig: "Junior Librarian"},
+    {name: "Bindu M C", pic: bindu_pic, desig: "Assistant"},
+    {name: "Sony C V", pic: sony_pic, desig: "Computer Assistant"},
+    {name: "Udayakumar K G", pic: udayakumar_pic, desig: "Office Attendant"}
+];
 
 const Staff = () => {
     return (
         <>
             <div className="section_people">
-                <Title head="Faculty"/>
+                <Title head="STAFFS"/>
                 <div className="section_faculty">
-                    <h2 className="main-head faculty-h2">Staffs</h2>
                     <div className="faculty_grid">
                         {staffs.map((staff) => {
                             return <Card img={staff.pic} name={staff.name} desig={staff.desig}/>    
@@ -26,7 +38,7 @@ const Staff = () => {
 const Card = (props) => {
     return(
         <div className="faculty_card">
-            <img src={props.img} alt="Professor"/>
+            <img src={props.img} alt="Image"/>
             <div>
                 <h3>{props.name}</h3>
                 <p>{props.desig}</p>

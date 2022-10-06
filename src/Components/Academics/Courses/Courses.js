@@ -8,12 +8,14 @@ import imsc from "./Imsc_syllabus.pdf";
 import bulletin_20_21 from "./bulletin_20_21.pdf";
 import po from "./program-outcomes.pdf"
 
+import Heading from "../../Reusable/Head/Heading";
 
 const Courses = () => {
     return (
         <>
+            <section id="section-courses">
             <div className="table_programs">
-                <h2>Programs</h2>
+                <Heading name="Programs"/>
                 <table className="content-table">
                     <thead>
                         <tr>
@@ -48,7 +50,7 @@ const Courses = () => {
             <Download name="Course Structure" link={bulletin}/>
             <Download name="Academic Bulletin 2020 - 2021" link={bulletin_20_21}/>
             
-            
+            </section>
         </>
     );
 }
@@ -58,7 +60,7 @@ const Download = ({link, name}) => {
         <>
             <div className="main-courses">
                 <h4>{name}</h4>
-                <a href={link} className="btn btn_box courses-a" download>Download</a>
+                <a href={link} className="btn-custom btn_box courses-a" download>Download</a>
             </div>
         </>
     )

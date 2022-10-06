@@ -35,22 +35,7 @@ export const PeopleLogo = () => {return <svg className="icons" xmlns="http://www
 export const FacilitiesLogo = () => {return <svg className="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20px" height="20px"><path d="M 6.570313 1 L 6.328125 2.289063 C 5.398438 2.5625 4.570313 3.046875 3.890625 3.695313 L 2.652344 3.261719 L 1.222656 5.738281 L 2.210938 6.585938 C 2.097656 7.042969 2 7.507813 2 8 C 2 8.492188 2.097656 8.957031 2.210938 9.414063 L 1.222656 10.261719 L 2.652344 12.738281 L 3.886719 12.300781 C 4.570313 12.957031 5.398438 13.4375 6.328125 13.714844 L 6.570313 15 L 8 15 L 8 16 L 16 16 L 16 8 L 14 8 C 14 7.507813 13.902344 7.042969 13.789063 6.585938 L 14.777344 5.738281 L 13.347656 3.261719 L 12.113281 3.695313 C 11.429688 3.042969 10.601563 2.5625 9.671875 2.289063 L 9.429688 1 Z M 7.398438 2 L 8.601563 2 L 8.796875 3.054688 L 9.117188 3.132813 C 10.109375 3.359375 10.984375 3.878906 11.65625 4.597656 L 11.878906 4.835938 L 12.894531 4.480469 L 13.496094 5.519531 L 12.683594 6.21875 L 12.78125 6.53125 C 12.921875 6.992188 13 7.488281 13 8 L 11 8 C 11 6.347656 9.652344 5 8 5 C 6.347656 5 5 6.347656 5 8 C 5 9.652344 6.347656 11 8 11 L 8 14 L 7.398438 14 L 7.203125 12.941406 L 6.882813 12.871094 C 5.890625 12.640625 5.015625 12.121094 4.34375 11.402344 L 4.117188 11.160156 L 3.101563 11.519531 L 2.503906 10.480469 L 3.316406 9.78125 L 3.21875 9.46875 C 3.078125 9.007813 3 8.511719 3 8 C 3 7.488281 3.078125 6.992188 3.21875 6.53125 L 3.316406 6.21875 L 2.503906 5.519531 L 3.101563 4.480469 L 4.121094 4.835938 L 4.34375 4.597656 C 5.015625 3.878906 5.890625 3.359375 6.882813 3.132813 L 7.203125 3.054688 Z M 8 6 C 9.109375 6 10 6.890625 10 8 L 8 8 L 8 10 C 6.890625 10 6 9.109375 6 8 C 6 6.890625 6.890625 6 8 6 Z M 9 9 L 15 9 L 15 10 L 9 10 Z M 9 11 L 15 11 L 15 15 L 9 15 Z M 13.160156 11.632813 L 11.699219 12.984375 L 10.839844 12.1875 L 10.160156 12.921875 L 11.699219 14.347656 L 13.839844 12.367188 Z"></path></svg>}
 export const Arrow = ({pos}) => {return <svg style={{transform: pos}}xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" className="arrow_main" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>}
 
-/*----Gallery----*/
-export {default as img1} from "./Assets/gallery/img1.jpg";
-export {default as img2} from "./Assets/gallery/img2.jpg";
-export {default as img3} from "./Assets/gallery/img3.jpg";
-export {default as img4} from "./Assets/gallery/img4.jpg";
-export {default as img5} from "./Assets/gallery/img5.jpg";
-export {default as img6} from "./Assets/gallery/img6.jpg";
-export {default as img7} from "./Assets/gallery/img7.jpg";
 
-export {default as img8} from "./Assets/gallery/slides_img1.JPG"; 
-export {default as img9} from "./Assets/gallery/slides_img2.JPG";
-export {default as img10} from "./Assets/gallery/slides_img3.JPG";
-
-export {default as img11} from "./Assets/gallery/dep1.JPG";
-export {default as img12} from "./Assets/gallery/dep4.JPG";
-export {default as img13} from "./Assets/gallery/dep7.JPG";
 
 /*----Box----*/
 export {default as b_img1} from "./Assets/main/box_img1.jpg";

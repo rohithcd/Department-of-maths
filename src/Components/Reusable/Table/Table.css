@@ -1,11 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
 .content-table
 {
     border-collapse: collapse;
+    margin: 1rem 0 1rem 2rem;
     font-size: 1.1rem;
     min-width: 400px;
+    font-family: "Poppins", sans-serif;
 }
 
-.content-table thead tr
+.content-table thead
 {
     background-color: var(--bg-main);/*#009809*/
     color: #fff;

@@ -1,6 +1,8 @@
 import {about} from "../../../Exports";
-import Contact from "../Contact/Contact";
-// import Heading from "../Reusable/Head/Heading";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+import Heading from "../../Reusable/Head/Heading.js";
 import "./About.css";
 
 const About = () => {
@@ -11,18 +13,12 @@ const About = () => {
     
     return (
         <>
-            {/* <Heading name="ABOUT US" /> */}
-            <div className="section_about">
-                <div className="about_main">
-                    <div className="about_text">
-                        <div className="about_head">
-                            <h2 className="main-head">About</h2>
-                        </div>
-                        {arr}
-                    </div>
-                    <Contact/>
+            <section id="main-about">
+                <Heading name="About" />
+                <div className="text">
+                    {arr}
                 </div>
-            </div>
+            </section>
         </>
     );
 }

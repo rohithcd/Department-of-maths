@@ -1,8 +1,8 @@
 /* Importing Font 'Poppins' from google fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 
 
-.section_about
+/* .section_about
 {
     height: 35rem;
 }
@@ -42,7 +42,7 @@
     bottom: 10%;
     left: 0%;
     background-color: powderblue;
-}*/
+}
 
 .about_text
 {
@@ -146,4 +146,30 @@
     {
         height: 100%;
     }
+} */
+
+#main-about {
+    width: 90%;
+    font-family: "Poppins",sans-serif;
+    margin: 3rem auto 0 auto;
+
+
+}
+
+#main-about h2 {
+    font-size: 35px;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#main-about .text {
+    text-align: justify;
+}
+
+#main-about p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 1.6rem;
+
 }

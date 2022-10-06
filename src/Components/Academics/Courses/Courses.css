@@ -1,12 +1,12 @@
 .main-courses
 {
     width: 90%;
-    margin: 0 auto 0.4rem auto;
-    height: 20px;
+    margin: 0 auto 0.8rem auto;
+    /* height: 20px; */
     border-bottom: 2px grey solid;
     display: flex;
     justify-content: space-between;
-    padding: 3.2rem 1rem;
+    padding: 2rem 1rem;
     background-color: white;
     
 }
@@ -17,13 +17,12 @@
     margin: 2rem auto !important;
 }
 
-
-
-
 .main-courses h4 
 {
     font-family: "Poppins", "Sans-serif";
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
 }
 
 .courses-a 

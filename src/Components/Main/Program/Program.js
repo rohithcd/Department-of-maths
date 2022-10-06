@@ -1,13 +1,13 @@
 import {bg_pro} from "../../../Exports";
 import "./Program.css";
 import {Link} from "react-router-dom";
-
+import Heading from "../../Reusable/Head/Heading.js";
 
 const Program = () => {
     return(
         <>
-            <div className="section_program">
-                <h2 className="main-head">Programs Offered</h2>
+            <section className="section_program">
+                <Heading name="Programs Offered" />
                 <div className="program_box">
                     <div className="program_text">
                         <ul className="program_list">
@@ -21,7 +21,7 @@ const Program = () => {
                         <img src={bg_pro} alt=""/>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     );
 }

@@ -12,17 +12,18 @@
 .title_bg > h1
 {
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 3.7rem;
     font-weight: 900;
     color: var(--white);
     font-family: "Roberto", sans-serif;
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.123);  
 }
 
-.title_bg > h1::before
+/* .title_bg > h1::before
 {
     content: "";
     width: 80%;
@@ -31,9 +32,9 @@
     bottom: 0%;
     left: 0%;
     background-color: var(--white);
-}
+} */
 
-@media screen and (max-width: 1150px)
+/* @media screen and (max-width: 1150px)
 {
     .title_bg > h1
     {
@@ -69,5 +70,5 @@
         width: 0;
         height: 0;
     }
-}
+} */
 
