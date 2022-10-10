@@ -15,7 +15,6 @@ import pdf8 from "../../../../Assets/people/CV/Bio-Shankar.pdf";
 /*import pdf9 from "../../../../Assets/people/CV/Bio-Tanu.pdf";
 import pdf10 from "../../../../Assets/people/CV/Bio-Tatha.pdf"; */
 
-
 /*----Profile Pic ----*/
 import p_img1 from "../../../../Assets/people/image1.jpg";
 import p_img2 from "../../../../Assets/people/image2.jpg";
