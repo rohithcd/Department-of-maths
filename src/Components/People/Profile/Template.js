@@ -179,7 +179,7 @@ const Links = (props) => {
         <>
             <span>
                 <h5>{props.head}</h5>
-                <a href={props.anchor} className="btn btn_box">View</a>
+                <a href={props.anchor} className="btn-custom btn_box">View</a>
             </span>
         </>
     );

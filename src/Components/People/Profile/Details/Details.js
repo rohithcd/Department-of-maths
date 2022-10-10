@@ -3,10 +3,10 @@
 /*---- Import End ----*/
 
 /*----CV----*/
-/*import pdf0 from "../../../../Assets/people/CV/Bio-Romeo.pdf";
-import pdf1 from "../../../../Assets/people/CV/Bio-Sasi.pdf";
-import pdf2 from "../../../../Assets/people/CV/Bio-Ambat.pdf";
-import pdf3 from "../../../../Assets/people/CV/Bio-Shery.pdf"; */
+// import pdf0 from "../../../../Assets/people/CV/Bio-Romeo.pdf";
+import cv_sasi from "../../../../Assets/people/CV/Bio-Sasi.pdf";
+import cv_ambat from "../../../../Assets/people/CV/Bio-Ambat.pdf";
+// import pdf3 from "../../../../Assets/people/CV/Bio-Shery.pdf"; 
 import pdf4 from "../../../../Assets/people/CV/Bio-Ambily.pdf";
 import pdf5 from "../../../../Assets/people/CV/Bio-Aparna.pdf";
 import pdf6 from "../../../../Assets/people/CV/Bio-Kiran.pdf";
@@ -30,6 +30,7 @@ import p_img10 from "../../../../Assets/people/image10.jpg";
 import p_img11 from "../../../../Assets/people/image11.jpg";
 import profile_pic1 from "../../../../Assets/people/profile_pic1.jpg";
 import mnn_pic from "../../../../Assets/people/mnn_namboothiri.jpg";
+import kpn from "../../../../Assets/people/kpnaveenachandran.jpg";
 
 
 
@@ -488,11 +489,11 @@ let link = {
 /*------- Faculty List -------*/
 // Data in  the card View (faculty.js)
 export let Professors = [
-    {name: "Prof. Sasi Gopalan", pos: "Professor & Head", pic: [p_img2], bio: p_bio[1], qua:"MSc, PhD", publi: "Papers 51, Books 4",  phd: "No. of phd Students: Awarded 3, Ongoing 7", award: null, areaOfInt: "Approximation Theory, Analysis and Approximations in Deep learning, Optimization Techniques, Fuzzy Mathematics, Wavelet Analysis, Mathematical Morphology", profLink: "/people/faculty/profile=4MzRVnmS"},
+    {name: "Prof. Sasi Gopalan", pos: "Professor & Head", pic: [p_img2], bio: p_bio[1], qua:"MSc, PhD", publi: "Papers 51, Books 4",  phd: "No. of phd Students: Awarded 3, Ongoing 7", award: null, areaOfInt: "Approximation Theory, Analysis and Approximations in Deep learning, Optimization Techniques, Fuzzy Mathematics, Wavelet Analysis, Mathematical Morphology", profLink: "/people/faculty/profile=4MzRVnmS", doc: cv_sasi},
     {name: "Prof. P. G. Romeo", pos: "Emeritus Scientist (CSIR)", pic: [p_img1], bio: p_bio[0], qua:"MSc, PhD", publi:32, phd: "No. of phd Students: 8", award: null, areaOfInt: "Algebra, Category theory, Algebraic topology, Universal algebras", profLink: "/people/faculty/profile=Azyq5R38",/* doc: pdf0*/},
-    {name: "Prof. Ambat Vijayakumar", pos: "Emeretus Professor", pic: [p_img3], bio: p_bio[2], qua:"PhD", publi: 71, phd: "No. of phd Students: Awarded 13, Ongoing 1", award: null, areaOfInt: "Discrete Mathematics", profLink: "/people/faculty/profile=5D7f5vjz", /* doc: pdf2*/},
+    {name: "Prof. Ambat Vijayakumar", pos: "Emeretus Professor", pic: [p_img3], bio: p_bio[2], qua:"PhD", publi: 71, phd: "No. of phd Students: Awarded 13, Ongoing 1", award: null, areaOfInt: "Discrete Mathematics", profLink: "/people/faculty/profile=5D7f5vjz", doc: cv_ambat},
     {name: "Prof M.N.N Namboothiri", pos: "Emeretus Professor", pic: [mnn_pic], bio: [], qua: "PhD", publi: 22, phd: null, award: null, areaOfInt: "Broadly Functional Analysis, Current research topics: Spectral Analysis of Schrodinger Operators, Spectral Analysis large matrices, Approximation Theory in Operator Algebras", profLink: "/people/faculty/profile=Bb5G5mjy", /* doc: pdf2*/},
-    {name: "Prof K.P. Naveenachandran", pos: "Adjunct Professor", pic: null, bio: [], qua: null, publi: 4, phd: null, award: null, areaOfInt: "Commutative Algebra", profLink: "/people/faculty/profile=Bb5G5mjy", /* doc: pdf2*/}
+    {name: "Prof K.P. Naveenachandran", pos: "Adjunct Professor", pic: [kpn], bio: [], qua: null, publi: 4, phd: null, award: null, areaOfInt: "Commutative Algebra", profLink: "/people/faculty/profile=Bb5G5mjy", /* doc: pdf2*/}
 
 ];
 

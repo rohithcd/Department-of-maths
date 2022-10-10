@@ -1,14 +1,17 @@
 import Title from "../../Reusable/Title/Title";
 import Table from "../../Reusable/Table/Table";
+import Heading from "../../Reusable/Head/Heading";
 
 const RetiredFaculty 
 = () => {
     return (
         <>
             <Title head="Retired Faculty" />
+
             <Table heading={["Sl.no", "Name of Faculty/s"]}
                 rest={retiredFaculty}/>
 
+            <Heading name="Retired HOD/s"/>
             <Table heading={["Sl.no", "Name of HOD", "Year"]}
                 rest={retiredHOD}/>
 

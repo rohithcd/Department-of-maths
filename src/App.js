@@ -11,6 +11,10 @@ import {Profile, Staff, ResearchScholars, RetiredFaculty} from "./Imports";
 
 import {Campus, Olympiad, Events, Gallery_main, ActivitiesMain, Outreach, Alumni, Contact} from "./Imports";
 
+import TrainingPrograms from "./Components/Students/TrainingPrograms/TrainingPrograms";
+import ScholarshipExams from "./Components/Students/ScholarshipExams/ScholarshipExams";
+
+
 import Error from "./Components/Reusable/Error/Error";
 
 const App = () => {
@@ -34,6 +38,8 @@ const App = () => {
                     <Route path="/gallery/events" component={Events}/>
                     <Route path="/gallery" component={Gallery_main}/>
                     <Route path="/facilities" component={Facilities}/>
+                    <Route path="/student/training-programs" component={TrainingPrograms}/>
+                    <Route path="/student/scholar-exams" component={ScholarshipExams}/>
                     <Route path="/outreach" component={Outreach}/>
                     <Route path="/alumni" component={Alumni}/>
                     <Route path="/contact-us" component={Contact}/>

@@ -38,15 +38,15 @@ export const Arrow = ({pos}) => {return <svg style={{transform: pos}}xmlns="http
 
 
 /*----Box----*/
-export {default as b_img1} from "./Assets/main/box_img1.jpg";
-export {default as b_img2} from "./Assets/main/box_img2.jpg";
-export {default as b_img3} from "./Assets/main/box_img3.jpg";
-export {default as b_img4} from "./Assets/main/box_img4.jpg";
+// export {default as b_img1} from "./Assets/main/box_img1.jpg";
+// export {default as b_img2} from "./Assets/main/box_img2.jpg";
+// export {default as b_img3} from "./Assets/main/box_img3.jpg";
+// export {default as b_img4} from "./Assets/main/box_img4.jpg";
 
 /*----Carousal----*/
-export {default as slide1} from "./Assets/main/slides_img1.JPG";
-export {default as slide2} from "./Assets/main/slides_img2.JPG";
-export {default as slide3} from "./Assets/main/slides_img3.JPG";
+export {default as slide1} from "./Assets/main/slides_img1.jpg";
+export {default as slide2} from "./Assets/main/slides_img2.jpg";
+export {default as slide3} from "./Assets/main/slides_img3.jpg";
 
 export {default as slide_min1} from "./Assets/main/slides_img1-mob.jpg";
 export {default as slide_min2} from "./Assets/main/slides_img2-mob.jpg";

@@ -1,0 +1,9 @@
+.scholarship-exams {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.scholarship-exams li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
