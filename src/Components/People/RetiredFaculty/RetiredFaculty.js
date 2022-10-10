@@ -6,8 +6,11 @@ const RetiredFaculty
     return (
         <>
             <Title head="Retired Faculty" />
-            <Table heading={["Sl.no", "Name of Faculty/s", "Year"]}
+            <Table heading={["Sl.no", "Name of Faculty/s"]}
                 rest={retiredFaculty}/>
+
+            <Table heading={["Sl.no", "Name of HOD", "Year"]}
+                rest={retiredHOD}/>
 
         </>
     );
@@ -15,7 +18,7 @@ const RetiredFaculty
 
 export default RetiredFaculty;
 
-const retiredFaculty =  [
+const retiredHOD =  [
     ["Dr. R. N. Pillai (c)", "1976 - 1977, 1982 - 1982"],
     ["Prof. Wazir Hasan Abdi", "1977 - 1982"],
     ["Prof. T. Thrivikraman", "1982 - 1989, 1990 - 1993, 1997 - 2001"],
@@ -24,4 +27,26 @@ const retiredFaculty =  [
     ["Prof. M. Jathavedan", "2004 - 2007"],
     ["Prof. B. Lakshmy", "2011 - 2013"],
     ["Prof. P. G. Romeo", "2013 - 2016, 2017 - 2018, 2019 - 2021"],
+];
+
+const retiredFaculty = [
+    ["Dr. T. Thrivikraman", ""],
+    ["Dr. A. Krishnamoorthy", ""],
+    ["Dr. R.S. Chakravarthy", ""],
+    ["Dr. M. Jathamdat", ""],
+    ["Dr. M.K Ganapathy", ""],
+    ["Dr. M.N.N Namboothiri", ""],
+    ["Dr. A Vijayakumar", ""],
+    ["Dr. B. Lakshmy", ""],
+    ["Dr. N. Unnikrishnan", ""],
+    ["Dr. V.K. Ramachandran", ""],
+    ["Dr. Babu Binder", ""],
+    ["Dr. K.R. Muralidharan Nair", ""],
+    ["Dr. Jacob Zachariah", ""],
+    ["Dr. N. Balakrishnan", ""],
+    ["Dr. R. N Pillai", ""],
+    ["Dr. Wazim Abdi", ""],
+    ["Dr. N. Ramanujan", ""],
+    ["Dr. N. Ramachandran Kaimal", ""],
+    ["Prof. Rajeshwary Thamjan", ""]
 ];

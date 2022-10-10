@@ -1,22 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.0451350e.css",
-    "main.js": "/static/js/main.6568cefc.js",
+    "main.css": "/static/css/main.09299fe3.css",
+    "main.js": "/static/js/main.c3244425.js",
+    "static/media/events7.JPG": "/static/media/events7.966d1fa5e654a7b7b691.JPG",
+    "static/media/events1.JPG": "/static/media/events1.991c86570d2ac885fffd.JPG",
+    "static/media/events6.JPG": "/static/media/events6.adc759e4f94d247581aa.JPG",
     "static/media/dep1.JPG": "/static/media/dep1.608eb71e7c4f14e8255b.JPG",
     "static/media/img_about.JPG": "/static/media/img_about.206c2ed9b14bcf7de67c.JPG",
     "static/media/slides_img3.JPG": "/static/media/slides_img3.8fa75fd164e80f6b2dfd.JPG",
     "static/media/dep7.JPG": "/static/media/dep7.1433a48c2c2831380e27.JPG",
+    "static/media/events3.JPG": "/static/media/events3.8b98c76cae16fc6b5ae8.JPG",
     "static/media/slides_img2.JPG": "/static/media/slides_img2.22fdaff02b27d4d16f08.JPG",
+    "static/media/events4.JPG": "/static/media/events4.593c15987bf16893e766.JPG",
     "static/media/dep4.JPG": "/static/media/dep4.4489566181f7eeaab026.JPG",
+    "static/media/events2.JPG": "/static/media/events2.aa8bd2a9796ca0ce4a47.JPG",
     "static/media/slides_img1.JPG": "/static/media/slides_img1.3fc319049c931b6cddf7.JPG",
+    "static/media/events5.JPG": "/static/media/events5.9c071b3b68ad8a830fa9.JPG",
     "static/media/bulletin_20_21.pdf": "/static/media/bulletin_20_21.dbe2587038709b346e62.pdf",
     "static/media/Msc_syllabus.pdf": "/static/media/Msc_syllabus.0de355da4820252705ef.pdf",
     "static/media/img4.jpg": "/static/media/img4.858f853c1238c34d2b7f.jpg",
     "static/media/img1.jpg": "/static/media/img1.79073e9fcbc2762150af.jpg",
     "static/media/img6.jpg": "/static/media/img6.75c51ab24ab93a086414.jpg",
+    "static/media/olympiad_img4.jpg": "/static/media/olympiad_img4.4235fba0b504b78ae5d4.jpg",
+    "static/media/olympiad_img7.jpg": "/static/media/olympiad_img7.c37776887b96dc5e9b26.jpg",
+    "static/media/olympiad_img6.jpg": "/static/media/olympiad_img6.07fc547b51ac6914e74f.jpg",
+    "static/media/olympiad_img3.jpg": "/static/media/olympiad_img3.77b949b4a3412a6d468e.jpg",
     "static/media/img2.jpg": "/static/media/img2.71ed94ae02cd050a1d9c.jpg",
     "static/media/img3.jpg": "/static/media/img3.796f843223b454d2fb43.jpg",
+    "static/media/olympiad_img2.jpg": "/static/media/olympiad_img2.9f043075e1f5640a7dd8.jpg",
+    "static/media/olympiad_img5.jpg": "/static/media/olympiad_img5.054a9437283580ca9b2b.jpg",
     "static/media/img5.jpg": "/static/media/img5.72a6b828e49521cb7784.jpg",
+    "static/media/olympiad_img1.jpg": "/static/media/olympiad_img1.5db3fa1594a344e57cc6.jpg",
     "static/media/lib-1.jpg": "/static/media/lib-1.aadc8a26fcdc8067d760.jpg",
     "static/media/Imsc_syllabus.pdf": "/static/media/Imsc_syllabus.b9f52d032761c2d7448e.pdf",
     "static/media/lib-3.jpg": "/static/media/lib-3.293586aac978ab36c495.jpg",
@@ -41,6 +55,7 @@
     "static/media/Syllabus-IntMSc.pdf": "/static/media/Syllabus-IntMSc.09943de76c9bff37bb5f.pdf",
     "static/media/image4.jpg": "/static/media/image4.96925ad128f20a8e43a9.jpg",
     "static/media/image9.jpg": "/static/media/image9.a8ed906752119d41f9f4.jpg",
+    "static/media/abhilash.jpg": "/static/media/abhilash.c2378ab28c8696f2e487.jpg",
     "static/media/Bio-Ambily.pdf": "/static/media/Bio-Ambily.1ed3aaa5ebaf3265d09b.pdf",
     "static/media/box_img1.jpg": "/static/media/box_img1.bb8906f9eb0a939188f9.jpg",
     "static/media/Bio-Shankar.pdf": "/static/media/Bio-Shankar.ae05c6e2d02368019b93.pdf",
@@ -71,11 +86,11 @@
     "static/media/teachers.pdf": "/static/media/teachers.89586c1a0d130c89878b.pdf",
     "index.html": "/index.html",
     "static/media/down_arrow.svg": "/static/media/down_arrow.210c375d82c5b34ef153fd40b75542cb.svg",
-    "main.0451350e.css.map": "/static/css/main.0451350e.css.map",
-    "main.6568cefc.js.map": "/static/js/main.6568cefc.js.map"
+    "main.09299fe3.css.map": "/static/css/main.09299fe3.css.map",
+    "main.c3244425.js.map": "/static/js/main.c3244425.js.map"
   },
   "entrypoints": [
-    "static/css/main.0451350e.css",
-    "static/js/main.6568cefc.js"
+    "static/css/main.09299fe3.css",
+    "static/js/main.c3244425.js"
   ]
 }
