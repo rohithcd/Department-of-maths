@@ -85,7 +85,7 @@ export let rscholar_data_fulltime = [
     ["Athul Augustine", "CSIR", "Dr. Shankar P", "Boundary representation and Hyperrigidity in Hilbert C*- Modules"],
     ["Rinusha T R", "UJRF", "Dr. Shery Fernandez", "Generalizations of pivot theorems"],
     ["Minnumol P K", "_", "Dr. P G Romeo", "Structure of algebras : A semigroup theoretical and categorical approach"],
-    ["Anjali V A", "_", "Dr. Shanker P", ""],
+    ["Anjali V A", "_", "Dr. Shankar P", ""],
     ["Dhanya Roy", "_", "Dr. Aparna Lakshmanan S"," "],
     ["Aadya D", "UGC", "Dr. Aparna Lakshmanan S"," "],
 ];

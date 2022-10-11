@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca0a7603.css",
-    "main.js": "/static/js/main.6f6c1438.js",
+    "main.css": "/static/css/main.d0e3c26b.css",
+    "main.js": "/static/js/main.93fe7b2f.js",
     "static/media/bulletin_20_21.pdf": "/static/media/bulletin_20_21.dbe2587038709b346e62.pdf",
     "static/media/Msc_syllabus.pdf": "/static/media/Msc_syllabus.0de355da4820252705ef.pdf",
     "static/media/events7.jpg": "/static/media/events7.1f8c4af2d22acbb5a75d.jpg",
@@ -78,11 +78,11 @@
     "static/media/teachers.pdf": "/static/media/teachers.89586c1a0d130c89878b.pdf",
     "index.html": "/index.html",
     "static/media/down_arrow.svg": "/static/media/down_arrow.210c375d82c5b34ef153fd40b75542cb.svg",
-    "main.ca0a7603.css.map": "/static/css/main.ca0a7603.css.map",
-    "main.6f6c1438.js.map": "/static/js/main.6f6c1438.js.map"
+    "main.d0e3c26b.css.map": "/static/css/main.d0e3c26b.css.map",
+    "main.93fe7b2f.js.map": "/static/js/main.93fe7b2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca0a7603.css",
-    "static/js/main.6f6c1438.js"
+    "static/css/main.d0e3c26b.css",
+    "static/js/main.93fe7b2f.js"
   ]
 }

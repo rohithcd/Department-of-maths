@@ -1,16 +1,19 @@
+
 .research-areas {
     width: 90%;
     margin: 0 auto;
     padding: 1rem 0;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
 }
 
 .research-areas h2,  
 .research-areas h3 {
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .research-areas p {
-    line-height: 1.2;
+    line-height: 1.4;
     font-size: 18px;
     margin-bottom: 1rem;
 }

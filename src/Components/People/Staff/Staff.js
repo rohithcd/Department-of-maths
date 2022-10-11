@@ -11,7 +11,7 @@ import abhilash_pic from "../../../Assets/people/staff/abhilash.jpg";
 /*---- Staff List ----*/
 let staffs = [
     {name: "Sheeba VK", pic: sheeba_pic, desig: "Section Officer"},
-    {name: "Abhilash R", pic: abhilash_pic, desig: "Junior Librarian"},
+    {name: "Dr. Abhilash R", pic: abhilash_pic, desig: "Junior Librarian"},
     {name: "Bindu M C", pic: bindu_pic, desig: "Assistant"},
     {name: "Sony C V", pic: sony_pic, desig: "Computer Assistant"},
     {name: "Udayakumar K G", pic: udayakumar_pic, desig: "Office Attendant"}

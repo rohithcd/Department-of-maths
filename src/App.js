@@ -14,6 +14,10 @@ import {Campus, Olympiad, Events, Gallery_main, ActivitiesMain, Outreach, Alumni
 import TrainingPrograms from "./Components/Students/TrainingPrograms/TrainingPrograms";
 import ScholarshipExams from "./Components/Students/ScholarshipExams/ScholarshipExams";
 
+// import Achievements from "../Students/Achievements/Achievements";
+// import ResearchAreas from "./ResearchAreas/ResearchAreas";
+// import WorkConf from "./WorkConf/WorkConf";
+// import ResearchAwarded from "./ResearchAwarded/ResearchAwarded";
 
 import Error from "./Components/Reusable/Error/Error";
 

@@ -23,7 +23,7 @@ const droplist = {
         {name: "Publications", link: "/research/publications"},
         {name: "PhD Awarded", link: "/research/PhD-awarded"},
         {name: "Visitors", link:"/research/visitors"},
-        {name: "Research Awarded", link:"/research/research-awarded"}
+        {name: "Research Awards", link:"/research/research-awarded"}
     ],
 
     academics: [

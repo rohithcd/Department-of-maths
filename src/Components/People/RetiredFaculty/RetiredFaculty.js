@@ -8,10 +8,10 @@ const RetiredFaculty
         <>
             <Title head="Retired Faculty" />
 
-            <Table heading={["Sl.no", "Name of Faculty/s"]}
+            <Table heading={["Sl.no", "Name of Faculty"]}
                 rest={retiredFaculty}/>
 
-            <Heading name="Retired HOD/s"/>
+            <Heading name="Retired HODs"/>
             <Table heading={["Sl.no", "Name of HOD", "Year"]}
                 rest={retiredHOD}/>
 
@@ -36,20 +36,20 @@ const retiredFaculty = [
     ["Dr. T. Thrivikraman", ""],
     ["Dr. A. Krishnamoorthy", ""],
     ["Dr. R.S. Chakravarthy", ""],
-    ["Dr. M. Jathamdat", ""],
+    ["Dr. M. Jathavedan", ""],
     ["Dr. M.K Ganapathy", ""],
     ["Dr. M.N.N Namboothiri", ""],
     ["Dr. A Vijayakumar", ""],
     ["Dr. B. Lakshmy", ""],
     ["Dr. N. Unnikrishnan", ""],
     ["Dr. V.K. Ramachandran", ""],
-    ["Dr. Babu Binder", ""],
-    ["Dr. K.R. Muralidharan Nair", ""],
+    ["Dr. Babu Sunder", ""],
+    ["Dr. K.R. Muraleedharan Nair", ""],
     ["Dr. Jacob Zachariah", ""],
     ["Dr. N. Balakrishnan", ""],
-    ["Dr. R. N Pillai", ""],
-    ["Dr. Wazim Abdi", ""],
+    ["Dr. R. N. Pillai", ""],
+    ["Dr. Wazir Hasan Abdi", ""],
     ["Dr. N. Ramanujan", ""],
     ["Dr. N. Ramachandran Kaimal", ""],
-    ["Prof. Rajeshwary Thamjan", ""]
+    ["Prof. Rajeshwary Thampuran", ""]
 ];
