@@ -36,5 +36,14 @@ let phd_awarded = [
     ["Elizabeth Reshma M.T","Prof. T.P.Johnson","A STUDY ON CONVERGENCE IN FRAMES AND SINGLY GENERATED FRAME EXTENSIONS",2020],
     ["Rahul Rajan","Dr. V. B. Kiran Kumar","Korovkin-type Approximation on Some Concrete and Abstract Spaces",2020],
     ["Lejo J Mananavalan","Prof. P.G. Romeo","A STUDY ON THE STRUCTURE OF SEMIGROUPS CONSTRUCTED FROM FUNCTIONS",2021],
+    ["Pinky", "Dr. P.G. Romeo", "A Study on some lattice problems in L-Topology and related topics", "2021"],
+    ["Linu Pinto", "Dr. Sasi Gopalan", "An analytical approach on the approximations of deep neural network for classifications functions in fuzzy domain", "2021"],
+    ["Sindhurani P J", "Dr. T.P Johnson", "A critical analysis of sulbasutras in the perspective of geometry and algebra", "2021"],
+    ["Rasila V A", "Dr. A Vijayakumar", "Studies on some steiner distance notions in graphs", "2022"],
+    ["Anu Nuthan Joshua", "Dr. A. Krishnamoorthy", "ANALYSIS OF QUEUES WITH MARKOV DEPENDENT ARRIVAL BATCHES AND MARKOV DEPENDENT SERVICE BATCHES AND MULTISTAGE QUEUES WITH ACCESSIBLE BATCH SERVICE", "2022"],
+    ["Smisha M. A", "Dr. P.G. Romeo", "Embedding of Amalgam of Some Class Γ-semigroups and Rees Matrix Semigroups", "2022"],
+    ["Yogesh Prasad", "Dr. T.P Johnson", "A Study on Reversibility in Generalized Topological Spaces", "2022"]
 ].reverse();
+
+
 

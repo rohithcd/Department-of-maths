@@ -39,8 +39,8 @@ const droplist = {
     activities: [
         {name: "Regional Mathematic Olympiad", link: "/activities/reg-math-olympiad"},
         {name: "Scholarship Exams", link: "/student/scholar-exams"},
-        {name: "Training Programs", link: "/student/training-programs"},
-        {name: "Workshops/Conferences", link: "/research/work-conf"}
+        {name: "Training Programs/Workshops/Conferences", link: "/student/training-programs"},
+        // {name: "Workshops/Conferences", link: "/research/work-conf"}
     ]
 }
 

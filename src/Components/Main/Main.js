@@ -6,6 +6,11 @@ import Explore from "./Explore/Explore";
 import Banner from "./Banner/Banner";
 import Program from "./Program/Program";
 
+
+import Heading from "../Reusable/Head/Heading.js";
+
+
+import sastrayan from "../../Assets/main/sasthrayan.mp4";
 //import "./Main.css";
 
 const Main = () => {
@@ -13,6 +18,7 @@ const Main = () => {
         <>
             <Carousel />
             <Explore />
+            <Video/>
             {/* <Additional /> */}
             <About />
             <Program />
@@ -22,6 +28,34 @@ const Main = () => {
 }
 
 export default Main;
+
+
+const Video = () => {
+    return (
+        <>
+            <section id="video" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                <Heading name="Sasthrayan"/>
+                <video controls>
+                    <source src={sastrayan} type="video/mp4" />
+                </video>
+            </section>
+        </>
+    ); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const Additional = () => {
     return (

@@ -7,8 +7,8 @@ const Timetable = () => {
     return (
         <>
             <section>
-                <Download name="Integrated MSc - Semester 1 (2022 - 24 batch)" link={MSc_sem1}/>
-                <Download name="Integrated MSc - Semester 2 (2022)" link={MSc_sem2}/>
+                <Download name="MSc - Semester 1 (2022 - 24 batch)" link={MSc_sem1}/>
+                <Download name="MSc - Semester 2 (2022)" link={MSc_sem2}/>
                 <Download name="Integrated MSc - Semester 5 (2022)" link={intMsc}/>
             </section>
 

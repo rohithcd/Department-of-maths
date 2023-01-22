@@ -75,7 +75,7 @@ const visitorsList = [
             'Dr. Praphulla Kaushik, IISER Pune, 05.07.2022, 07.07.2022, 08.07.2022',
             'Dr. Kaushik Dhara, Weizmann institute of science, 13.07.2022',
             'Dr. Apoorva Khare, IISc Bangalore, 29.09.2022',
-            'Prof. Jayadev Sarkar, ISI Bangalore, 29.09.2022'
+            'Prof. Jaydeb Sarkar, ISI Bangalore, 29.09.2022'
 
         ]
     },

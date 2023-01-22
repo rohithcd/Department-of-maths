@@ -12,3 +12,9 @@
     margin-bottom: 1rem;
     color: rgba(0, 0, 0, 0.7);
 }
+
+.training-programs li {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-weight: bold;
+}

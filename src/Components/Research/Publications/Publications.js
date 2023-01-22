@@ -5,7 +5,7 @@ const Publications = () => {
     return (
         <>
             <Title head="Publications" />
-            <Table heading={["Sl.no", "Name of the author/s", "Title of the paper", "Name of the journal", "year of publication", "ISSN No", "link to recog", "Link to the paper"]}
+            <Table heading={["Sl.no", "Title of the paper", "Name of the author/s", "Name of the journal", "year of publication", "ISSN No", "link to recog", "Link to the paper"]}
                 rest={publications}/>
         </>
     );
@@ -261,5 +261,15 @@ let publications = [
   ["A Mathematical Model of Neuro Fuzzy Approximation in image Classification", "Dr.Sasi Gopalan, Linu Pinto , Sheela.C, Arun Kumar", "AIP Conference Proceedings", "2016", "Volume 1738 Article Number 480068  ", "https://doi.org/10.1063/1.4952304", "https://aip.scitation.org/doi/10.1063/1.4952304"],
   ["Induced cycles in triangle graphs", "Aparna Lakshmanan S., Cs. Bujtas, Zs. Tuza", "Discrete Applied Mathematics", "2016", "0166-218X", "https://www.scopus.com/sourceid/25890", "https://www.sciencedirect.com/science/article/pii/S0166218X15005818"],
   ["Preconditioners in spectral approximation \u2028\n", "V. B. Kiran Kumar ", "Annals of Functional Analysis", "2016", "Electronic ISSN\n2008-8752\nPrint  ISSN\n2639-7390", "https://www.scopus.com/sourceid/21100286971", "https://projecteuclid.org/journals/annals-of-functional-analysis/volume-7/issue-2/Preconditioners-in-spectral-approximation/10.1215/20088752-3506079.full"],
+  ["Italian Domination and Perfect Italian Domination on Sierpinski Graphs", "Jismy Varghese, Anu V., Aparna Lakshmanan S.", "Journal of Discrete Mathematical Sciences and Cryptography", "2021", "", "", "https://www.tandfonline.com/doi/abs/10.1080/09720529.2021.1933705"],
+  ["Leech Index of a Tree", "Seena Varghese, Aparna Lakshmanan S., S. Arumugam", "Journal of Discrete Mathematical Sciences and Cryptography", "2021", "", "", "https://www.tandfonline.com/doi/abs/10.1080/09720529.2020.1800217?journalCode=tdmc20"],
+  ["Impact of Some Graph Operators on Double Roman Domination Number", "Anu V., Aparna Lakshmanan S.", "International Journal of Combinatorial Graph Theory and Applications", "2021", ""],
+  ["A Comparative Study on Various Sharing Among Undergraduates in PreCovid-19 and Covid-19 Period Using Network Parameters", "V. G. Deepa, Aparna Lakshmanan S., V. N. Sreeja", "Lecture Notes in Networks and Systems", "2021", ""],
+  
+  ["Interval valued Fuzzy graph and Complement Number", "Shery Fernandez, Deepthi Mary Tresa S", " International Digital Conference on Computatinal sciences (CSMCS - 2020),Computations in Computer and Information Science, CCIS, Springer 192-202", "2021", ""],
+  ["Intuitionistic level subgroups in cyclic groups of order", "Shery Fernandez, Divya Mary Daise S", "South East Asian Journal of Mathematics and Mathematical Sciences,17(1)", "2021", ""],
+  ["Intuitionistic Level Subgroups in the Klein-4 Group", "Shery Fernandez, Divya Mary", "Creative Mathematics and Informatics, 30(2), 164-173", "2021", ""],
+  ["On Isomorphisms of Intuitionistic Fuzzy Sets", "Daise S, Deepthi Mary Tresa S Shery Fernandez, Divya Mary Daise S", "Journal of Advanced Mathematical Studies, 15(2), 176-186", "2022", ""],
+  ["Impact of Vertex Addition on Italian Domination Number", "Jismy Varghese, Aparna Lakshmanan S.", "Indian Journal of Discrete Mathematics", "2022", ""],
+  ["Visualization for Petrov’s odd unitary group", "A.A. Ambily and V.K. Aparna Pradeep", "Linear and Multilinear Algebra", "2022", ""],
 ]; 
-

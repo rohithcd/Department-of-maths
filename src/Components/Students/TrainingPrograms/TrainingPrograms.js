@@ -4,7 +4,7 @@ import './TrainingPrograms.css';
 const TrainingPrograms = () => {
     return (
         <>
-            <Title head="Training Programs"/>
+            <Title head="Training Programs / Workshops/Conferences"/>
             <div className="training-programs">
                 <h3>Research Workshop on Analysis</h3>
                 <h6>Coordinator: Dr. V B Kiran Kumar & Dr.Noufal A, Assistant Professor, Department of Mathematics, Cochin University of Science and Technology (CUSAT), Cochin, Kerala. 25-28 July, 2016</h6>
@@ -22,10 +22,24 @@ const TrainingPrograms = () => {
                 <h6>Co-ordinator- Dr. Ambily A A, Assistant Professor, Department of Mathematics, Cochin University of Science and Technology (CUSAT), Cochin, Kerala. 09 March, 2019</h6>
 
                 <h3>Other than these the department also organizes Residential Training Camp for RMO Awardees and coordinated skill development programme for SC/ST stuents of Kochi corporation every year .</h3>
+
+
+                {
+                    list.map((item) => (<li>{item}</li>))
+                }
+
             </div>
         </>
     );
 
 }
+
+const list = [
+    "Research workshop on Analysis (25 - 28 July 2016)",
+    "Research workshop on Wavelet & Frames (March 24 - 26, 2018)",
+    "Residential Training Camp for the Regional Mathematical Olympiad Awardees in Kerala Region (2017, 2018, 2019)",
+    "International conference on semigroups and applications-2019(ICSAA-2019) 9-11 December 2019",
+    "International conference on semigroups, algebra and operator theory (ICSAOT-2022). 28-31 March 2022",
+];
 
 export default TrainingPrograms;
