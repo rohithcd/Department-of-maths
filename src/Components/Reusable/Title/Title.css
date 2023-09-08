@@ -3,7 +3,7 @@
     width: 100%;
     height: 30rem;
     background-image: linear-gradient(to right, rgba(3,29,58, 0.3) 0%, rgba(3,29,58, 0.5) 100%),
-    url("../../../Assets/main/img_about.jpg");
+    url("../../../Assets/main/img_about.JPG");
     background-size: cover;
     position: relative;
     pointer-events: none;

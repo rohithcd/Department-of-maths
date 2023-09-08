@@ -17,16 +17,16 @@ import pdf10 from "../../../../Assets/people/CV/Bio-Tatha.pdf"; */
 
 /*----Profile Pic ----*/
 import p_img1 from "../../../../Assets/people/image1.jpg";
-import p_img2 from "../../../../Assets/people/image2.jpg";
+import p_img2 from "../../../../Assets/people/image2.JPG";
 import p_img3 from "../../../../Assets/people/image3.jpg";
 import p_img4 from "../../../../Assets/people/image4.jpg";
 import p_img5 from "../../../../Assets/people/image5.jpg";
-import p_img6 from "../../../../Assets/people/image6.jpg";
+import p_img6 from "../../../../Assets/people/image6.JPG";
 import p_img7 from "../../../../Assets/people/image7.jpg";
 import p_img8 from "../../../../Assets/people/image8.jpg";
 import p_img9 from "../../../../Assets/people/image9.jpg";
 import p_img10 from "../../../../Assets/people/image10.jpg";
-import p_img11 from "../../../../Assets/people/image11.jpg";
+import p_img11 from "../../../../Assets/people/image11.JPG";
 import profile_pic1 from "../../../../Assets/people/profile_pic1.jpg";
 import mnn_pic from "../../../../Assets/people/mnn_namboothiri.jpg";
 import kpn from "../../../../Assets/people/kpnaveenachandran.jpg";

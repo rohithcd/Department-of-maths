@@ -10,7 +10,7 @@ import Gallery from "./Gallery"; //Component containing code for displaying the 
 // import img7 from "../../Assets/gallery/img7.jpg";
 import img8 from "../../Assets/main/slides_img1.jpg"; 
 import img9 from "../../Assets/main/slides_img2.jpg";
-import img10 from "../../Assets/main/slides_img3.jpg";
+import img10 from "../../Assets/main/slides_img3.JPG";
 import img11 from "../../Assets/gallery/dep1.JPG";
 import img12 from "../../Assets/gallery/dep4.JPG";
 import img13 from "../../Assets/gallery/dep7.JPG";

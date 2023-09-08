@@ -6,6 +6,14 @@ import Explore from "./Explore/Explore";
 import Banner from "./Banner/Banner";
 import Program from "./Program/Program";
 
+import "./Main.css";
+
+
+import notice1 from "../../Assets/notices/TNOTICE_AMBILY.pdf";
+import notice2 from "../../Assets/notices/TNOTICE_noufal.pdf";
+
+import form1 from "../../Assets/notices/TFORM_AMBILY.pdf";
+import form2 from "../../Assets/notices/TFORM_noufal.pdf";
 
 import Heading from "../Reusable/Head/Heading.js";
 
@@ -38,6 +46,25 @@ const Video = () => {
                 <video controls>
                     <source src={sastrayan} type="video/mp4" />
                 </video>
+            </section>
+
+            <section className="notices_section">
+                <Heading name="Notices"/>
+                <h4>Tender notice for the supply of 'Computing laptop for high-end Computation'</h4>
+
+                <div className="notices_div">
+                    <div>
+                        <p>Tender Notices</p>
+                        <a href={notice1} download>Tender Notice 1</a>
+                        <a href={notice2} download>Tender Notice 2</a>
+                    </div>
+                    <div>
+                        <p>Tender Forms</p>
+                        <a href={form1} download>Tender Form 1</a>
+                        <a href={form2} download>Tender Form 2</a>
+
+                    </div>
+                </div>
             </section>
         </>
     ); 
