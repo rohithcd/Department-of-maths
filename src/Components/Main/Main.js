@@ -11,9 +11,12 @@ import "./Main.css";
 
 import notice1 from "../../Assets/notices/TNOTICE_AMBILY.pdf";
 import notice2 from "../../Assets/notices/TNOTICE_noufal.pdf";
+import notice3 from "../../Assets/notices/TENDER-NOTICE_LTM1.pdf"
 
 import form1 from "../../Assets/notices/TFORM_AMBILY.pdf";
 import form2 from "../../Assets/notices/TFORM_noufal.pdf";
+import form3 from "../../Assets/notices/TFORM_LTM1.pdf";
+import form4 from "../../Assets/notices/TFORM_Notice_LTM1.docx";
 
 import Heading from "../Reusable/Head/Heading.js";
 
@@ -57,11 +60,14 @@ const Video = () => {
                         <p>Tender Notices</p>
                         <a href={notice1} download>Tender Notice 1</a>
                         <a href={notice2} download>Tender Notice 2</a>
+                        <a href={notice3} download>Tender Notice 3</a>
                     </div>
                     <div>
                         <p>Tender Forms</p>
                         <a href={form1} download>Tender Form 1</a>
                         <a href={form2} download>Tender Form 2</a>
+                        <a href={form3} download>Tender Form 3</a>
+                        <a href={form4} download>Tender Form 4</a>
 
                     </div>
                 </div>
