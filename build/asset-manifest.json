@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.75d02c6a.css",
-    "main.js": "/static/js/main.662c554d.js",
+    "main.js": "/static/js/main.9a40fce8.js",
     "static/media/sasthrayan.mp4": "/static/media/sasthrayan.dcdfc973abf57e2c0c77.mp4",
     "static/media/bulletin_20_21.pdf": "/static/media/bulletin_20_21.dbe2587038709b346e62.pdf",
     "static/media/Msc_syllabus.pdf": "/static/media/Msc_syllabus.0de355da4820252705ef.pdf",
@@ -43,8 +43,8 @@
     "static/media/Bio-Ambat.pdf": "/static/media/Bio-Ambat.241c6264badc008c411a.pdf",
     "static/media/image1.jpg": "/static/media/image1.cebd53d4c5e71d64b463.jpg",
     "static/media/TNOTICE_AMBILY.pdf": "/static/media/TNOTICE_AMBILY.5ddb0ceb38eec18f9205.pdf",
+    "static/media/TNOTICE_noufal_.pdf": "/static/media/TNOTICE_noufal_.04caef6814bee687c2ea.pdf",
     "static/media/TENDER-NOTICE_LTM1.pdf": "/static/media/TENDER-NOTICE_LTM1.ec758f4d3e9ddcf95f49.pdf",
-    "static/media/TNOTICE_noufal.pdf": "/static/media/TNOTICE_noufal.16c5048797816684d6b1.pdf",
     "static/media/kpnaveenachandran.jpg": "/static/media/kpnaveenachandran.22d20b1c91cd9cec7223.jpg",
     "static/media/bulletin.pdf": "/static/media/bulletin.f27066018ac636c0f124.pdf",
     "static/media/Bio-Aparna.pdf": "/static/media/Bio-Aparna.f78fdb0ebb8a7f969726.pdf",
@@ -87,10 +87,10 @@
     "index.html": "/index.html",
     "static/media/down_arrow.svg": "/static/media/down_arrow.210c375d82c5b34ef153fd40b75542cb.svg",
     "main.75d02c6a.css.map": "/static/css/main.75d02c6a.css.map",
-    "main.662c554d.js.map": "/static/js/main.662c554d.js.map"
+    "main.9a40fce8.js.map": "/static/js/main.9a40fce8.js.map"
   },
   "entrypoints": [
     "static/css/main.75d02c6a.css",
-    "static/js/main.662c554d.js"
+    "static/js/main.9a40fce8.js"
   ]
 }
