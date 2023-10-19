@@ -10,7 +10,7 @@ import "./Main.css";
 
 
 import notice1 from "../../Assets/notices/TNOTICE_AMBILY.pdf";
-import notice2 from "../../Assets/notices/TNOTICE_noufal.pdf";
+import notice2 from "../../Assets/notices/TNOTICE_noufal_.pdf";
 import notice3 from "../../Assets/notices/TENDER-NOTICE_LTM1.pdf"
 
 import form1 from "../../Assets/notices/TFORM_AMBILY.pdf";
